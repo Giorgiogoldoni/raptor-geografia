@@ -1,6 +1,21 @@
 {
-  "updated_display": "In attesa del primo calcolo...",
-  "paesi": { "positions": [], "use_xeon": true, "xeon_price": null, "watchlist": [], "qualified": [], "all": [] },
-  "new_area": { "positions": [], "use_xeon": true, "xeon_price": null, "watchlist": [], "qualified": [], "all": [] },
+  "updated_at": "2026-03-28T18:32:50.144914+01:00",
+  "updated_display": "28/03/2026 18:32 CET",
+  "paesi": {
+    "positions": [],
+    "use_xeon": true,
+    "xeon_price": null,
+    "watchlist": [],
+    "qualified": [],
+    "all": []
+  },
+  "new_area": {
+    "positions": [],
+    "use_xeon": true,
+    "xeon_price": null,
+    "watchlist": [],
+    "qualified": [],
+    "all": []
+  },
   "xeon": null
 }
