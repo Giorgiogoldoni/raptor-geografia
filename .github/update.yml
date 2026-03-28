@@ -1,0 +1,66 @@
+name: 🦅 RAPTOR GEOGRAFIA — Hourly Update
+
+on:
+  schedule:
+    # Every hour 07:00–17:00 UTC = 09:00–19:00 CET (winter) | Mon–Fri only
+    - cron: '0 7,8,9,10,11,12,13,14,15,16,17 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Manual trigger reason'
+        required: false
+        default: 'Manual update'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: raptor-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: 🐍 Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 📦 Install dependencies
+        run: pip install -r requirements.txt --quiet
+
+      - name: 🦅 Run RAPTOR GEOGRAFIA
+        run: python raptor_geografia.py
+
+      - name: 💾 Commit & push
+        run: |
+          git config user.name  "RAPTOR GEOGRAFIA 🦅"
+          git config user.email "raptor-geografia@noreply.github.com"
+          git add geografia.json portfolio_state.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🦅 RAPTOR update $(date -u '+%d/%m/%Y %H:%M') UTC"
+            git push
+          fi
+
+      - name: 📊 Summary
+        if: always()
+        run: |
+          echo "### 🦅 RAPTOR GEOGRAFIA Update" >> $GITHUB_STEP_SUMMARY
+          echo "- **Time**: $(date -u '+%d/%m/%Y %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          if [ -f geografia.json ]; then
+            echo "- **Status**: ✅ geografia.json updated" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- **Status**: ⚠️ geografia.json not generated" >> $GITHUB_STEP_SUMMARY
+          fi
