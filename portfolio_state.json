@@ -1,6 +1,7 @@
 {
   "paesi": {
-    "positions": [
+    "positions": [],
+    "history": [
       {
         "ticker": "SPXJ.L",
         "name": "iShares MSCI Pacific ex-Japan UCITS ETF",
@@ -23,10 +24,13 @@
         "perf7": 36.48,
         "perf30": 31.23,
         "weight_pct": 100.0,
-        "warning": null
+        "warning": null,
+        "exit_reason": "K% negativo \u2014 prezzo sotto KAMA",
+        "exit_price": 4051.0,
+        "final_gain_pct": -25.31,
+        "exit_date": "2026-04-02"
       }
-    ],
-    "history": []
+    ]
   },
   "new_area": {
     "positions": [],
