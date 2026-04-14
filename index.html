@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>🦅 RAPTOR GEOGRAFIA</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <style>
 :root{
   --bg:#f5f7fa;--bg2:#fff;--bg3:#eef0f3;--border:#d0d7de;
@@ -190,7 +191,7 @@ function renderPos(pos){
       <div class="pos-cell"><div class="cell-lbl">Gain %</div><div class="cell-val ${gc}">${gs}${pos.current_gain_pct?.toFixed(2)}%</div></div>
       <div class="pos-cell"><div class="cell-lbl">Trail Stop</div><div class="cell-val">${pos.trailing_stop?.toFixed(3)||'—'}</div></div>
       <div class="pos-cell"><div class="cell-lbl">Giorni</div><div class="cell-val ${pos.days_held>=7?'cv-warn':''}">${pos.days_held}/10</div></div>
-      <div class="pos-cell"><div class="cell-lbl">Score</div><div class="cell-val ${pos.score>=35?'cv-pos':pos.score>=20?'cv-warn':'cv-neg'}">${pos.score}</div></div>
+      <div class="pos-cell"><div class="cell-lbl">Score</div><div class="cell-val ${pos.score>=37?'cv-pos':pos.score>=25?'cv-warn':'cv-neg'}">${pos.score}</div></div>
     </div>
     <div class="pos-grid" style="border-top:1px solid var(--border)">
       <div class="pos-cell"><div class="cell-lbl">Vortex</div>${indBull(pos.vortex_bullish,'Vortex')}</div>
@@ -229,7 +230,7 @@ function renderWatchlist(items, label){
       <span class="wt">${t}</span>
       <span class="wn" title="${d.name||''}">${d.name||'—'}</span>
       <span>${sigBadge(d.signal)}</span>
-      <span style="font-weight:600;color:${d.score>=35?'var(--green)':d.score>=20?'var(--yellow)':'var(--red)'}">${d.score}</span>
+      <span style="font-weight:600;color:${d.score>=37?'var(--green)':d.score>=25?'var(--yellow)':'var(--red)'}">${d.score}</span>
       <span style="color:var(--blue)">${d.er?(d.er*100).toFixed(0)+'%':'—'}</span>
       <span style="color:${d.vortex_bullish?'var(--green)':'var(--red)'}">${d.vortex_bullish?'▲V':'▼V'}</span>
       <span style="color:${d.rvi_bullish?'var(--green)':'var(--red)'}">${d.rvi_bullish?'▲R':'▼R'}</span>
@@ -280,7 +281,7 @@ function renderTable(data, title){
       <td style="font-weight:700;color:var(--blue)">${t}</td>
       <td style="max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:11px;color:var(--text2)">${d.name||'—'}</td>
       <td>${sigBadge(d.signal)}</td>
-      <td style="font-weight:600;color:${d.score>=35?'var(--green)':d.score>=20?'var(--yellow)':'var(--red)'}">${d.score}</td>
+      <td style="font-weight:600;color:${d.score>=37?'var(--green)':d.score>=25?'var(--yellow)':'var(--red)'}">${d.score}</td>
       <td>${d.er?(d.er*100).toFixed(0)+'%':'—'}</td>
       <td>${trendBadge(d.trend)}</td>
       <td class="${pc}">${d.k_pct!=null?(d.k_pct>0?'+':'')+d.k_pct.toFixed(2)+'%':'—'}</td>
@@ -345,6 +346,7 @@ async function loadData(){
     document.getElementById('last-update').textContent='🕐 '+(d.updated_display||'—');
     document.getElementById('ts-detail').textContent='✅ '+(d.updated_display||'—');
 
+    _lastData = d;
     renderPanel(d.paesi,    'body-paesi',    'count-paesi');
     renderPanel(d.new_area, 'body-new-area', 'count-new-area');
     checkAlerts(d.paesi, d.new_area);
@@ -365,6 +367,41 @@ async function loadData(){
     eb.innerHTML='⚠️ Impossibile caricare geografia.json — '+e.message;
   }
 }
+
+// ── EXCEL EXPORT ──
+let _lastData = null;
+
+function exportExcel() {
+  if (!_lastData) { alert('Nessun dato caricato'); return; }
+  const wb = XLSX.utils.book_new();
+  const buildSheet = (portData, portName) => {
+    const rows = [['Portafoglio','Ticker','Nome','Segnale','Score','ER%','Baffetti','K%',
+      'Trend','Vortex','RVI','SAR','Supertrend','Perf7%','Perf30%','Prezzo',
+      'Ingresso','Target','Stop','Gain%','Giorni','Peso%','Stato']];
+    (portData.all||[]).forEach(d=>{
+      const pos=(portData.positions||[]).find(p=>p.ticker===d.ticker);
+      rows.push([portName,d.ticker,d.name||'',d.signal||'',d.score||0,
+        d.er?Math.round(d.er*100):0,d.baffetti||0,d.k_pct||0,d.trend||'',
+        d.vortex_bullish?'▲':'▼',d.rvi_bullish?'▲':'▼',
+        d.sar_bullish?'▲':'▼',d.supertrend_bullish?'▲':'▼',
+        d.perf7||0,d.perf30||0,d.price||0,
+        pos?pos.entry_price||'':'',pos?pos.target_price||'':'',
+        pos?pos.stop_loss||'':'',pos?pos.current_gain_pct||0:'',
+        pos?pos.days_held||0:'',pos?pos.weight_pct||0:'',
+        pos?'IN PORTAFOGLIO':d.qualifies?'QUALIFICATO':''
+      ]);
+    });
+    return XLSX.utils.aoa_to_sheet(rows);
+  };
+  const ws1=buildSheet(_lastData.paesi,'PAESI');
+  const ws2=buildSheet(_lastData.new_area,'NEW AREA');
+  ws1['!cols']=new Array(23).fill({wch:14});
+  ws2['!cols']=new Array(23).fill({wch:14});
+  XLSX.utils.book_append_sheet(wb,ws1,'PAESI');
+  XLSX.utils.book_append_sheet(wb,ws2,'NEW AREA');
+  XLSX.writeFile(wb,'RAPTOR_GEOGRAFIA_'+new Date().toISOString().slice(0,10)+'.xlsx');
+}
+
 
 loadData();
 setInterval(loadData, 60*60*1000);
