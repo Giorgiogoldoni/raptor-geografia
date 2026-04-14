@@ -1,131 +1,134 @@
 #!/usr/bin/env python3
 """
-🦅 RAPTOR GEOGRAFIA — Autonomous ETF Portfolio Manager
-Two portfolios: PAESI + NEW AREA (UCITS ETFs, listed in Europe only)
-Runs hourly via GitHub Actions 09:00-19:00 CET on weekdays.
+🦅 RAPTOR GEOGRAFIA — Autonomous ETF Portfolio Manager v4
+Two portfolios: PAESI + NEW AREA (UCITS ETFs, all quoted in EUR on MI/DE/PA/AS)
 
-Exit conditions  : K% < 0  |  Trailing Stop (2×ATR)  |  Score < 20
-                   Supertrend red (pre-alert)  |  Day 7 pre-alert  |  Day 10 time-stop
-Entry conditions : Signal in (LONG/EARLY/WATCH) + Score ≥ 40 + Trendycator VERDE
-                   + ER ≥ 0.50 + Baffetti ≥ 3 + SAR bullish + Supertrend bullish
-Ranking          : by ER descending (most efficient trend)
-Weighting        : by Score proportional
-Target           : +5% per trade  |  Max 5 positions per portfolio
-Preferred entry  : Wednesday (confirmed at close)
-Cushion          : XEON when no ETF qualifies
+Signal levels (Opzione C):
+  LONG FORTE  = 7/7 conditions
+  LONG        = 5-6/7 conditions
+  EARLY FORTE = 4/7 conditions
+  EARLY       = 3/7 conditions
+
+Indicators: KAMA · ER · AO/Baffetti · Trendycator · SAR · Supertrend · MM
+            + Vortex Index (VI+/VI-) · RVI (Relative Vigor Index)
+
+Score bonuses: +5 Vortex bullish · +5 RVI bullish · -10 both bearish
+Max positions : 7 per portfolio
+Target        : +5% per trade · Time stop: 10 days
+Cushion       : XEON when no ETF qualifies
 """
 
-import json, os, sys
+import json, os
 from datetime import datetime, date
 import pytz
-import numpy as np
 import yfinance as yf
+import pandas as pd
 
 ROME_TZ = pytz.timezone("Europe/Rome")
+MAX_POSITIONS = 7
 
 # ─────────────────────────────────────────────────────────────────────────────
-# ETF UNIVERSE — UCITS, listed in Europe (Yahoo Finance tickers)
+# ETF UNIVERSE — all EUR, quoted on MI / DE / PA / AS
 # ─────────────────────────────────────────────────────────────────────────────
 
 PAESI = {
-    "IUSS.L":    "iShares MSCI Saudi Arabia UCITS ETF",
-    "SAUDI.L":   "Franklin FTSE Saudi Arabia UCITS ETF",
-    "IBZL.L":    "iShares MSCI Brazil UCITS ETF",
-    "XCHA.DE":   "Xtrackers CSI300 Swap UCITS ETF",
-    "LCCN.L":    "Amundi MSCI China UCITS ETF",
-    "WSPE.L":    "WisdomTree S&P 500 EUR Daily Hedged",
-    "MCHN.L":    "Invesco MSCI China All Shares UCITS ETF",
-    "XCS3.DE":   "Xtrackers MSCI Malaysia UCITS ETF",
-    "D5BI.DE":   "Xtrackers MSCI Mexico UCITS ETF",
-    "FLXT.L":    "Franklin FTSE Taiwan UCITS ETF",
-    "TUR.PA":    "Amundi MSCI Turkey UCITS ETF",
-    "XCS4.DE":   "Xtrackers MSCI Thailand UCITS ETF",
-    "WRD.L":     "HSBC MSCI World UCITS ETF",
-    "IBCJ.L":    "iShares MSCI Poland UCITS ETF",
-    "XBAS.DE":   "Xtrackers MSCI Singapore UCITS ETF",
-    "IMIB.MI":   "iShares FTSE MIB UCITS ETF",
-    "WMIB.MI":   "WisdomTree FTSE MIB",
-    "CN1.PA":    "Amundi MSCI Nordic UCITS ETF",
-    "FMI.MI":    "Amundi Italy MIB ESG UCITS ETF",
-    "CSMIB.MI":  "iShares FTSE MIB ETF EUR Acc",
-    "SPXE.L":    "State Street SPDR S&P 500 EUR Acc H",
-    "UKE.MI":    "UBS MSCI United Kingdom hEUR Acc",
-    "WS5X.MI":   "WisdomTree EURO STOXX 50",
-    "XSMI.SW":   "Xtrackers Switzerland UCITS ETF",
-    "VUKE.L":    "Vanguard FTSE 100 UCITS ETF",
-    "VUKG.L":    "Vanguard FTSE 100 UCITS ETF GBP Acc",
-    "HSTE.L":    "HSBC Hang Seng Tech UCITS ETF",
-    "SP1E.L":    "L&G S&P 100 Equal Weight UCITS ETF",
-    "WSPX.L":    "WisdomTree S&P 500",
-    "LGUS.L":    "L&G US Equity UCITS ETF",
-    "SPY5.L":    "State Street SPDR S&P 500 UCITS ETF",
-    "VUSA.L":    "Vanguard S&P 500 UCITS ETF",
-    "DJE.PA":    "Amundi Dow Jones Industrial Average UCITS ETF",
-    "SAUS.L":    "iShares MSCI Australia UCITS ETF USD Acc",
-    "FLXU.L":    "Franklin U.S. Equity UCITS ETF",
-    "SPXJ.L":    "iShares MSCI Pacific ex-Japan UCITS ETF",
-    "IS3U.DE":   "iShares MSCI France UCITS ETF",
-    "XESD.DE":   "Xtrackers Spain UCITS ETF",
-    "EXS1.DE":   "iShares Core DAX UCITS ETF",
-    "XDAX.DE":   "Xtrackers DAX UCITS ETF",
-    "INDO.PA":   "Amundi MSCI Indonesia UCITS ETF",
-    "C40.PA":    "Amundi CAC 40 ESG UCITS ETF",
-    "ITBL.MI":   "WisdomTree FTSE MIB Banks",
-    "XPQP.DE":   "Xtrackers MSCI Philippines UCITS ETF",
-    "FLXI.L":    "Franklin FTSE India UCITS ETF",
-    "XFVT.DE":   "Xtrackers Vietnam Swap UCITS ETF",
-    "AUHEUA.SW": "UBS MSCI Australia hEUR Acc",
-    "SW2CHB.SW": "UBS MSCI Switzerland 20/35 UCITS ETF",
-    "VJPE.L":    "Vanguard FTSE Japan EUR Hedged",
-    "SRSA.L":    "iShares MSCI South Africa UCITS ETF",
-    "INDI.PA":   "Amundi MSCI India Swap UCITS ETF",
-    "CSNDX.SW":  "iShares NASDAQ 100 UCITS ETF",
-    "WNAS.MI":   "WisdomTree NASDAQ-100 ETP",
-    "QTOP.L":    "iShares Nasdaq 100 Top 30 UCITS ETF",
-    "IAEX.AS":   "iShares AEX UCITS ETF",
-    "XSFR.DE":   "Xtrackers S&P Select Frontier Swap UCITS ETF",
-    "WRTY.L":    "WisdomTree Russell 2000 ETP",
-    "KOR.PA":    "Amundi MSCI Korea UCITS ETF",
-    "GXDW.L":    "Global X Dorsey Wright Thematic ETF",
-    "NORW.L":    "Global X MSCI Norway UCITS ETF",
-    "LEER.DE":   "Xtrackers MSCI World Minimum Volatility UCITS ETF",
-    "EST.MI":    "Amundi MSCI Eastern Europe Ex Russia UCITS ETF",
+    "IUSS.MI":    "iShares MSCI Saudi Arabia UCITS ETF",
+    "SAUDI.MI":   "Franklin FTSE Saudi Arabia UCITS ETF",
+    "IBZL.MI":    "iShares MSCI Brazil UCITS ETF",
+    "XCHA.DE":    "Xtrackers CSI300 Swap UCITS ETF",
+    "LCCN.MI":    "Amundi MSCI China UCITS ETF",
+    "WSPE.MI":    "WisdomTree S&P 500 EUR Daily Hedged",
+    "MCHN.MI":    "Invesco MSCI China All Shares UCITS ETF",
+    "XCS3.DE":    "Xtrackers MSCI Malaysia UCITS ETF",
+    "D5BI.DE":    "Xtrackers MSCI Mexico UCITS ETF",
+    "FLXT.MI":    "Franklin FTSE Taiwan UCITS ETF",
+    "TUR.PA":     "Amundi MSCI Turkey UCITS ETF",
+    "XCS4.DE":    "Xtrackers MSCI Thailand UCITS ETF",
+    "WRD.PA":     "HSBC MSCI World UCITS ETF",
+    "IBCJ.MI":    "iShares MSCI Poland UCITS ETF",
+    "XBAS.DE":    "Xtrackers MSCI Singapore UCITS ETF",
+    "IMIB.MI":    "iShares FTSE MIB UCITS ETF",
+    "WMIB.MI":    "WisdomTree FTSE MIB",
+    "CN1.PA":     "Amundi MSCI Nordic UCITS ETF",
+    "FMI.MI":     "Amundi Italy MIB ESG UCITS ETF",
+    "CSMIB.MI":   "iShares FTSE MIB ETF EUR Acc",
+    "SPXE.MI":    "State Street SPDR S&P 500 EUR Acc Hedged",
+    "UKE.MI":     "UBS MSCI United Kingdom hEUR Acc",
+    "WS5X.MI":    "WisdomTree EURO STOXX 50",
+    "XSMI.MI":    "Xtrackers Switzerland UCITS ETF",
+    "HSTE.MI":    "HSBC Hang Seng Tech UCITS ETF",
+    "SP1E.MI":    "L&G S&P 100 Equal Weight UCITS ETF",
+    "WSPX.MI":    "WisdomTree S&P 500",
+    "LGUS.MI":    "L&G US Equity UCITS ETF",
+    "SPY5.MI":    "State Street SPDR S&P 500 UCITS ETF",
+    "VUSA.MI":    "Vanguard S&P 500 UCITS ETF",
+    "DJE.PA":     "Amundi Dow Jones Industrial Average UCITS ETF",
+    "SAUS.MI":    "iShares MSCI Australia UCITS ETF EUR",
+    "FLXU.MI":    "Franklin U.S. Equity UCITS ETF",
+    "SPXJ.MI":    "iShares MSCI Pacific ex-Japan UCITS ETF",
+    "IS3U.DE":    "iShares MSCI France UCITS ETF",
+    "XESD.DE":    "Xtrackers Spain UCITS ETF",
+    "EXS1.DE":    "iShares Core DAX UCITS ETF",
+    "XDAX.DE":    "Xtrackers DAX UCITS ETF",
+    "INDO.PA":    "Amundi MSCI Indonesia UCITS ETF",
+    "C40.PA":     "Amundi CAC 40 ESG UCITS ETF",
+    "ITBL.MI":    "WisdomTree FTSE MIB Banks",
+    "XPQP.DE":    "Xtrackers MSCI Philippines UCITS ETF",
+    "FLXI.MI":    "Franklin FTSE India UCITS ETF",
+    "XFVT.DE":    "Xtrackers Vietnam Swap UCITS ETF",
+    "AUHEUA.MI":  "UBS MSCI Australia hEUR Acc",
+    "VJPE.MI":    "Vanguard FTSE Japan EUR Hedged",
+    "SRSA.MI":    "iShares MSCI South Africa UCITS ETF",
+    "INDI.PA":    "Amundi MSCI India Swap UCITS ETF",
+    "CSNDX.MI":   "iShares NASDAQ 100 UCITS ETF",
+    "WNAS.MI":    "WisdomTree NASDAQ-100 ETP",
+    "QTOP.MI":    "iShares Nasdaq 100 Top 30 UCITS ETF",
+    "IAEX.AS":    "iShares AEX UCITS ETF",
+    "XSFR.DE":    "Xtrackers S&P Select Frontier Swap UCITS ETF",
+    "WRTY.MI":    "WisdomTree Russell 2000 ETP",
+    "KOR.PA":     "Amundi MSCI Korea UCITS ETF",
+    "GXDW.MI":    "Global X Dorsey Wright Thematic ETF",
+    "NORW.MI":    "Global X MSCI Norway UCITS ETF",
+    "LEER.DE":    "Xtrackers MSCI World Minimum Volatility UCITS ETF",
+    "EST.MI":     "Amundi MSCI Eastern Europe Ex Russia UCITS ETF",
+    "100H.MI":    "Amundi FTSE 100 EUR Hedged UCITS ETF",
+    "SVE.MI":     "UBS MSCI Switzerland 20/35 UCITS ETF EUR",
 }
 
 NEW_AREA = {
-    "TAM.L":     "iShares MSCI EM Latin America UCITS ETF",
-    "ALAT.PA":   "Amundi MSCI EM Latin America UCITS ETF",
-    "CSCA.L":    "iShares MSCI Canada ETF USD Acc",
-    "IQQ9.DE":   "iShares BIC 50 UCITS ETF",
-    "IAPD.L":    "iShares Asia Pacific Dividend UCITS ETF",
-    "CAHEUA.SW": "UBS MSCI Canada UCITS ETF hEUR Acc",
-    "IQQF.DE":   "iShares MSCI AC Far East ex-Japan UCITS ETF",
-    "CSPXJ.L":   "iShares Core MSCI Pac ex-Jpn ETF USD Acc",
-    "ISAC.L":    "iShares MSCI ACWI UCITS ETF",
-    "SXRU.DE":   "iShares Dow Jones Industrial Avg ETF USD Acc",
-    "SJPA.L":    "iShares Core MSCI Japan IMI UCITS ETF",
-    "MEUD.PA":   "Amundi Core Stoxx Europe 600 UCITS ETF",
-    "IUSE.L":    "iShares S&P 500 EUR Hedged UCITS ETF",
-    "IJPE.L":    "iShares MSCI Japan EUR Hedged UCITS ETF",
-    "CEB4.L":    "iShares Core FTSE 100 EUR Hedged Acc",
-    "IWDE.L":    "iShares MSCI World EUR Hedged UCITS ETF",
-    "JRGE.L":    "JPMorgan Global Research Enhanced Index ETF",
-    "SEMA.L":    "iShares MSCI EM UCITS ETF USD Acc",
-    "NQSE.DE":   "iShares NASDAQ 100 UCITS ETF",
-    "XDEE.DE":   "Xtrackers S&P 500 Equal Weight EUR Hedged",
-    "EST.PA":    "Amundi MSCI Eastern Europe Ex Russia UCITS ETF",
-    "LAFRI.PA":  "Amundi Pan Africa UCITS ETF",
-    "CSEMAS.L":  "iShares MSCI EM Asia ETF USD Acc",
-    "WS5X.MI":   "WisdomTree EURO STOXX 50",
-    "WWRD.MI":   "WisdomTree MSCI World Quality Dividend Growth",
-    "WSPE.MI":   "WisdomTree S&P 500 EUR Hedged",
-    "WNAS.MI":   "WisdomTree NASDAQ-100 ETP",
-    "NTSZ.DE":   "Neuberger Berman US Multi Cap Opportunities",
-    "NTSG.MI":   "Neuberger Berman Sustainable Global Equity",
-    "NTSX.MI":   "WisdomTree US Efficient Core",
+    "ALAT.MI":    "Amundi MSCI EM Latin America UCITS ETF",
+    "LTAM.MI":    "iShares MSCI EM Latin America UCITS ETF",
+    "CSCA.MI":    "iShares MSCI Canada ETF EUR Acc",
+    "IQQ9.DE":    "iShares BIC 50 UCITS ETF",
+    "IAPD.MI":    "iShares Asia Pacific Dividend UCITS ETF",
+    "CAHEUA.MI":  "UBS MSCI Canada UCITS ETF hEUR Acc",
+    "IQQF.DE":    "iShares MSCI AC Far East ex-Japan UCITS ETF",
+    "CSPXJ.MI":   "iShares Core MSCI Pac ex-Jpn ETF EUR Acc",
+    "ISAC.MI":    "iShares MSCI ACWI UCITS ETF",
+    "SXRU.DE":    "iShares Dow Jones Industrial Avg ETF EUR Acc",
+    "SJPA.MI":    "iShares Core MSCI Japan IMI UCITS ETF",
+    "MEUD.PA":    "Amundi Core Stoxx Europe 600 UCITS ETF",
+    "IUSE.MI":    "iShares S&P 500 EUR Hedged UCITS ETF",
+    "IJPE.MI":    "iShares MSCI Japan EUR Hedged UCITS ETF",
+    "IWDE.MI":    "iShares MSCI World EUR Hedged UCITS ETF",
+    "JRGE.MI":    "JPMorgan Global Research Enhanced Index ETF",
+    "SEMA.MI":    "iShares MSCI EM UCITS ETF EUR Acc",
+    "NQSE.DE":    "iShares NASDAQ 100 UCITS ETF",
+    "XDEE.DE":    "Xtrackers S&P 500 Equal Weight EUR Hedged",
+    "EST.MI":     "Amundi MSCI Eastern Europe Ex Russia UCITS ETF",
+    "LAFRI.MI":   "Amundi Pan Africa UCITS ETF",
+    "CSEMAS.MI":  "iShares MSCI EM Asia ETF EUR Acc",
+    "WS5X.MI":    "WisdomTree EURO STOXX 50",
+    "WWRD.MI":    "WisdomTree MSCI World Quality Dividend Growth",
+    "WSPE.MI":    "WisdomTree S&P 500 EUR Hedged",
+    "WNAS.MI":    "WisdomTree NASDAQ-100 ETP",
+    "NTSZ.DE":    "Neuberger Berman US Multi Cap Opportunities",
+    "NTSG.MI":    "Neuberger Berman Sustainable Global Equity",
+    "NTSX.MI":    "WisdomTree US Efficient Core",
+    "LMVC.MI":    "Amundi MSCI World Min Volatility Factor UCITS ETF",
 }
 
-XEON_TICKER = "XEON.PA"
+XEON_TICKER = "XEON.MI"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # INDICATORS
@@ -206,8 +209,8 @@ def calc_parabolic_sar(high, low, af0=0.02, af_max=0.2):
         prev = sars[-1]
         if bull:
             new = prev + af * (ep - prev)
-            new = min(new, low[max(0, i-2):i])  # type: ignore
-            new = min(new) if hasattr(new, '__iter__') else new
+            cands = low[max(0, i-2):i]
+            new = min(new, min(cands)) if cands else new
             if low[i] < new:
                 bull, new, ep, af = False, ep, low[i], af0
             else:
@@ -235,14 +238,11 @@ def calc_supertrend(high, low, close, period=10, mult=3.0):
     atr_arr = [sum(tr[:period]) / period]
     for i in range(period, len(tr)):
         atr_arr.append((atr_arr[-1] * (period-1) + tr[i]) / period)
-    # pad to length of close
     pad = len(close) - len(atr_arr) - 1
     atr_full = [atr_arr[0]] * (pad + 1) + atr_arr
-
     hl2 = [(h + l) / 2 for h, l in zip(high, low)]
     upper = [hl2[i] + mult * atr_full[i] for i in range(len(close))]
     lower = [hl2[i] - mult * atr_full[i] for i in range(len(close))]
-
     st = [lower[0]]
     dir_ = [1]
     for i in range(1, len(close)):
@@ -275,35 +275,129 @@ def mm_align(close):
     mm200 = sum(close[-200:]) / 200
     return close[-1] > mm20 > mm50 > mm200
 
-def calc_score(er, baff, k_pct, p7, p30, mm_ok, ao_pos, cross, trend):
+def calc_vortex(high, low, close, n=14):
+    """Vortex Index — VI+ and VI-"""
+    if len(close) < n + 1:
+        return 1.0, 1.0, False
+    vm_plus  = [abs(high[i] - low[i-1]) for i in range(1, len(close))]
+    vm_minus = [abs(low[i]  - high[i-1]) for i in range(1, len(close))]
+    tr       = [max(high[i]-low[i], abs(high[i]-close[i-1]), abs(low[i]-close[i-1]))
+                for i in range(1, len(close))]
+    vi_plus  = round(sum(vm_plus[-n:])  / sum(tr[-n:]) if sum(tr[-n:]) > 0 else 1.0, 4)
+    vi_minus = round(sum(vm_minus[-n:]) / sum(tr[-n:]) if sum(tr[-n:]) > 0 else 1.0, 4)
+    bull = vi_plus > vi_minus
+    return vi_plus, vi_minus, bull
+
+def calc_rvi(close, open_, high, low, n=10):
+    """Relative Vigor Index — RVI and Signal line"""
+    if len(close) < n + 4:
+        return 0.0, 0.0, False
+    # Numerator: weighted avg of (Close - Open)
+    # Denominator: weighted avg of (High - Low)
+    num, den = [], []
+    for i in range(3, len(close)):
+        n_val = (close[i]-open_[i] + 2*(close[i-1]-open_[i-1])
+                 + 2*(close[i-2]-open_[i-2]) + (close[i-3]-open_[i-3])) / 6
+        d_val = (high[i]-low[i] + 2*(high[i-1]-low[i-1])
+                 + 2*(high[i-2]-low[i-2]) + (high[i-3]-low[i-3])) / 6
+        num.append(n_val)
+        den.append(d_val)
+    if len(num) < n:
+        return 0.0, 0.0, False
+    rvi_series = []
+    for i in range(n-1, len(num)):
+        d_sum = sum(den[i-n+1:i+1])
+        rvi_series.append(sum(num[i-n+1:i+1]) / d_sum if d_sum != 0 else 0)
+    if len(rvi_series) < 4:
+        return 0.0, 0.0, False
+    # Signal line: 4-bar symmetric weighted average
+    sig_series = []
+    for i in range(3, len(rvi_series)):
+        sig_series.append((rvi_series[i] + 2*rvi_series[i-1]
+                           + 2*rvi_series[i-2] + rvi_series[i-3]) / 6)
+    if not sig_series:
+        return 0.0, 0.0, False
+    rvi_val = round(rvi_series[-1], 6)
+    sig_val = round(sig_series[-1], 6)
+    bull = rvi_val > sig_val
+    return rvi_val, sig_val, bull
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SCORING & SIGNALS — Opzione C (graduated) + Opzione D (Vortex + RVI)
+# ─────────────────────────────────────────────────────────────────────────────
+
+def calc_score(er, baff, k_pct, p7, p30, mm_ok, ao_pos, cross, trend,
+               vortex_bull=False, rvi_bull=False):
     s = (er * 30 + min(baff, 10) * 5 + min(abs(k_pct), 5) * 3
          + max(-10, min(5, p7)) * 4
          + max(-20, min(10, p30)) * 2
-         + (10 if mm_ok else 0) + (5 if ao_pos else 0)
+         + (10 if mm_ok else 0)
+         + (5  if ao_pos else 0)
          + (20 if cross <= 3 else 12 if cross <= 10 else 5 if cross <= 20 else 0))
+    # Opzione D — Vortex + RVI bonuses
+    if vortex_bull:
+        s += 5
+    if rvi_bull:
+        s += 5
+    if not vortex_bull and not rvi_bull:
+        s -= 10
     if trend == "ROSSO":
         s *= 0.6
-    return round(s, 1)
+    return round(max(0, s), 1)
 
-def calc_signal(price, kama_v, er, baff, trend, ao, mm_ok):
+def count_conditions(price, kama_v, er, baff, trend, sar_bull, st_bull,
+                     mm_ok, ao_pos, vortex_bull, rvi_bull):
+    """Count how many of the 9 conditions are met (base 7 + Vortex + RVI)"""
+    conds = [
+        price > kama_v,           # 1. Prezzo sopra KAMA
+        trend == "VERDE",         # 2. Trendycator verde
+        er >= 0.35,               # 3. ER (soglia morbida)
+        baff >= 2,                # 4. Baffetti (soglia morbida)
+        sar_bull,                 # 5. SAR bullish
+        st_bull,                  # 6. Supertrend bullish
+        mm_ok or ao_pos,          # 7. MM align OR AO positivo
+        vortex_bull,              # 8. Vortex bullish
+        rvi_bull,                 # 9. RVI bullish
+    ]
+    return sum(conds)
+
+def calc_signal(price, kama_v, er, baff, trend, ao, mm_ok,
+                vortex_bull, rvi_bull, sar_bull, st_bull):
+    """Opzione C — graduated signal levels"""
     if price < kama_v and trend == "ROSSO":
         return "STOP"
     if price < kama_v:
         return "USCITA"
-    if ao <= 0 or trend == "GRIGIO":
+    if ao <= 0 and trend == "GRIGIO":
         return "ATTENZIONE"
-    if trend == "VERDE" and er >= 0.50 and baff >= 3 and mm_ok:
+    n = count_conditions(price, kama_v, er, baff, trend,
+                         sar_bull, st_bull, mm_ok, ao > 0,
+                         vortex_bull, rvi_bull)
+    if n >= 7:
+        return "LONG_FORTE"
+    if n >= 5:
         return "LONG"
-    if baff >= 3 and trend in ("VERDE", "GRIGIO"):
+    if n >= 4:
+        return "EARLY_FORTE"
+    if n >= 3:
         return "EARLY"
-    if baff >= 1 and trend in ("VERDE", "GRIGIO"):
+    if n >= 1:
         return "WATCH"
     return "ATTENZIONE"
 
-def qualifies(signal, score, trend, er, baff, sar_bull, st_bull):
-    return (signal in ("LONG", "EARLY", "WATCH") and score >= 40
-            and trend == "VERDE" and er >= 0.50 and baff >= 3
-            and sar_bull and st_bull)
+def qualifies(signal, score, price, kama_v):
+    """Opzione C — entry qualifies at different score thresholds by signal"""
+    if price <= kama_v:
+        return False
+    thresholds = {
+        "LONG_FORTE":  30,
+        "LONG":        35,
+        "EARLY_FORTE": 38,
+        "EARLY":       42,
+        "WATCH":       50,
+    }
+    min_score = thresholds.get(signal, 999)
+    return score >= min_score
 
 # ─────────────────────────────────────────────────────────────────────────────
 # DATA FETCHING & ANALYSIS
@@ -313,19 +407,20 @@ def analyze(ticker, name):
     try:
         df = yf.download(ticker, period="1y", interval="1d",
                          progress=False, auto_adjust=True)
-        if df.empty or len(df) < 55:
+        if df is None or df.empty:
+            return None
+        if isinstance(df.columns, pd.MultiIndex):
+            df.columns = df.columns.get_level_values(0)
+        df = df.loc[:, ~df.columns.duplicated()]
+        df = df.dropna(subset=['Close', 'High', 'Low'])
+        if len(df) < 55:
             return None
 
-        # Flatten multi-level columns if present
-        if isinstance(df.columns, type(df.columns)) and hasattr(df.columns, 'levels'):
-            df.columns = df.columns.droplevel(1) if df.columns.nlevels > 1 else df.columns
-
-        close  = df['Close'].dropna().values.astype(float).tolist()
-        high   = df['High'].dropna().values.astype(float).tolist()
-        low    = df['Low'].dropna().values.astype(float).tolist()
-
-        if len(close) < 55:
-            return None
+        close  = [float(x) for x in df['Close'].tolist()]
+        high   = [float(x) for x in df['High'].tolist()]
+        low    = [float(x) for x in df['Low'].tolist()]
+        # Open needed for RVI
+        open_  = [float(x) for x in df['Open'].tolist()] if 'Open' in df.columns else close[:]
 
         price   = close[-1]
         kama_s  = kama(close)
@@ -340,8 +435,10 @@ def analyze(ticker, name):
         mm_ok   = mm_align(close)
         sar_v, sar_bull = calc_parabolic_sar(high, low)
         st_v, st_bull   = calc_supertrend(high, low, close)
-        p7      = round((price / close[-8]  - 1) * 100 if len(close) >= 8  else 0, 2)
-        p30     = round((price / close[-31] - 1) * 100 if len(close) >= 31 else 0, 2)
+        vi_plus, vi_minus, vortex_bull = calc_vortex(high, low, close)
+        rvi_val, rvi_sig, rvi_bull     = calc_rvi(close, open_, high, low)
+        p7  = round((price / close[-8]  - 1) * 100 if len(close) >= 8  else 0, 2)
+        p30 = round((price / close[-31] - 1) * 100 if len(close) >= 31 else 0, 2)
 
         cross = 0
         for i in range(len(kama_s)-1, 0, -1):
@@ -350,9 +447,11 @@ def analyze(ticker, name):
             else:
                 break
 
-        score  = calc_score(er, baff, k_pct, p7, p30, mm_ok, ao > 0, cross, trend)
-        signal = calc_signal(price, kama_v, er, baff, trend, ao, mm_ok)
-        q      = qualifies(signal, score, trend, er, baff, sar_bull, st_bull)
+        score  = calc_score(er, baff, k_pct, p7, p30, mm_ok, ao > 0, cross, trend,
+                            vortex_bull, rvi_bull)
+        signal = calc_signal(price, kama_v, er, baff, trend, ao, mm_ok,
+                             vortex_bull, rvi_bull, sar_bull, st_bull)
+        q      = qualifies(signal, score, price, kama_v)
 
         return {
             "ticker": ticker, "name": name,
@@ -362,6 +461,8 @@ def analyze(ticker, name):
             "trend": trend, "mm_aligned": mm_ok,
             "sar": sar_v, "sar_bullish": sar_bull,
             "supertrend": st_v, "supertrend_bullish": st_bull,
+            "vi_plus": vi_plus, "vi_minus": vi_minus, "vortex_bullish": vortex_bull,
+            "rvi": rvi_val, "rvi_signal": rvi_sig, "rvi_bullish": rvi_bull,
             "perf7": p7, "perf30": p30,
             "score": score, "signal": signal, "qualifies": q,
         }
@@ -386,9 +487,9 @@ def save_state(state):
         json.dump(state, f, indent=2, default=str)
 
 def update_portfolio(existing, candidates, today_str):
-    today    = date.fromisoformat(today_str)
-    kept     = []
-    exited   = []
+    today  = date.fromisoformat(today_str)
+    kept   = []
+    exited = []
 
     for pos in existing:
         cur = next((c for c in candidates if c["ticker"] == pos["ticker"]), None)
@@ -397,11 +498,11 @@ def update_portfolio(existing, candidates, today_str):
             kept.append(pos)
             continue
 
-        entry_date  = date.fromisoformat(pos["entry_date"])
-        days_held   = (today - entry_date).days
-        cur_gain    = round((cur["price"] / pos["entry_price"] - 1) * 100, 2)
-        new_trail   = round(cur["price"] - 2 * cur["atr"], 3)
-        trail_stop  = max(pos.get("trailing_stop", new_trail), new_trail)
+        entry_date = date.fromisoformat(pos["entry_date"])
+        days_held  = (today - entry_date).days
+        cur_gain   = round((cur["price"] / pos["entry_price"] - 1) * 100, 2)
+        new_trail  = round(cur["price"] - 2 * cur["atr"], 3)
+        trail_stop = max(pos.get("trailing_stop", new_trail), new_trail)
 
         exit_reason = None
         if cur["k_pct"] < 0:
@@ -418,8 +519,8 @@ def update_portfolio(existing, candidates, today_str):
                            "exit_price": cur["price"], "final_gain_pct": cur_gain})
             continue
 
-        pre_alert   = days_held >= 7 and cur_gain < 5.0
-        target_hit  = cur_gain >= 5.0
+        pre_alert  = days_held >= 7 and cur_gain < 5.0
+        target_hit = cur_gain >= 5.0
 
         pos.update({
             "current_price": cur["price"], "current_gain_pct": cur_gain,
@@ -429,15 +530,17 @@ def update_portfolio(existing, candidates, today_str):
             "er": cur["er"], "trend": cur["trend"],
             "supertrend_bullish": cur["supertrend_bullish"],
             "sar_bullish": cur["sar_bullish"],
+            "vortex_bullish": cur.get("vortex_bullish", False),
+            "rvi_bullish": cur.get("rvi_bullish", False),
             "perf7": cur["perf7"], "perf30": cur["perf30"],
             "warning": None,
         })
         kept.append(pos)
 
     # Fill empty slots — ranked by ER desc
-    slots   = 5 - len(kept)
+    slots = MAX_POSITIONS - len(kept)
     existing_tickers = {p["ticker"] for p in kept}
-    new_q   = sorted(
+    new_q = sorted(
         [c for c in candidates if c["qualifies"] and c["ticker"] not in existing_tickers],
         key=lambda x: x["er"], reverse=True
     )
@@ -453,8 +556,11 @@ def update_portfolio(existing, candidates, today_str):
             "current_gain_pct": 0.0, "days_held": 0,
             "pre_alert": False, "target_hit": False,
             "score": c["score"], "er": c["er"], "signal": c["signal"],
-            "trend": c["trend"], "supertrend_bullish": c["supertrend_bullish"],
+            "trend": c["trend"],
+            "supertrend_bullish": c["supertrend_bullish"],
             "sar_bullish": c["sar_bullish"],
+            "vortex_bullish": c.get("vortex_bullish", False),
+            "rvi_bullish": c.get("rvi_bullish", False),
             "perf7": c["perf7"], "perf30": c["perf30"],
             "warning": None,
         })
@@ -473,11 +579,11 @@ def update_portfolio(existing, candidates, today_str):
 def main():
     now       = datetime.now(ROME_TZ)
     today_str = now.date().isoformat()
-    print(f"🦅 RAPTOR GEOGRAFIA — {now.strftime('%d/%m/%Y %H:%M')} CET")
+    print(f"🦅 RAPTOR GEOGRAFIA v4 — {now.strftime('%d/%m/%Y %H:%M')} CET")
+    print(f"   Max posizioni: {MAX_POSITIONS} | Vortex + RVI attivi")
 
     state = load_state()
 
-    # ── Analyze all tickers ──
     print("\n📊 PAESI...")
     paesi_data = []
     for t, n in PAESI.items():
@@ -485,7 +591,7 @@ def main():
         r = analyze(t, n)
         if r:
             paesi_data.append(r)
-            print(f"✓  score={r['score']}  signal={r['signal']}")
+            print(f"✓ score={r['score']} signal={r['signal']} V={'✅' if r['vortex_bullish'] else '❌'} RVI={'✅' if r['rvi_bullish'] else '❌'}")
         else:
             print("✗")
 
@@ -496,14 +602,14 @@ def main():
         r = analyze(t, n)
         if r:
             new_area_data.append(r)
-            print(f"✓  score={r['score']}  signal={r['signal']}")
+            print(f"✓ score={r['score']} signal={r['signal']} V={'✅' if r['vortex_bullish'] else '❌'} RVI={'✅' if r['rvi_bullish'] else '❌'}")
         else:
             print("✗")
 
     print("\n💰 XEON...")
     xeon = analyze(XEON_TICKER, "Xtrackers EUR Overnight Rate Swap UCITS ETF")
 
-    # ── Update portfolios ──
+    # Update portfolios
     paesi_pos, paesi_exited = update_portfolio(
         state["paesi"].get("positions", []), paesi_data, today_str)
     new_area_pos, new_area_exited = update_portfolio(
@@ -515,7 +621,6 @@ def main():
     state["new_area"].setdefault("history", []).extend(new_area_exited)
     save_state(state)
 
-    # ── Build output JSON ──
     def top10(data):
         return sorted(data, key=lambda x: x["score"], reverse=True)[:10]
 
@@ -544,7 +649,7 @@ def main():
     with open("geografia.json", "w") as f:
         json.dump(output, f, indent=2, default=str)
 
-    print(f"\n✅ geografia.json aggiornato")
+    print(f"\n✅ geografia.json aggiornato — {now.strftime('%d/%m/%Y %H:%M CET')}")
     print(f"   PAESI   : {len(paesi_pos)} posizioni {'| XEON 100%' if not paesi_pos else ''}")
     print(f"   NEW AREA: {len(new_area_pos)} posizioni {'| XEON 100%' if not new_area_pos else ''}")
 
