@@ -328,22 +328,27 @@ def calc_rvi(close, open_, high, low, n=10):
 
 def calc_score(er, baff, k_pct, p7, p30, mm_ok, ao_pos, cross, trend,
                vortex_bull=False, rvi_bull=False):
-    s = (er * 30 + min(baff, 10) * 5 + min(abs(k_pct), 5) * 3
-         + max(-10, min(5, p7)) * 4
-         + max(-20, min(10, p30)) * 2
-         + (10 if mm_ok else 0)
-         + (5  if ao_pos else 0)
-         + (20 if cross <= 3 else 12 if cross <= 10 else 5 if cross <= 20 else 0))
-    # Opzione D — Vortex + RVI bonuses
+    # Scala 0-75 reale (max teorico assoluto ~82)
+    # ER(1)*18=18 + Baff(5)*2=10 + K%(5)*1=5 + P7(5)*2=10
+    # + P30(10)*0.5=5 + MM=4 + AO=3 + Cross=8 + Vortex=2 + RVI=2 = 67
+    s = (er * 18
+         + min(baff, 5) * 2
+         + min(abs(k_pct), 5) * 1
+         + max(-5, min(5, p7)) * 2
+         + max(-10, min(10, p30)) * 0.5
+         + (4 if mm_ok else 0)
+         + (3 if ao_pos else 0)
+         + (8 if cross <= 3 else 5 if cross <= 10 else 2 if cross <= 20 else 0))
+    # Vortex + RVI — bonus/malus moderato
     if vortex_bull:
-        s += 5
+        s += 2
     if rvi_bull:
-        s += 5
+        s += 2
     if not vortex_bull and not rvi_bull:
-        s -= 10
+        s -= 4
     if trend == "ROSSO":
         s *= 0.6
-    return round(max(0, s), 1)
+    return round(max(0, min(75, s)), 1)
 
 def count_conditions(price, kama_v, er, baff, trend, sar_bull, st_bull,
                      mm_ok, ao_pos, vortex_bull, rvi_bull):
@@ -351,8 +356,8 @@ def count_conditions(price, kama_v, er, baff, trend, sar_bull, st_bull,
     conds = [
         price > kama_v,           # 1. Prezzo sopra KAMA
         trend == "VERDE",         # 2. Trendycator verde
-        er >= 0.35,               # 3. ER (soglia morbida)
-        baff >= 2,                # 4. Baffetti (soglia morbida)
+        er >= 0.40,               # 3. ER
+        baff >= 3,                # 4. Baffetti
         sar_bull,                 # 5. SAR bullish
         st_bull,                  # 6. Supertrend bullish
         mm_ok or ao_pos,          # 7. MM align OR AO positivo
@@ -390,11 +395,11 @@ def qualifies(signal, score, price, kama_v):
     if price <= kama_v:
         return False
     thresholds = {
-        "LONG_FORTE":  30,
-        "LONG":        35,
-        "EARLY_FORTE": 38,
-        "EARLY":       42,
-        "WATCH":       50,
+        "LONG_FORTE":  42,
+        "LONG":        37,
+        "EARLY_FORTE": 33,
+        "EARLY":       28,
+        "WATCH":       45,
     }
     min_score = thresholds.get(signal, 999)
     return score >= min_score
