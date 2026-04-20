@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-20T18:18:02.233948+02:00",
-  "updated_display": "20/04/2026 18:18 CET",
+  "updated_at": "2026-04-20T20:03:47.021502+02:00",
+  "updated_display": "20/04/2026 20:03 CET",
   "paesi": {
     "positions": [
       {
@@ -122,7 +122,7 @@
         "rvi_bullish": false,
         "perf7": 5.86,
         "perf30": 13.24,
-        "warning": null,
+        "warning": "Dati non disponibili",
         "weight_pct": 8.1
       },
       {
@@ -130,24 +130,24 @@
         "name": "Amundi MSCI Eastern Europe Ex Russia UCITS ETF",
         "entry_date": "2026-04-14",
         "entry_price": 42.75,
-        "current_price": 43.21,
+        "current_price": 43.285,
         "target_price": 44.888,
         "stop_loss": 40.938,
         "trailing_stop": 42.011,
-        "current_gain_pct": 1.08,
+        "current_gain_pct": 1.25,
         "days_held": 6,
         "pre_alert": false,
         "target_hit": false,
-        "score": 48.7,
-        "er": 0.6817,
+        "score": 48.4,
+        "er": 0.6644,
         "signal": "LONG_FORTE",
         "trend": "VERDE",
         "supertrend_bullish": true,
         "sar_bullish": true,
         "vortex_bullish": true,
         "rvi_bullish": false,
-        "perf7": 5.35,
-        "perf30": 13.22,
+        "perf7": 5.86,
+        "perf30": 13.24,
         "warning": null,
         "weight_pct": 8.1
       },
@@ -1084,8 +1084,8 @@
         "qualifies": true
       },
       {
-        "ticker": "WRTY.MI",
-        "name": "WisdomTree Russell 2000 ETP",
+        "ticker": "KOR.PA",
+        "name": "Amundi MSCI Korea UCITS ETF",
         "price": 33.93,
         "kama": 33.204,
         "k_pct": 2.19,
@@ -1114,8 +1114,8 @@
         "qualifies": true
       },
       {
-        "ticker": "LEER.DE",
-        "name": "Xtrackers MSCI World Minimum Volatility UCITS ETF",
+        "ticker": "EST.MI",
+        "name": "Amundi MSCI Eastern Europe Ex Russia UCITS ETF",
         "price": 43.285,
         "kama": 43.086,
         "k_pct": 0.46,
@@ -1144,8 +1144,8 @@
         "qualifies": true
       },
       {
-        "ticker": "EST.MI",
-        "name": "Amundi MSCI Eastern Europe Ex Russia UCITS ETF",
+        "ticker": "100H.MI",
+        "name": "Amundi FTSE 100 EUR Hedged UCITS ETF",
         "price": 43.21,
         "kama": 43.048,
         "k_pct": 0.38,
@@ -1236,8 +1236,8 @@
         "qualifies": true
       },
       {
-        "ticker": "WRTY.MI",
-        "name": "WisdomTree Russell 2000 ETP",
+        "ticker": "KOR.PA",
+        "name": "Amundi MSCI Korea UCITS ETF",
         "price": 33.93,
         "kama": 33.204,
         "k_pct": 2.19,
@@ -1326,8 +1326,8 @@
         "qualifies": true
       },
       {
-        "ticker": "EST.MI",
-        "name": "Amundi MSCI Eastern Europe Ex Russia UCITS ETF",
+        "ticker": "100H.MI",
+        "name": "Amundi FTSE 100 EUR Hedged UCITS ETF",
         "price": 43.21,
         "kama": 43.048,
         "k_pct": 0.38,
@@ -1356,8 +1356,8 @@
         "qualifies": true
       },
       {
-        "ticker": "LEER.DE",
-        "name": "Xtrackers MSCI World Minimum Volatility UCITS ETF",
+        "ticker": "EST.MI",
+        "name": "Amundi MSCI Eastern Europe Ex Russia UCITS ETF",
         "price": 43.285,
         "kama": 43.086,
         "k_pct": 0.46,
@@ -4422,8 +4422,8 @@
         "qualifies": false
       },
       {
-        "ticker": "ALAT.MI",
-        "name": "Amundi MSCI EM Latin America UCITS ETF",
+        "ticker": "LTAM.MI",
+        "name": "iShares MSCI EM Latin America UCITS ETF",
         "price": 22.325,
         "kama": 22.035,
         "k_pct": 1.31,
@@ -4448,36 +4448,6 @@
         "perf7": 1.22,
         "perf30": 6.61,
         "score": 25.1,
-        "signal": "LONG",
-        "qualifies": false
-      },
-      {
-        "ticker": "LTAM.MI",
-        "name": "iShares MSCI EM Latin America UCITS ETF",
-        "price": 19.732,
-        "kama": 19.497,
-        "k_pct": 1.21,
-        "er": 0.3882,
-        "ao": 1.15045,
-        "baffetti": 0,
-        "rsi": 63.6,
-        "atr": 0.34501,
-        "trailing_stop": 19.042,
-        "trend": "VERDE",
-        "mm_aligned": true,
-        "sar": 19.38322,
-        "sar_bullish": true,
-        "supertrend": 18.81349,
-        "supertrend_bullish": true,
-        "vi_plus": 1.1626,
-        "vi_minus": 0.648,
-        "vortex_bullish": true,
-        "rvi": 0.202413,
-        "rvi_signal": 0.315471,
-        "rvi_bullish": false,
-        "perf7": 1.04,
-        "perf30": 6.31,
-        "score": 24.4,
         "signal": "LONG",
         "qualifies": false
       },
