@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-26T16:31:05.603024+02:00",
-  "updated_display": "26/04/2026 16:31 CET",
+  "updated_at": "2026-04-26T21:47:57.018718+02:00",
+  "updated_display": "26/04/2026 21:47 CET",
   "vix": 18.71,
   "vix_regime": "NORMALE",
   "paesi": {
@@ -321,7 +321,7 @@
         "trailing_stop": 9.352,
         "current_gain_pct": 0.0,
         "days_held": 0,
-        "days_in_buy1": 2,
+        "days_in_buy1": 3,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -398,7 +398,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 4,
         "score": 92.0,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY3",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "WSPX.MI",
@@ -443,7 +447,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 5,
         "score": 89.6,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY3",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "SPY5.MI",
@@ -488,7 +496,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 5,
         "score": 89.4,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY3",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "VUSA.MI",
@@ -533,7 +545,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 5,
         "score": 89.4,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY3",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "WRTY.MI",
@@ -578,7 +594,13 @@
         "trend_rs": "VERDE",
         "baff_rs": 0,
         "score": 88.9,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta"
+        ],
+        "stress_score": 1,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "LGUS.MI",
@@ -623,7 +645,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 5,
         "score": 88.8,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY3",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "WSPE.MI",
@@ -668,7 +694,11 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 5,
         "score": 77.0,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY2",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "WRD.PA",
@@ -713,7 +743,11 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 71.8,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY2",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "XCHA.DE",
@@ -758,7 +792,11 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 66.8,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY2",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "XCS3.DE",
@@ -803,7 +841,13 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 63.8,
-        "cross_bars": 4
+        "cross_bars": 4,
+        "stress_flags": [
+          "ER<0.4"
+        ],
+        "stress_score": 1,
+        "buy_level": null,
+        "level_ts": null
       }
     ],
     "all": [
@@ -850,7 +894,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 1,
         "score": 99.6,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY2",
+        "level_ts": "2026-04-26 11:28 CET"
       },
       {
         "ticker": "WNAS.MI",
@@ -895,7 +943,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 5,
         "score": 95.3,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY3",
+        "level_ts": "2026-04-26 11:28 CET"
       },
       {
         "ticker": "CSNDX.MI",
@@ -940,7 +992,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 4,
         "score": 92.5,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY3",
+        "level_ts": "2026-04-26 11:28 CET"
       },
       {
         "ticker": "QTOP.MI",
@@ -985,7 +1041,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 4,
         "score": 92.0,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY3",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "FLXU.MI",
@@ -1030,7 +1090,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 1,
         "score": 91.7,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY2",
+        "level_ts": "2026-04-26 11:28 CET"
       },
       {
         "ticker": "WSPX.MI",
@@ -1075,7 +1139,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 5,
         "score": 89.6,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY3",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "SPY5.MI",
@@ -1120,7 +1188,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 5,
         "score": 89.4,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY3",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "VUSA.MI",
@@ -1165,7 +1237,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 5,
         "score": 89.4,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY3",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "WRTY.MI",
@@ -1210,7 +1286,13 @@
         "trend_rs": "VERDE",
         "baff_rs": 0,
         "score": 88.9,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta"
+        ],
+        "stress_score": 1,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "LGUS.MI",
@@ -1255,7 +1337,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 5,
         "score": 88.8,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY3",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "XFVT.DE",
@@ -1300,7 +1386,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 1,
         "score": 80.5,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY2",
+        "level_ts": "2026-04-26 11:28 CET"
       },
       {
         "ticker": "WSPE.MI",
@@ -1345,7 +1435,11 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 5,
         "score": 77.0,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY2",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "WRD.PA",
@@ -1390,7 +1484,11 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 71.8,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY2",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "XCHA.DE",
@@ -1435,7 +1533,11 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 66.8,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY2",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "XCS3.DE",
@@ -1480,7 +1582,13 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 63.8,
-        "cross_bars": 4
+        "cross_bars": 4,
+        "stress_flags": [
+          "ER<0.4"
+        ],
+        "stress_score": 1,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "SP1E.MI",
@@ -1525,7 +1633,11 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 60.6,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY1",
+        "level_ts": "2026-04-26 11:28 CET"
       },
       {
         "ticker": "DJE.PA",
@@ -1570,7 +1682,13 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 59.5,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [
+          "ER<0.4"
+        ],
+        "stress_score": 1,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "SPXE.MI",
@@ -1615,7 +1733,11 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 2,
         "score": 57.7,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "XSMI.MI",
@@ -1660,7 +1782,13 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 50.1,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [
+          "ER<0.4"
+        ],
+        "stress_score": 1,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "FMI.MI",
@@ -1705,7 +1833,14 @@
         "trend_rs": "VERDE",
         "baff_rs": 0,
         "score": 42.0,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 2,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "SVE.MI",
@@ -1750,7 +1885,14 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 38.9,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "ER<0.4"
+        ],
+        "stress_score": 2,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "IAEX.AS",
@@ -1795,7 +1937,14 @@
         "trend_rs": "ROSSO",
         "baff_rs": 1,
         "score": 37.9,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 2,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "SPXJ.MI",
@@ -1840,7 +1989,15 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 36.1,
-        "cross_bars": 3
+        "cross_bars": 3,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "AUHEUA.MI",
@@ -1885,7 +2042,15 @@
         "trend_rs": "ROSSO",
         "baff_rs": 2,
         "score": 35.5,
-        "cross_bars": 4
+        "cross_bars": 4,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "WMIB.MI",
@@ -1930,7 +2095,15 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 35.3,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "CN1.PA",
@@ -1975,7 +2148,16 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 35.1,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 4,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "IMIB.MI",
@@ -2020,7 +2202,16 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 33.4,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 4,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "XCS4.DE",
@@ -2065,7 +2256,15 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 1,
         "score": 33.3,
-        "cross_bars": 5
+        "cross_bars": 5,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "ITBL.MI",
@@ -2110,7 +2309,16 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 32.3,
-        "cross_bars": 2
+        "cross_bars": 2,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 4,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "SAUS.MI",
@@ -2155,7 +2363,15 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 32.2,
-        "cross_bars": 4
+        "cross_bars": 4,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "CSMIB.MI",
@@ -2200,7 +2416,16 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 31.6,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 4,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "TUR.PA",
@@ -2245,7 +2470,14 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 30.0,
-        "cross_bars": 2
+        "cross_bars": 2,
+        "stress_flags": [
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 2,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "D5BI.DE",
@@ -2290,7 +2522,14 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 29.8,
-        "cross_bars": 18
+        "cross_bars": 18,
+        "stress_flags": [
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 2,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "IBZL.MI",
@@ -2335,7 +2574,16 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 29.5,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 4,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "XBAS.DE",
@@ -2380,7 +2628,15 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 29.4,
-        "cross_bars": 2
+        "cross_bars": 2,
+        "stress_flags": [
+          "KAMA rotta",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "MCHN.MI",
@@ -2425,7 +2681,14 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 29.1,
-        "cross_bars": 11
+        "cross_bars": 11,
+        "stress_flags": [
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 2,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "UKE.MI",
@@ -2470,7 +2733,15 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 26.8,
-        "cross_bars": 4
+        "cross_bars": 4,
+        "stress_flags": [
+          "KAMA rotta",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "XESD.DE",
@@ -2515,7 +2786,16 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 25.9,
-        "cross_bars": 3
+        "cross_bars": 3,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 4,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "EST.MI",
@@ -2560,7 +2840,16 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 24.4,
-        "cross_bars": 4
+        "cross_bars": 4,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 4,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "FLXI.MI",
@@ -2605,7 +2894,15 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 24.2,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "ER<0.4"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "LEER.DE",
@@ -2650,7 +2947,16 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 24.1,
-        "cross_bars": 4
+        "cross_bars": 4,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 4,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "SAUDI.MI",
@@ -2695,7 +3001,16 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 1,
         "score": 23.7,
-        "cross_bars": 2
+        "cross_bars": 2,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 4,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "IS3U.DE",
@@ -2740,7 +3055,16 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 22.7,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 4,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "WS5X.MI",
@@ -2785,7 +3109,14 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 22.1,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 2,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "EXS1.DE",
@@ -2830,7 +3161,14 @@
         "trend_rs": "ROSSO",
         "baff_rs": 1,
         "score": 21.8,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 2,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "C40.PA",
@@ -2875,7 +3213,16 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 19.9,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 4,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "VJPE.MI",
@@ -2920,7 +3267,15 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 17.4,
-        "cross_bars": 4
+        "cross_bars": 4,
+        "stress_flags": [
+          "KAMA rotta",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "SRSA.MI",
@@ -2965,7 +3320,16 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 16.2,
-        "cross_bars": 2
+        "cross_bars": 2,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 4,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "LCCN.MI",
@@ -3010,7 +3374,15 @@
         "trend_rs": "ROSSO",
         "baff_rs": 1,
         "score": 13.6,
-        "cross_bars": 2
+        "cross_bars": 2,
+        "stress_flags": [
+          "KAMA rotta",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "XPQP.DE",
@@ -3055,7 +3427,15 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 12.8,
-        "cross_bars": 5
+        "cross_bars": 5,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO negativo"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "HSTE.MI",
@@ -3100,7 +3480,15 @@
         "trend_rs": "ROSSO",
         "baff_rs": 1,
         "score": 11.6,
-        "cross_bars": 2
+        "cross_bars": 2,
+        "stress_flags": [
+          "KAMA rotta",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "INDO.PA",
@@ -3145,7 +3533,15 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 7.8,
-        "cross_bars": 2
+        "cross_bars": 2,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO negativo"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       }
     ],
     "cooldowns": {}
@@ -3357,7 +3753,7 @@
         "perf30": 2.42,
         "warning": null,
         "weight_pct": 6.1,
-        "days_in_buy1": 2,
+        "days_in_buy1": 3,
         "current_level": "BUY1",
         "peak_score": 63.2,
         "rs_above_kama": false,
@@ -3500,7 +3896,7 @@
         "trailing_stop": 499.094,
         "current_gain_pct": 0.0,
         "days_held": 0,
-        "days_in_buy1": 2,
+        "days_in_buy1": 3,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -3541,7 +3937,7 @@
         "trailing_stop": 22.415,
         "current_gain_pct": 0.0,
         "days_held": 0,
-        "days_in_buy1": 2,
+        "days_in_buy1": 3,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -3618,7 +4014,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 3,
         "score": 82.4,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY3",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "WSPE.MI",
@@ -3663,7 +4063,11 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 5,
         "score": 77.0,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY2",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "NTSX.MI",
@@ -3708,7 +4112,11 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 1,
         "score": 67.3,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY2",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "SEMA.MI",
@@ -3753,7 +4161,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 1,
         "score": 61.1,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "IWDE.MI",
@@ -3798,7 +4210,11 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 46.7,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "CSCA.MI",
@@ -3843,7 +4259,14 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 46.5,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "AO calante"
+        ],
+        "stress_score": 2,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "JRGE.MI",
@@ -3888,7 +4311,13 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 45.8,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [
+          "AO calante"
+        ],
+        "stress_score": 1,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "ALAT.MI",
@@ -3933,7 +4362,15 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 43.0,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "LTAM.MI",
@@ -3978,7 +4415,15 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 41.9,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "XDEE.DE",
@@ -4023,7 +4468,13 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 33.5,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [
+          "ER<0.4"
+        ],
+        "stress_score": 1,
+        "buy_level": null,
+        "level_ts": null
       }
     ],
     "all": [
@@ -4070,7 +4521,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 5,
         "score": 95.3,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY3",
+        "level_ts": "2026-04-26 11:28 CET"
       },
       {
         "ticker": "NQSE.DE",
@@ -4115,7 +4570,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 4,
         "score": 89.7,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY3",
+        "level_ts": "2026-04-26 11:28 CET"
       },
       {
         "ticker": "IQQF.DE",
@@ -4160,7 +4619,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 1,
         "score": 87.4,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY2",
+        "level_ts": "2026-04-26 11:28 CET"
       },
       {
         "ticker": "CSEMAS.MI",
@@ -4205,7 +4668,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 1,
         "score": 84.2,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY2",
+        "level_ts": "2026-04-26 11:28 CET"
       },
       {
         "ticker": "ISAC.MI",
@@ -4250,7 +4717,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 3,
         "score": 82.4,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY3",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "IUSE.MI",
@@ -4295,7 +4766,11 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 4,
         "score": 78.9,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY2",
+        "level_ts": "2026-04-26 11:28 CET"
       },
       {
         "ticker": "WSPE.MI",
@@ -4340,7 +4815,11 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 5,
         "score": 77.0,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY2",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "NTSX.MI",
@@ -4385,7 +4864,11 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 1,
         "score": 67.3,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY2",
+        "level_ts": "2026-04-26 21:48 CET"
       },
       {
         "ticker": "NTSG.MI",
@@ -4430,7 +4913,11 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 63.2,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY1",
+        "level_ts": "2026-04-22"
       },
       {
         "ticker": "SXRU.DE",
@@ -4475,7 +4962,11 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 61.1,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY1",
+        "level_ts": "2026-04-26 11:28 CET"
       },
       {
         "ticker": "SEMA.MI",
@@ -4520,7 +5011,11 @@
         "trend_rs": "VERDE",
         "baff_rs": 1,
         "score": 61.1,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "WWRD.MI",
@@ -4565,7 +5060,11 @@
         "trend_rs": "ROSSO",
         "baff_rs": 2,
         "score": 50.9,
-        "cross_bars": 16
+        "cross_bars": 16,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": "BUY1",
+        "level_ts": "2026-04-26 11:28 CET"
       },
       {
         "ticker": "IWDE.MI",
@@ -4610,7 +5109,11 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 46.7,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "CSCA.MI",
@@ -4655,7 +5158,14 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 46.5,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "AO calante"
+        ],
+        "stress_score": 2,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "JRGE.MI",
@@ -4700,7 +5210,13 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 45.8,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [
+          "AO calante"
+        ],
+        "stress_score": 1,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "ALAT.MI",
@@ -4745,7 +5261,15 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 43.0,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "LTAM.MI",
@@ -4790,7 +5314,15 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 41.9,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "XDEE.DE",
@@ -4835,7 +5367,13 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 33.5,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [
+          "ER<0.4"
+        ],
+        "stress_score": 1,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "CSPXJ.MI",
@@ -4880,7 +5418,15 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 32.5,
-        "cross_bars": 4
+        "cross_bars": 4,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "NTSZ.DE",
@@ -4925,7 +5471,16 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 32.4,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 4,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "CAHEUA.MI",
@@ -4970,7 +5525,15 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 31.3,
-        "cross_bars": 4
+        "cross_bars": 4,
+        "stress_flags": [
+          "KAMA rotta",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "IAPD.MI",
@@ -5015,7 +5578,16 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 30.0,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 4,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "MEUD.PA",
@@ -5060,7 +5632,16 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 29.3,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 4,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "IJPE.MI",
@@ -5105,7 +5686,15 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 25.0,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "EST.MI",
@@ -5150,7 +5739,16 @@
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
         "score": 24.4,
-        "cross_bars": 4
+        "cross_bars": 4,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 4,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "WS5X.MI",
@@ -5195,7 +5793,14 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 22.1,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 2,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "LAFRI.MI",
@@ -5240,7 +5845,14 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 20.6,
-        "cross_bars": 13
+        "cross_bars": 13,
+        "stress_flags": [
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 2,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "SJPA.MI",
@@ -5285,7 +5897,15 @@
         "trend_rs": "ROSSO",
         "baff_rs": 0,
         "score": 17.8,
-        "cross_bars": 1
+        "cross_bars": 1,
+        "stress_flags": [
+          "KAMA rotta",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "IQQ9.DE",
@@ -5330,7 +5950,15 @@
         "trend_rs": "ROSSO",
         "baff_rs": 1,
         "score": 8.5,
-        "cross_bars": 2
+        "cross_bars": 2,
+        "stress_flags": [
+          "KAMA rotta",
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 3,
+        "buy_level": null,
+        "level_ts": null
       }
     ],
     "cooldowns": {}
@@ -5378,6 +6006,10 @@
     "trend_rs": "ROSSO",
     "baff_rs": 1,
     "score": 50.7,
-    "cross_bars": 35
+    "cross_bars": 35,
+    "stress_flags": [],
+    "stress_score": 0,
+    "buy_level": null,
+    "level_ts": null
   }
 }
