@@ -22,7 +22,7 @@
         "sar_bullish": true,
         "perf7": 6.26,
         "perf30": 4.51,
-        "weight_pct": 21.3,
+        "weight_pct": 13.2,
         "warning": "Dati non disponibili"
       },
       {
@@ -46,7 +46,7 @@
         "sar_bullish": true,
         "perf7": 2.27,
         "perf30": -2.34,
-        "weight_pct": 15.9,
+        "weight_pct": 9.9,
         "warning": "Dati non disponibili"
       },
       {
@@ -70,7 +70,7 @@
         "sar_bullish": true,
         "perf7": 2.36,
         "perf30": -2.31,
-        "weight_pct": 16.0,
+        "weight_pct": 9.9,
         "warning": "Dati non disponibili"
       },
       {
@@ -94,7 +94,7 @@
         "sar_bullish": true,
         "perf7": 7.39,
         "perf30": 5.12,
-        "weight_pct": 22.0,
+        "weight_pct": 13.7,
         "warning": "Dati non disponibili"
       },
       {
@@ -107,10 +107,10 @@
         "stop_loss": 1242.089,
         "trailing_stop": 1300.484,
         "current_gain_pct": 4.29,
-        "days_held": 8,
+        "days_held": 10,
         "pre_alert": true,
         "target_hit": false,
-        "score": 54.0,
+        "score": 92.5,
         "er": 0.873,
         "signal": "LONG_FORTE",
         "trend": "VERDE",
@@ -121,7 +121,23 @@
         "perf7": 5.33,
         "perf30": 7.65,
         "warning": null,
-        "weight_pct": 8.9
+        "weight_pct": 9.5,
+        "days_in_buy1": 0,
+        "current_level": "BUY3",
+        "peak_score": 92.5,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "baff_rs": 4,
+        "events": [
+          {
+            "ts": "2026-04-26 11:28 CET",
+            "level": "BUY3",
+            "reason": "Score 92.5\u226580 \u00b7 ER 0.87>0.6 \u00b7 BaffRS 4\u22653 \u00b7 RS>KAMA_RS \u00b7 TrendRS VERDE",
+            "size_pct": 100,
+            "score": 92.5,
+            "er": 0.873
+          }
+        ]
       },
       {
         "ticker": "WNAS.MI",
@@ -133,10 +149,10 @@
         "stop_loss": 32.42,
         "trailing_stop": 33.247,
         "current_gain_pct": 2.39,
-        "days_held": 3,
+        "days_held": 5,
         "pre_alert": false,
         "target_hit": false,
-        "score": 55.6,
+        "score": 95.3,
         "er": 0.9816,
         "signal": "LONG_FORTE",
         "trend": "VERDE",
@@ -147,7 +163,23 @@
         "perf7": 5.34,
         "perf30": 7.81,
         "warning": null,
-        "weight_pct": 9.2
+        "weight_pct": 9.8,
+        "days_in_buy1": 0,
+        "current_level": "BUY3",
+        "peak_score": 95.3,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "baff_rs": 5,
+        "events": [
+          {
+            "ts": "2026-04-26 11:28 CET",
+            "level": "BUY3",
+            "reason": "Score 95.3\u226580 \u00b7 ER 0.98>0.6 \u00b7 BaffRS 5\u22653 \u00b7 RS>KAMA_RS \u00b7 TrendRS VERDE",
+            "size_pct": 100,
+            "score": 95.3,
+            "er": 0.9816
+          }
+        ]
       },
       {
         "ticker": "FLXU.MI",
@@ -157,23 +189,162 @@
         "current_price": 61.64,
         "target_price": 64.838,
         "stop_loss": 61.0,
-        "trailing_stop": 61.0,
+        "trailing_stop": 61.039,
         "current_gain_pct": -0.18,
-        "days_held": 3,
+        "days_held": 5,
         "pre_alert": false,
         "target_hit": false,
-        "score": 40.3,
+        "score": 91.7,
         "er": 1.0,
         "signal": "LONG_FORTE",
         "trend": "VERDE",
         "supertrend_bullish": true,
         "sar_bullish": true,
-        "vortex_bullish": false,
-        "rvi_bullish": false,
-        "perf7": 2.14,
+        "vortex_bullish": true,
+        "rvi_bullish": true,
+        "perf7": 1.95,
         "perf30": 5.33,
         "warning": null,
-        "weight_pct": 6.7
+        "weight_pct": 9.4,
+        "days_in_buy1": 0,
+        "current_level": "BUY2",
+        "peak_score": 91.7,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "baff_rs": 1,
+        "events": [
+          {
+            "ts": "2026-04-26 11:28 CET",
+            "level": "BUY2",
+            "reason": "Score 91.7\u226565 \u00b7 AO +2.3027>0 \u00b7 ER 1.00\u22650.5 \u00b7 SAR bull \u00b7 Trend VERDE",
+            "size_pct": 70,
+            "score": 91.7,
+            "er": 1.0
+          }
+        ]
+      },
+      {
+        "ticker": "FLXT.MI",
+        "name": "Franklin FTSE Taiwan UCITS ETF",
+        "entry_date": "2026-04-26",
+        "entry_ts": "2026-04-26 11:28 CET",
+        "entry_price": 50.28,
+        "current_price": 50.28,
+        "target_price": 52.794,
+        "stop_loss": 48.218,
+        "trailing_stop": 48.218,
+        "current_gain_pct": 0.0,
+        "days_held": 0,
+        "days_in_buy1": 0,
+        "target_hit": false,
+        "current_level": "BUY2",
+        "size_pct": 70,
+        "peak_score": 99.6,
+        "score": 99.6,
+        "er": 0.9304,
+        "trend": "VERDE",
+        "sar_bullish": true,
+        "vortex_bullish": true,
+        "rvi_bullish": true,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "baff_rs": 1,
+        "perf7": 9.21,
+        "perf30": 20.07,
+        "events": [
+          {
+            "ts": "2026-04-26 11:28 CET",
+            "level": "BUY2",
+            "reason": "Score 99.6\u226565 \u00b7 AO +5.1742>0 \u00b7 ER 0.93\u22650.5 \u00b7 SAR bull \u00b7 Trend VERDE",
+            "size_pct": 70,
+            "score": 99.6,
+            "er": 0.9304
+          }
+        ],
+        "warning": null,
+        "weight_pct": 10.2
+      },
+      {
+        "ticker": "XFVT.DE",
+        "name": "Xtrackers Vietnam Swap UCITS ETF",
+        "entry_date": "2026-04-26",
+        "entry_ts": "2026-04-26 11:28 CET",
+        "entry_price": 35.89,
+        "current_price": 35.89,
+        "target_price": 37.684,
+        "stop_loss": 34.552,
+        "trailing_stop": 34.552,
+        "current_gain_pct": 0.0,
+        "days_held": 0,
+        "days_in_buy1": 0,
+        "target_hit": false,
+        "current_level": "BUY2",
+        "size_pct": 70,
+        "peak_score": 80.5,
+        "score": 80.5,
+        "er": 0.5259,
+        "trend": "VERDE",
+        "sar_bullish": true,
+        "vortex_bullish": true,
+        "rvi_bullish": true,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "baff_rs": 1,
+        "perf7": 3.52,
+        "perf30": 8.92,
+        "events": [
+          {
+            "ts": "2026-04-26 11:28 CET",
+            "level": "BUY2",
+            "reason": "Score 80.5\u226565 \u00b7 AO +2.6157>0 \u00b7 ER 0.53\u22650.5 \u00b7 SAR bull \u00b7 Trend VERDE",
+            "size_pct": 70,
+            "score": 80.5,
+            "er": 0.5259
+          }
+        ],
+        "warning": null,
+        "weight_pct": 8.3
+      },
+      {
+        "ticker": "SP1E.MI",
+        "name": "L&G S&P 100 Equal Weight UCITS ETF",
+        "entry_date": "2026-04-26",
+        "entry_ts": "2026-04-26 11:28 CET",
+        "entry_price": 9.449,
+        "current_price": 9.449,
+        "target_price": 9.921,
+        "stop_loss": 9.352,
+        "trailing_stop": 9.352,
+        "current_gain_pct": 0.0,
+        "days_held": 0,
+        "days_in_buy1": 1,
+        "target_hit": false,
+        "current_level": "BUY1",
+        "size_pct": 35,
+        "peak_score": 60.6,
+        "score": 60.6,
+        "er": 0.6156,
+        "trend": "VERDE",
+        "sar_bullish": true,
+        "vortex_bullish": true,
+        "rvi_bullish": false,
+        "rs_above_kama": false,
+        "trend_rs": "ROSSO",
+        "baff_rs": 0,
+        "perf7": 1.79,
+        "perf30": 1.34,
+        "events": [
+          {
+            "ts": "2026-04-26 11:28 CET",
+            "level": "BUY1",
+            "reason": "KAMA cross \u2191 \u00b7 ER 0.62>0.4 \u00b7 SAR bull \u00b7 AO crescente",
+            "size_pct": 35,
+            "score": 60.6,
+            "er": 0.6156
+          }
+        ],
+        "warning": null,
+        "weight_pct": 6.2
       }
     ],
     "history": [
@@ -405,7 +576,8 @@
         "exit_price": 42.95,
         "final_gain_pct": 0.47
       }
-    ]
+    ],
+    "cooldowns": {}
   },
   "new_area": {
     "positions": [
@@ -430,7 +602,7 @@
         "sar_bullish": true,
         "perf7": 5.31,
         "perf30": 4.08,
-        "weight_pct": 21.9,
+        "weight_pct": 12.1,
         "warning": "Dati non disponibili"
       },
       {
@@ -454,7 +626,7 @@
         "sar_bullish": true,
         "perf7": 1.9,
         "perf30": -1.03,
-        "weight_pct": 17.8,
+        "weight_pct": 9.9,
         "warning": "Dati non disponibili"
       },
       {
@@ -478,7 +650,7 @@
         "sar_bullish": true,
         "perf7": 5.19,
         "perf30": -2.02,
-        "weight_pct": 17.6,
+        "weight_pct": 9.8,
         "warning": "Dati non disponibili"
       },
       {
@@ -502,7 +674,7 @@
         "sar_bullish": true,
         "perf7": 2.83,
         "perf30": -2.11,
-        "weight_pct": 17.3,
+        "weight_pct": 9.6,
         "warning": "Dati non disponibili"
       },
       {
@@ -515,10 +687,10 @@
         "stop_loss": 32.378,
         "trailing_stop": 33.247,
         "current_gain_pct": 2.49,
-        "days_held": 3,
+        "days_held": 5,
         "pre_alert": false,
         "target_hit": false,
-        "score": 55.6,
+        "score": 95.3,
         "er": 0.9816,
         "signal": "LONG_FORTE",
         "trend": "VERDE",
@@ -529,7 +701,23 @@
         "perf7": 5.34,
         "perf30": 7.81,
         "warning": null,
-        "weight_pct": 9.6
+        "weight_pct": 9.2,
+        "days_in_buy1": 0,
+        "current_level": "BUY3",
+        "peak_score": 95.3,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "baff_rs": 5,
+        "events": [
+          {
+            "ts": "2026-04-26 11:28 CET",
+            "level": "BUY3",
+            "reason": "Score 95.3\u226580 \u00b7 ER 0.98>0.6 \u00b7 BaffRS 5\u22653 \u00b7 RS>KAMA_RS \u00b7 TrendRS VERDE",
+            "size_pct": 100,
+            "score": 95.3,
+            "er": 0.9816
+          }
+        ]
       },
       {
         "ticker": "NQSE.DE",
@@ -541,10 +729,10 @@
         "stop_loss": 15.008,
         "trailing_stop": 15.399,
         "current_gain_pct": 2.31,
-        "days_held": 3,
+        "days_held": 5,
         "pre_alert": false,
         "target_hit": false,
-        "score": 52.1,
+        "score": 89.7,
         "er": 0.8107,
         "signal": "LONG_FORTE",
         "trend": "VERDE",
@@ -555,33 +743,261 @@
         "perf7": 4.44,
         "perf30": 8.3,
         "warning": null,
-        "weight_pct": 9.0
+        "weight_pct": 8.6,
+        "days_in_buy1": 0,
+        "current_level": "BUY3",
+        "peak_score": 89.7,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "baff_rs": 4,
+        "events": [
+          {
+            "ts": "2026-04-26 11:28 CET",
+            "level": "BUY3",
+            "reason": "Score 89.7\u226580 \u00b7 ER 0.81>0.6 \u00b7 BaffRS 4\u22653 \u00b7 RS>KAMA_RS \u00b7 TrendRS VERDE",
+            "size_pct": 100,
+            "score": 89.7,
+            "er": 0.8107
+          }
+        ]
       },
       {
         "ticker": "NTSG.MI",
         "name": "Neuberger Berman Sustainable Global Equity",
         "entry_date": "2026-04-22",
         "entry_price": 26.795,
-        "current_price": 26.92,
+        "current_price": 26.835,
         "target_price": 28.135,
         "stop_loss": 26.185,
         "trailing_stop": 26.356,
-        "current_gain_pct": 0.47,
-        "days_held": 2,
+        "current_gain_pct": 0.15,
+        "days_held": 4,
         "pre_alert": false,
         "target_hit": false,
-        "score": 38.2,
-        "er": 0.7209,
+        "score": 63.2,
+        "er": 0.5602,
         "signal": "LONG_FORTE",
         "trend": "VERDE",
         "supertrend_bullish": true,
         "sar_bullish": true,
         "vortex_bullish": true,
         "rvi_bullish": true,
-        "perf7": 2.2,
-        "perf30": 1.99,
+        "perf7": 0.75,
+        "perf30": 2.42,
         "warning": null,
-        "weight_pct": 6.6
+        "weight_pct": 6.1,
+        "days_in_buy1": 1,
+        "current_level": "BUY1",
+        "peak_score": 63.2,
+        "rs_above_kama": false,
+        "trend_rs": "ROSSO",
+        "baff_rs": 0,
+        "events": []
+      },
+      {
+        "ticker": "IQQF.DE",
+        "name": "iShares MSCI AC Far East ex-Japan UCITS ETF",
+        "entry_date": "2026-04-26",
+        "entry_ts": "2026-04-26 11:28 CET",
+        "entry_price": 75.63,
+        "current_price": 75.63,
+        "target_price": 79.412,
+        "stop_loss": 72.978,
+        "trailing_stop": 72.978,
+        "current_gain_pct": 0.0,
+        "days_held": 0,
+        "days_in_buy1": 0,
+        "target_hit": false,
+        "current_level": "BUY2",
+        "size_pct": 70,
+        "peak_score": 87.4,
+        "score": 87.4,
+        "er": 0.7088,
+        "trend": "VERDE",
+        "sar_bullish": true,
+        "vortex_bullish": true,
+        "rvi_bullish": true,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "baff_rs": 1,
+        "perf7": 4.45,
+        "perf30": 8.77,
+        "events": [
+          {
+            "ts": "2026-04-26 11:28 CET",
+            "level": "BUY2",
+            "reason": "Score 87.4\u226565 \u00b7 AO +4.5861>0 \u00b7 ER 0.71\u22650.5 \u00b7 SAR bull \u00b7 Trend VERDE",
+            "size_pct": 70,
+            "score": 87.4,
+            "er": 0.7088
+          }
+        ],
+        "warning": null,
+        "weight_pct": 8.4
+      },
+      {
+        "ticker": "CSEMAS.MI",
+        "name": "iShares MSCI EM Asia ETF EUR Acc",
+        "entry_date": "2026-04-26",
+        "entry_ts": "2026-04-26 11:28 CET",
+        "entry_price": 238.28,
+        "current_price": 238.28,
+        "target_price": 250.194,
+        "stop_loss": 229.566,
+        "trailing_stop": 229.566,
+        "current_gain_pct": 0.0,
+        "days_held": 0,
+        "days_in_buy1": 0,
+        "target_hit": false,
+        "current_level": "BUY2",
+        "size_pct": 70,
+        "peak_score": 84.2,
+        "score": 84.2,
+        "er": 0.6015,
+        "trend": "VERDE",
+        "sar_bullish": true,
+        "vortex_bullish": true,
+        "rvi_bullish": true,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "baff_rs": 1,
+        "perf7": 4.11,
+        "perf30": 7.77,
+        "events": [
+          {
+            "ts": "2026-04-26 11:28 CET",
+            "level": "BUY2",
+            "reason": "Score 84.2\u226565 \u00b7 AO +14.1532>0 \u00b7 ER 0.60\u22650.5 \u00b7 SAR bull \u00b7 Trend VERDE",
+            "size_pct": 70,
+            "score": 84.2,
+            "er": 0.6015
+          }
+        ],
+        "warning": null,
+        "weight_pct": 8.1
+      },
+      {
+        "ticker": "IUSE.MI",
+        "name": "iShares S&P 500 EUR Hedged UCITS ETF",
+        "entry_date": "2026-04-26",
+        "entry_ts": "2026-04-26 11:28 CET",
+        "entry_price": 147.02,
+        "current_price": 147.02,
+        "target_price": 154.371,
+        "stop_loss": 143.756,
+        "trailing_stop": 143.756,
+        "current_gain_pct": 0.0,
+        "days_held": 0,
+        "days_in_buy1": 0,
+        "target_hit": false,
+        "current_level": "BUY2",
+        "size_pct": 70,
+        "peak_score": 78.9,
+        "score": 78.9,
+        "er": 0.7213,
+        "trend": "VERDE",
+        "sar_bullish": true,
+        "vortex_bullish": true,
+        "rvi_bullish": true,
+        "rs_above_kama": true,
+        "trend_rs": "GRIGIO",
+        "baff_rs": 4,
+        "perf7": 2.12,
+        "perf30": 5.04,
+        "events": [
+          {
+            "ts": "2026-04-26 11:28 CET",
+            "level": "BUY2",
+            "reason": "Score 78.9\u226565 \u00b7 AO +7.0199>0 \u00b7 ER 0.72\u22650.5 \u00b7 SAR bull \u00b7 Trend VERDE",
+            "size_pct": 70,
+            "score": 78.9,
+            "er": 0.7213
+          }
+        ],
+        "warning": null,
+        "weight_pct": 7.6
+      },
+      {
+        "ticker": "SXRU.DE",
+        "name": "iShares Dow Jones Industrial Avg ETF EUR Acc",
+        "entry_date": "2026-04-26",
+        "entry_ts": "2026-04-26 11:28 CET",
+        "entry_price": 509.6,
+        "current_price": 509.6,
+        "target_price": 535.08,
+        "stop_loss": 499.094,
+        "trailing_stop": 499.094,
+        "current_gain_pct": 0.0,
+        "days_held": 0,
+        "days_in_buy1": 1,
+        "target_hit": false,
+        "current_level": "BUY1",
+        "size_pct": 35,
+        "peak_score": 61.1,
+        "score": 61.1,
+        "er": 0.4061,
+        "trend": "VERDE",
+        "sar_bullish": true,
+        "vortex_bullish": true,
+        "rvi_bullish": true,
+        "rs_above_kama": false,
+        "trend_rs": "ROSSO",
+        "baff_rs": 0,
+        "perf7": 2.48,
+        "perf30": 2.62,
+        "events": [
+          {
+            "ts": "2026-04-26 11:28 CET",
+            "level": "BUY1",
+            "reason": "KAMA cross \u2191 \u00b7 ER 0.41>0.4 \u00b7 SAR bull \u00b7 AO crescente",
+            "size_pct": 35,
+            "score": 61.1,
+            "er": 0.4061
+          }
+        ],
+        "warning": null,
+        "weight_pct": 5.9
+      },
+      {
+        "ticker": "WWRD.MI",
+        "name": "WisdomTree MSCI World Quality Dividend Growth",
+        "entry_date": "2026-04-26",
+        "entry_ts": "2026-04-26 11:28 CET",
+        "entry_price": 23.175,
+        "current_price": 23.175,
+        "target_price": 24.334,
+        "stop_loss": 22.415,
+        "trailing_stop": 22.415,
+        "current_gain_pct": 0.0,
+        "days_held": 0,
+        "days_in_buy1": 1,
+        "target_hit": false,
+        "current_level": "BUY1",
+        "size_pct": 35,
+        "peak_score": 50.9,
+        "score": 50.9,
+        "er": 0.6442,
+        "trend": "VERDE",
+        "sar_bullish": true,
+        "vortex_bullish": true,
+        "rvi_bullish": true,
+        "rs_above_kama": false,
+        "trend_rs": "ROSSO",
+        "baff_rs": 2,
+        "perf7": 1.69,
+        "perf30": 3.28,
+        "events": [
+          {
+            "ts": "2026-04-26 11:28 CET",
+            "level": "BUY1",
+            "reason": "KAMA cross \u2191 \u00b7 ER 0.64>0.4 \u00b7 SAR bull \u00b7 AO crescente",
+            "size_pct": 35,
+            "score": 50.9,
+            "er": 0.6442
+          }
+        ],
+        "warning": null,
+        "weight_pct": 4.9
       }
     ],
     "history": [
@@ -672,6 +1088,7 @@
         "exit_price": 299.45,
         "final_gain_pct": -0.33
       }
-    ]
+    ],
+    "cooldowns": {}
   }
 }
