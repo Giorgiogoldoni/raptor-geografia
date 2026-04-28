@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-04-28T18:59:53.514698+02:00",
-  "updated_display": "28/04/2026 18:59 CET",
-  "vix": 18.66,
+  "updated_at": "2026-04-28T20:46:59.980723+02:00",
+  "updated_display": "28/04/2026 20:46 CET",
+  "vix": 18.21,
   "vix_regime": "NORMALE",
   "paesi": {
     "positions": [
@@ -330,7 +330,7 @@
         "stress_flags": [],
         "stress_score": 0,
         "buy_level": "BUY2",
-        "level_ts": "2026-04-28 19:00 CET"
+        "level_ts": "2026-04-28 20:47 CET"
       },
       {
         "ticker": "SPY5.MI",
@@ -379,7 +379,7 @@
         "stress_flags": [],
         "stress_score": 0,
         "buy_level": "BUY2",
-        "level_ts": "2026-04-28 19:00 CET"
+        "level_ts": "2026-04-28 20:47 CET"
       },
       {
         "ticker": "WSPX.MI",
@@ -428,7 +428,7 @@
         "stress_flags": [],
         "stress_score": 0,
         "buy_level": "BUY2",
-        "level_ts": "2026-04-28 19:00 CET"
+        "level_ts": "2026-04-28 20:47 CET"
       },
       {
         "ticker": "LGUS.MI",
@@ -477,7 +477,7 @@
         "stress_flags": [],
         "stress_score": 0,
         "buy_level": "BUY2",
-        "level_ts": "2026-04-28 19:00 CET"
+        "level_ts": "2026-04-28 20:47 CET"
       },
       {
         "ticker": "VUSA.MI",
@@ -526,7 +526,7 @@
         "stress_flags": [],
         "stress_score": 0,
         "buy_level": "BUY2",
-        "level_ts": "2026-04-28 19:00 CET"
+        "level_ts": "2026-04-28 20:47 CET"
       },
       {
         "ticker": "XCS3.DE",
@@ -830,7 +830,7 @@
         "stress_flags": [],
         "stress_score": 0,
         "buy_level": "BUY2",
-        "level_ts": "2026-04-28 19:00 CET"
+        "level_ts": "2026-04-28 20:47 CET"
       },
       {
         "ticker": "FLXU.MI",
@@ -1030,7 +1030,7 @@
         "stress_flags": [],
         "stress_score": 0,
         "buy_level": "BUY2",
-        "level_ts": "2026-04-28 19:00 CET"
+        "level_ts": "2026-04-28 20:47 CET"
       },
       {
         "ticker": "WSPX.MI",
@@ -1079,7 +1079,7 @@
         "stress_flags": [],
         "stress_score": 0,
         "buy_level": "BUY2",
-        "level_ts": "2026-04-28 19:00 CET"
+        "level_ts": "2026-04-28 20:47 CET"
       },
       {
         "ticker": "LGUS.MI",
@@ -1128,7 +1128,7 @@
         "stress_flags": [],
         "stress_score": 0,
         "buy_level": "BUY2",
-        "level_ts": "2026-04-28 19:00 CET"
+        "level_ts": "2026-04-28 20:47 CET"
       },
       {
         "ticker": "VUSA.MI",
@@ -1177,7 +1177,7 @@
         "stress_flags": [],
         "stress_score": 0,
         "buy_level": "BUY2",
-        "level_ts": "2026-04-28 19:00 CET"
+        "level_ts": "2026-04-28 20:47 CET"
       },
       {
         "ticker": "WNAS.MI",
