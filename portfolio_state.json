@@ -6,7 +6,7 @@
         "name": "iShares MSCI Brazil UCITS ETF",
         "entry_date": "2026-04-08",
         "entry_price": 2398.5,
-        "current_price": 27.515,
+        "current_price": 27.56,
         "target_price": 2518.425,
         "stop_loss": 2257.1326,
         "trailing_stop": 2356.9348,
@@ -14,9 +14,9 @@
         "days_held": 20,
         "pre_alert": false,
         "target_hit": false,
-        "score": 42.1,
+        "score": 41.8,
         "peak_score": 128.8,
-        "er": 0.6084,
+        "er": 0.5926,
         "current_level": "EXIT1",
         "size_pct": 35,
         "signal": "EARLY",
@@ -24,8 +24,8 @@
         "sar_bullish": false,
         "vortex_bullish": true,
         "rvi_bullish": false,
-        "perf7": -2.64,
-        "perf30": 8.74,
+        "perf7": -2.48,
+        "perf30": 8.92,
         "weight_pct": 6.8,
         "events": [
           {
@@ -103,17 +103,17 @@
         "name": "iShares NASDAQ 100 UCITS ETF",
         "entry_date": "2026-04-16",
         "entry_price": 1278.12,
-        "current_price": 1333.44,
+        "current_price": 1334.67,
         "target_price": 1342.026,
         "stop_loss": 1242.089,
         "trailing_stop": 1305.859,
-        "current_gain_pct": 4.33,
+        "current_gain_pct": 4.42,
         "days_held": 12,
         "pre_alert": false,
         "target_hit": false,
-        "score": 77.5,
+        "score": 77.7,
         "peak_score": 77.8,
-        "er": 0.8181,
+        "er": 0.8203,
         "current_level": "BUY2",
         "size_pct": 70,
         "signal": "LONG_FORTE",
@@ -121,10 +121,19 @@
         "sar_bullish": true,
         "vortex_bullish": true,
         "rvi_bullish": true,
-        "perf7": 2.7,
-        "perf30": 8.74,
-        "weight_pct": 12.5,
-        "events": [],
+        "perf7": 2.8,
+        "perf30": 8.84,
+        "weight_pct": 12.6,
+        "events": [
+          {
+            "ts": "2026-04-16 09:00 CET",
+            "level": "BUY2",
+            "reason": "Ingresso storico (migrazione v5) \u2014 score 77.7 \u00b7 ER 0.82",
+            "size_pct": 70,
+            "score": 77.7,
+            "er": 0.8203
+          }
+        ],
         "warning": null,
         "days_in_buy1": 0
       },
@@ -154,7 +163,16 @@
         "perf7": 2.81,
         "perf30": 8.58,
         "weight_pct": 11.9,
-        "events": [],
+        "events": [
+          {
+            "ts": "2026-04-21 09:00 CET",
+            "level": "BUY2",
+            "reason": "Ingresso storico (migrazione v5) \u2014 score 73.4 \u00b7 ER 0.85",
+            "size_pct": 70,
+            "score": 73.4,
+            "er": 0.8512
+          }
+        ],
         "warning": null,
         "days_in_buy1": 0
       },
@@ -310,7 +328,7 @@
         "rvi_bullish": false,
         "perf7": -0.13,
         "perf30": 2.4,
-        "weight_pct": 11.3,
+        "weight_pct": 11.2,
         "events": [
           {
             "ts": "2026-04-28 09:28 CET",
@@ -337,17 +355,17 @@
         "name": "iShares MSCI EM UCITS ETF EUR Acc",
         "entry_date": "2026-04-13",
         "entry_price": 51.0,
-        "current_price": 51.74,
+        "current_price": 51.78,
         "target_price": 54.57,
         "stop_loss": 49.2,
         "trailing_stop": 50.232,
-        "current_gain_pct": 1.45,
+        "current_gain_pct": 1.53,
         "days_held": 15,
         "pre_alert": false,
         "target_hit": false,
-        "score": 42.9,
+        "score": 43.5,
         "peak_score": 50.0,
-        "er": 0.4111,
+        "er": 0.427,
         "current_level": "BUY1",
         "size_pct": 35,
         "signal": "EARLY",
@@ -355,12 +373,21 @@
         "sar_bullish": true,
         "vortex_bullish": true,
         "rvi_bullish": true,
-        "perf7": -0.1,
-        "perf30": 8.85,
-        "weight_pct": 12.3,
-        "events": [],
+        "perf7": -0.02,
+        "perf30": 8.93,
+        "weight_pct": 12.4,
+        "events": [
+          {
+            "ts": "2026-04-13 09:00 CET",
+            "level": "BUY1",
+            "reason": "Ingresso storico (migrazione v5) \u2014 score 43.5 \u00b7 ER 0.43",
+            "size_pct": 35,
+            "score": 43.5,
+            "er": 0.427
+          }
+        ],
         "warning": null,
-        "days_in_buy1": 5
+        "days_in_buy1": 6
       },
       {
         "ticker": "WNAS.MI",
@@ -387,8 +414,17 @@
         "rvi_bullish": false,
         "perf7": 2.81,
         "perf30": 8.58,
-        "weight_pct": 21.0,
-        "events": [],
+        "weight_pct": 20.9,
+        "events": [
+          {
+            "ts": "2026-04-21 09:00 CET",
+            "level": "BUY2",
+            "reason": "Ingresso storico (migrazione v5) \u2014 score 73.4 \u00b7 ER 0.85",
+            "size_pct": 70,
+            "score": 73.4,
+            "er": 0.8512
+          }
+        ],
         "warning": null,
         "days_in_buy1": 0
       },
@@ -397,17 +433,17 @@
         "name": "iShares NASDAQ 100 UCITS ETF",
         "entry_date": "2026-04-21",
         "entry_price": 15.49,
-        "current_price": 15.844,
+        "current_price": 15.864,
         "target_price": 16.265,
         "stop_loss": 15.008,
-        "trailing_stop": 15.458,
-        "current_gain_pct": 2.29,
+        "trailing_stop": 15.459,
+        "current_gain_pct": 2.41,
         "days_held": 7,
         "pre_alert": false,
         "target_hit": false,
-        "score": 69.5,
+        "score": 70.5,
         "peak_score": 70.5,
-        "er": 0.7522,
+        "er": 0.781,
         "current_level": "BUY2",
         "size_pct": 70,
         "signal": "LONG_FORTE",
@@ -415,10 +451,19 @@
         "sar_bullish": true,
         "vortex_bullish": true,
         "rvi_bullish": false,
-        "perf7": 1.71,
-        "perf30": 10.8,
-        "weight_pct": 19.9,
-        "events": [],
+        "perf7": 1.84,
+        "perf30": 10.94,
+        "weight_pct": 20.1,
+        "events": [
+          {
+            "ts": "2026-04-21 09:00 CET",
+            "level": "BUY2",
+            "reason": "Ingresso storico (migrazione v5) \u2014 score 70.5 \u00b7 ER 0.78",
+            "size_pct": 70,
+            "score": 70.5,
+            "er": 0.781
+          }
+        ],
         "warning": null,
         "days_in_buy1": 0
       },
@@ -500,7 +545,7 @@
           }
         ],
         "warning": null,
-        "weight_pct": 22.5
+        "weight_pct": 22.4
       }
     ],
     "history": [
