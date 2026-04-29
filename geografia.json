@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-04-29T18:48:21.165094+02:00",
-  "updated_display": "29/04/2026 18:48 CET",
-  "vix": 18.85,
+  "updated_at": "2026-04-29T20:18:41.074029+02:00",
+  "updated_display": "29/04/2026 20:18 CET",
+  "vix": 18.65,
   "vix_regime": "NORMALE",
   "paesi": {
     "positions": [
@@ -416,7 +416,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-04-29 18:48 CET"
+        "level_ts": "2026-04-29 20:18 CET"
       },
       {
         "ticker": "SPY5.MI",
@@ -474,7 +474,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-04-29 18:48 CET"
+        "level_ts": "2026-04-29 20:18 CET"
       },
       {
         "ticker": "WSPX.MI",
@@ -532,7 +532,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-04-29 18:48 CET"
+        "level_ts": "2026-04-29 20:18 CET"
       },
       {
         "ticker": "LGUS.MI",
@@ -590,7 +590,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-04-29 18:48 CET"
+        "level_ts": "2026-04-29 20:18 CET"
       },
       {
         "ticker": "VUSA.MI",
@@ -648,7 +648,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-04-29 18:48 CET"
+        "level_ts": "2026-04-29 20:18 CET"
       },
       {
         "ticker": "XCS3.DE",
@@ -1308,7 +1308,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-04-29 18:48 CET"
+        "level_ts": "2026-04-29 20:18 CET"
       },
       {
         "ticker": "SPY5.MI",
@@ -1366,7 +1366,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-04-29 18:48 CET"
+        "level_ts": "2026-04-29 20:18 CET"
       },
       {
         "ticker": "WSPX.MI",
@@ -1424,7 +1424,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-04-29 18:48 CET"
+        "level_ts": "2026-04-29 20:18 CET"
       },
       {
         "ticker": "LGUS.MI",
@@ -1482,7 +1482,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-04-29 18:48 CET"
+        "level_ts": "2026-04-29 20:18 CET"
       },
       {
         "ticker": "VUSA.MI",
@@ -1540,7 +1540,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-04-29 18:48 CET"
+        "level_ts": "2026-04-29 20:18 CET"
       },
       {
         "ticker": "XCS3.DE",
