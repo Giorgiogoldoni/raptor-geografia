@@ -64,17 +64,17 @@
         "name": "iShares NASDAQ 100 UCITS ETF",
         "entry_date": "2026-04-16",
         "entry_price": 1278.12,
-        "current_price": 1329.14,
+        "current_price": 1330.41,
         "target_price": 1342.026,
         "stop_loss": 1242.089,
         "trailing_stop": 1305.859,
-        "current_gain_pct": 3.99,
+        "current_gain_pct": 4.09,
         "days_held": 13,
         "pre_alert": false,
         "target_hit": false,
-        "score": 70.7,
+        "score": 71.0,
         "peak_score": 77.8,
-        "er": 0.5879,
+        "er": 0.5927,
         "current_level": "BUY2",
         "size_pct": 70,
         "signal": "LONG_FORTE",
@@ -82,8 +82,8 @@
         "sar_bullish": true,
         "vortex_bullish": true,
         "rvi_bullish": false,
-        "perf7": 2.96,
-        "perf30": 7.96,
+        "perf7": 3.06,
+        "perf30": 8.06,
         "weight_pct": 12.8,
         "events": [
           {
@@ -100,11 +100,13 @@
         "hurst": 0.353,
         "adx": 57.4,
         "regime": {
-          "code": "UNCERTAIN",
-          "label": "~ Incerto",
-          "color": "#888780",
-          "description": "Segnali contrastanti tra Hurst e ADX"
-        }
+          "code": "SLANCIO",
+          "label": "\ud83d\ude80 Slancio",
+          "color": "#1a7f37",
+          "desc": "Trend rialzista forte con memoria recente confermata"
+        },
+        "hurst_60": 0.608,
+        "hurst_1y": 0.353
       },
       {
         "ticker": "WNAS.MI",
@@ -147,11 +149,13 @@
         "hurst": 0.286,
         "adx": 60.9,
         "regime": {
-          "code": "UNCERTAIN",
-          "label": "~ Incerto",
-          "color": "#888780",
-          "description": "Segnali contrastanti tra Hurst e ADX"
-        }
+          "code": "SLANCIO",
+          "label": "\ud83d\ude80 Slancio",
+          "color": "#1a7f37",
+          "desc": "Trend rialzista forte con memoria recente confermata"
+        },
+        "hurst_60": 0.613,
+        "hurst_1y": 0.286
       },
       {
         "ticker": "FLXU.MI",
@@ -202,11 +206,13 @@
         "hurst": 0.292,
         "adx": 58.3,
         "regime": {
-          "code": "UNCERTAIN",
-          "label": "~ Incerto",
-          "color": "#888780",
-          "description": "Segnali contrastanti tra Hurst e ADX"
-        }
+          "code": "SALITA",
+          "label": "\ud83d\udcc8 Salita",
+          "color": "#2ea043",
+          "desc": "Movimento rialzista in corso"
+        },
+        "hurst_60": 0.547,
+        "hurst_1y": 0.292
       },
       {
         "ticker": "FLXT.MI",
@@ -214,19 +220,19 @@
         "entry_date": "2026-04-28",
         "entry_ts": "2026-04-28 09:28 CET",
         "entry_price": 50.41,
-        "current_price": 50.23,
+        "current_price": 50.2,
         "target_price": 52.931,
         "stop_loss": 48.476,
         "trailing_stop": 48.594,
-        "current_gain_pct": -0.36,
+        "current_gain_pct": -0.42,
         "days_held": 1,
         "days_in_buy1": 0,
         "target_hit": false,
         "current_level": "BUY2",
         "size_pct": 100,
         "peak_score": 82.5,
-        "score": 74.8,
-        "er": 0.7522,
+        "score": 74.7,
+        "er": 0.7509,
         "trend": "VERDE",
         "sar_bullish": true,
         "vortex_bullish": true,
@@ -234,8 +240,8 @@
         "rs_above_kama": true,
         "trend_rs": "VERDE",
         "baff_rs": 1,
-        "perf7": 6.45,
-        "perf30": 19.23,
+        "perf7": 6.39,
+        "perf30": 19.15,
         "events": [
           {
             "ts": "2026-04-28 09:28 CET",
@@ -259,11 +265,13 @@
         "hurst": 0.356,
         "adx": 57.6,
         "regime": {
-          "code": "UNCERTAIN",
-          "label": "~ Incerto",
-          "color": "#888780",
-          "description": "Segnali contrastanti tra Hurst e ADX"
-        }
+          "code": "SLANCIO",
+          "label": "\ud83d\ude80 Slancio",
+          "color": "#1a7f37",
+          "desc": "Trend rialzista forte con memoria recente confermata"
+        },
+        "hurst_60": 0.584,
+        "hurst_1y": 0.356
       },
       {
         "ticker": "WSPE.MI",
@@ -308,11 +316,13 @@
         "hurst": 0.396,
         "adx": 57.8,
         "regime": {
-          "code": "UNCERTAIN",
-          "label": "~ Incerto",
-          "color": "#888780",
-          "description": "Segnali contrastanti tra Hurst e ADX"
-        }
+          "code": "SLANCIO",
+          "label": "\ud83d\ude80 Slancio",
+          "color": "#1a7f37",
+          "desc": "Trend rialzista forte con memoria recente confermata"
+        },
+        "hurst_60": 0.617,
+        "hurst_1y": 0.396
       }
     ],
     "history": [
@@ -417,28 +427,30 @@
         "hurst": 0.286,
         "adx": 60.9,
         "regime": {
-          "code": "UNCERTAIN",
-          "label": "~ Incerto",
-          "color": "#888780",
-          "description": "Segnali contrastanti tra Hurst e ADX"
-        }
+          "code": "SLANCIO",
+          "label": "\ud83d\ude80 Slancio",
+          "color": "#1a7f37",
+          "desc": "Trend rialzista forte con memoria recente confermata"
+        },
+        "hurst_60": 0.613,
+        "hurst_1y": 0.286
       },
       {
         "ticker": "NQSE.DE",
         "name": "iShares NASDAQ 100 UCITS ETF",
         "entry_date": "2026-04-21",
         "entry_price": 15.49,
-        "current_price": 15.812,
+        "current_price": 15.81,
         "target_price": 16.265,
         "stop_loss": 15.008,
         "trailing_stop": 15.459,
-        "current_gain_pct": 2.08,
+        "current_gain_pct": 2.07,
         "days_held": 8,
         "pre_alert": false,
         "target_hit": false,
-        "score": 67.7,
+        "score": 67.6,
         "peak_score": 70.5,
-        "er": 0.5072,
+        "er": 0.5064,
         "current_level": "BUY2",
         "size_pct": 70,
         "signal": "LONG_FORTE",
@@ -446,8 +458,8 @@
         "sar_bullish": true,
         "vortex_bullish": true,
         "rvi_bullish": false,
-        "perf7": 2.3,
-        "perf30": 9.61,
+        "perf7": 2.29,
+        "perf30": 9.59,
         "weight_pct": 27.0,
         "events": [
           {
@@ -496,11 +508,13 @@
         "hurst": 0.386,
         "adx": 54.8,
         "regime": {
-          "code": "UNCERTAIN",
-          "label": "~ Incerto",
-          "color": "#888780",
-          "description": "Segnali contrastanti tra Hurst e ADX"
-        }
+          "code": "SLANCIO",
+          "label": "\ud83d\ude80 Slancio",
+          "color": "#1a7f37",
+          "desc": "Trend rialzista forte con memoria recente confermata"
+        },
+        "hurst_60": 0.618,
+        "hurst_1y": 0.386
       },
       {
         "ticker": "NTSG.MI",
@@ -551,11 +565,13 @@
         "hurst": 0.331,
         "adx": 37.6,
         "regime": {
-          "code": "UNCERTAIN",
-          "label": "~ Incerto",
-          "color": "#888780",
-          "description": "Segnali contrastanti tra Hurst e ADX"
-        }
+          "code": "SLANCIO",
+          "label": "\ud83d\ude80 Slancio",
+          "color": "#1a7f37",
+          "desc": "Trend rialzista forte con memoria recente confermata"
+        },
+        "hurst_60": 0.606,
+        "hurst_1y": 0.331
       },
       {
         "ticker": "WSPE.MI",
@@ -600,11 +616,13 @@
         "hurst": 0.396,
         "adx": 57.8,
         "regime": {
-          "code": "UNCERTAIN",
-          "label": "~ Incerto",
-          "color": "#888780",
-          "description": "Segnali contrastanti tra Hurst e ADX"
-        }
+          "code": "SLANCIO",
+          "label": "\ud83d\ude80 Slancio",
+          "color": "#1a7f37",
+          "desc": "Trend rialzista forte con memoria recente confermata"
+        },
+        "hurst_60": 0.617,
+        "hurst_1y": 0.396
       }
     ],
     "history": [
