@@ -96,7 +96,15 @@
           }
         ],
         "warning": null,
-        "days_in_buy1": 0
+        "days_in_buy1": 0,
+        "hurst": 0.353,
+        "adx": 57.4,
+        "regime": {
+          "code": "UNCERTAIN",
+          "label": "~ Incerto",
+          "color": "#888780",
+          "description": "Segnali contrastanti tra Hurst e ADX"
+        }
       },
       {
         "ticker": "WNAS.MI",
@@ -135,7 +143,15 @@
           }
         ],
         "warning": null,
-        "days_in_buy1": 0
+        "days_in_buy1": 0,
+        "hurst": 0.286,
+        "adx": 60.9,
+        "regime": {
+          "code": "UNCERTAIN",
+          "label": "~ Incerto",
+          "color": "#888780",
+          "description": "Segnali contrastanti tra Hurst e ADX"
+        }
       },
       {
         "ticker": "FLXU.MI",
@@ -182,7 +198,15 @@
           }
         ],
         "warning": null,
-        "days_in_buy1": 0
+        "days_in_buy1": 0,
+        "hurst": 0.292,
+        "adx": 58.3,
+        "regime": {
+          "code": "UNCERTAIN",
+          "label": "~ Incerto",
+          "color": "#888780",
+          "description": "Segnali contrastanti tra Hurst e ADX"
+        }
       },
       {
         "ticker": "FLXT.MI",
@@ -231,7 +255,15 @@
           }
         ],
         "warning": null,
-        "weight_pct": 13.5
+        "weight_pct": 13.5,
+        "hurst": 0.356,
+        "adx": 57.6,
+        "regime": {
+          "code": "UNCERTAIN",
+          "label": "~ Incerto",
+          "color": "#888780",
+          "description": "Segnali contrastanti tra Hurst e ADX"
+        }
       },
       {
         "ticker": "WSPE.MI",
@@ -272,7 +304,15 @@
           }
         ],
         "warning": null,
-        "weight_pct": 13.6
+        "weight_pct": 13.6,
+        "hurst": 0.396,
+        "adx": 57.8,
+        "regime": {
+          "code": "UNCERTAIN",
+          "label": "~ Incerto",
+          "color": "#888780",
+          "description": "Segnali contrastanti tra Hurst e ADX"
+        }
       }
     ],
     "history": [
@@ -361,7 +401,7 @@
         "rvi_bullish": false,
         "perf7": 2.91,
         "perf30": 8.2,
-        "weight_pct": 29.3,
+        "weight_pct": 29.2,
         "events": [
           {
             "ts": "2026-04-21 09:00 CET",
@@ -373,34 +413,42 @@
           }
         ],
         "warning": null,
-        "days_in_buy1": 0
+        "days_in_buy1": 0,
+        "hurst": 0.286,
+        "adx": 60.9,
+        "regime": {
+          "code": "UNCERTAIN",
+          "label": "~ Incerto",
+          "color": "#888780",
+          "description": "Segnali contrastanti tra Hurst e ADX"
+        }
       },
       {
         "ticker": "NQSE.DE",
         "name": "iShares NASDAQ 100 UCITS ETF",
         "entry_date": "2026-04-21",
         "entry_price": 15.49,
-        "current_price": 15.79,
+        "current_price": 15.812,
         "target_price": 16.265,
         "stop_loss": 15.008,
         "trailing_stop": 15.459,
-        "current_gain_pct": 1.94,
+        "current_gain_pct": 2.08,
         "days_held": 8,
         "pre_alert": false,
         "target_hit": false,
-        "score": 67.1,
+        "score": 67.7,
         "peak_score": 70.5,
-        "er": 0.4984,
-        "current_level": "BUY1",
+        "er": 0.5072,
+        "current_level": "BUY2",
         "size_pct": 70,
         "signal": "LONG_FORTE",
         "trend": "VERDE",
         "sar_bullish": true,
         "vortex_bullish": true,
         "rvi_bullish": false,
-        "perf7": 2.16,
-        "perf30": 9.46,
-        "weight_pct": 26.8,
+        "perf7": 2.3,
+        "perf30": 9.61,
+        "weight_pct": 27.0,
         "events": [
           {
             "ts": "2026-04-21 09:00 CET",
@@ -433,10 +481,26 @@
             "size_pct": 75,
             "score": 67.1,
             "er": 0.4984
+          },
+          {
+            "ts": "2026-04-29 10:42 CET",
+            "level": "BUY2",
+            "reason": "Score 67.7\u226565 \u00b7 AO +1.1000>0 \u00b7 ER 0.51\u22650.5 \u00b7 SAR bull \u00b7 Trend VERDE",
+            "size_pct": 70,
+            "score": 67.7,
+            "er": 0.5072
           }
         ],
         "warning": null,
-        "days_in_buy1": 1
+        "days_in_buy1": 0,
+        "hurst": 0.386,
+        "adx": 54.8,
+        "regime": {
+          "code": "UNCERTAIN",
+          "label": "~ Incerto",
+          "color": "#888780",
+          "description": "Segnali contrastanti tra Hurst e ADX"
+        }
       },
       {
         "ticker": "NTSG.MI",
@@ -483,7 +547,15 @@
           }
         ],
         "warning": null,
-        "days_in_buy1": 1
+        "days_in_buy1": 1,
+        "hurst": 0.331,
+        "adx": 37.6,
+        "regime": {
+          "code": "UNCERTAIN",
+          "label": "~ Incerto",
+          "color": "#888780",
+          "description": "Segnali contrastanti tra Hurst e ADX"
+        }
       },
       {
         "ticker": "WSPE.MI",
@@ -524,7 +596,15 @@
           }
         ],
         "warning": null,
-        "weight_pct": 30.2
+        "weight_pct": 30.1,
+        "hurst": 0.396,
+        "adx": 57.8,
+        "regime": {
+          "code": "UNCERTAIN",
+          "label": "~ Incerto",
+          "color": "#888780",
+          "description": "Segnali contrastanti tra Hurst e ADX"
+        }
       }
     ],
     "history": [
