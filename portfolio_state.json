@@ -55,7 +55,7 @@
         "rvi_bullish": false,
         "perf7": 7.39,
         "perf30": 5.12,
-        "weight_pct": 24.0,
+        "weight_pct": 24.1,
         "events": [],
         "warning": "Dati non disponibili"
       },
@@ -64,17 +64,17 @@
         "name": "iShares NASDAQ 100 UCITS ETF",
         "entry_date": "2026-04-16",
         "entry_price": 1278.12,
-        "current_price": 1329.89,
+        "current_price": 1329.14,
         "target_price": 1342.026,
         "stop_loss": 1242.089,
         "trailing_stop": 1305.859,
-        "current_gain_pct": 4.05,
+        "current_gain_pct": 3.99,
         "days_held": 13,
         "pre_alert": false,
         "target_hit": false,
-        "score": 70.9,
+        "score": 70.7,
         "peak_score": 77.8,
-        "er": 0.5908,
+        "er": 0.5879,
         "current_level": "BUY2",
         "size_pct": 70,
         "signal": "LONG_FORTE",
@@ -82,8 +82,8 @@
         "sar_bullish": true,
         "vortex_bullish": true,
         "rvi_bullish": false,
-        "perf7": 3.02,
-        "perf30": 8.02,
+        "perf7": 2.96,
+        "perf30": 7.96,
         "weight_pct": 12.8,
         "events": [
           {
@@ -190,19 +190,19 @@
         "entry_date": "2026-04-28",
         "entry_ts": "2026-04-28 09:28 CET",
         "entry_price": 50.41,
-        "current_price": 50.34,
+        "current_price": 50.23,
         "target_price": 52.931,
         "stop_loss": 48.476,
         "trailing_stop": 48.594,
-        "current_gain_pct": -0.14,
+        "current_gain_pct": -0.36,
         "days_held": 1,
         "days_in_buy1": 0,
         "target_hit": false,
         "current_level": "BUY2",
         "size_pct": 100,
         "peak_score": 82.5,
-        "score": 75.4,
-        "er": 0.757,
+        "score": 74.8,
+        "er": 0.7522,
         "trend": "VERDE",
         "sar_bullish": true,
         "vortex_bullish": true,
@@ -210,8 +210,8 @@
         "rs_above_kama": true,
         "trend_rs": "VERDE",
         "baff_rs": 1,
-        "perf7": 6.69,
-        "perf30": 19.49,
+        "perf7": 6.45,
+        "perf30": 19.23,
         "events": [
           {
             "ts": "2026-04-28 09:28 CET",
@@ -231,7 +231,7 @@
           }
         ],
         "warning": null,
-        "weight_pct": 13.6
+        "weight_pct": 13.5
       },
       {
         "ticker": "WSPE.MI",
@@ -361,7 +361,7 @@
         "rvi_bullish": false,
         "perf7": 2.91,
         "perf30": 8.2,
-        "weight_pct": 29.2,
+        "weight_pct": 29.3,
         "events": [
           {
             "ts": "2026-04-21 09:00 CET",
@@ -380,27 +380,27 @@
         "name": "iShares NASDAQ 100 UCITS ETF",
         "entry_date": "2026-04-21",
         "entry_price": 15.49,
-        "current_price": 15.812,
+        "current_price": 15.79,
         "target_price": 16.265,
         "stop_loss": 15.008,
         "trailing_stop": 15.459,
-        "current_gain_pct": 2.08,
+        "current_gain_pct": 1.94,
         "days_held": 8,
         "pre_alert": false,
         "target_hit": false,
-        "score": 67.7,
+        "score": 67.1,
         "peak_score": 70.5,
-        "er": 0.5072,
-        "current_level": "BUY2",
+        "er": 0.4984,
+        "current_level": "BUY1",
         "size_pct": 70,
         "signal": "LONG_FORTE",
         "trend": "VERDE",
         "sar_bullish": true,
         "vortex_bullish": true,
         "rvi_bullish": false,
-        "perf7": 2.3,
-        "perf30": 9.61,
-        "weight_pct": 27.0,
+        "perf7": 2.16,
+        "perf30": 9.46,
+        "weight_pct": 26.8,
         "events": [
           {
             "ts": "2026-04-21 09:00 CET",
@@ -425,10 +425,18 @@
             "size_pct": 70,
             "score": 65.7,
             "er": 0.65
+          },
+          {
+            "ts": "2026-04-29 10:30 CET",
+            "level": "DOWNGRADE_BUY1",
+            "reason": "BUY2\u2192BUY1: ER 0.50<0.5",
+            "size_pct": 75,
+            "score": 67.1,
+            "er": 0.4984
           }
         ],
         "warning": null,
-        "days_in_buy1": 0
+        "days_in_buy1": 1
       },
       {
         "ticker": "NTSG.MI",
@@ -516,7 +524,7 @@
           }
         ],
         "warning": null,
-        "weight_pct": 30.1
+        "weight_pct": 30.2
       }
     ],
     "history": [
