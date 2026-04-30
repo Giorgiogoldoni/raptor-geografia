@@ -26,7 +26,7 @@
         "rvi_bullish": false,
         "perf7": -4.27,
         "perf30": 10.91,
-        "weight_pct": 6.5,
+        "weight_pct": 7.0,
         "events": [
           {
             "ts": "2026-04-08 09:00 CET",
@@ -82,7 +82,7 @@
         "rvi_bullish": false,
         "perf7": 7.39,
         "perf30": 5.12,
-        "weight_pct": 24.7,
+        "weight_pct": 26.9,
         "events": [],
         "warning": "Dati non disponibili"
       },
@@ -91,17 +91,17 @@
         "name": "iShares NASDAQ 100 UCITS ETF",
         "entry_date": "2026-04-16",
         "entry_price": 1278.12,
-        "current_price": 1332.81,
+        "current_price": 1339.2,
         "target_price": 1342.026,
         "stop_loss": 1242.089,
-        "trailing_stop": 1305.859,
-        "current_gain_pct": 4.28,
-        "days_held": 13,
+        "trailing_stop": 1308.757,
+        "current_gain_pct": 4.78,
+        "days_held": 14,
         "pre_alert": false,
         "target_hit": false,
-        "score": 71.6,
+        "score": 70.3,
         "peak_score": 77.8,
-        "er": 0.6014,
+        "er": 0.5535,
         "current_level": "BUY2",
         "size_pct": 70,
         "signal": "LONG_FORTE",
@@ -109,9 +109,9 @@
         "sar_bullish": true,
         "vortex_bullish": true,
         "rvi_bullish": false,
-        "perf7": 3.24,
-        "perf30": 8.26,
-        "weight_pct": 13.3,
+        "perf7": 3.09,
+        "perf30": 8.57,
+        "weight_pct": 14.2,
         "events": [
           {
             "ts": "2026-04-16 09:00 CET",
@@ -125,32 +125,32 @@
         "warning": null,
         "days_in_buy1": 0,
         "hurst": 0.353,
-        "adx": 57.4,
+        "adx": 57.0,
         "regime": {
           "code": "SLANCIO",
           "label": "\ud83d\ude80 Slancio",
           "color": "#1a7f37",
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
-        "hurst_60": 0.609,
-        "hurst_1y": 0.354
+        "hurst_60": 0.631,
+        "hurst_1y": 0.356
       },
       {
         "ticker": "WNAS.MI",
         "name": "WisdomTree NASDAQ-100 ETP",
         "entry_date": "2026-04-21",
         "entry_price": 33.22,
-        "current_price": 34.025,
+        "current_price": 34.19,
         "target_price": 34.881,
         "stop_loss": 32.42,
-        "trailing_stop": 33.365,
-        "current_gain_pct": 2.42,
-        "days_held": 8,
+        "trailing_stop": 33.471,
+        "current_gain_pct": 2.92,
+        "days_held": 9,
         "pre_alert": false,
         "target_hit": false,
-        "score": 73.5,
+        "score": 72.9,
         "peak_score": 79.6,
-        "er": 0.6764,
+        "er": 0.6438,
         "current_level": "BUY2",
         "size_pct": 70,
         "signal": "LONG_FORTE",
@@ -158,9 +158,9 @@
         "sar_bullish": true,
         "vortex_bullish": true,
         "rvi_bullish": false,
-        "perf7": 3.01,
-        "perf30": 8.31,
-        "weight_pct": 13.6,
+        "perf7": 3.08,
+        "perf30": 8.66,
+        "weight_pct": 14.7,
         "events": [
           {
             "ts": "2026-04-21 09:00 CET",
@@ -174,15 +174,15 @@
         "warning": null,
         "days_in_buy1": 0,
         "hurst": 0.286,
-        "adx": 60.9,
+        "adx": 60.3,
         "regime": {
           "code": "SLANCIO",
           "label": "\ud83d\ude80 Slancio",
           "color": "#1a7f37",
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
-        "hurst_60": 0.613,
-        "hurst_1y": 0.286
+        "hurst_60": 0.631,
+        "hurst_1y": 0.285
       },
       {
         "ticker": "FLXU.MI",
@@ -194,13 +194,13 @@
         "stop_loss": 61.0,
         "trailing_stop": 61.705,
         "current_gain_pct": -0.05,
-        "days_held": 8,
+        "days_held": 9,
         "pre_alert": false,
         "target_hit": false,
-        "score": 76.0,
+        "score": 55.9,
         "peak_score": 80.8,
         "er": 1.0,
-        "current_level": "BUY2",
+        "current_level": "BUY1",
         "size_pct": 35,
         "signal": "LONG_FORTE",
         "trend": "VERDE",
@@ -208,8 +208,8 @@
         "vortex_bullish": true,
         "rvi_bullish": false,
         "perf7": 1.46,
-        "perf30": 4.77,
-        "weight_pct": 14.1,
+        "perf30": 4.7,
+        "weight_pct": 11.3,
         "events": [
           {
             "ts": "2026-04-28 09:28 CET",
@@ -226,20 +226,28 @@
             "size_pct": 40,
             "score": 77.6,
             "er": 1.0
+          },
+          {
+            "ts": "2026-04-30 11:22 CET",
+            "level": "DOWNGRADE_BUY1",
+            "reason": "BUY2\u2192BUY1: Score 55.9<65",
+            "size_pct": 75,
+            "score": 55.9,
+            "er": 1.0
           }
         ],
         "warning": null,
-        "days_in_buy1": 0,
+        "days_in_buy1": 1,
         "hurst": 0.292,
-        "adx": 58.3,
+        "adx": 55.1,
         "regime": {
-          "code": "SALITA",
-          "label": "\ud83d\udcc8 Salita",
-          "color": "#2ea043",
-          "desc": "Movimento rialzista in corso"
+          "code": "SLANCIO",
+          "label": "\ud83d\ude80 Slancio",
+          "color": "#1a7f37",
+          "desc": "Trend rialzista forte con memoria recente confermata"
         },
-        "hurst_60": 0.547,
-        "hurst_1y": 0.292
+        "hurst_60": 0.566,
+        "hurst_1y": 0.295
       },
       {
         "ticker": "FLXT.MI",
@@ -247,19 +255,19 @@
         "entry_date": "2026-04-28",
         "entry_ts": "2026-04-28 09:28 CET",
         "entry_price": 50.41,
-        "current_price": 50.18,
+        "current_price": 50.56,
         "target_price": 52.931,
         "stop_loss": 48.476,
-        "trailing_stop": 48.594,
-        "current_gain_pct": -0.46,
-        "days_held": 1,
+        "trailing_stop": 48.739,
+        "current_gain_pct": 0.3,
+        "days_held": 2,
         "days_in_buy1": 0,
         "target_hit": false,
         "current_level": "BUY2",
         "size_pct": 100,
         "peak_score": 82.5,
-        "score": 74.6,
-        "er": 0.75,
+        "score": 74.5,
+        "er": 0.7542,
         "trend": "VERDE",
         "sar_bullish": true,
         "vortex_bullish": true,
@@ -267,8 +275,8 @@
         "rs_above_kama": true,
         "trend_rs": "VERDE",
         "baff_rs": 1,
-        "perf7": 6.35,
-        "perf30": 19.11,
+        "perf7": 5.94,
+        "perf30": 18.28,
         "events": [
           {
             "ts": "2026-04-28 09:28 CET",
@@ -288,17 +296,17 @@
           }
         ],
         "warning": null,
-        "weight_pct": 13.8,
+        "weight_pct": 15.0,
         "hurst": 0.356,
-        "adx": 57.6,
+        "adx": 58.9,
         "regime": {
           "code": "SLANCIO",
           "label": "\ud83d\ude80 Slancio",
           "color": "#1a7f37",
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
-        "hurst_60": 0.584,
-        "hurst_1y": 0.356
+        "hurst_60": 0.591,
+        "hurst_1y": 0.371
       },
       {
         "ticker": "WSPE.MI",
@@ -311,14 +319,14 @@
         "stop_loss": 26.322,
         "trailing_stop": 26.423,
         "current_gain_pct": -0.41,
-        "days_held": 1,
-        "days_in_buy1": 0,
+        "days_held": 2,
+        "days_in_buy1": 1,
         "target_hit": false,
-        "current_level": "BUY2",
+        "current_level": "BUY1",
         "size_pct": 70,
         "peak_score": 78.7,
-        "score": 75.5,
-        "er": 0.7634,
+        "score": 53.5,
+        "er": 0.6944,
         "trend": "VERDE",
         "sar_bullish": true,
         "vortex_bullish": true,
@@ -336,20 +344,28 @@
             "size_pct": 70,
             "score": 78.4,
             "er": 1.0
+          },
+          {
+            "ts": "2026-04-30 11:22 CET",
+            "level": "DOWNGRADE_BUY1",
+            "reason": "BUY2\u2192BUY1: Score 53.5<65",
+            "size_pct": 75,
+            "score": 53.5,
+            "er": 0.6944
           }
         ],
         "warning": null,
-        "weight_pct": 14.0,
+        "weight_pct": 10.8,
         "hurst": 0.396,
-        "adx": 57.8,
+        "adx": 55.4,
         "regime": {
           "code": "SLANCIO",
           "label": "\ud83d\ude80 Slancio",
           "color": "#1a7f37",
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
-        "hurst_60": 0.617,
-        "hurst_1y": 0.396
+        "hurst_60": 0.629,
+        "hurst_1y": 0.405
       }
     ],
     "history": [
@@ -407,9 +423,7 @@
         "exit_ts": "2026-04-28 13:54 CET"
       }
     ],
-    "cooldowns": {
-      "IBZL.MI": "2026-04-30"
-    }
+    "cooldowns": {}
   },
   "new_area": {
     "positions": [
@@ -418,17 +432,17 @@
         "name": "WisdomTree NASDAQ-100 ETP",
         "entry_date": "2026-04-21",
         "entry_price": 33.19,
-        "current_price": 34.025,
+        "current_price": 34.19,
         "target_price": 34.849,
         "stop_loss": 32.378,
-        "trailing_stop": 33.365,
-        "current_gain_pct": 2.52,
-        "days_held": 8,
+        "trailing_stop": 33.471,
+        "current_gain_pct": 3.01,
+        "days_held": 9,
         "pre_alert": false,
         "target_hit": false,
-        "score": 73.5,
+        "score": 72.9,
         "peak_score": 79.6,
-        "er": 0.6764,
+        "er": 0.6438,
         "current_level": "BUY2",
         "size_pct": 70,
         "signal": "LONG_FORTE",
@@ -436,9 +450,9 @@
         "sar_bullish": true,
         "vortex_bullish": true,
         "rvi_bullish": false,
-        "perf7": 3.01,
-        "perf30": 8.31,
-        "weight_pct": 29.2,
+        "perf7": 3.08,
+        "perf30": 8.66,
+        "weight_pct": 32.6,
         "events": [
           {
             "ts": "2026-04-21 09:00 CET",
@@ -452,42 +466,42 @@
         "warning": null,
         "days_in_buy1": 0,
         "hurst": 0.286,
-        "adx": 60.9,
+        "adx": 60.3,
         "regime": {
           "code": "SLANCIO",
           "label": "\ud83d\ude80 Slancio",
           "color": "#1a7f37",
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
-        "hurst_60": 0.613,
-        "hurst_1y": 0.286
+        "hurst_60": 0.631,
+        "hurst_1y": 0.285
       },
       {
         "ticker": "NQSE.DE",
         "name": "iShares NASDAQ 100 UCITS ETF",
         "entry_date": "2026-04-21",
         "entry_price": 15.49,
-        "current_price": 15.836,
+        "current_price": 15.878,
         "target_price": 16.265,
         "stop_loss": 15.008,
-        "trailing_stop": 15.459,
-        "current_gain_pct": 2.23,
-        "days_held": 8,
+        "trailing_stop": 15.477,
+        "current_gain_pct": 2.5,
+        "days_held": 9,
         "pre_alert": false,
         "target_hit": false,
-        "score": 68.2,
+        "score": 66.5,
         "peak_score": 70.5,
-        "er": 0.5164,
-        "current_level": "BUY2",
+        "er": 0.4513,
+        "current_level": "BUY1",
         "size_pct": 70,
         "signal": "LONG_FORTE",
         "trend": "VERDE",
         "sar_bullish": true,
         "vortex_bullish": true,
         "rvi_bullish": false,
-        "perf7": 2.46,
-        "perf30": 9.77,
-        "weight_pct": 27.1,
+        "perf7": 2.5,
+        "perf30": 9.37,
+        "weight_pct": 29.8,
         "events": [
           {
             "ts": "2026-04-21 09:00 CET",
@@ -544,37 +558,45 @@
             "size_pct": 70,
             "score": 68.2,
             "er": 0.5164
+          },
+          {
+            "ts": "2026-04-30 11:22 CET",
+            "level": "DOWNGRADE_BUY1",
+            "reason": "BUY2\u2192BUY1: ER 0.45<0.5",
+            "size_pct": 75,
+            "score": 66.5,
+            "er": 0.4513
           }
         ],
         "warning": null,
-        "days_in_buy1": 0,
+        "days_in_buy1": 1,
         "hurst": 0.386,
-        "adx": 54.8,
+        "adx": 54.0,
         "regime": {
           "code": "SLANCIO",
           "label": "\ud83d\ude80 Slancio",
           "color": "#1a7f37",
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
-        "hurst_60": 0.619,
-        "hurst_1y": 0.386
+        "hurst_60": 0.635,
+        "hurst_1y": 0.388
       },
       {
         "ticker": "NTSG.MI",
         "name": "Neuberger Berman Sustainable Global Equity",
         "entry_date": "2026-04-22",
         "entry_price": 26.795,
-        "current_price": 26.75,
+        "current_price": 26.72,
         "target_price": 28.135,
         "stop_loss": 26.185,
         "trailing_stop": 26.356,
-        "current_gain_pct": -0.17,
-        "days_held": 7,
+        "current_gain_pct": -0.28,
+        "days_held": 8,
         "pre_alert": false,
         "target_hit": false,
-        "score": 34.4,
+        "score": 30.4,
         "peak_score": 45.4,
-        "er": 0.3832,
+        "er": 0.1056,
         "current_level": "EXIT2",
         "size_pct": 35,
         "signal": "LONG_FORTE",
@@ -582,9 +604,9 @@
         "sar_bullish": false,
         "vortex_bullish": true,
         "rvi_bullish": false,
-        "perf7": -0.71,
-        "perf30": 3.14,
-        "weight_pct": 13.7,
+        "perf7": -0.87,
+        "perf30": 2.3,
+        "weight_pct": 13.6,
         "events": [
           {
             "ts": "2026-04-28 09:28 CET",
@@ -606,15 +628,15 @@
         "warning": null,
         "days_in_buy1": 1,
         "hurst": 0.331,
-        "adx": 37.6,
+        "adx": 37.5,
         "regime": {
           "code": "SLANCIO",
           "label": "\ud83d\ude80 Slancio",
           "color": "#1a7f37",
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
-        "hurst_60": 0.606,
-        "hurst_1y": 0.331
+        "hurst_60": 0.614,
+        "hurst_1y": 0.332
       },
       {
         "ticker": "WSPE.MI",
@@ -627,14 +649,14 @@
         "stop_loss": 26.322,
         "trailing_stop": 26.423,
         "current_gain_pct": -0.41,
-        "days_held": 1,
-        "days_in_buy1": 0,
+        "days_held": 2,
+        "days_in_buy1": 1,
         "target_hit": false,
-        "current_level": "BUY2",
+        "current_level": "BUY1",
         "size_pct": 70,
         "peak_score": 78.7,
-        "score": 75.5,
-        "er": 0.7634,
+        "score": 53.5,
+        "er": 0.6944,
         "trend": "VERDE",
         "sar_bullish": true,
         "vortex_bullish": true,
@@ -652,20 +674,28 @@
             "size_pct": 70,
             "score": 78.4,
             "er": 1.0
+          },
+          {
+            "ts": "2026-04-30 11:22 CET",
+            "level": "DOWNGRADE_BUY1",
+            "reason": "BUY2\u2192BUY1: Score 53.5<65",
+            "size_pct": 75,
+            "score": 53.5,
+            "er": 0.6944
           }
         ],
         "warning": null,
-        "weight_pct": 30.0,
+        "weight_pct": 24.0,
         "hurst": 0.396,
-        "adx": 57.8,
+        "adx": 55.4,
         "regime": {
           "code": "SLANCIO",
           "label": "\ud83d\ude80 Slancio",
           "color": "#1a7f37",
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
-        "hurst_60": 0.617,
-        "hurst_1y": 0.396
+        "hurst_60": 0.629,
+        "hurst_1y": 0.405
       }
     ],
     "history": [
@@ -829,8 +859,6 @@
       }
     ],
     "cooldowns": {
-      "ALAT.MI": "2026-04-30",
-      "SEMA.MI": "2026-04-30",
       "CSCA.MI": "2026-05-01"
     }
   }
