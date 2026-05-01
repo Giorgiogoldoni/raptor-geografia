@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-01T13:15:36.331847+02:00",
-  "updated_display": "01/05/2026 13:15 CET",
-  "vix": 17.07,
+  "updated_at": "2026-05-01T15:46:33.919168+02:00",
+  "updated_display": "01/05/2026 15:46 CET",
+  "vix": 16.72,
   "vix_regime": "NORMALE",
   "paesi": {
     "positions": [
@@ -292,7 +292,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-01 13:15 CET"
+        "level_ts": "2026-05-01 15:46 CET"
       },
       {
         "ticker": "QTOP.MI",
@@ -884,7 +884,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-01 13:15 CET"
+        "level_ts": "2026-05-01 15:46 CET"
       },
       {
         "ticker": "WNAS.MI",
@@ -4135,200 +4135,7 @@
         "hurst_1y": 0.333
       }
     ],
-    "exited_today": [
-      {
-        "ticker": "NQSE.DE",
-        "name": "iShares NASDAQ 100 UCITS ETF",
-        "entry_date": "2026-04-21",
-        "entry_price": 15.49,
-        "current_price": 15.886,
-        "target_price": 16.265,
-        "stop_loss": 15.008,
-        "trailing_stop": 15.537,
-        "current_gain_pct": 2.56,
-        "days_held": 10,
-        "pre_alert": false,
-        "target_hit": false,
-        "score": 66.7,
-        "peak_score": 70.5,
-        "er": 0.4552,
-        "current_level": "BUY1",
-        "size_pct": 70,
-        "signal": "LONG_FORTE",
-        "trend": "VERDE",
-        "sar_bullish": true,
-        "vortex_bullish": true,
-        "rvi_bullish": false,
-        "perf7": 2.56,
-        "perf30": 9.42,
-        "weight_pct": 29.8,
-        "events": [
-          {
-            "ts": "2026-04-21 09:00 CET",
-            "level": "BUY2",
-            "reason": "Ingresso storico (migrazione v5) \u2014 score 70.5 \u00b7 ER 0.78",
-            "size_pct": 70,
-            "score": 70.5,
-            "er": 0.781
-          },
-          {
-            "ts": "2026-04-28 13:54 CET",
-            "level": "DOWNGRADE_BUY1",
-            "reason": "BUY2\u2192BUY1: Score 63.9<65",
-            "size_pct": 75,
-            "score": 63.9,
-            "er": 0.6045
-          },
-          {
-            "ts": "2026-04-28 16:35 CET",
-            "level": "BUY2",
-            "reason": "Score 65.7\u226565 \u00b7 AO +1.0913>0 \u00b7 ER 0.65\u22650.5 \u00b7 SAR bull \u00b7 Trend VERDE",
-            "size_pct": 70,
-            "score": 65.7,
-            "er": 0.65
-          },
-          {
-            "ts": "2026-04-29 10:30 CET",
-            "level": "DOWNGRADE_BUY1",
-            "reason": "BUY2\u2192BUY1: ER 0.50<0.5",
-            "size_pct": 75,
-            "score": 67.1,
-            "er": 0.4984
-          },
-          {
-            "ts": "2026-04-29 10:42 CET",
-            "level": "BUY2",
-            "reason": "Score 67.7\u226565 \u00b7 AO +1.1000>0 \u00b7 ER 0.51\u22650.5 \u00b7 SAR bull \u00b7 Trend VERDE",
-            "size_pct": 70,
-            "score": 67.7,
-            "er": 0.5072
-          },
-          {
-            "ts": "2026-04-29 16:24 CET",
-            "level": "DOWNGRADE_BUY1",
-            "reason": "BUY2\u2192BUY1: ER 0.50<0.5",
-            "size_pct": 75,
-            "score": 67.1,
-            "er": 0.4976
-          },
-          {
-            "ts": "2026-04-29 18:48 CET",
-            "level": "BUY2",
-            "reason": "Score 68.2\u226565 \u00b7 AO +1.0978>0 \u00b7 ER 0.52\u22650.5 \u00b7 SAR bull \u00b7 Trend VERDE",
-            "size_pct": 70,
-            "score": 68.2,
-            "er": 0.5164
-          },
-          {
-            "ts": "2026-04-30 11:22 CET",
-            "level": "DOWNGRADE_BUY1",
-            "reason": "BUY2\u2192BUY1: ER 0.45<0.5",
-            "size_pct": 75,
-            "score": 66.5,
-            "er": 0.4513
-          },
-          {
-            "ts": "2026-05-01 13:15 CET",
-            "level": "EXIT1b",
-            "reason": "Time stop: 7gg in BUY1 senza upgrade a BUY2",
-            "size_pct": 100,
-            "score": 66.7,
-            "er": 0.4552
-          }
-        ],
-        "warning": null,
-        "days_in_buy1": 6,
-        "hurst": 0.386,
-        "adx": 54.7,
-        "regime": {
-          "code": "SLANCIO",
-          "label": "\ud83d\ude80 Slancio",
-          "color": "#1a7f37",
-          "desc": "Trend rialzista forte con memoria recente confermata"
-        },
-        "hurst_60": 0.635,
-        "hurst_1y": 0.388,
-        "exit_level": "EXIT1b",
-        "exit_reason": "Time stop: 7gg in BUY1 senza upgrade a BUY2",
-        "exit_price": 15.886,
-        "final_gain_pct": 2.56,
-        "exit_date": "2026-05-01",
-        "exit_ts": "2026-05-01 13:15 CET"
-      },
-      {
-        "ticker": "WSPE.MI",
-        "name": "WisdomTree S&P 500 EUR Hedged",
-        "entry_date": "2026-04-28",
-        "entry_ts": "2026-04-28 09:28 CET",
-        "entry_price": 26.775,
-        "current_price": 26.84,
-        "target_price": 28.114,
-        "stop_loss": 26.322,
-        "trailing_stop": 26.441,
-        "current_gain_pct": 0.24,
-        "days_held": 3,
-        "days_in_buy1": 6,
-        "target_hit": false,
-        "current_level": "BUY1",
-        "size_pct": 70,
-        "peak_score": 78.7,
-        "score": 54.3,
-        "er": 0.6835,
-        "trend": "VERDE",
-        "sar_bullish": true,
-        "vortex_bullish": true,
-        "rvi_bullish": true,
-        "rs_above_kama": true,
-        "trend_rs": "GRIGIO",
-        "baff_rs": 0,
-        "perf7": 1.8,
-        "perf30": 6.19,
-        "events": [
-          {
-            "ts": "2026-04-28 09:28 CET",
-            "level": "BUY2",
-            "reason": "Score 78.4\u226565 \u00b7 AO +1.2453>0 \u00b7 ER 1.00\u22650.5 \u00b7 SAR bull \u00b7 Trend VERDE",
-            "size_pct": 70,
-            "score": 78.4,
-            "er": 1.0
-          },
-          {
-            "ts": "2026-04-30 11:22 CET",
-            "level": "DOWNGRADE_BUY1",
-            "reason": "BUY2\u2192BUY1: Score 53.5<65",
-            "size_pct": 75,
-            "score": 53.5,
-            "er": 0.6944
-          },
-          {
-            "ts": "2026-05-01 13:15 CET",
-            "level": "EXIT1b",
-            "reason": "Time stop: 7gg in BUY1 senza upgrade a BUY2",
-            "size_pct": 100,
-            "score": 54.3,
-            "er": 0.6835
-          }
-        ],
-        "warning": null,
-        "weight_pct": 24.3,
-        "hurst": 0.396,
-        "adx": 54.7,
-        "regime": {
-          "code": "SLANCIO",
-          "label": "\ud83d\ude80 Slancio",
-          "color": "#1a7f37",
-          "desc": "Trend rialzista forte con memoria recente confermata"
-        },
-        "hurst_60": 0.634,
-        "hurst_1y": 0.412,
-        "exit_level": "EXIT1b",
-        "exit_reason": "Time stop: 7gg in BUY1 senza upgrade a BUY2",
-        "exit_price": 26.84,
-        "final_gain_pct": 0.24,
-        "exit_date": "2026-05-01",
-        "exit_ts": "2026-05-01 13:15 CET"
-      }
-    ],
+    "exited_today": [],
     "use_xeon": false,
     "xeon_price": 149.031,
     "watchlist": [
@@ -4388,7 +4195,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY1",
-        "level_ts": "2026-05-01 13:15 CET"
+        "level_ts": "2026-05-01 15:46 CET"
       },
       {
         "ticker": "WSPE.MI",
@@ -5050,7 +4857,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY1",
-        "level_ts": "2026-05-01 13:15 CET"
+        "level_ts": "2026-05-01 15:46 CET"
       },
       {
         "ticker": "WSPE.MI",
