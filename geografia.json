@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-04-30T20:17:06.731411+02:00",
-  "updated_display": "30/04/2026 20:17 CET",
-  "vix": 17.22,
+  "updated_at": "2026-05-01T11:05:48.953373+02:00",
+  "updated_display": "01/05/2026 11:05 CET",
+  "vix": 17.09,
   "vix_regime": "NORMALE",
   "paesi": {
     "positions": [
@@ -30,7 +30,7 @@
         "rvi_bullish": false,
         "perf7": -4.27,
         "perf30": 10.91,
-        "weight_pct": 12.3,
+        "weight_pct": 16.8,
         "events": [
           {
             "ts": "2026-04-08 09:00 CET",
@@ -86,7 +86,7 @@
         "rvi_bullish": true,
         "perf7": 0.65,
         "perf30": 2.1,
-        "weight_pct": 11.1,
+        "weight_pct": 15.2,
         "events": [
           {
             "ts": "2026-04-08 09:00 CET",
@@ -105,7 +105,7 @@
             "er": 0.0441
           }
         ],
-        "warning": null,
+        "warning": "Dati non disponibili",
         "days_in_buy1": 1,
         "hurst_60": 0.453,
         "hurst_1y": 0.486,
@@ -127,7 +127,7 @@
         "stop_loss": 1242.089,
         "trailing_stop": 1308.757,
         "current_gain_pct": 4.44,
-        "days_held": 14,
+        "days_held": 15,
         "pre_alert": false,
         "target_hit": false,
         "score": 69.1,
@@ -142,7 +142,7 @@
         "rvi_bullish": false,
         "perf7": 2.75,
         "perf30": 8.22,
-        "weight_pct": 24.4,
+        "weight_pct": 33.3,
         "events": [
           {
             "ts": "2026-04-16 09:00 CET",
@@ -192,7 +192,7 @@
         "stop_loss": 32.42,
         "trailing_stop": 33.471,
         "current_gain_pct": 2.68,
-        "days_held": 9,
+        "days_held": 10,
         "pre_alert": false,
         "target_hit": false,
         "score": 72.1,
@@ -207,7 +207,7 @@
         "rvi_bullish": false,
         "perf7": 2.83,
         "perf30": 8.41,
-        "weight_pct": 25.5,
+        "weight_pct": 34.7,
         "events": [
           {
             "ts": "2026-04-21 09:00 CET",
@@ -230,7 +230,9 @@
         },
         "hurst_60": 0.631,
         "hurst_1y": 0.285
-      },
+      }
+    ],
+    "exited_today": [
       {
         "ticker": "TUR.PA",
         "name": "Amundi MSCI Turkey UCITS ETF",
@@ -276,149 +278,77 @@
             "size_pct": 70,
             "score": 75.8,
             "er": 0.7651
+          },
+          {
+            "ts": "2026-05-01 11:06 CET",
+            "level": "EXIT3",
+            "reason": "Score 30.8<35 (soglia BUY2) \u2014 uscita totale",
+            "size_pct": 100,
+            "score": 30.8,
+            "er": 0.0783
           }
         ],
         "warning": null,
-        "weight_pct": 26.8
+        "weight_pct": 26.8,
+        "exit_level": "EXIT3",
+        "exit_reason": "Score 30.8<35 (soglia BUY2) \u2014 uscita totale",
+        "exit_price": 51.706,
+        "final_gain_pct": 1.74,
+        "exit_date": "2026-05-01",
+        "exit_ts": "2026-05-01 11:06 CET"
       }
     ],
-    "exited_today": [
-      {
-        "ticker": "FLXU.MI",
-        "name": "Franklin U.S. Equity UCITS ETF",
-        "entry_date": "2026-04-21",
-        "entry_price": 61.75,
-        "current_price": 61.72,
-        "target_price": 64.838,
-        "stop_loss": 61.0,
-        "trailing_stop": 61.705,
-        "current_gain_pct": -0.05,
-        "days_held": 9,
-        "pre_alert": false,
-        "target_hit": false,
-        "score": 55.9,
-        "peak_score": 80.8,
-        "er": 1.0,
-        "current_level": "BUY1",
-        "size_pct": 35,
-        "signal": "LONG_FORTE",
-        "trend": "VERDE",
-        "sar_bullish": true,
-        "vortex_bullish": true,
-        "rvi_bullish": false,
-        "perf7": 1.46,
-        "perf30": 4.7,
-        "weight_pct": 11.3,
-        "events": [
-          {
-            "ts": "2026-04-28 09:28 CET",
-            "level": "BUY3",
-            "reason": "Score 80.8\u226580 \u00b7 ER 1.00>0.6 \u00b7 Baff 15\u22653 \u00b7 Vortex+RVI bull \u00b7 Trend VERDE",
-            "size_pct": 100,
-            "score": 80.8,
-            "er": 1.0
-          },
-          {
-            "ts": "2026-04-28 13:54 CET",
-            "level": "DOWNGRADE_BUY2",
-            "reason": "BUY3\u2192BUY2: Vortex/RVI indeboliti",
-            "size_pct": 40,
-            "score": 77.6,
-            "er": 1.0
-          },
-          {
-            "ts": "2026-04-30 11:22 CET",
-            "level": "DOWNGRADE_BUY1",
-            "reason": "BUY2\u2192BUY1: Score 55.9<65",
-            "size_pct": 75,
-            "score": 55.9,
-            "er": 1.0
-          },
-          {
-            "ts": "2026-04-30 20:17 CET",
-            "level": "EXIT3",
-            "reason": "Score 21.3<30 (soglia BUY1) \u2014 uscita totale",
-            "size_pct": 100,
-            "score": 21.3,
-            "er": 0.1551
-          }
-        ],
-        "warning": null,
-        "days_in_buy1": 4,
-        "hurst": 0.292,
-        "adx": 55.1,
-        "regime": {
-          "code": "SLANCIO",
-          "label": "\ud83d\ude80 Slancio",
-          "color": "#1a7f37",
-          "desc": "Trend rialzista forte con memoria recente confermata"
-        },
-        "hurst_60": 0.566,
-        "hurst_1y": 0.295,
-        "exit_level": "EXIT3",
-        "exit_reason": "Score 21.3<30 (soglia BUY1) \u2014 uscita totale",
-        "exit_price": 53.77,
-        "final_gain_pct": -12.92,
-        "exit_date": "2026-04-30",
-        "exit_ts": "2026-04-30 20:17 CET"
-      },
+    "use_xeon": false,
+    "xeon_price": 149.031,
+    "watchlist": [
       {
         "ticker": "FLXT.MI",
         "name": "Franklin FTSE Taiwan UCITS ETF",
-        "entry_date": "2026-04-28",
-        "entry_ts": "2026-04-28 09:28 CET",
-        "entry_price": 50.41,
-        "current_price": 50.82,
-        "target_price": 52.931,
-        "stop_loss": 48.476,
-        "trailing_stop": 48.944,
-        "current_gain_pct": 0.81,
-        "days_held": 2,
-        "days_in_buy1": 0,
-        "target_hit": false,
-        "current_level": "BUY2",
-        "size_pct": 100,
-        "peak_score": 82.5,
-        "score": 75.8,
+        "price": 50.82,
+        "kama": 49.912,
+        "k_pct": 1.82,
         "er": 0.7651,
+        "ao": 5.931721,
+        "ao_series": [
+          5.174177,
+          5.528074,
+          5.678573,
+          5.725382,
+          5.931721
+        ],
+        "baffetti": 18,
+        "rsi": 78.7,
+        "atr": 0.93816,
+        "trailing_stop": 48.944,
         "trend": "VERDE",
+        "mm_aligned": true,
+        "sar": 48.53732,
         "sar_bullish": true,
+        "sar_history": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "vi_plus": 1.2083,
+        "vi_minus": 0.4804,
         "vortex_bullish": true,
+        "rvi": 0.127738,
+        "rvi_signal": 0.220542,
         "rvi_bullish": false,
-        "rs_above_kama": true,
-        "trend_rs": "VERDE",
-        "baff_rs": 1,
         "perf7": 6.49,
         "perf30": 18.89,
-        "events": [
-          {
-            "ts": "2026-04-28 09:28 CET",
-            "level": "BUY3",
-            "reason": "Score 81.9\u226580 \u00b7 ER 0.80>0.6 \u00b7 Baff 16\u22653 \u00b7 Vortex+RVI bull \u00b7 Trend VERDE",
-            "size_pct": 100,
-            "score": 81.9,
-            "er": 0.8013
-          },
-          {
-            "ts": "2026-04-28 13:54 CET",
-            "level": "DOWNGRADE_BUY2",
-            "reason": "BUY3\u2192BUY2: Vortex/RVI indeboliti",
-            "size_pct": 40,
-            "score": 75.3,
-            "er": 0.7892
-          },
-          {
-            "ts": "2026-04-30 20:17 CET",
-            "level": "EXIT3",
-            "reason": "Score 32.9<35 (soglia BUY2) \u2014 uscita totale",
-            "size_pct": 100,
-            "score": 32.9,
-            "er": 0.3349
-          }
-        ],
-        "warning": null,
-        "weight_pct": 15.3,
-        "hurst": 0.356,
+        "rs_line": 1.187383,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "baff_rs": 3,
+        "score": 75.8,
+        "cross_bars": 17,
+        "stress_flags": [],
+        "stress_score": 0,
+        "hurst_60": 0.591,
+        "hurst_1y": 0.371,
         "adx": 59.4,
         "regime": {
           "code": "SLANCIO",
@@ -426,92 +356,9 @@
           "color": "#1a7f37",
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
-        "hurst_60": 0.591,
-        "hurst_1y": 0.371,
-        "exit_level": "EXIT3",
-        "exit_reason": "Score 32.9<35 (soglia BUY2) \u2014 uscita totale",
-        "exit_price": 12.788,
-        "final_gain_pct": -74.63,
-        "exit_date": "2026-04-30",
-        "exit_ts": "2026-04-30 20:17 CET"
+        "buy_level": "BUY2",
+        "level_ts": "2026-05-01 11:06 CET"
       },
-      {
-        "ticker": "WSPE.MI",
-        "name": "WisdomTree S&P 500 EUR Daily Hedged",
-        "entry_date": "2026-04-28",
-        "entry_ts": "2026-04-28 09:28 CET",
-        "entry_price": 26.775,
-        "current_price": 26.84,
-        "target_price": 28.114,
-        "stop_loss": 26.322,
-        "trailing_stop": 26.441,
-        "current_gain_pct": 0.24,
-        "days_held": 2,
-        "days_in_buy1": 4,
-        "target_hit": false,
-        "current_level": "BUY1",
-        "size_pct": 70,
-        "peak_score": 78.7,
-        "score": 54.3,
-        "er": 0.6835,
-        "trend": "VERDE",
-        "sar_bullish": true,
-        "vortex_bullish": true,
-        "rvi_bullish": true,
-        "rs_above_kama": true,
-        "trend_rs": "GRIGIO",
-        "baff_rs": 0,
-        "perf7": 1.8,
-        "perf30": 6.19,
-        "events": [
-          {
-            "ts": "2026-04-28 09:28 CET",
-            "level": "BUY2",
-            "reason": "Score 78.4\u226565 \u00b7 AO +1.2453>0 \u00b7 ER 1.00\u22650.5 \u00b7 SAR bull \u00b7 Trend VERDE",
-            "size_pct": 70,
-            "score": 78.4,
-            "er": 1.0
-          },
-          {
-            "ts": "2026-04-30 11:22 CET",
-            "level": "DOWNGRADE_BUY1",
-            "reason": "BUY2\u2192BUY1: Score 53.5<65",
-            "size_pct": 75,
-            "score": 53.5,
-            "er": 0.6944
-          },
-          {
-            "ts": "2026-04-30 20:17 CET",
-            "level": "EXIT3",
-            "reason": "Score 7.6<30 (soglia BUY1) \u2014 uscita totale",
-            "size_pct": 100,
-            "score": 7.6,
-            "er": 0.371
-          }
-        ],
-        "warning": null,
-        "weight_pct": 11.0,
-        "hurst": 0.396,
-        "adx": 54.7,
-        "regime": {
-          "code": "SLANCIO",
-          "label": "\ud83d\ude80 Slancio",
-          "color": "#1a7f37",
-          "desc": "Trend rialzista forte con memoria recente confermata"
-        },
-        "hurst_60": 0.634,
-        "hurst_1y": 0.412,
-        "exit_level": "EXIT3",
-        "exit_reason": "Score 7.6<30 (soglia BUY1) \u2014 uscita totale",
-        "exit_price": 18.654,
-        "final_gain_pct": -30.33,
-        "exit_date": "2026-04-30",
-        "exit_ts": "2026-04-30 20:17 CET"
-      }
-    ],
-    "use_xeon": false,
-    "xeon_price": 149.031,
-    "watchlist": [
       {
         "ticker": "QTOP.MI",
         "name": "iShares Nasdaq 100 Top 30 UCITS ETF",
@@ -571,27 +418,27 @@
         "level_ts": null
       },
       {
-        "ticker": "SPXJ.MI",
-        "name": "iShares MSCI Pacific ex-Japan UCITS ETF",
+        "ticker": "FLXU.MI",
+        "name": "Franklin U.S. Equity UCITS ETF",
         "price": 61.72,
-        "kama": 61.673,
-        "k_pct": 0.08,
+        "kama": 61.694,
+        "k_pct": 0.04,
         "er": 1.0,
-        "ao": 2.325088,
+        "ao": 2.246971,
         "ao_series": [
-          2.211559,
           2.302676,
           2.393794,
           2.403205,
-          2.325088
+          2.325088,
+          2.246971
         ],
         "baffetti": 0,
         "rsi": 74.2,
-        "atr": 0.28559,
-        "trailing_stop": 61.149,
+        "atr": 0.2652,
+        "trailing_stop": 61.19,
         "trend": "VERDE",
         "mm_aligned": true,
-        "sar": 60.65729,
+        "sar": 60.92332,
         "sar_bullish": true,
         "sar_history": [
           true,
@@ -600,25 +447,27 @@
           true,
           true
         ],
-        "vi_plus": 1.3333,
-        "vi_minus": 1.3258,
+        "vi_plus": 1.4017,
+        "vi_minus": 1.3932,
         "vortex_bullish": true,
-        "rvi": -1.471003,
-        "rvi_signal": -0.049702,
+        "rvi": -3.552365,
+        "rvi_signal": -1.035814,
         "rvi_bullish": false,
-        "perf7": 1.46,
-        "perf30": 4.7,
+        "perf7": 0.13,
+        "perf30": 4.45,
         "rs_line": 1.442056,
-        "rs_above_kama": true,
+        "rs_above_kama": false,
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
-        "score": 55.9,
-        "cross_bars": 16,
-        "stress_flags": [],
-        "stress_score": 0,
-        "hurst_60": 0.566,
-        "hurst_1y": 0.295,
-        "adx": 55.1,
+        "score": 54.4,
+        "cross_bars": 17,
+        "stress_flags": [
+          "AO calante"
+        ],
+        "stress_score": 1,
+        "hurst_60": 0.57,
+        "hurst_1y": 0.296,
+        "adx": 52.4,
         "regime": {
           "code": "SLANCIO",
           "label": "\ud83d\ude80 Slancio",
@@ -629,8 +478,8 @@
         "level_ts": null
       },
       {
-        "ticker": "MCHN.MI",
-        "name": "Invesco MSCI China All Shares UCITS ETF",
+        "ticker": "WSPE.MI",
+        "name": "WisdomTree S&P 500 EUR Daily Hedged",
         "price": 26.84,
         "kama": 26.715,
         "k_pct": 0.47,
@@ -689,8 +538,8 @@
         "level_ts": null
       },
       {
-        "ticker": "VUSA.MI",
-        "name": "Vanguard S&P 500 UCITS ETF",
+        "ticker": "SPY5.MI",
+        "name": "State Street SPDR S&P 500 UCITS ETF",
         "price": 610.84,
         "kama": 608.52,
         "k_pct": 0.38,
@@ -749,8 +598,8 @@
         "level_ts": null
       },
       {
-        "ticker": "LGUS.MI",
-        "name": "L&G US Equity UCITS ETF",
+        "ticker": "WSPX.MI",
+        "name": "WisdomTree S&P 500",
         "price": 37.125,
         "kama": 36.99,
         "k_pct": 0.37,
@@ -807,8 +656,8 @@
         "level_ts": null
       },
       {
-        "ticker": "SPY5.MI",
-        "name": "State Street SPDR S&P 500 UCITS ETF",
+        "ticker": "LGUS.MI",
+        "name": "L&G US Equity UCITS ETF",
         "price": 24.635,
         "kama": 24.54,
         "k_pct": 0.39,
@@ -865,8 +714,8 @@
         "level_ts": null
       },
       {
-        "ticker": "DJE.PA",
-        "name": "Amundi Dow Jones Industrial Average UCITS ETF",
+        "ticker": "VUSA.MI",
+        "name": "Vanguard S&P 500 UCITS ETF",
         "price": 115.89,
         "kama": 115.427,
         "k_pct": 0.4,
@@ -983,8 +832,8 @@
         "level_ts": null
       },
       {
-        "ticker": "LCCN.MI",
-        "name": "Amundi MSCI China UCITS ETF",
+        "ticker": "XCHA.DE",
+        "name": "Xtrackers CSI300 Swap UCITS ETF",
         "price": 18.152,
         "kama": 17.778,
         "k_pct": 2.1,
@@ -1041,72 +890,12 @@
         },
         "buy_level": null,
         "level_ts": null
-      },
-      {
-        "ticker": "UKE.MI",
-        "name": "UBS MSCI United Kingdom hEUR Acc",
-        "price": 17.404,
-        "kama": 17.286,
-        "k_pct": 0.68,
-        "er": 0.4866,
-        "ao": 0.804612,
-        "ao_series": [
-          0.835277,
-          0.8431,
-          0.824488,
-          0.815865,
-          0.804612
-        ],
-        "baffetti": 0,
-        "rsi": 69.2,
-        "atr": 0.1663,
-        "trailing_stop": 17.071,
-        "trend": "VERDE",
-        "mm_aligned": true,
-        "sar": 17.207,
-        "sar_bullish": true,
-        "sar_history": [
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "vi_plus": 1.1693,
-        "vi_minus": 0.5972,
-        "vortex_bullish": true,
-        "rvi": 0.249542,
-        "rvi_signal": 0.381619,
-        "rvi_bullish": false,
-        "perf7": 1.05,
-        "perf30": 6.25,
-        "rs_line": 0.406636,
-        "rs_above_kama": true,
-        "trend_rs": "VERDE",
-        "baff_rs": 0,
-        "score": 40.8,
-        "cross_bars": 17,
-        "stress_flags": [
-          "AO calante"
-        ],
-        "stress_score": 1,
-        "hurst_60": 0.645,
-        "hurst_1y": 0.398,
-        "adx": 50.6,
-        "regime": {
-          "code": "SLANCIO",
-          "label": "\ud83d\ude80 Slancio",
-          "color": "#1a7f37",
-          "desc": "Trend rialzista forte con memoria recente confermata"
-        },
-        "buy_level": null,
-        "level_ts": null
       }
     ],
     "all": [
       {
-        "ticker": "TUR.PA",
-        "name": "Amundi MSCI Turkey UCITS ETF",
+        "ticker": "FLXT.MI",
+        "name": "Franklin FTSE Taiwan UCITS ETF",
         "price": 50.82,
         "kama": 49.912,
         "k_pct": 1.82,
@@ -1160,7 +949,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-04-30 20:17 CET"
+        "level_ts": "2026-05-01 11:06 CET"
       },
       {
         "ticker": "WNAS.MI",
@@ -1341,27 +1130,27 @@
         "level_ts": null
       },
       {
-        "ticker": "SPXJ.MI",
-        "name": "iShares MSCI Pacific ex-Japan UCITS ETF",
+        "ticker": "FLXU.MI",
+        "name": "Franklin U.S. Equity UCITS ETF",
         "price": 61.72,
-        "kama": 61.673,
-        "k_pct": 0.08,
+        "kama": 61.694,
+        "k_pct": 0.04,
         "er": 1.0,
-        "ao": 2.325088,
+        "ao": 2.246971,
         "ao_series": [
-          2.211559,
           2.302676,
           2.393794,
           2.403205,
-          2.325088
+          2.325088,
+          2.246971
         ],
         "baffetti": 0,
         "rsi": 74.2,
-        "atr": 0.28559,
-        "trailing_stop": 61.149,
+        "atr": 0.2652,
+        "trailing_stop": 61.19,
         "trend": "VERDE",
         "mm_aligned": true,
-        "sar": 60.65729,
+        "sar": 60.92332,
         "sar_bullish": true,
         "sar_history": [
           true,
@@ -1370,25 +1159,27 @@
           true,
           true
         ],
-        "vi_plus": 1.3333,
-        "vi_minus": 1.3258,
+        "vi_plus": 1.4017,
+        "vi_minus": 1.3932,
         "vortex_bullish": true,
-        "rvi": -1.471003,
-        "rvi_signal": -0.049702,
+        "rvi": -3.552365,
+        "rvi_signal": -1.035814,
         "rvi_bullish": false,
-        "perf7": 1.46,
-        "perf30": 4.7,
+        "perf7": 0.13,
+        "perf30": 4.45,
         "rs_line": 1.442056,
-        "rs_above_kama": true,
+        "rs_above_kama": false,
         "trend_rs": "GRIGIO",
         "baff_rs": 0,
-        "score": 55.9,
-        "cross_bars": 16,
-        "stress_flags": [],
-        "stress_score": 0,
-        "hurst_60": 0.566,
-        "hurst_1y": 0.295,
-        "adx": 55.1,
+        "score": 54.4,
+        "cross_bars": 17,
+        "stress_flags": [
+          "AO calante"
+        ],
+        "stress_score": 1,
+        "hurst_60": 0.57,
+        "hurst_1y": 0.296,
+        "adx": 52.4,
         "regime": {
           "code": "SLANCIO",
           "label": "\ud83d\ude80 Slancio",
@@ -1399,8 +1190,8 @@
         "level_ts": null
       },
       {
-        "ticker": "MCHN.MI",
-        "name": "Invesco MSCI China All Shares UCITS ETF",
+        "ticker": "WSPE.MI",
+        "name": "WisdomTree S&P 500 EUR Daily Hedged",
         "price": 26.84,
         "kama": 26.715,
         "k_pct": 0.47,
@@ -1459,8 +1250,8 @@
         "level_ts": null
       },
       {
-        "ticker": "VUSA.MI",
-        "name": "Vanguard S&P 500 UCITS ETF",
+        "ticker": "SPY5.MI",
+        "name": "State Street SPDR S&P 500 UCITS ETF",
         "price": 610.84,
         "kama": 608.52,
         "k_pct": 0.38,
@@ -1519,8 +1310,8 @@
         "level_ts": null
       },
       {
-        "ticker": "LGUS.MI",
-        "name": "L&G US Equity UCITS ETF",
+        "ticker": "WSPX.MI",
+        "name": "WisdomTree S&P 500",
         "price": 37.125,
         "kama": 36.99,
         "k_pct": 0.37,
@@ -1577,8 +1368,8 @@
         "level_ts": null
       },
       {
-        "ticker": "SPY5.MI",
-        "name": "State Street SPDR S&P 500 UCITS ETF",
+        "ticker": "LGUS.MI",
+        "name": "L&G US Equity UCITS ETF",
         "price": 24.635,
         "kama": 24.54,
         "k_pct": 0.39,
@@ -1635,8 +1426,8 @@
         "level_ts": null
       },
       {
-        "ticker": "DJE.PA",
-        "name": "Amundi Dow Jones Industrial Average UCITS ETF",
+        "ticker": "VUSA.MI",
+        "name": "Vanguard S&P 500 UCITS ETF",
         "price": 115.89,
         "kama": 115.427,
         "k_pct": 0.4,
@@ -1753,8 +1544,8 @@
         "level_ts": null
       },
       {
-        "ticker": "LCCN.MI",
-        "name": "Amundi MSCI China UCITS ETF",
+        "ticker": "XCHA.DE",
+        "name": "Xtrackers CSI300 Swap UCITS ETF",
         "price": 18.152,
         "kama": 17.778,
         "k_pct": 2.1,
@@ -1813,8 +1604,8 @@
         "level_ts": null
       },
       {
-        "ticker": "UKE.MI",
-        "name": "UBS MSCI United Kingdom hEUR Acc",
+        "ticker": "SPXE.MI",
+        "name": "State Street SPDR S&P 500 EUR Acc Hedged",
         "price": 17.404,
         "kama": 17.286,
         "k_pct": 0.68,
@@ -1934,8 +1725,8 @@
         "level_ts": null
       },
       {
-        "ticker": "WSPX.MI",
-        "name": "WisdomTree S&P 500",
+        "ticker": "SP1E.MI",
+        "name": "L&G S&P 100 Equal Weight UCITS ETF",
         "price": 9.537,
         "kama": 9.427,
         "k_pct": 1.17,
@@ -1992,8 +1783,8 @@
         "level_ts": null
       },
       {
-        "ticker": "SAUS.MI",
-        "name": "iShares MSCI Australia UCITS ETF EUR",
+        "ticker": "DJE.PA",
+        "name": "Amundi Dow Jones Industrial Average UCITS ETF",
         "price": 426.65,
         "kama": 421.246,
         "k_pct": 1.28,
@@ -2024,8 +1815,8 @@
         "vi_plus": 0.9869,
         "vi_minus": 0.6928,
         "vortex_bullish": true,
-        "rvi": 0.256635,
-        "rvi_signal": 0.264004,
+        "rvi": 0.258215,
+        "rvi_signal": 0.264267,
         "rvi_bullish": false,
         "perf7": 0.41,
         "perf30": 3.32,
@@ -2053,24 +1844,85 @@
         "level_ts": null
       },
       {
-        "ticker": "SPXE.MI",
-        "name": "State Street SPDR S&P 500 EUR Acc Hedged",
+        "ticker": "XFVT.DE",
+        "name": "Xtrackers Vietnam Swap UCITS ETF",
+        "price": 36.18,
+        "kama": 35.513,
+        "k_pct": 1.88,
+        "er": 0.2445,
+        "ao": 2.457206,
+        "ao_series": [
+          2.61575,
+          2.604588,
+          2.64025,
+          2.537603,
+          2.457206
+        ],
+        "baffetti": 0,
+        "rsi": 63.0,
+        "atr": 0.65005,
+        "trailing_stop": 34.88,
+        "trend": "VERDE",
+        "mm_aligned": true,
+        "sar": 35.729,
+        "sar_bullish": true,
+        "sar_history": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "vi_plus": 1.051,
+        "vi_minus": 0.7069,
+        "vortex_bullish": true,
+        "rvi": 0.153859,
+        "rvi_signal": 0.185511,
+        "rvi_bullish": false,
+        "perf7": 2.15,
+        "perf30": 9.69,
+        "rs_line": 0.845327,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "baff_rs": 0,
+        "score": 35.9,
+        "cross_bars": 17,
+        "stress_flags": [
+          "AO calante",
+          "ER<0.4"
+        ],
+        "stress_score": 2,
+        "hurst_60": 0.575,
+        "hurst_1y": 0.466,
+        "adx": 60.6,
+        "regime": {
+          "code": "SLANCIO",
+          "label": "\ud83d\ude80 Slancio",
+          "color": "#1a7f37",
+          "desc": "Trend rialzista forte con memoria recente confermata"
+        },
+        "buy_level": null,
+        "level_ts": null
+      },
+      {
+        "ticker": "CSMIB.MI",
+        "name": "iShares FTSE MIB ETF EUR Acc",
         "price": 235.7,
         "kama": 233.563,
         "k_pct": 0.92,
         "er": 0.1498,
-        "ao": 9.776324,
+        "ao": 9.784853,
         "ao_series": [
           12.37147,
           11.528677,
           10.729412,
           10.287647,
-          9.776324
+          9.784853
         ],
         "baffetti": 0,
         "rsi": 63.9,
-        "atr": 3.43021,
-        "trailing_stop": 228.84,
+        "atr": 3.43735,
+        "trailing_stop": 228.825,
         "trend": "VERDE",
         "mm_aligned": true,
         "sar": 237.14539,
@@ -2082,11 +1934,11 @@
           false,
           false
         ],
-        "vi_plus": 0.8893,
-        "vi_minus": 0.828,
+        "vi_plus": 0.8896,
+        "vi_minus": 0.8258,
         "vortex_bullish": true,
-        "rvi": 0.062736,
-        "rvi_signal": 0.111087,
+        "rvi": 0.062688,
+        "rvi_signal": 0.111079,
         "rvi_bullish": false,
         "perf7": 0.55,
         "perf30": 8.29,
@@ -2177,8 +2029,8 @@
         "level_ts": null
       },
       {
-        "ticker": "XCHA.DE",
-        "name": "Xtrackers CSI300 Swap UCITS ETF",
+        "ticker": "SAUDI.MI",
+        "name": "Franklin FTSE Saudi Arabia UCITS ETF",
         "price": 21.26,
         "kama": 21.296,
         "k_pct": -0.17,
@@ -2239,8 +2091,8 @@
         "level_ts": null
       },
       {
-        "ticker": "FLXT.MI",
-        "name": "Franklin FTSE Taiwan UCITS ETF",
+        "ticker": "XCS3.DE",
+        "name": "Xtrackers MSCI Malaysia UCITS ETF",
         "price": 12.788,
         "kama": 12.695,
         "k_pct": 0.74,
@@ -2299,8 +2151,8 @@
         "level_ts": null
       },
       {
-        "ticker": "CSMIB.MI",
-        "name": "iShares FTSE MIB ETF EUR Acc",
+        "ticker": "FMI.MI",
+        "name": "Amundi Italy MIB ESG UCITS ETF",
         "price": 116.54,
         "kama": 115.106,
         "k_pct": 1.25,
@@ -2423,8 +2275,8 @@
         "level_ts": null
       },
       {
-        "ticker": "IBCJ.MI",
-        "name": "iShares MSCI Poland UCITS ETF",
+        "ticker": "XCS4.DE",
+        "name": "Xtrackers MSCI Thailand UCITS ETF",
         "price": 24.12,
         "kama": 24.012,
         "k_pct": 0.45,
@@ -2468,10 +2320,9 @@
         "cross_bars": 1,
         "stress_flags": [
           "SAR bear",
-          "ER<0.4",
-          "Score -102pt dal picco"
+          "ER<0.4"
         ],
-        "stress_score": 3,
+        "stress_score": 2,
         "hurst_60": 0.453,
         "hurst_1y": 0.486,
         "adx": 18.5,
@@ -2481,12 +2332,12 @@
           "color": "#8c98a4",
           "desc": "Mercato senza direzione"
         },
-        "buy_level": "EXIT2",
-        "level_ts": "2026-04-30 20:17 CET"
+        "buy_level": null,
+        "level_ts": null
       },
       {
-        "ticker": "XCS4.DE",
-        "name": "Xtrackers MSCI Thailand UCITS ETF",
+        "ticker": "TUR.PA",
+        "name": "Amundi MSCI Turkey UCITS ETF",
         "price": 51.706,
         "kama": 51.946,
         "k_pct": -0.46,
@@ -2548,8 +2399,8 @@
         "level_ts": null
       },
       {
-        "ticker": "XESD.DE",
-        "name": "Xtrackers Spain UCITS ETF",
+        "ticker": "SPXJ.MI",
+        "name": "iShares MSCI Pacific ex-Japan UCITS ETF",
         "price": 47.505,
         "kama": 47.627,
         "k_pct": -0.26,
@@ -2954,8 +2805,8 @@
         "vi_plus": 0.8767,
         "vi_minus": 0.9575,
         "vortex_bullish": false,
-        "rvi": -0.208541,
-        "rvi_signal": -0.103827,
+        "rvi": -0.207363,
+        "rvi_signal": -0.103631,
         "rvi_bullish": false,
         "perf7": -0.66,
         "perf30": 2.82,
@@ -2984,8 +2835,8 @@
         "level_ts": null
       },
       {
-        "ticker": "XSMI.MI",
-        "name": "Xtrackers Switzerland UCITS ETF",
+        "ticker": "WS5X.MI",
+        "name": "WisdomTree EURO STOXX 50",
         "price": 42.6,
         "kama": 42.473,
         "k_pct": 0.3,
@@ -3108,8 +2959,8 @@
         "level_ts": null
       },
       {
-        "ticker": "HSTE.MI",
-        "name": "HSBC Hang Seng Tech UCITS ETF",
+        "ticker": "XSMI.MI",
+        "name": "Xtrackers Switzerland UCITS ETF",
         "price": 149.58,
         "kama": 147.443,
         "k_pct": 1.45,
@@ -3295,8 +3146,8 @@
         "level_ts": null
       },
       {
-        "ticker": "SP1E.MI",
-        "name": "L&G S&P 100 Equal Weight UCITS ETF",
+        "ticker": "HSTE.MI",
+        "name": "HSBC Hang Seng Tech UCITS ETF",
         "price": 5.872,
         "kama": 5.872,
         "k_pct": -0.01,
@@ -3420,58 +3271,58 @@
         "level_ts": null
       },
       {
-        "ticker": "WS5X.MI",
-        "name": "WisdomTree EURO STOXX 50",
+        "ticker": "UKE.MI",
+        "name": "UBS MSCI United Kingdom hEUR Acc",
         "price": 21.105,
-        "kama": 21.628,
-        "k_pct": -2.42,
-        "er": 0.4581,
-        "ao": 0.076118,
+        "kama": 21.556,
+        "k_pct": -2.09,
+        "er": 0.5067,
+        "ao": -0.009456,
         "ao_series": [
-          0.437456,
           0.346574,
           0.254456,
           0.155559,
-          0.076118
+          0.076118,
+          -0.009456
         ],
         "baffetti": 0,
         "rsi": 40.6,
-        "atr": 0.15813,
-        "trailing_stop": 20.789,
+        "atr": 0.14684,
+        "trailing_stop": 20.811,
         "trend": "GRIGIO",
         "mm_aligned": false,
-        "sar": 21.96022,
+        "sar": 21.91551,
         "sar_bullish": false,
         "sar_history": [
           true,
-          true,
+          false,
           false,
           false,
           false
         ],
-        "vi_plus": 0.5618,
-        "vi_minus": 0.9676,
+        "vi_plus": 0.6006,
+        "vi_minus": 1.1022,
         "vortex_bullish": false,
-        "rvi": 0.16808,
-        "rvi_signal": 0.215884,
+        "rvi": 0.139174,
+        "rvi_signal": 0.200786,
         "rvi_bullish": false,
-        "perf7": -3.61,
+        "perf7": -2.63,
         "perf30": -0.78,
         "rs_line": 0.493107,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
         "baff_rs": 0,
-        "score": 21.7,
-        "cross_bars": 7,
+        "score": 22.2,
+        "cross_bars": 8,
         "stress_flags": [
           "KAMA rotta",
           "SAR bear",
-          "AO calante"
+          "AO negativo"
         ],
         "stress_score": 3,
         "hurst_60": 0.543,
         "hurst_1y": 0.342,
-        "adx": 31.2,
+        "adx": 33.2,
         "regime": {
           "code": "RIBASSO",
           "label": "\ud83d\udcc9 Ribasso",
@@ -3482,8 +3333,8 @@
         "level_ts": null
       },
       {
-        "ticker": "EXS1.DE",
-        "name": "iShares Core DAX UCITS ETF",
+        "ticker": "XESD.DE",
+        "name": "Xtrackers Spain UCITS ETF",
         "price": 41.285,
         "kama": 41.415,
         "k_pct": -0.31,
@@ -3608,8 +3459,8 @@
         "level_ts": null
       },
       {
-        "ticker": "XCS3.DE",
-        "name": "Xtrackers MSCI Malaysia UCITS ETF",
+        "ticker": "MCHN.MI",
+        "name": "Invesco MSCI China All Shares UCITS ETF",
         "price": 26.85,
         "kama": 26.7,
         "k_pct": 0.56,
@@ -3669,24 +3520,24 @@
         "level_ts": null
       },
       {
-        "ticker": "FLXU.MI",
-        "name": "Franklin U.S. Equity UCITS ETF",
+        "ticker": "SAUS.MI",
+        "name": "iShares MSCI Australia UCITS ETF EUR",
         "price": 53.77,
         "kama": 53.846,
         "k_pct": -0.14,
         "er": 0.1551,
-        "ao": 0.269412,
+        "ao": 0.271971,
         "ao_series": [
           0.987882,
           0.764264,
           0.529117,
           0.347529,
-          0.269412
+          0.271971
         ],
         "baffetti": 0,
         "rsi": 53.4,
-        "atr": 0.67964,
-        "trailing_stop": 52.411,
+        "atr": 0.68178,
+        "trailing_stop": 52.406,
         "trend": "VERDE",
         "mm_aligned": false,
         "sar": 54.42987,
@@ -3698,11 +3549,11 @@
           false,
           false
         ],
-        "vi_plus": 0.6996,
-        "vi_minus": 0.9736,
+        "vi_plus": 0.7008,
+        "vi_minus": 0.9698,
         "vortex_bullish": false,
-        "rvi": -0.101308,
-        "rvi_signal": 0.024315,
+        "rvi": -0.101187,
+        "rvi_signal": 0.024335,
         "rvi_bullish": false,
         "perf7": -0.61,
         "perf30": 0.5,
@@ -3721,7 +3572,7 @@
         "stress_score": 4,
         "hurst_60": 0.531,
         "hurst_1y": 0.45,
-        "adx": 23.4,
+        "adx": 23.3,
         "regime": {
           "code": "TRANSIZIONE",
           "label": "\u26a0\ufe0f Transizione",
@@ -3795,24 +3646,24 @@
         "level_ts": null
       },
       {
-        "ticker": "XPQP.DE",
-        "name": "Xtrackers MSCI Philippines UCITS ETF",
+        "ticker": "C40.PA",
+        "name": "Amundi CAC 40 ESG UCITS ETF",
         "price": 139.56,
         "kama": 140.076,
         "k_pct": -0.37,
         "er": 0.1394,
-        "ao": 1.888885,
+        "ao": 1.897414,
         "ao_series": [
           4.241883,
           3.593471,
           2.803883,
           2.330177,
-          1.888885
+          1.897414
         ],
         "baffetti": 0,
         "rsi": 50.5,
-        "atr": 2.24716,
-        "trailing_stop": 135.066,
+        "atr": 2.25431,
+        "trailing_stop": 135.051,
         "trend": "GRIGIO",
         "mm_aligned": false,
         "sar": 144.75017,
@@ -3824,11 +3675,11 @@
           false,
           false
         ],
-        "vi_plus": 0.782,
-        "vi_minus": 0.9935,
+        "vi_plus": 0.7828,
+        "vi_minus": 0.9899,
         "vortex_bullish": false,
-        "rvi": -0.023948,
-        "rvi_signal": 0.057398,
+        "rvi": -0.023926,
+        "rvi_signal": 0.057402,
         "rvi_bullish": false,
         "perf7": -1.44,
         "perf30": 2.24,
@@ -3858,8 +3709,8 @@
         "level_ts": null
       },
       {
-        "ticker": "XDAX.DE",
-        "name": "Xtrackers DAX UCITS ETF",
+        "ticker": "EXS1.DE",
+        "name": "iShares Core DAX UCITS ETF",
         "price": 200.6,
         "kama": 197.853,
         "k_pct": 1.39,
@@ -3982,8 +3833,8 @@
         "level_ts": null
       },
       {
-        "ticker": "WSPE.MI",
-        "name": "WisdomTree S&P 500 EUR Daily Hedged",
+        "ticker": "LCCN.MI",
+        "name": "Amundi MSCI China UCITS ETF",
         "price": 18.654,
         "kama": 18.796,
         "k_pct": -0.75,
@@ -4045,8 +3896,8 @@
         "level_ts": null
       },
       {
-        "ticker": "FLXI.MI",
-        "name": "Franklin FTSE India UCITS ETF",
+        "ticker": "XPQP.DE",
+        "name": "Xtrackers MSCI Philippines UCITS ETF",
         "price": 1.223,
         "kama": 1.273,
         "k_pct": -3.92,
@@ -4107,8 +3958,8 @@
         "level_ts": null
       },
       {
-        "ticker": "XFVT.DE",
-        "name": "Xtrackers Vietnam Swap UCITS ETF",
+        "ticker": "FLXI.MI",
+        "name": "Franklin FTSE India UCITS ETF",
         "price": 34.92,
         "kama": 35.445,
         "k_pct": -1.48,
@@ -4236,7 +4087,8 @@
     "cooldowns": {
       "FLXU.MI": "2026-05-02",
       "FLXT.MI": "2026-05-02",
-      "WSPE.MI": "2026-05-02"
+      "WSPE.MI": "2026-05-02",
+      "TUR.PA": "2026-05-03"
     }
   },
   "new_area": {
@@ -4251,7 +4103,7 @@
         "stop_loss": 32.378,
         "trailing_stop": 33.471,
         "current_gain_pct": 2.77,
-        "days_held": 9,
+        "days_held": 10,
         "pre_alert": false,
         "target_hit": false,
         "score": 72.1,
@@ -4266,7 +4118,7 @@
         "rvi_bullish": false,
         "perf7": 2.83,
         "perf30": 8.41,
-        "weight_pct": 32.3,
+        "weight_pct": 32.2,
         "events": [
           {
             "ts": "2026-04-21 09:00 CET",
@@ -4300,7 +4152,7 @@
         "stop_loss": 15.008,
         "trailing_stop": 15.537,
         "current_gain_pct": 2.56,
-        "days_held": 9,
+        "days_held": 10,
         "pre_alert": false,
         "target_hit": false,
         "score": 66.7,
@@ -4383,7 +4235,7 @@
           }
         ],
         "warning": null,
-        "days_in_buy1": 5,
+        "days_in_buy1": 6,
         "hurst": 0.386,
         "adx": 54.7,
         "regime": {
@@ -4400,17 +4252,17 @@
         "name": "Neuberger Berman Sustainable Global Equity",
         "entry_date": "2026-04-22",
         "entry_price": 26.795,
-        "current_price": 26.72,
+        "current_price": 26.805,
         "target_price": 28.135,
         "stop_loss": 26.185,
         "trailing_stop": 26.356,
-        "current_gain_pct": -0.28,
-        "days_held": 8,
+        "current_gain_pct": 0.04,
+        "days_held": 9,
         "pre_alert": false,
         "target_hit": false,
-        "score": 30.4,
+        "score": 30.8,
         "peak_score": 45.4,
-        "er": 0.1056,
+        "er": 0.0769,
         "current_level": "EXIT2",
         "size_pct": 35,
         "signal": "LONG_FORTE",
@@ -4418,9 +4270,9 @@
         "sar_bullish": false,
         "vortex_bullish": true,
         "rvi_bullish": false,
-        "perf7": -0.87,
-        "perf30": 2.3,
-        "weight_pct": 13.6,
+        "perf7": 0.04,
+        "perf30": 2.43,
+        "weight_pct": 13.8,
         "events": [
           {
             "ts": "2026-04-28 09:28 CET",
@@ -4442,15 +4294,15 @@
         "warning": null,
         "days_in_buy1": 1,
         "hurst": 0.331,
-        "adx": 37.5,
+        "adx": 38.4,
         "regime": {
           "code": "SLANCIO",
           "label": "\ud83d\ude80 Slancio",
           "color": "#1a7f37",
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
-        "hurst_60": 0.614,
-        "hurst_1y": 0.332
+        "hurst_60": 0.62,
+        "hurst_1y": 0.333
       },
       {
         "ticker": "WSPE.MI",
@@ -4463,8 +4315,8 @@
         "stop_loss": 26.322,
         "trailing_stop": 26.441,
         "current_gain_pct": 0.24,
-        "days_held": 2,
-        "days_in_buy1": 5,
+        "days_held": 3,
+        "days_in_buy1": 6,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 70,
@@ -6092,6 +5944,69 @@
         "level_ts": null
       },
       {
+        "ticker": "NTSG.MI",
+        "name": "Neuberger Berman Sustainable Global Equity",
+        "price": 26.805,
+        "kama": 26.743,
+        "k_pct": 0.23,
+        "er": 0.0769,
+        "ao": 0.703265,
+        "ao_series": [
+          0.856441,
+          0.801162,
+          0.77275,
+          0.741765,
+          0.703265
+        ],
+        "baffetti": 0,
+        "rsi": 61.7,
+        "atr": 0.25455,
+        "trailing_stop": 26.296,
+        "trend": "VERDE",
+        "mm_aligned": true,
+        "sar": 27.23027,
+        "sar_bullish": false,
+        "sar_history": [
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "vi_plus": 1.11,
+        "vi_minus": 0.7847,
+        "vortex_bullish": true,
+        "rvi": -0.124045,
+        "rvi_signal": -0.017924,
+        "rvi_bullish": false,
+        "perf7": 0.04,
+        "perf30": 2.43,
+        "rs_line": 0.626285,
+        "rs_above_kama": false,
+        "trend_rs": "ROSSO",
+        "baff_rs": 0,
+        "score": 30.8,
+        "cross_bars": 1,
+        "stress_flags": [
+          "SAR bear",
+          "AO calante",
+          "ER<0.4",
+          "Score -15pt dal picco"
+        ],
+        "stress_score": 4,
+        "hurst_60": 0.62,
+        "hurst_1y": 0.333,
+        "adx": 38.4,
+        "regime": {
+          "code": "SLANCIO",
+          "label": "\ud83d\ude80 Slancio",
+          "color": "#1a7f37",
+          "desc": "Trend rialzista forte con memoria recente confermata"
+        },
+        "buy_level": "EXIT2",
+        "level_ts": "2026-04-29 10:17 CET"
+      },
+      {
         "ticker": "CAHEUA.MI",
         "name": "UBS MSCI Canada UCITS ETF hEUR Acc",
         "price": 38.615,
@@ -6153,70 +6068,6 @@
         },
         "buy_level": null,
         "level_ts": null
-      },
-      {
-        "ticker": "NTSG.MI",
-        "name": "Neuberger Berman Sustainable Global Equity",
-        "price": 26.72,
-        "kama": 26.742,
-        "k_pct": -0.08,
-        "er": 0.1056,
-        "ao": 0.741765,
-        "ao_series": [
-          0.843117,
-          0.856441,
-          0.801162,
-          0.77275,
-          0.741765
-        ],
-        "baffetti": 0,
-        "rsi": 59.8,
-        "atr": 0.25798,
-        "trailing_stop": 26.204,
-        "trend": "VERDE",
-        "mm_aligned": true,
-        "sar": 27.26603,
-        "sar_bullish": false,
-        "sar_history": [
-          true,
-          true,
-          false,
-          false,
-          false
-        ],
-        "vi_plus": 1.0973,
-        "vi_minus": 0.7608,
-        "vortex_bullish": true,
-        "rvi": -0.064726,
-        "rvi_signal": 0.046131,
-        "rvi_bullish": false,
-        "perf7": -0.87,
-        "perf30": 2.3,
-        "rs_line": 0.624299,
-        "rs_above_kama": false,
-        "trend_rs": "ROSSO",
-        "baff_rs": 0,
-        "score": 30.4,
-        "cross_bars": 1,
-        "stress_flags": [
-          "KAMA rotta",
-          "SAR bear",
-          "AO calante",
-          "ER<0.4",
-          "Score -15pt dal picco"
-        ],
-        "stress_score": 5,
-        "hurst_60": 0.614,
-        "hurst_1y": 0.332,
-        "adx": 37.5,
-        "regime": {
-          "code": "SLANCIO",
-          "label": "\ud83d\ude80 Slancio",
-          "color": "#1a7f37",
-          "desc": "Trend rialzista forte con memoria recente confermata"
-        },
-        "buy_level": "EXIT2",
-        "level_ts": "2026-04-29 10:17 CET"
       },
       {
         "ticker": "IJPE.MI",
@@ -6900,9 +6751,7 @@
         "level_ts": null
       }
     ],
-    "cooldowns": {
-      "CSCA.MI": "2026-05-01"
-    }
+    "cooldowns": {}
   },
   "xeon": {
     "ticker": "XEON.MI",
