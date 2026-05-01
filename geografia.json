@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-01T11:05:48.953373+02:00",
-  "updated_display": "01/05/2026 11:05 CET",
-  "vix": 17.09,
+  "updated_at": "2026-05-01T13:15:36.331847+02:00",
+  "updated_display": "01/05/2026 13:15 CET",
+  "vix": 17.07,
   "vix_regime": "NORMALE",
   "paesi": {
     "positions": [
@@ -232,72 +232,7 @@
         "hurst_1y": 0.285
       }
     ],
-    "exited_today": [
-      {
-        "ticker": "TUR.PA",
-        "name": "Amundi MSCI Turkey UCITS ETF",
-        "entry_date": "2026-04-30",
-        "entry_ts": "2026-04-30 20:17 CET",
-        "entry_price": 50.82,
-        "current_price": 50.82,
-        "target_price": 53.361,
-        "stop_loss": 48.944,
-        "trailing_stop": 48.944,
-        "current_gain_pct": 0.0,
-        "days_held": 0,
-        "days_in_buy1": 0,
-        "target_hit": false,
-        "current_level": "BUY2",
-        "size_pct": 70,
-        "peak_score": 75.8,
-        "score": 75.8,
-        "er": 0.7651,
-        "trend": "VERDE",
-        "sar_bullish": true,
-        "vortex_bullish": true,
-        "rvi_bullish": false,
-        "rs_above_kama": true,
-        "trend_rs": "VERDE",
-        "baff_rs": 3,
-        "perf7": 6.49,
-        "perf30": 18.89,
-        "hurst_60": 0.591,
-        "hurst_1y": 0.371,
-        "adx": 59.4,
-        "regime": {
-          "code": "SLANCIO",
-          "label": "\ud83d\ude80 Slancio",
-          "color": "#1a7f37",
-          "desc": "Trend rialzista forte con memoria recente confermata"
-        },
-        "events": [
-          {
-            "ts": "2026-04-30 20:17 CET",
-            "level": "BUY2",
-            "reason": "Score 75.8\u226565 \u00b7 AO +5.9317>0 \u00b7 ER 0.77\u22650.5 \u00b7 SAR bull \u00b7 Trend VERDE",
-            "size_pct": 70,
-            "score": 75.8,
-            "er": 0.7651
-          },
-          {
-            "ts": "2026-05-01 11:06 CET",
-            "level": "EXIT3",
-            "reason": "Score 30.8<35 (soglia BUY2) \u2014 uscita totale",
-            "size_pct": 100,
-            "score": 30.8,
-            "er": 0.0783
-          }
-        ],
-        "warning": null,
-        "weight_pct": 26.8,
-        "exit_level": "EXIT3",
-        "exit_reason": "Score 30.8<35 (soglia BUY2) \u2014 uscita totale",
-        "exit_price": 51.706,
-        "final_gain_pct": 1.74,
-        "exit_date": "2026-05-01",
-        "exit_ts": "2026-05-01 11:06 CET"
-      }
-    ],
+    "exited_today": [],
     "use_xeon": false,
     "xeon_price": 149.031,
     "watchlist": [
@@ -357,7 +292,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-01 11:06 CET"
+        "level_ts": "2026-05-01 13:15 CET"
       },
       {
         "ticker": "QTOP.MI",
@@ -949,7 +884,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-01 11:06 CET"
+        "level_ts": "2026-05-01 13:15 CET"
       },
       {
         "ticker": "WNAS.MI",
@@ -4118,7 +4053,7 @@
         "rvi_bullish": false,
         "perf7": 2.83,
         "perf30": 8.41,
-        "weight_pct": 32.2,
+        "weight_pct": 70.1,
         "events": [
           {
             "ts": "2026-04-21 09:00 CET",
@@ -4142,6 +4077,65 @@
         "hurst_60": 0.631,
         "hurst_1y": 0.285
       },
+      {
+        "ticker": "NTSG.MI",
+        "name": "Neuberger Berman Sustainable Global Equity",
+        "entry_date": "2026-04-22",
+        "entry_price": 26.795,
+        "current_price": 26.805,
+        "target_price": 28.135,
+        "stop_loss": 26.185,
+        "trailing_stop": 26.356,
+        "current_gain_pct": 0.04,
+        "days_held": 9,
+        "pre_alert": false,
+        "target_hit": false,
+        "score": 30.8,
+        "peak_score": 45.4,
+        "er": 0.0769,
+        "current_level": "EXIT2",
+        "size_pct": 35,
+        "signal": "LONG_FORTE",
+        "trend": "VERDE",
+        "sar_bullish": false,
+        "vortex_bullish": true,
+        "rvi_bullish": false,
+        "perf7": 0.04,
+        "perf30": 2.43,
+        "weight_pct": 29.9,
+        "events": [
+          {
+            "ts": "2026-04-28 09:28 CET",
+            "level": "EXIT1",
+            "reason": "SAR girato sopra prezzo",
+            "size_pct": 40,
+            "score": 45.4,
+            "er": 0.5537
+          },
+          {
+            "ts": "2026-04-29 10:17 CET",
+            "level": "EXIT2",
+            "reason": "Score -11pt (45\u219234) \u00b7 ER 0.38<0.4",
+            "size_pct": 75,
+            "score": 34.4,
+            "er": 0.3832
+          }
+        ],
+        "warning": null,
+        "days_in_buy1": 1,
+        "hurst": 0.331,
+        "adx": 38.4,
+        "regime": {
+          "code": "SLANCIO",
+          "label": "\ud83d\ude80 Slancio",
+          "color": "#1a7f37",
+          "desc": "Trend rialzista forte con memoria recente confermata"
+        },
+        "hurst_60": 0.62,
+        "hurst_1y": 0.333
+      }
+    ],
+    "exited_today": [
       {
         "ticker": "NQSE.DE",
         "name": "iShares NASDAQ 100 UCITS ETF",
@@ -4232,6 +4226,14 @@
             "size_pct": 75,
             "score": 66.5,
             "er": 0.4513
+          },
+          {
+            "ts": "2026-05-01 13:15 CET",
+            "level": "EXIT1b",
+            "reason": "Time stop: 7gg in BUY1 senza upgrade a BUY2",
+            "size_pct": 100,
+            "score": 66.7,
+            "er": 0.4552
           }
         ],
         "warning": null,
@@ -4245,64 +4247,13 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "hurst_60": 0.635,
-        "hurst_1y": 0.388
-      },
-      {
-        "ticker": "NTSG.MI",
-        "name": "Neuberger Berman Sustainable Global Equity",
-        "entry_date": "2026-04-22",
-        "entry_price": 26.795,
-        "current_price": 26.805,
-        "target_price": 28.135,
-        "stop_loss": 26.185,
-        "trailing_stop": 26.356,
-        "current_gain_pct": 0.04,
-        "days_held": 9,
-        "pre_alert": false,
-        "target_hit": false,
-        "score": 30.8,
-        "peak_score": 45.4,
-        "er": 0.0769,
-        "current_level": "EXIT2",
-        "size_pct": 35,
-        "signal": "LONG_FORTE",
-        "trend": "VERDE",
-        "sar_bullish": false,
-        "vortex_bullish": true,
-        "rvi_bullish": false,
-        "perf7": 0.04,
-        "perf30": 2.43,
-        "weight_pct": 13.8,
-        "events": [
-          {
-            "ts": "2026-04-28 09:28 CET",
-            "level": "EXIT1",
-            "reason": "SAR girato sopra prezzo",
-            "size_pct": 40,
-            "score": 45.4,
-            "er": 0.5537
-          },
-          {
-            "ts": "2026-04-29 10:17 CET",
-            "level": "EXIT2",
-            "reason": "Score -11pt (45\u219234) \u00b7 ER 0.38<0.4",
-            "size_pct": 75,
-            "score": 34.4,
-            "er": 0.3832
-          }
-        ],
-        "warning": null,
-        "days_in_buy1": 1,
-        "hurst": 0.331,
-        "adx": 38.4,
-        "regime": {
-          "code": "SLANCIO",
-          "label": "\ud83d\ude80 Slancio",
-          "color": "#1a7f37",
-          "desc": "Trend rialzista forte con memoria recente confermata"
-        },
-        "hurst_60": 0.62,
-        "hurst_1y": 0.333
+        "hurst_1y": 0.388,
+        "exit_level": "EXIT1b",
+        "exit_reason": "Time stop: 7gg in BUY1 senza upgrade a BUY2",
+        "exit_price": 15.886,
+        "final_gain_pct": 2.56,
+        "exit_date": "2026-05-01",
+        "exit_ts": "2026-05-01 13:15 CET"
       },
       {
         "ticker": "WSPE.MI",
@@ -4348,6 +4299,14 @@
             "size_pct": 75,
             "score": 53.5,
             "er": 0.6944
+          },
+          {
+            "ts": "2026-05-01 13:15 CET",
+            "level": "EXIT1b",
+            "reason": "Time stop: 7gg in BUY1 senza upgrade a BUY2",
+            "size_pct": 100,
+            "score": 54.3,
+            "er": 0.6835
           }
         ],
         "warning": null,
@@ -4361,13 +4320,136 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "hurst_60": 0.634,
-        "hurst_1y": 0.412
+        "hurst_1y": 0.412,
+        "exit_level": "EXIT1b",
+        "exit_reason": "Time stop: 7gg in BUY1 senza upgrade a BUY2",
+        "exit_price": 26.84,
+        "final_gain_pct": 0.24,
+        "exit_date": "2026-05-01",
+        "exit_ts": "2026-05-01 13:15 CET"
       }
     ],
-    "exited_today": [],
     "use_xeon": false,
     "xeon_price": 149.031,
     "watchlist": [
+      {
+        "ticker": "NQSE.DE",
+        "name": "iShares NASDAQ 100 UCITS ETF",
+        "price": 15.886,
+        "kama": 15.734,
+        "k_pct": 0.97,
+        "er": 0.4552,
+        "ao": 1.102,
+        "ao_series": [
+          1.041953,
+          1.084171,
+          1.089953,
+          1.097765,
+          1.102
+        ],
+        "baffetti": 18,
+        "rsi": 71.1,
+        "atr": 0.21157,
+        "trailing_stop": 15.463,
+        "trend": "VERDE",
+        "mm_aligned": true,
+        "sar": 15.5637,
+        "sar_bullish": true,
+        "sar_history": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "vi_plus": 1.2748,
+        "vi_minus": 0.5307,
+        "vortex_bullish": true,
+        "rvi": 0.232243,
+        "rvi_signal": 0.385929,
+        "rvi_bullish": false,
+        "perf7": 2.56,
+        "perf30": 9.42,
+        "rs_line": 0.371168,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "baff_rs": 0,
+        "score": 66.7,
+        "cross_bars": 2,
+        "stress_flags": [],
+        "stress_score": 0,
+        "hurst_60": 0.635,
+        "hurst_1y": 0.388,
+        "adx": 54.7,
+        "regime": {
+          "code": "SLANCIO",
+          "label": "\ud83d\ude80 Slancio",
+          "color": "#1a7f37",
+          "desc": "Trend rialzista forte con memoria recente confermata"
+        },
+        "buy_level": "BUY1",
+        "level_ts": "2026-05-01 13:15 CET"
+      },
+      {
+        "ticker": "WSPE.MI",
+        "name": "WisdomTree S&P 500 EUR Hedged",
+        "price": 26.84,
+        "kama": 26.715,
+        "k_pct": 0.47,
+        "er": 0.6835,
+        "ao": 1.233397,
+        "ao_series": [
+          1.186162,
+          1.245338,
+          1.294662,
+          1.25178,
+          1.233397
+        ],
+        "baffetti": 0,
+        "rsi": 73.5,
+        "atr": 0.19966,
+        "trailing_stop": 26.441,
+        "trend": "VERDE",
+        "mm_aligned": false,
+        "sar": 26.48367,
+        "sar_bullish": true,
+        "sar_history": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "vi_plus": 1.1129,
+        "vi_minus": 0.8217,
+        "vortex_bullish": true,
+        "rvi": -0.465517,
+        "rvi_signal": -0.551599,
+        "rvi_bullish": true,
+        "perf7": 1.8,
+        "perf30": 6.19,
+        "rs_line": 0.627103,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "baff_rs": 0,
+        "score": 54.3,
+        "cross_bars": 1,
+        "stress_flags": [
+          "AO calante"
+        ],
+        "stress_score": 1,
+        "hurst_60": 0.634,
+        "hurst_1y": 0.412,
+        "adx": 54.7,
+        "regime": {
+          "code": "SLANCIO",
+          "label": "\ud83d\ude80 Slancio",
+          "color": "#1a7f37",
+          "desc": "Trend rialzista forte con memoria recente confermata"
+        },
+        "buy_level": null,
+        "level_ts": null
+      },
       {
         "ticker": "IQQF.DE",
         "name": "iShares MSCI AC Far East ex-Japan UCITS ETF",
@@ -4849,129 +4931,6 @@
         },
         "buy_level": null,
         "level_ts": null
-      },
-      {
-        "ticker": "LTAM.MI",
-        "name": "iShares MSCI EM Latin America UCITS ETF",
-        "price": 18.88,
-        "kama": 19.065,
-        "k_pct": -0.97,
-        "er": 0.7869,
-        "ao": 0.210691,
-        "ao_series": [
-          0.816609,
-          0.713015,
-          0.526797,
-          0.372868,
-          0.210691
-        ],
-        "baffetti": 0,
-        "rsi": 45.0,
-        "atr": 0.31522,
-        "trailing_stop": 18.25,
-        "trend": "GRIGIO",
-        "mm_aligned": false,
-        "sar": 19.70387,
-        "sar_bullish": false,
-        "sar_history": [
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "vi_plus": 0.6454,
-        "vi_minus": 1.185,
-        "vortex_bullish": false,
-        "rvi": -0.242597,
-        "rvi_signal": -0.177815,
-        "rvi_bullish": false,
-        "perf7": -4.25,
-        "perf30": 3.62,
-        "rs_line": 0.441121,
-        "rs_above_kama": false,
-        "trend_rs": "GRIGIO",
-        "baff_rs": 0,
-        "score": 33.2,
-        "cross_bars": 5,
-        "stress_flags": [
-          "KAMA rotta",
-          "SAR bear",
-          "AO calante"
-        ],
-        "stress_score": 3,
-        "hurst_60": 0.524,
-        "hurst_1y": 0.472,
-        "adx": 31.1,
-        "regime": {
-          "code": "RIBASSO",
-          "label": "\ud83d\udcc9 Ribasso",
-          "color": "#cf222e",
-          "desc": "Movimento ribassista in corso"
-        },
-        "buy_level": null,
-        "level_ts": null
-      },
-      {
-        "ticker": "SEMA.MI",
-        "name": "iShares MSCI EM UCITS ETF EUR Acc",
-        "price": 51.68,
-        "kama": 51.146,
-        "k_pct": 1.04,
-        "er": 0.2139,
-        "ao": 2.757191,
-        "ao_series": [
-          2.859971,
-          2.91922,
-          2.821529,
-          2.783706,
-          2.757191
-        ],
-        "baffetti": 0,
-        "rsi": 63.1,
-        "atr": 0.7833,
-        "trailing_stop": 50.113,
-        "trend": "VERDE",
-        "mm_aligned": true,
-        "sar": 51.04997,
-        "sar_bullish": true,
-        "sar_history": [
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "vi_plus": 1.0457,
-        "vi_minus": 0.6998,
-        "vortex_bullish": true,
-        "rvi": 0.178785,
-        "rvi_signal": 0.306044,
-        "rvi_bullish": false,
-        "perf7": 1.21,
-        "perf30": 6.09,
-        "rs_line": 1.207477,
-        "rs_above_kama": true,
-        "trend_rs": "VERDE",
-        "baff_rs": 0,
-        "score": 33.2,
-        "cross_bars": 17,
-        "stress_flags": [
-          "AO calante",
-          "ER<0.4"
-        ],
-        "stress_score": 2,
-        "hurst_60": 0.547,
-        "hurst_1y": 0.392,
-        "adx": 39.5,
-        "regime": {
-          "code": "SALITA",
-          "label": "\ud83d\udcc8 Salita",
-          "color": "#2ea043",
-          "desc": "Movimento rialzista in corso"
-        },
-        "buy_level": null,
-        "level_ts": null
       }
     ],
     "all": [
@@ -5091,7 +5050,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY1",
-        "level_ts": "2026-04-30 11:22 CET"
+        "level_ts": "2026-05-01 13:15 CET"
       },
       {
         "ticker": "WSPE.MI",
@@ -5138,10 +5097,9 @@
         "score": 54.3,
         "cross_bars": 1,
         "stress_flags": [
-          "AO calante",
-          "Score -24pt dal picco"
+          "AO calante"
         ],
-        "stress_score": 2,
+        "stress_score": 1,
         "hurst_60": 0.634,
         "hurst_1y": 0.412,
         "adx": 54.7,
@@ -5151,8 +5109,8 @@
           "color": "#1a7f37",
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
-        "buy_level": "BUY1",
-        "level_ts": "2026-04-30 11:22 CET"
+        "buy_level": null,
+        "level_ts": null
       },
       {
         "ticker": "IQQF.DE",
@@ -6751,7 +6709,10 @@
         "level_ts": null
       }
     ],
-    "cooldowns": {}
+    "cooldowns": {
+      "NQSE.DE": "2026-05-03",
+      "WSPE.MI": "2026-05-03"
+    }
   },
   "xeon": {
     "ticker": "XEON.MI",
