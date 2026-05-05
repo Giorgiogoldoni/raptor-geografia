@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-05T18:48:03.048228+02:00",
-  "updated_display": "05/05/2026 18:48 CET",
-  "vix": 17.45,
+  "updated_at": "2026-05-05T20:17:31.000642+02:00",
+  "updated_display": "05/05/2026 20:17 CET",
+  "vix": 17.25,
   "vix_regime": "NORMALE",
   "paesi": {
     "positions": [
@@ -293,7 +293,7 @@
         "trailing_stop": 39.475,
         "current_gain_pct": 0.19,
         "days_held": 0,
-        "days_in_buy1": 3,
+        "days_in_buy1": 4,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -334,7 +334,7 @@
     ],
     "exited_today": [],
     "use_xeon": false,
-    "xeon_price": null,
+    "xeon_price": 149.044,
     "watchlist": [
       {
         "ticker": "QTOP.MI",
@@ -392,7 +392,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-05 18:48 CET"
+        "level_ts": "2026-05-05 20:17 CET"
       },
       {
         "ticker": "FLXU.MI",
@@ -450,7 +450,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-05 18:48 CET"
+        "level_ts": "2026-05-05 20:17 CET"
       },
       {
         "ticker": "SPY5.MI",
@@ -740,7 +740,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY1",
-        "level_ts": "2026-05-05 18:48 CET"
+        "level_ts": "2026-05-05 20:17 CET"
       },
       {
         "ticker": "XCS3.DE",
@@ -1148,7 +1148,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-05 18:48 CET"
+        "level_ts": "2026-05-05 20:17 CET"
       },
       {
         "ticker": "FLXU.MI",
@@ -1206,7 +1206,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-05 18:48 CET"
+        "level_ts": "2026-05-05 20:17 CET"
       },
       {
         "ticker": "SPY5.MI",
@@ -1554,7 +1554,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY1",
-        "level_ts": "2026-05-05 18:48 CET"
+        "level_ts": "2026-05-05 20:17 CET"
       },
       {
         "ticker": "XCS3.DE",
@@ -4261,7 +4261,7 @@
         "trailing_stop": 23.01,
         "current_gain_pct": -0.7,
         "days_held": 1,
-        "days_in_buy1": 1,
+        "days_in_buy1": 2,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -4335,7 +4335,7 @@
         "trailing_stop": 98.073,
         "current_gain_pct": 0.33,
         "days_held": 0,
-        "days_in_buy1": 3,
+        "days_in_buy1": 4,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -4426,7 +4426,7 @@
     ],
     "exited_today": [],
     "use_xeon": false,
-    "xeon_price": null,
+    "xeon_price": 149.044,
     "watchlist": [
       {
         "ticker": "CSEMAS.MI",
@@ -4484,7 +4484,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-05 18:48 CET"
+        "level_ts": "2026-05-05 20:17 CET"
       },
       {
         "ticker": "SEMA.MI",
@@ -4658,7 +4658,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY1",
-        "level_ts": "2026-05-05 18:48 CET"
+        "level_ts": "2026-05-05 20:17 CET"
       },
       {
         "ticker": "SJPA.MI",
@@ -5259,7 +5259,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-05 18:48 CET"
+        "level_ts": "2026-05-05 20:17 CET"
       },
       {
         "ticker": "WWRD.MI",
@@ -5551,7 +5551,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY1",
-        "level_ts": "2026-05-05 18:48 CET"
+        "level_ts": "2026-05-05 20:17 CET"
       },
       {
         "ticker": "SJPA.MI",
@@ -6788,5 +6788,62 @@
       "WSPE.MI": "2026-05-07"
     }
   },
-  "xeon": null
+  "xeon": {
+    "ticker": "XEON.MI",
+    "name": "Xtrackers EUR Overnight Rate Swap UCITS ETF",
+    "price": 149.044,
+    "kama": 149.023,
+    "k_pct": 0.01,
+    "er": 0.9104,
+    "ao": 0.177107,
+    "ao_series": [
+      0.170645,
+      0.174661,
+      0.174843,
+      0.176825,
+      0.177107
+    ],
+    "baffetti": 7,
+    "rsi": 94.1,
+    "atr": 0.03534,
+    "trailing_stop": 148.974,
+    "trend": "VERDE",
+    "mm_aligned": true,
+    "sar": 148.9805,
+    "sar_bullish": true,
+    "sar_history": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "vi_plus": 1.3232,
+    "vi_minus": 0.6436,
+    "vortex_bullish": true,
+    "rvi": 0.172541,
+    "rvi_signal": 0.188998,
+    "rvi_bullish": false,
+    "perf7": 0.06,
+    "perf30": 0.26,
+    "rs_line": 3.449301,
+    "rs_above_kama": false,
+    "trend_rs": "ROSSO",
+    "baff_rs": 0,
+    "score": 67.5,
+    "cross_bars": 41,
+    "stress_flags": [],
+    "stress_score": 0,
+    "hurst_60": 0.1,
+    "hurst_1y": 0.166,
+    "adx": 86.7,
+    "regime": {
+      "code": "SALITA",
+      "label": "\ud83d\udcc8 Salita",
+      "color": "#2ea043",
+      "desc": "Movimento rialzista in corso"
+    },
+    "buy_level": null,
+    "level_ts": null
+  }
 }
