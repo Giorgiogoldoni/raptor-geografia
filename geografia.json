@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-06T18:49:44.499347+02:00",
-  "updated_display": "06/05/2026 18:49 CET",
-  "vix": 17.23,
+  "updated_at": "2026-05-06T20:25:19.185318+02:00",
+  "updated_display": "06/05/2026 20:25 CET",
+  "vix": 16.99,
   "vix_regime": "NORMALE",
   "paesi": {
     "positions": [
@@ -367,7 +367,7 @@
         "trailing_stop": 116.878,
         "current_gain_pct": 0.6,
         "days_held": 0,
-        "days_in_buy1": 4,
+        "days_in_buy1": 5,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -417,7 +417,7 @@
         "trailing_stop": 34.384,
         "current_gain_pct": 0.0,
         "days_held": 0,
-        "days_in_buy1": 1,
+        "days_in_buy1": 2,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -516,7 +516,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-06 18:50 CET"
+        "level_ts": "2026-05-06 20:25 CET"
       },
       {
         "ticker": "FLXU.MI",
@@ -574,7 +574,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-06 18:50 CET"
+        "level_ts": "2026-05-06 20:25 CET"
       },
       {
         "ticker": "SPY5.MI",
@@ -1274,7 +1274,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-06 18:50 CET"
+        "level_ts": "2026-05-06 20:25 CET"
       },
       {
         "ticker": "WRD.PA",
@@ -1390,7 +1390,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-06 18:50 CET"
+        "level_ts": "2026-05-06 20:25 CET"
       },
       {
         "ticker": "SPY5.MI",
@@ -4524,7 +4524,7 @@
         "trailing_stop": 112.067,
         "current_gain_pct": 0.44,
         "days_held": 0,
-        "days_in_buy1": 4,
+        "days_in_buy1": 5,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -4574,7 +4574,7 @@
         "trailing_stop": 129.933,
         "current_gain_pct": 0.1,
         "days_held": 0,
-        "days_in_buy1": 4,
+        "days_in_buy1": 5,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -4624,7 +4624,7 @@
         "trailing_stop": 64.262,
         "current_gain_pct": 0.0,
         "days_held": 0,
-        "days_in_buy1": 1,
+        "days_in_buy1": 2,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -4723,7 +4723,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-06 18:50 CET"
+        "level_ts": "2026-05-06 20:25 CET"
       },
       {
         "ticker": "SEMA.MI",
@@ -4781,7 +4781,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-06 18:50 CET"
+        "level_ts": "2026-05-06 20:25 CET"
       },
       {
         "ticker": "IUSE.MI",
@@ -5487,7 +5487,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-06 18:50 CET"
+        "level_ts": "2026-05-06 20:25 CET"
       },
       {
         "ticker": "WWRD.MI",
@@ -5721,7 +5721,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-06 18:50 CET"
+        "level_ts": "2026-05-06 20:25 CET"
       },
       {
         "ticker": "IUSE.MI",
