@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-07T18:59:20.359178+02:00",
-  "updated_display": "07/05/2026 18:59 CET",
-  "vix": 17.37,
+  "updated_at": "2026-05-07T20:54:28.636326+02:00",
+  "updated_display": "07/05/2026 20:54 CET",
+  "vix": 17.14,
   "vix_regime": "NORMALE",
   "paesi": {
     "positions": [
@@ -30,7 +30,7 @@
         "rvi_bullish": true,
         "perf7": 2.88,
         "perf30": 13.57,
-        "weight_pct": 6.4,
+        "weight_pct": 7.0,
         "events": [
           {
             "ts": "2026-04-08 09:00 CET",
@@ -86,7 +86,7 @@
         "rvi_bullish": true,
         "perf7": 0.65,
         "perf30": 2.1,
-        "weight_pct": 4.7,
+        "weight_pct": 5.1,
         "events": [
           {
             "ts": "2026-04-08 09:00 CET",
@@ -142,7 +142,7 @@
         "rvi_bullish": true,
         "perf7": 5.42,
         "perf30": 17.22,
-        "weight_pct": 12.4,
+        "weight_pct": 13.5,
         "events": [
           {
             "ts": "2026-04-16 09:00 CET",
@@ -215,7 +215,7 @@
         "rvi_bullish": false,
         "perf7": 5.6,
         "perf30": 17.04,
-        "weight_pct": 11.6,
+        "weight_pct": 12.7,
         "events": [
           {
             "ts": "2026-04-21 09:00 CET",
@@ -287,7 +287,7 @@
           }
         ],
         "warning": null,
-        "weight_pct": 11.7
+        "weight_pct": 12.8
       },
       {
         "ticker": "WRD.PA",
@@ -361,8 +361,210 @@
           }
         ],
         "warning": null,
-        "weight_pct": 11.0
+        "weight_pct": 12.0
       },
+      {
+        "ticker": "IMIB.MI",
+        "name": "iShares FTSE MIB UCITS ETF",
+        "entry_date": "2026-05-07",
+        "entry_ts": "2026-05-07 11:42 CET",
+        "entry_price": 30.335,
+        "current_price": 30.12,
+        "target_price": 31.852,
+        "stop_loss": 29.479,
+        "trailing_stop": 29.479,
+        "current_gain_pct": -0.71,
+        "days_held": 0,
+        "days_in_buy1": 5,
+        "target_hit": false,
+        "current_level": "BUY1",
+        "size_pct": 35,
+        "peak_score": 61.8,
+        "score": 57.8,
+        "er": 0.3048,
+        "trend": "VERDE",
+        "sar_bullish": true,
+        "vortex_bullish": true,
+        "rvi_bullish": true,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "baff_rs": 0,
+        "perf7": 3.47,
+        "perf30": 14.59,
+        "hurst_60": 0.546,
+        "hurst_1y": 0.327,
+        "adx": 30.4,
+        "regime": {
+          "code": "SALITA",
+          "label": "\ud83d\udcc8 Salita",
+          "color": "#2ea043",
+          "desc": "Movimento rialzista in corso"
+        },
+        "events": [
+          {
+            "ts": "2026-05-07 11:42 CET",
+            "level": "BUY1",
+            "reason": "KAMA cross \u2191 \u00b7 ER 0.40>0.4 \u00b7 SAR bull \u00b7 AO crescente",
+            "size_pct": 35,
+            "score": 61.8,
+            "er": 0.4043
+          }
+        ],
+        "warning": null,
+        "weight_pct": 9.4
+      },
+      {
+        "ticker": "SPXJ.MI",
+        "name": "iShares MSCI Pacific ex-Japan UCITS ETF",
+        "entry_date": "2026-05-07",
+        "entry_ts": "2026-05-07 11:42 CET",
+        "entry_price": 48.62,
+        "current_price": 48.15,
+        "target_price": 51.051,
+        "stop_loss": 47.891,
+        "trailing_stop": 47.891,
+        "current_gain_pct": -0.97,
+        "days_held": 0,
+        "days_in_buy1": 5,
+        "target_hit": false,
+        "current_level": "BUY1",
+        "size_pct": 35,
+        "peak_score": 59.1,
+        "score": 52.4,
+        "er": 0.2468,
+        "trend": "VERDE",
+        "sar_bullish": true,
+        "vortex_bullish": true,
+        "rvi_bullish": false,
+        "rs_above_kama": true,
+        "trend_rs": "ROSSO",
+        "baff_rs": 3,
+        "perf7": 2.27,
+        "perf30": 5.14,
+        "hurst_60": 0.425,
+        "hurst_1y": 0.377,
+        "adx": 24.3,
+        "regime": {
+          "code": "TRANSIZIONE",
+          "label": "\u26a0\ufe0f Transizione",
+          "color": "#bc4c00",
+          "desc": "Zona grigia, segnale debole"
+        },
+        "events": [
+          {
+            "ts": "2026-05-07 11:42 CET",
+            "level": "BUY1",
+            "reason": "KAMA cross \u2191 \u00b7 ER 0.41>0.4 \u00b7 SAR bull \u00b7 AO crescente",
+            "size_pct": 35,
+            "score": 59.1,
+            "er": 0.4079
+          }
+        ],
+        "warning": null,
+        "weight_pct": 8.5
+      },
+      {
+        "ticker": "CSMIB.MI",
+        "name": "iShares FTSE MIB ETF EUR Acc",
+        "entry_date": "2026-05-07",
+        "entry_ts": "2026-05-07 13:56 CET",
+        "entry_price": 242.75,
+        "current_price": 240.7,
+        "target_price": 254.888,
+        "stop_loss": 235.488,
+        "trailing_stop": 235.488,
+        "current_gain_pct": -0.84,
+        "days_held": 0,
+        "days_in_buy1": 4,
+        "target_hit": false,
+        "current_level": "BUY1",
+        "size_pct": 35,
+        "peak_score": 62.4,
+        "score": 57.6,
+        "er": 0.3022,
+        "trend": "VERDE",
+        "sar_bullish": true,
+        "vortex_bullish": true,
+        "rvi_bullish": true,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "baff_rs": 0,
+        "perf7": 3.44,
+        "perf30": 14.73,
+        "hurst_60": 0.565,
+        "hurst_1y": 0.335,
+        "adx": 28.1,
+        "regime": {
+          "code": "SLANCIO",
+          "label": "\ud83d\ude80 Slancio",
+          "color": "#1a7f37",
+          "desc": "Trend rialzista forte con memoria recente confermata"
+        },
+        "events": [
+          {
+            "ts": "2026-05-07 13:56 CET",
+            "level": "BUY1",
+            "reason": "KAMA cross \u2191 \u00b7 ER 0.42>0.4 \u00b7 SAR bull \u00b7 AO crescente",
+            "size_pct": 35,
+            "score": 62.4,
+            "er": 0.4204
+          }
+        ],
+        "warning": null,
+        "weight_pct": 9.4
+      },
+      {
+        "ticker": "WSPE.MI",
+        "name": "WisdomTree S&P 500 EUR Daily Hedged",
+        "entry_date": "2026-05-07",
+        "entry_ts": "2026-05-07 16:41 CET",
+        "entry_price": 27.55,
+        "current_price": 27.615,
+        "target_price": 28.928,
+        "stop_loss": 27.109,
+        "trailing_stop": 27.174,
+        "current_gain_pct": 0.24,
+        "days_held": 0,
+        "days_in_buy1": 3,
+        "target_hit": false,
+        "current_level": "BUY1",
+        "size_pct": 35,
+        "peak_score": 57.8,
+        "score": 57.8,
+        "er": 0.8087,
+        "trend": "VERDE",
+        "sar_bullish": true,
+        "vortex_bullish": true,
+        "rvi_bullish": false,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "baff_rs": 1,
+        "perf7": 3.14,
+        "perf30": 12.1,
+        "hurst_60": 0.639,
+        "hurst_1y": 0.444,
+        "adx": 61.3,
+        "regime": {
+          "code": "SLANCIO",
+          "label": "\ud83d\ude80 Slancio",
+          "color": "#1a7f37",
+          "desc": "Trend rialzista forte con memoria recente confermata"
+        },
+        "events": [
+          {
+            "ts": "2026-05-07 16:41 CET",
+            "level": "BUY1",
+            "reason": "KAMA cross \u2191 \u00b7 ER 0.80>0.4 \u00b7 SAR bull \u00b7 AO crescente",
+            "size_pct": 35,
+            "score": 57.1,
+            "er": 0.7972
+          }
+        ],
+        "warning": null,
+        "weight_pct": 9.4
+      }
+    ],
+    "exited_today": [
       {
         "ticker": "WRTY.MI",
         "name": "WisdomTree Russell 2000 ETP",
@@ -408,213 +610,26 @@
             "size_pct": 35,
             "score": 60.1,
             "er": 0.4156
-          }
-        ],
-        "warning": null,
-        "weight_pct": 8.8
-      },
-      {
-        "ticker": "IMIB.MI",
-        "name": "iShares FTSE MIB UCITS ETF",
-        "entry_date": "2026-05-07",
-        "entry_ts": "2026-05-07 11:42 CET",
-        "entry_price": 30.335,
-        "current_price": 30.12,
-        "target_price": 31.852,
-        "stop_loss": 29.479,
-        "trailing_stop": 29.479,
-        "current_gain_pct": -0.71,
-        "days_held": 0,
-        "days_in_buy1": 4,
-        "target_hit": false,
-        "current_level": "BUY1",
-        "size_pct": 35,
-        "peak_score": 61.8,
-        "score": 57.8,
-        "er": 0.3048,
-        "trend": "VERDE",
-        "sar_bullish": true,
-        "vortex_bullish": true,
-        "rvi_bullish": true,
-        "rs_above_kama": true,
-        "trend_rs": "VERDE",
-        "baff_rs": 0,
-        "perf7": 3.47,
-        "perf30": 14.59,
-        "hurst_60": 0.546,
-        "hurst_1y": 0.327,
-        "adx": 30.4,
-        "regime": {
-          "code": "SALITA",
-          "label": "\ud83d\udcc8 Salita",
-          "color": "#2ea043",
-          "desc": "Movimento rialzista in corso"
-        },
-        "events": [
+          },
           {
-            "ts": "2026-05-07 11:42 CET",
-            "level": "BUY1",
-            "reason": "KAMA cross \u2191 \u00b7 ER 0.40>0.4 \u00b7 SAR bull \u00b7 AO crescente",
-            "size_pct": 35,
-            "score": 61.8,
-            "er": 0.4043
+            "ts": "2026-05-07 20:55 CET",
+            "level": "EXIT1b",
+            "reason": "Time stop: 7gg in BUY1 senza upgrade a BUY2",
+            "size_pct": 100,
+            "score": 58.9,
+            "er": 0.4037
           }
         ],
         "warning": null,
-        "weight_pct": 8.6
-      },
-      {
-        "ticker": "SPXJ.MI",
-        "name": "iShares MSCI Pacific ex-Japan UCITS ETF",
-        "entry_date": "2026-05-07",
-        "entry_ts": "2026-05-07 11:42 CET",
-        "entry_price": 48.62,
-        "current_price": 48.15,
-        "target_price": 51.051,
-        "stop_loss": 47.891,
-        "trailing_stop": 47.891,
-        "current_gain_pct": -0.97,
-        "days_held": 0,
-        "days_in_buy1": 4,
-        "target_hit": false,
-        "current_level": "BUY1",
-        "size_pct": 35,
-        "peak_score": 59.1,
-        "score": 52.4,
-        "er": 0.2468,
-        "trend": "VERDE",
-        "sar_bullish": true,
-        "vortex_bullish": true,
-        "rvi_bullish": false,
-        "rs_above_kama": true,
-        "trend_rs": "ROSSO",
-        "baff_rs": 3,
-        "perf7": 2.27,
-        "perf30": 5.14,
-        "hurst_60": 0.425,
-        "hurst_1y": 0.377,
-        "adx": 24.3,
-        "regime": {
-          "code": "TRANSIZIONE",
-          "label": "\u26a0\ufe0f Transizione",
-          "color": "#bc4c00",
-          "desc": "Zona grigia, segnale debole"
-        },
-        "events": [
-          {
-            "ts": "2026-05-07 11:42 CET",
-            "level": "BUY1",
-            "reason": "KAMA cross \u2191 \u00b7 ER 0.41>0.4 \u00b7 SAR bull \u00b7 AO crescente",
-            "size_pct": 35,
-            "score": 59.1,
-            "er": 0.4079
-          }
-        ],
-        "warning": null,
-        "weight_pct": 7.8
-      },
-      {
-        "ticker": "CSMIB.MI",
-        "name": "iShares FTSE MIB ETF EUR Acc",
-        "entry_date": "2026-05-07",
-        "entry_ts": "2026-05-07 13:56 CET",
-        "entry_price": 242.75,
-        "current_price": 240.7,
-        "target_price": 254.888,
-        "stop_loss": 235.488,
-        "trailing_stop": 235.488,
-        "current_gain_pct": -0.84,
-        "days_held": 0,
-        "days_in_buy1": 3,
-        "target_hit": false,
-        "current_level": "BUY1",
-        "size_pct": 35,
-        "peak_score": 62.4,
-        "score": 57.6,
-        "er": 0.3022,
-        "trend": "VERDE",
-        "sar_bullish": true,
-        "vortex_bullish": true,
-        "rvi_bullish": true,
-        "rs_above_kama": true,
-        "trend_rs": "VERDE",
-        "baff_rs": 0,
-        "perf7": 3.44,
-        "perf30": 14.73,
-        "hurst_60": 0.565,
-        "hurst_1y": 0.335,
-        "adx": 28.1,
-        "regime": {
-          "code": "SLANCIO",
-          "label": "\ud83d\ude80 Slancio",
-          "color": "#1a7f37",
-          "desc": "Trend rialzista forte con memoria recente confermata"
-        },
-        "events": [
-          {
-            "ts": "2026-05-07 13:56 CET",
-            "level": "BUY1",
-            "reason": "KAMA cross \u2191 \u00b7 ER 0.42>0.4 \u00b7 SAR bull \u00b7 AO crescente",
-            "size_pct": 35,
-            "score": 62.4,
-            "er": 0.4204
-          }
-        ],
-        "warning": null,
-        "weight_pct": 8.6
-      },
-      {
-        "ticker": "WSPE.MI",
-        "name": "WisdomTree S&P 500 EUR Daily Hedged",
-        "entry_date": "2026-05-07",
-        "entry_ts": "2026-05-07 16:41 CET",
-        "entry_price": 27.55,
-        "current_price": 27.615,
-        "target_price": 28.928,
-        "stop_loss": 27.109,
-        "trailing_stop": 27.174,
-        "current_gain_pct": 0.24,
-        "days_held": 0,
-        "days_in_buy1": 2,
-        "target_hit": false,
-        "current_level": "BUY1",
-        "size_pct": 35,
-        "peak_score": 57.8,
-        "score": 57.8,
-        "er": 0.8087,
-        "trend": "VERDE",
-        "sar_bullish": true,
-        "vortex_bullish": true,
-        "rvi_bullish": false,
-        "rs_above_kama": true,
-        "trend_rs": "VERDE",
-        "baff_rs": 1,
-        "perf7": 3.14,
-        "perf30": 12.1,
-        "hurst_60": 0.639,
-        "hurst_1y": 0.444,
-        "adx": 61.3,
-        "regime": {
-          "code": "SLANCIO",
-          "label": "\ud83d\ude80 Slancio",
-          "color": "#1a7f37",
-          "desc": "Trend rialzista forte con memoria recente confermata"
-        },
-        "events": [
-          {
-            "ts": "2026-05-07 16:41 CET",
-            "level": "BUY1",
-            "reason": "KAMA cross \u2191 \u00b7 ER 0.80>0.4 \u00b7 SAR bull \u00b7 AO crescente",
-            "size_pct": 35,
-            "score": 57.1,
-            "er": 0.7972
-          }
-        ],
-        "warning": null,
-        "weight_pct": 8.6
+        "weight_pct": 8.8,
+        "exit_level": "EXIT1b",
+        "exit_reason": "Time stop: 7gg in BUY1 senza upgrade a BUY2",
+        "exit_price": 35.245,
+        "final_gain_pct": 0.03,
+        "exit_date": "2026-05-07",
+        "exit_ts": "2026-05-07 20:55 CET"
       }
     ],
-    "exited_today": [],
     "use_xeon": false,
     "xeon_price": 149.059,
     "watchlist": [
@@ -674,7 +689,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "LGUS.MI",
@@ -732,7 +747,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "WSPX.MI",
@@ -790,7 +805,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "SP1E.MI",
@@ -848,7 +863,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "SPY5.MI",
@@ -906,7 +921,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "VUSA.MI",
@@ -964,7 +979,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "FLXU.MI",
@@ -1022,7 +1037,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "SPXE.MI",
@@ -1432,7 +1447,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "WRD.PA",
@@ -1548,7 +1563,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "WSPX.MI",
@@ -1606,7 +1621,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "SP1E.MI",
@@ -1664,7 +1679,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "SPY5.MI",
@@ -1722,7 +1737,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "VUSA.MI",
@@ -1780,7 +1795,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "FLXU.MI",
@@ -1838,7 +1853,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "SPXE.MI",
@@ -2072,7 +2087,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY1",
-        "level_ts": "2026-05-06 18:50 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "WMIB.MI",
@@ -4307,7 +4322,8 @@
       }
     ],
     "cooldowns": {
-      "FMI.MI": "2026-05-09"
+      "FMI.MI": "2026-05-09",
+      "WRTY.MI": "2026-05-09"
     }
   },
   "new_area": {
@@ -4414,7 +4430,7 @@
           }
         ],
         "warning": null,
-        "days_in_buy1": 4,
+        "days_in_buy1": 5,
         "hurst": 0.331,
         "adx": 46.8,
         "regime": {
@@ -4718,7 +4734,7 @@
         "trailing_stop": 112.484,
         "current_gain_pct": 0.58,
         "days_held": 1,
-        "days_in_buy1": 2,
+        "days_in_buy1": 3,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -4784,7 +4800,7 @@
         "trailing_stop": 130.465,
         "current_gain_pct": 0.16,
         "days_held": 1,
-        "days_in_buy1": 3,
+        "days_in_buy1": 4,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -4908,7 +4924,7 @@
         "trailing_stop": 27.174,
         "current_gain_pct": 0.24,
         "days_held": 0,
-        "days_in_buy1": 2,
+        "days_in_buy1": 3,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -5007,7 +5023,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "IUSE.MI",
@@ -5065,7 +5081,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "SEMA.MI",
@@ -5123,7 +5139,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "IAPD.MI",
@@ -5774,7 +5790,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "IUSE.MI",
@@ -5832,7 +5848,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "SJPA.MI",
@@ -5950,7 +5966,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-07 18:59 CET"
+        "level_ts": "2026-05-07 20:55 CET"
       },
       {
         "ticker": "WWRD.MI",
