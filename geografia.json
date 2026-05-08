@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-08T18:25:16.054506+02:00",
-  "updated_display": "08/05/2026 18:25 CET",
-  "vix": 17.23,
+  "updated_at": "2026-05-08T20:20:08.854964+02:00",
+  "updated_display": "08/05/2026 20:20 CET",
+  "vix": 17.43,
   "vix_regime": "NORMALE",
   "paesi": {
     "positions": [
@@ -375,7 +375,7 @@
         "trailing_stop": 5.857,
         "current_gain_pct": -0.64,
         "days_held": 0,
-        "days_in_buy1": 5,
+        "days_in_buy1": 6,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -425,7 +425,7 @@
         "trailing_stop": 67.753,
         "current_gain_pct": 0.79,
         "days_held": 0,
-        "days_in_buy1": 4,
+        "days_in_buy1": 5,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -574,7 +574,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "VUSA.MI",
@@ -632,7 +632,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "LGUS.MI",
@@ -690,7 +690,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "WSPX.MI",
@@ -748,7 +748,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "SP1E.MI",
@@ -806,7 +806,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "SPXE.MI",
@@ -864,7 +864,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "FLXU.MI",
@@ -1390,7 +1390,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "VUSA.MI",
@@ -1448,7 +1448,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "WRD.PA",
@@ -1564,7 +1564,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "WSPX.MI",
@@ -1622,7 +1622,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "SP1E.MI",
@@ -1680,7 +1680,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "SPXE.MI",
@@ -1738,7 +1738,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "FLXU.MI",
@@ -4910,7 +4910,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY3",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "SEMA.MI",
@@ -4968,7 +4968,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "IUSE.MI",
@@ -5026,7 +5026,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "NTSX.MI",
@@ -5084,7 +5084,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "WSPE.MI",
@@ -5618,7 +5618,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY3",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "WNAS.MI",
@@ -5734,7 +5734,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "ISAC.MI",
@@ -5908,7 +5908,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "WWRD.MI",
@@ -6142,7 +6142,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-08 18:25 CET"
+        "level_ts": "2026-05-08 20:20 CET"
       },
       {
         "ticker": "NTSG.MI",
