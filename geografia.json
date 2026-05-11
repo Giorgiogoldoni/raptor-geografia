@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-11T18:36:24.572256+02:00",
-  "updated_display": "11/05/2026 18:36 CET",
-  "vix": 17.99,
+  "updated_at": "2026-05-11T21:03:42.142472+02:00",
+  "updated_display": "11/05/2026 21:03 CET",
+  "vix": 18.19,
   "vix_regime": "NORMALE",
   "paesi": {
     "positions": [
@@ -549,7 +549,7 @@
         "trailing_stop": 117.12,
         "current_gain_pct": 0.27,
         "days_held": 0,
-        "days_in_buy1": 3,
+        "days_in_buy1": 4,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -599,7 +599,7 @@
         "trailing_stop": 235.781,
         "current_gain_pct": 0.0,
         "days_held": 0,
-        "days_in_buy1": 1,
+        "days_in_buy1": 2,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -649,7 +649,7 @@
         "trailing_stop": 29.498,
         "current_gain_pct": 0.0,
         "days_held": 0,
-        "days_in_buy1": 1,
+        "days_in_buy1": 2,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -748,7 +748,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "SPY5.MI",
@@ -806,7 +806,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "VUSA.MI",
@@ -864,7 +864,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "WSPX.MI",
@@ -922,7 +922,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "SP1E.MI",
@@ -980,7 +980,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "SPXE.MI",
@@ -1038,7 +1038,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "WSPE.MI",
@@ -1096,7 +1096,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "WMIB.MI",
@@ -1272,7 +1272,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       }
     ],
     "all": [
@@ -1564,7 +1564,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "SPY5.MI",
@@ -1622,7 +1622,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "QTOP.MI",
@@ -1740,7 +1740,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "WSPX.MI",
@@ -1798,7 +1798,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "SP1E.MI",
@@ -1856,7 +1856,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "SPXE.MI",
@@ -1914,7 +1914,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "VJPE.MI",
@@ -2030,7 +2030,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "WMIB.MI",
@@ -2264,7 +2264,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "FLXU.MI",
@@ -2322,7 +2322,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "CSMIB.MI",
@@ -4584,7 +4584,7 @@
         "trailing_stop": 23.184,
         "current_gain_pct": 0.74,
         "days_held": 7,
-        "days_in_buy1": 3,
+        "days_in_buy1": 4,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -5101,7 +5101,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY3",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "SEMA.MI",
@@ -5159,7 +5159,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "IUSE.MI",
@@ -5217,7 +5217,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "WSPE.MI",
@@ -5275,7 +5275,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "JRGE.MI",
@@ -5333,7 +5333,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "IAPD.MI",
@@ -5865,7 +5865,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY3",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "ISAC.MI",
@@ -6097,7 +6097,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "IUSE.MI",
@@ -6155,7 +6155,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "IWDE.MI",
@@ -6329,7 +6329,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "JRGE.MI",
@@ -6387,7 +6387,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-11 18:36 CET"
+        "level_ts": "2026-05-11 21:04 CET"
       },
       {
         "ticker": "IAPD.MI",
