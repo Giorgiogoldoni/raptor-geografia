@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-12T18:46:11.380141+02:00",
-  "updated_display": "12/05/2026 18:46 CET",
-  "vix": 18.71,
+  "updated_at": "2026-05-12T20:22:32.395752+02:00",
+  "updated_display": "12/05/2026 20:22 CET",
+  "vix": 18.24,
   "vix_regime": "NORMALE",
   "paesi": {
     "positions": [
@@ -259,7 +259,7 @@
         "trailing_stop": 53.084,
         "current_gain_pct": 1.62,
         "days_held": 8,
-        "days_in_buy1": 3,
+        "days_in_buy1": 4,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 70,
@@ -317,7 +317,7 @@
         "trailing_stop": 40.084,
         "current_gain_pct": 0.94,
         "days_held": 7,
-        "days_in_buy1": 3,
+        "days_in_buy1": 4,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -620,136 +620,7 @@
         "weight_pct": 10.7
       }
     ],
-    "exited_today": [
-      {
-        "ticker": "CSMIB.MI",
-        "name": "iShares FTSE MIB ETF EUR Acc",
-        "entry_date": "2026-05-11",
-        "entry_ts": "2026-05-11 18:36 CET",
-        "entry_price": 242.8,
-        "current_price": 239.6,
-        "target_price": 254.94,
-        "stop_loss": 235.781,
-        "trailing_stop": 235.781,
-        "current_gain_pct": -1.32,
-        "days_held": 1,
-        "days_in_buy1": 6,
-        "target_hit": false,
-        "current_level": "BUY1",
-        "size_pct": 35,
-        "peak_score": 68.0,
-        "score": 63.2,
-        "er": 0.2491,
-        "trend": "VERDE",
-        "sar_bullish": true,
-        "vortex_bullish": true,
-        "rvi_bullish": true,
-        "rs_above_kama": true,
-        "trend_rs": "VERDE",
-        "baff_rs": 2,
-        "perf7": 1.65,
-        "perf30": 13.15,
-        "hurst_60": 0.56,
-        "hurst_1y": 0.36,
-        "adx": 28.0,
-        "regime": {
-          "code": "SLANCIO",
-          "label": "\ud83d\ude80 Slancio",
-          "color": "#1a7f37",
-          "desc": "Trend rialzista forte con memoria recente confermata"
-        },
-        "events": [
-          {
-            "ts": "2026-05-11 18:36 CET",
-            "level": "BUY1",
-            "reason": "KAMA cross \u2191 \u00b7 ER 0.42>0.4 \u00b7 SAR bull \u00b7 AO crescente",
-            "size_pct": 35,
-            "score": 68.0,
-            "er": 0.417
-          },
-          {
-            "ts": "2026-05-12 18:46 CET",
-            "level": "EXIT1b",
-            "reason": "Time stop: 7gg in BUY1 senza upgrade a BUY2",
-            "size_pct": 100,
-            "score": 63.2,
-            "er": 0.2491
-          }
-        ],
-        "warning": null,
-        "weight_pct": 9.1,
-        "exit_level": "EXIT1b",
-        "exit_reason": "Time stop: 7gg in BUY1 senza upgrade a BUY2",
-        "exit_price": 239.6,
-        "final_gain_pct": -1.32,
-        "exit_date": "2026-05-12",
-        "exit_ts": "2026-05-12 18:46 CET"
-      },
-      {
-        "ticker": "IMIB.MI",
-        "name": "iShares FTSE MIB UCITS ETF",
-        "entry_date": "2026-05-11",
-        "entry_ts": "2026-05-11 18:36 CET",
-        "entry_price": 30.335,
-        "current_price": 29.95,
-        "target_price": 31.852,
-        "stop_loss": 29.498,
-        "trailing_stop": 29.498,
-        "current_gain_pct": -1.27,
-        "days_held": 1,
-        "days_in_buy1": 6,
-        "target_hit": false,
-        "current_level": "BUY1",
-        "size_pct": 35,
-        "peak_score": 67.5,
-        "score": 63.1,
-        "er": 0.2463,
-        "trend": "VERDE",
-        "sar_bullish": true,
-        "vortex_bullish": true,
-        "rvi_bullish": true,
-        "rs_above_kama": true,
-        "trend_rs": "VERDE",
-        "baff_rs": 2,
-        "perf7": 1.66,
-        "perf30": 12.85,
-        "hurst_60": 0.544,
-        "hurst_1y": 0.351,
-        "adx": 29.4,
-        "regime": {
-          "code": "SALITA",
-          "label": "\ud83d\udcc8 Salita",
-          "color": "#2ea043",
-          "desc": "Movimento rialzista in corso"
-        },
-        "events": [
-          {
-            "ts": "2026-05-11 18:36 CET",
-            "level": "BUY1",
-            "reason": "KAMA cross \u2191 \u00b7 ER 0.41>0.4 \u00b7 SAR bull \u00b7 AO crescente",
-            "size_pct": 35,
-            "score": 67.5,
-            "er": 0.405
-          },
-          {
-            "ts": "2026-05-12 18:46 CET",
-            "level": "EXIT1b",
-            "reason": "Time stop: 7gg in BUY1 senza upgrade a BUY2",
-            "size_pct": 100,
-            "score": 63.1,
-            "er": 0.2463
-          }
-        ],
-        "warning": null,
-        "weight_pct": 9.1,
-        "exit_level": "EXIT1b",
-        "exit_reason": "Time stop: 7gg in BUY1 senza upgrade a BUY2",
-        "exit_price": 29.95,
-        "final_gain_pct": -1.27,
-        "exit_date": "2026-05-12",
-        "exit_ts": "2026-05-12 18:46 CET"
-      }
-    ],
+    "exited_today": [],
     "use_xeon": false,
     "xeon_price": 149.113,
     "watchlist": [
@@ -809,7 +680,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-12 18:46 CET"
+        "level_ts": "2026-05-12 20:22 CET"
       },
       {
         "ticker": "D5BI.DE",
@@ -927,7 +798,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-12 18:46 CET"
+        "level_ts": "2026-05-12 20:22 CET"
       },
       {
         "ticker": "MCHN.MI",
@@ -1575,7 +1446,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-12 18:46 CET"
+        "level_ts": "2026-05-12 20:22 CET"
       },
       {
         "ticker": "D5BI.DE",
@@ -1753,7 +1624,7 @@
           "desc": "Movimento rialzista in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-12 18:46 CET"
+        "level_ts": "2026-05-12 20:22 CET"
       },
       {
         "ticker": "MCHN.MI",
@@ -4625,7 +4496,7 @@
         "trailing_stop": 16.628,
         "current_gain_pct": 3.58,
         "days_held": 8,
-        "days_in_buy1": 2,
+        "days_in_buy1": 3,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -4707,7 +4578,7 @@
         "trailing_stop": 23.184,
         "current_gain_pct": 0.08,
         "days_held": 8,
-        "days_in_buy1": 3,
+        "days_in_buy1": 4,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -4829,7 +4700,7 @@
         "trailing_stop": 99.89,
         "current_gain_pct": 0.99,
         "days_held": 7,
-        "days_in_buy1": 4,
+        "days_in_buy1": 5,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -5009,7 +4880,7 @@
         "trailing_stop": 112.768,
         "current_gain_pct": -0.05,
         "days_held": 6,
-        "days_in_buy1": 3,
+        "days_in_buy1": 4,
         "target_hit": false,
         "current_level": "BUY1",
         "size_pct": 35,
@@ -5288,7 +5159,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-12 18:46 CET"
+        "level_ts": "2026-05-12 20:22 CET"
       },
       {
         "ticker": "IUSE.MI",
@@ -6183,7 +6054,7 @@
           "desc": "Trend rialzista forte con memoria recente confermata"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-12 18:46 CET"
+        "level_ts": "2026-05-12 20:22 CET"
       },
       {
         "ticker": "IWDE.MI",
