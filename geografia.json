@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-05-29T13:33:58.861183+02:00",
-  "updated_display": "29/05/2026 13:33 CET",
-  "vix": 15.79,
+  "updated_at": "2026-05-29T14:40:44.479644+02:00",
+  "updated_display": "29/05/2026 14:40 CET",
+  "vix": 15.8,
   "vix_regime": "NORMALE",
   "paesi": {
     "all": [
       {
         "ticker": "FLXT.MI",
         "name": "Franklin FTSE Taiwan UCITS ETF",
-        "price": 60.45,
-        "kama": 56.939,
-        "k_pct": 6.17,
-        "er": 0.681,
+        "price": 60.3,
+        "kama": 56.893,
+        "k_pct": 5.99,
+        "er": 0.6763,
         "ao": 7.170044,
         "ao_series": [
           4.405559,
@@ -21,7 +21,7 @@
           7.170044
         ],
         "baffetti": 6,
-        "rsi": 78.0,
+        "rsi": 77.7,
         "atr": 1.27209,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -37,18 +37,18 @@
         "vi_plus": 0.9581,
         "vi_minus": 0.7681,
         "vortex_bullish": true,
-        "rvi": 0.225184,
-        "rvi_signal": 0.166785,
+        "rvi": 0.222133,
+        "rvi_signal": 0.166277,
         "rvi_bullish": true,
-        "perf7": 13.88,
-        "perf30": 30.49,
+        "perf7": 13.6,
+        "perf30": 30.17,
         "rs_above_kama": true,
         "trend_rs": "VERDE",
-        "score": 85.9,
+        "score": 85.8,
         "cross_bars": 7,
         "stress_flags": [],
         "stress_score": 0,
-        "hurst_60": 0.467,
+        "hurst_60": 0.466,
         "hurst_1y": 0.499,
         "adx": 46.4,
         "regime": {
@@ -58,15 +58,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "BUY3",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "XESD.DE",
         "name": "Xtrackers Spain UCITS ETF",
-        "price": 42.88,
-        "kama": 41.841,
-        "k_pct": 2.48,
-        "er": 0.5903,
+        "price": 42.775,
+        "kama": 41.815,
+        "k_pct": 2.3,
+        "er": 0.5777,
         "ao": 1.036132,
         "ao_series": [
           0.325338,
@@ -76,7 +76,7 @@
           1.036132
         ],
         "baffetti": 8,
-        "rsi": 62.2,
+        "rsi": 61.5,
         "atr": 0.59327,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -92,14 +92,14 @@
         "vi_plus": 1.0475,
         "vi_minus": 0.7598,
         "vortex_bullish": true,
-        "rvi": 0.175994,
-        "rvi_signal": 0.165625,
+        "rvi": 0.172367,
+        "rvi_signal": 0.165021,
         "rvi_bullish": true,
-        "perf7": 2.3,
-        "perf30": 2.73,
+        "perf7": 2.05,
+        "perf30": 2.48,
         "rs_above_kama": false,
-        "trend_rs": "GRIGIO",
-        "score": 73.9,
+        "trend_rs": "ROSSO",
+        "score": 72.9,
         "cross_bars": 8,
         "stress_flags": [],
         "stress_score": 0,
@@ -113,15 +113,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "WS5X.MI",
         "name": "WisdomTree EURO STOXX 50",
-        "price": 44.495,
-        "kama": 43.391,
-        "k_pct": 2.55,
-        "er": 0.6294,
+        "price": 44.36,
+        "kama": 43.354,
+        "k_pct": 2.32,
+        "er": 0.6134,
         "ao": 1.322618,
         "ao_series": [
           0.773103,
@@ -131,7 +131,7 @@
           1.322618
         ],
         "baffetti": 6,
-        "rsi": 61.7,
+        "rsi": 60.7,
         "atr": 0.62096,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -147,18 +147,18 @@
         "vi_plus": 1.0217,
         "vi_minus": 0.7323,
         "vortex_bullish": true,
-        "rvi": 0.321491,
-        "rvi_signal": 0.303569,
+        "rvi": 0.31719,
+        "rvi_signal": 0.302853,
         "rvi_bullish": true,
-        "perf7": 2.1,
-        "perf30": 3.84,
+        "perf7": 1.79,
+        "perf30": 3.52,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 72.5,
+        "score": 71.3,
         "cross_bars": 13,
         "stress_flags": [],
         "stress_score": 0,
-        "hurst_60": 0.354,
+        "hurst_60": 0.353,
         "hurst_1y": 0.345,
         "adx": 33.9,
         "regime": {
@@ -168,7 +168,7 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "SP1E.MI",
@@ -223,62 +223,7 @@
           "desc": "Trend rialzista forte"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
-      },
-      {
-        "ticker": "FMI.MI",
-        "name": "Amundi Italy MIB ESG UCITS ETF",
-        "price": 124.12,
-        "kama": 119.407,
-        "k_pct": 3.95,
-        "er": 0.516,
-        "ao": 4.939647,
-        "ao_series": [
-          4.098176,
-          4.499941,
-          4.833176,
-          4.908294,
-          4.939647
-        ],
-        "baffetti": 6,
-        "rsi": 65.5,
-        "atr": 1.69532,
-        "trend": "VERDE",
-        "mm_aligned": true,
-        "sar": 119.85037,
-        "sar_bullish": true,
-        "sar_history": [
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "vi_plus": 0.9697,
-        "vi_minus": 0.739,
-        "vortex_bullish": true,
-        "rvi": 0.126647,
-        "rvi_signal": 0.153203,
-        "rvi_bullish": false,
-        "perf7": 2.75,
-        "perf30": 8.04,
-        "rs_above_kama": true,
-        "trend_rs": "VERDE",
-        "score": 65.7,
-        "cross_bars": 19,
-        "stress_flags": [],
-        "stress_score": 0,
-        "hurst_60": 0.412,
-        "hurst_1y": 0.412,
-        "adx": 29.3,
-        "regime": {
-          "code": "SALITA",
-          "label": "\ud83d\udcc8 Salita",
-          "color": "#2ea043",
-          "desc": "Rialzo in corso"
-        },
-        "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "WRTY.MI",
@@ -335,15 +280,125 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
+      },
+      {
+        "ticker": "FMI.MI",
+        "name": "Amundi Italy MIB ESG UCITS ETF",
+        "price": 123.92,
+        "kama": 119.356,
+        "k_pct": 3.82,
+        "er": 0.5061,
+        "ao": 4.939647,
+        "ao_series": [
+          4.098176,
+          4.499941,
+          4.833176,
+          4.908294,
+          4.939647
+        ],
+        "baffetti": 6,
+        "rsi": 65.1,
+        "atr": 1.69532,
+        "trend": "VERDE",
+        "mm_aligned": true,
+        "sar": 119.85037,
+        "sar_bullish": true,
+        "sar_history": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "vi_plus": 0.9697,
+        "vi_minus": 0.739,
+        "vortex_bullish": true,
+        "rvi": 0.124336,
+        "rvi_signal": 0.152818,
+        "rvi_bullish": false,
+        "perf7": 2.58,
+        "perf30": 7.87,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "score": 65.3,
+        "cross_bars": 19,
+        "stress_flags": [],
+        "stress_score": 0,
+        "hurst_60": 0.412,
+        "hurst_1y": 0.412,
+        "adx": 29.3,
+        "regime": {
+          "code": "SALITA",
+          "label": "\ud83d\udcc8 Salita",
+          "color": "#2ea043",
+          "desc": "Rialzo in corso"
+        },
+        "buy_level": "BUY2",
+        "level_ts": "2026-05-29 14:40 CET"
+      },
+      {
+        "ticker": "EXS1.DE",
+        "name": "iShares Core DAX UCITS ETF",
+        "price": 207.05,
+        "kama": 202.43,
+        "k_pct": 2.28,
+        "er": 0.5642,
+        "ao": 6.213528,
+        "ao_series": [
+          4.131323,
+          4.820881,
+          5.625292,
+          5.974409,
+          6.213528
+        ],
+        "baffetti": 9,
+        "rsi": 59.2,
+        "atr": 3.06632,
+        "trend": "VERDE",
+        "mm_aligned": false,
+        "sar": 197.3558,
+        "sar_bullish": true,
+        "sar_history": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "vi_plus": 0.9982,
+        "vi_minus": 0.7614,
+        "vortex_bullish": true,
+        "rvi": 0.184175,
+        "rvi_signal": 0.192774,
+        "rvi_bullish": false,
+        "perf7": 1.45,
+        "perf30": 3.67,
+        "rs_above_kama": false,
+        "trend_rs": "ROSSO",
+        "score": 64.5,
+        "cross_bars": 10,
+        "stress_flags": [],
+        "stress_score": 0,
+        "hurst_60": 0.366,
+        "hurst_1y": 0.398,
+        "adx": 30.1,
+        "regime": {
+          "code": "SALITA",
+          "label": "\ud83d\udcc8 Salita",
+          "color": "#2ea043",
+          "desc": "Rialzo in corso"
+        },
+        "buy_level": "WATCH",
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "IS3U.DE",
         "name": "iShares MSCI France UCITS ETF",
-        "price": 64.58,
-        "kama": 63.341,
-        "k_pct": 1.96,
-        "er": 0.5121,
+        "price": 64.46,
+        "kama": 63.317,
+        "k_pct": 1.81,
+        "er": 0.5,
         "ao": 1.021324,
         "ao_series": [
           0.1785,
@@ -353,7 +408,7 @@
           1.021324
         ],
         "baffetti": 6,
-        "rsi": 59.4,
+        "rsi": 58.7,
         "atr": 0.78899,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -369,14 +424,14 @@
         "vi_plus": 0.9923,
         "vi_minus": 0.7797,
         "vortex_bullish": true,
-        "rvi": 0.158291,
-        "rvi_signal": 0.159897,
+        "rvi": 0.155167,
+        "rvi_signal": 0.159376,
         "rvi_bullish": false,
-        "perf7": 1.94,
-        "perf30": 1.59,
+        "perf7": 1.75,
+        "perf30": 1.4,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 65.1,
+        "score": 64.3,
         "cross_bars": 8,
         "stress_flags": [],
         "stress_score": 0,
@@ -389,71 +444,16 @@
           "color": "#bc4c00",
           "desc": "Zona grigia"
         },
-        "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
-      },
-      {
-        "ticker": "EXS1.DE",
-        "name": "iShares Core DAX UCITS ETF",
-        "price": 207.35,
-        "kama": 202.501,
-        "k_pct": 2.39,
-        "er": 0.5718,
-        "ao": 6.24338,
-        "ao_series": [
-          4.131323,
-          4.820881,
-          5.625292,
-          5.974409,
-          6.24338
-        ],
-        "baffetti": 9,
-        "rsi": 59.7,
-        "atr": 3.04132,
-        "trend": "VERDE",
-        "mm_aligned": false,
-        "sar": 197.3558,
-        "sar_bullish": true,
-        "sar_history": [
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "vi_plus": 1.0063,
-        "vi_minus": 0.7594,
-        "vortex_bullish": true,
-        "rvi": 0.186283,
-        "rvi_signal": 0.193125,
-        "rvi_bullish": false,
-        "perf7": 1.59,
-        "perf30": 3.82,
-        "rs_above_kama": false,
-        "trend_rs": "ROSSO",
-        "score": 65.0,
-        "cross_bars": 10,
-        "stress_flags": [],
-        "stress_score": 0,
-        "hurst_60": 0.366,
-        "hurst_1y": 0.398,
-        "adx": 30.1,
-        "regime": {
-          "code": "SALITA",
-          "label": "\ud83d\udcc8 Salita",
-          "color": "#2ea043",
-          "desc": "Rialzo in corso"
-        },
-        "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "buy_level": "WATCH",
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "C40.PA",
         "name": "Amundi CAC 40 ESG UCITS ETF",
-        "price": 144.9,
-        "kama": 141.384,
-        "k_pct": 2.49,
-        "er": 0.5498,
+        "price": 144.76,
+        "kama": 141.352,
+        "k_pct": 2.41,
+        "er": 0.5447,
         "ao": 3.098589,
         "ao_series": [
           0.975118,
@@ -463,7 +463,7 @@
           3.098589
         ],
         "baffetti": 8,
-        "rsi": 60.5,
+        "rsi": 60.2,
         "atr": 2.20306,
         "trend": "VERDE",
         "mm_aligned": false,
@@ -479,14 +479,14 @@
         "vi_plus": 0.9865,
         "vi_minus": 0.738,
         "vortex_bullish": true,
-        "rvi": 0.202662,
-        "rvi_signal": 0.2115,
+        "rvi": 0.20142,
+        "rvi_signal": 0.211293,
         "rvi_bullish": false,
-        "perf7": 2.3,
-        "perf30": 2.48,
+        "perf7": 2.2,
+        "perf30": 2.38,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 64.5,
+        "score": 64.1,
         "cross_bars": 8,
         "stress_flags": [],
         "stress_score": 0,
@@ -500,15 +500,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "CSMIB.MI",
         "name": "iShares FTSE MIB ETF EUR Acc",
-        "price": 249.05,
-        "kama": 240.856,
-        "k_pct": 3.4,
-        "er": 0.4875,
+        "price": 248.85,
+        "kama": 240.808,
+        "k_pct": 3.34,
+        "er": 0.4817,
         "ao": 8.878969,
         "ao_series": [
           7.620147,
@@ -518,7 +518,7 @@
           8.878969
         ],
         "baffetti": 6,
-        "rsi": 64.9,
+        "rsi": 64.7,
         "atr": 3.18487,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -534,14 +534,14 @@
         "vi_plus": 1.0204,
         "vi_minus": 0.7905,
         "vortex_bullish": true,
-        "rvi": 0.148924,
-        "rvi_signal": 0.18956,
+        "rvi": 0.147776,
+        "rvi_signal": 0.189369,
         "rvi_bullish": false,
-        "perf7": 2.15,
-        "perf30": 6.77,
-        "rs_above_kama": true,
+        "perf7": 2.07,
+        "perf30": 6.69,
+        "rs_above_kama": false,
         "trend_rs": "VERDE",
-        "score": 64.3,
+        "score": 64.0,
         "cross_bars": 19,
         "stress_flags": [],
         "stress_score": 0,
@@ -555,15 +555,70 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
+      },
+      {
+        "ticker": "XCS4.DE",
+        "name": "Xtrackers MSCI Thailand UCITS ETF",
+        "price": 25.475,
+        "kama": 24.646,
+        "k_pct": 3.36,
+        "er": 0.4774,
+        "ao": 0.84103,
+        "ao_series": [
+          0.579735,
+          0.617691,
+          0.687706,
+          0.759309,
+          0.84103
+        ],
+        "baffetti": 6,
+        "rsi": 63.7,
+        "atr": 0.40186,
+        "trend": "VERDE",
+        "mm_aligned": true,
+        "sar": 24.2395,
+        "sar_bullish": true,
+        "sar_history": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "vi_plus": 0.9191,
+        "vi_minus": 0.6817,
+        "vortex_bullish": true,
+        "rvi": -0.168469,
+        "rvi_signal": -0.125309,
+        "rvi_bullish": false,
+        "perf7": 1.94,
+        "perf30": 5.18,
+        "rs_above_kama": true,
+        "trend_rs": "GRIGIO",
+        "score": 63.8,
+        "cross_bars": 13,
+        "stress_flags": [],
+        "stress_score": 0,
+        "hurst_60": 0.234,
+        "hurst_1y": 0.396,
+        "adx": 29.3,
+        "regime": {
+          "code": "SALITA",
+          "label": "\ud83d\udcc8 Salita",
+          "color": "#2ea043",
+          "desc": "Rialzo in corso"
+        },
+        "buy_level": "WATCH",
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "WNAS.MI",
         "name": "WisdomTree NASDAQ-100 ETP",
-        "price": 38.05,
-        "kama": 36.907,
-        "k_pct": 3.1,
-        "er": 0.4505,
+        "price": 38.055,
+        "kama": 36.909,
+        "k_pct": 3.11,
+        "er": 0.4515,
         "ao": 2.616618,
         "ao_series": [
           2.478147,
@@ -589,11 +644,11 @@
         "vi_plus": 1.0007,
         "vi_minus": 0.6307,
         "vortex_bullish": true,
-        "rvi": 0.058834,
-        "rvi_signal": 0.089432,
+        "rvi": 0.059027,
+        "rvi_signal": 0.089464,
         "rvi_bullish": false,
-        "perf7": 3.45,
-        "perf30": 16.4,
+        "perf7": 3.47,
+        "perf30": 16.41,
         "rs_above_kama": true,
         "trend_rs": "VERDE",
         "score": 63.5,
@@ -610,138 +665,26 @@
           "desc": "Trend rialzista forte"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
-      },
-      {
-        "ticker": "XCS4.DE",
-        "name": "Xtrackers MSCI Thailand UCITS ETF",
-        "price": 25.44,
-        "kama": 24.637,
-        "k_pct": 3.26,
-        "er": 0.4643,
-        "ao": 0.84103,
-        "ao_series": [
-          0.579735,
-          0.617691,
-          0.687706,
-          0.759309,
-          0.84103
-        ],
-        "baffetti": 6,
-        "rsi": 63.3,
-        "atr": 0.40186,
-        "trend": "VERDE",
-        "mm_aligned": true,
-        "sar": 24.2395,
-        "sar_bullish": true,
-        "sar_history": [
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "vi_plus": 0.9191,
-        "vi_minus": 0.6817,
-        "vortex_bullish": true,
-        "rvi": -0.170633,
-        "rvi_signal": -0.125669,
-        "rvi_bullish": false,
-        "perf7": 1.8,
-        "perf30": 5.04,
-        "rs_above_kama": true,
-        "trend_rs": "GRIGIO",
-        "score": 63.2,
-        "cross_bars": 13,
-        "stress_flags": [],
-        "stress_score": 0,
-        "hurst_60": 0.234,
-        "hurst_1y": 0.396,
-        "adx": 29.3,
-        "regime": {
-          "code": "SALITA",
-          "label": "\ud83d\udcc8 Salita",
-          "color": "#2ea043",
-          "desc": "Rialzo in corso"
-        },
-        "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
-      },
-      {
-        "ticker": "LEER.DE",
-        "name": "Xtrackers MSCI World Minimum Volatility UCITS ETF",
-        "price": 43.515,
-        "kama": 42.145,
-        "k_pct": 3.25,
-        "er": 0.338,
-        "ao": 0.943015,
-        "ao_series": [
-          0.442529,
-          0.571941,
-          0.756529,
-          0.843839,
-          0.943015
-        ],
-        "baffetti": 5,
-        "rsi": 59.5,
-        "atr": 0.70473,
-        "trend": "VERDE",
-        "mm_aligned": true,
-        "sar": 41.95439,
-        "sar_bullish": true,
-        "sar_history": [
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "vi_plus": 0.9168,
-        "vi_minus": 0.7559,
-        "vortex_bullish": true,
-        "rvi": 0.074421,
-        "rvi_signal": 0.123783,
-        "rvi_bullish": false,
-        "perf7": 2.33,
-        "perf30": 1.46,
-        "rs_above_kama": false,
-        "trend_rs": "VERDE",
-        "score": 61.2,
-        "cross_bars": 8,
-        "stress_flags": [
-          "ER<0.4"
-        ],
-        "stress_score": 1,
-        "hurst_60": 0.501,
-        "hurst_1y": 0.433,
-        "adx": 32.1,
-        "regime": {
-          "code": "SALITA",
-          "label": "\ud83d\udcc8 Salita",
-          "color": "#2ea043",
-          "desc": "Rialzo in corso"
-        },
-        "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "EST.MI",
         "name": "Amundi MSCI Eastern Europe Ex Russia UCITS ETF",
-        "price": 43.435,
-        "kama": 42.06,
-        "k_pct": 3.27,
-        "er": 0.3234,
-        "ao": 0.954029,
+        "price": 43.645,
+        "kama": 42.09,
+        "k_pct": 3.7,
+        "er": 0.3523,
+        "ao": 0.971088,
         "ao_series": [
           0.475471,
           0.601147,
           0.784633,
           0.863397,
-          0.954029
+          0.971088
         ],
         "baffetti": 6,
-        "rsi": 59.3,
-        "atr": 0.68678,
+        "rsi": 60.5,
+        "atr": 0.70107,
         "trend": "VERDE",
         "mm_aligned": true,
         "sar": 41.64408,
@@ -753,17 +696,17 @@
           true,
           true
         ],
-        "vi_plus": 0.9113,
-        "vi_minus": 0.7666,
+        "vi_plus": 0.9131,
+        "vi_minus": 0.7512,
         "vortex_bullish": true,
-        "rvi": 0.171762,
-        "rvi_signal": 0.209596,
+        "rvi": 0.176728,
+        "rvi_signal": 0.210424,
         "rvi_bullish": false,
-        "perf7": 2.13,
-        "perf30": 1.26,
-        "rs_above_kama": false,
-        "trend_rs": "GRIGIO",
-        "score": 60.5,
+        "perf7": 2.62,
+        "perf30": 1.75,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "score": 62.1,
         "cross_bars": 8,
         "stress_flags": [
           "ER<0.4"
@@ -771,7 +714,7 @@
         "stress_score": 1,
         "hurst_60": 0.513,
         "hurst_1y": 0.434,
-        "adx": 33.5,
+        "adx": 34.3,
         "regime": {
           "code": "SALITA",
           "label": "\ud83d\udcc8 Salita",
@@ -779,26 +722,83 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
+      },
+      {
+        "ticker": "LEER.DE",
+        "name": "Xtrackers MSCI World Minimum Volatility UCITS ETF",
+        "price": 43.585,
+        "kama": 42.154,
+        "k_pct": 3.39,
+        "er": 0.3472,
+        "ao": 0.954956,
+        "ao_series": [
+          0.442529,
+          0.571941,
+          0.756529,
+          0.843839,
+          0.954956
+        ],
+        "baffetti": 5,
+        "rsi": 59.9,
+        "atr": 0.71473,
+        "trend": "VERDE",
+        "mm_aligned": true,
+        "sar": 41.95439,
+        "sar_bullish": true,
+        "sar_history": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "vi_plus": 0.918,
+        "vi_minus": 0.7456,
+        "vortex_bullish": true,
+        "rvi": 0.07605,
+        "rvi_signal": 0.124055,
+        "rvi_bullish": false,
+        "perf7": 2.49,
+        "perf30": 1.62,
+        "rs_above_kama": false,
+        "trend_rs": "VERDE",
+        "score": 61.7,
+        "cross_bars": 8,
+        "stress_flags": [
+          "ER<0.4"
+        ],
+        "stress_score": 1,
+        "hurst_60": 0.501,
+        "hurst_1y": 0.432,
+        "adx": 32.7,
+        "regime": {
+          "code": "SALITA",
+          "label": "\ud83d\udcc8 Salita",
+          "color": "#2ea043",
+          "desc": "Rialzo in corso"
+        },
+        "buy_level": "WATCH",
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "IMIB.MI",
         "name": "iShares FTSE MIB UCITS ETF",
-        "price": 30.42,
-        "kama": 29.471,
-        "k_pct": 3.22,
-        "er": 0.4642,
-        "ao": 1.066843,
+        "price": 30.455,
+        "kama": 29.479,
+        "k_pct": 3.31,
+        "er": 0.4729,
+        "ao": 1.068549,
         "ao_series": [
           0.919504,
           1.000126,
           1.057088,
           1.064805,
-          1.066843
+          1.068549
         ],
         "baffetti": 6,
-        "rsi": 64.8,
-        "atr": 0.37143,
+        "rsi": 65.2,
+        "atr": 0.37285,
         "trend": "VERDE",
         "mm_aligned": false,
         "sar": 29.72985,
@@ -810,23 +810,23 @@
           true,
           true
         ],
-        "vi_plus": 0.976,
-        "vi_minus": 0.8001,
+        "vi_plus": 0.9761,
+        "vi_minus": 0.797,
         "vortex_bullish": true,
-        "rvi": 0.128362,
-        "rvi_signal": 0.167415,
+        "rvi": 0.130098,
+        "rvi_signal": 0.167705,
         "rvi_bullish": false,
-        "perf7": 1.86,
-        "perf30": 6.38,
+        "perf7": 1.98,
+        "perf30": 6.51,
         "rs_above_kama": false,
         "trend_rs": "VERDE",
-        "score": 60.3,
+        "score": 60.7,
         "cross_bars": 19,
         "stress_flags": [],
         "stress_score": 0,
         "hurst_60": 0.393,
         "hurst_1y": 0.134,
-        "adx": 27.2,
+        "adx": 27.3,
         "regime": {
           "code": "SALITA",
           "label": "\ud83d\udcc8 Salita",
@@ -834,15 +834,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "D5BI.DE",
         "name": "Xtrackers MSCI Mexico UCITS ETF",
-        "price": 8.034,
+        "price": 8.028,
         "kama": 8.002,
-        "k_pct": 0.4,
-        "er": 0.2459,
+        "k_pct": 0.32,
+        "er": 0.2397,
         "ao": 0.104006,
         "ao_series": [
           0.027903,
@@ -852,7 +852,7 @@
           0.104006
         ],
         "baffetti": 5,
-        "rsi": 52.9,
+        "rsi": 52.7,
         "atr": 0.12748,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -868,14 +868,14 @@
         "vi_plus": 0.9153,
         "vi_minus": 0.835,
         "vortex_bullish": true,
-        "rvi": 0.10219,
-        "rvi_signal": 0.089046,
+        "rvi": 0.101194,
+        "rvi_signal": 0.08888,
         "rvi_bullish": true,
-        "perf7": 0.15,
-        "perf30": 2.1,
+        "perf7": 0.07,
+        "perf30": 2.02,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 59.0,
+        "score": 58.6,
         "cross_bars": 5,
         "stress_flags": [
           "ER<0.4"
@@ -891,7 +891,7 @@
           "desc": "Zona grigia"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "VJPE.MI",
@@ -948,15 +948,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "CSNDX.MI",
         "name": "iShares NASDAQ 100 UCITS ETF",
-        "price": 1493.86,
-        "kama": 1449.046,
-        "k_pct": 3.09,
-        "er": 0.4722,
+        "price": 1491.86,
+        "kama": 1448.594,
+        "k_pct": 2.99,
+        "er": 0.462,
         "ao": 101.766577,
         "ao_series": [
           100.587457,
@@ -966,7 +966,7 @@
           101.766577
         ],
         "baffetti": 0,
-        "rsi": 77.4,
+        "rsi": 77.1,
         "atr": 17.3322,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -982,20 +982,20 @@
         "vi_plus": 1.0364,
         "vi_minus": 0.633,
         "vortex_bullish": true,
-        "rvi": 0.13877,
-        "rvi_signal": 0.102465,
+        "rvi": 0.136472,
+        "rvi_signal": 0.102082,
         "rvi_bullish": true,
-        "perf7": 3.52,
-        "perf30": 16.36,
+        "perf7": 3.38,
+        "perf30": 16.2,
         "rs_above_kama": true,
         "trend_rs": "VERDE",
-        "score": 53.2,
+        "score": 52.7,
         "cross_bars": 8,
         "stress_flags": [
           "AO calante"
         ],
         "stress_score": 1,
-        "hurst_60": 0.647,
+        "hurst_60": 0.648,
         "hurst_1y": 0.535,
         "adx": 52.3,
         "regime": {
@@ -1005,7 +1005,7 @@
           "desc": "Trend rialzista forte"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "QTOP.MI",
@@ -1062,7 +1062,7 @@
           "desc": "Trend rialzista forte"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "FLXU.MI",
@@ -1102,7 +1102,7 @@
         "perf7": 2.84,
         "perf30": 8.42,
         "rs_above_kama": true,
-        "trend_rs": "GRIGIO",
+        "trend_rs": "VERDE",
         "score": 50.5,
         "cross_bars": 7,
         "stress_flags": [
@@ -1119,26 +1119,26 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "SAUS.MI",
         "name": "iShares MSCI Australia UCITS ETF EUR",
-        "price": 53.82,
-        "kama": 53.631,
-        "k_pct": 0.35,
-        "er": 0.2989,
-        "ao": -0.221236,
+        "price": 53.84,
+        "kama": 53.633,
+        "k_pct": 0.39,
+        "er": 0.304,
+        "ao": -0.21953,
         "ao_series": [
           -0.614735,
           -0.532676,
           -0.380764,
           -0.338382,
-          -0.221236
+          -0.21953
         ],
         "baffetti": 5,
-        "rsi": 54.1,
-        "atr": 0.5911,
+        "rsi": 54.2,
+        "atr": 0.59252,
         "trend": "VERDE",
         "mm_aligned": true,
         "sar": 54.31886,
@@ -1150,17 +1150,17 @@
           false,
           false
         ],
-        "vi_plus": 0.8251,
-        "vi_minus": 0.893,
+        "vi_plus": 0.8255,
+        "vi_minus": 0.8906,
         "vortex_bullish": false,
-        "rvi": 0.160827,
-        "rvi_signal": 0.181862,
+        "rvi": 0.161459,
+        "rvi_signal": 0.181967,
         "rvi_bullish": false,
-        "perf7": 1.38,
-        "perf30": -1.18,
+        "perf7": 1.41,
+        "perf30": -1.14,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 50.1,
+        "score": 50.3,
         "cross_bars": 1,
         "stress_flags": [
           "SAR bear",
@@ -1170,7 +1170,7 @@
         "stress_score": 3,
         "hurst_60": 0.432,
         "hurst_1y": 0.45,
-        "adx": 15.0,
+        "adx": 15.1,
         "regime": {
           "code": "LATERALE",
           "label": "\u2194 Laterale",
@@ -1178,15 +1178,15 @@
           "desc": "Senza direzione"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "WMIB.MI",
         "name": "WisdomTree FTSE MIB",
-        "price": 59.03,
-        "kama": 57.197,
-        "k_pct": 3.2,
-        "er": 0.5457,
+        "price": 59.0,
+        "kama": 57.189,
+        "k_pct": 3.17,
+        "er": 0.5419,
         "ao": 1.975941,
         "ao_series": [
           1.593235,
@@ -1196,7 +1196,7 @@
           1.975941
         ],
         "baffetti": 1,
-        "rsi": 64.4,
+        "rsi": 64.3,
         "atr": 0.71417,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -1212,18 +1212,18 @@
         "vi_plus": 0.9938,
         "vi_minus": 0.8436,
         "vortex_bullish": true,
-        "rvi": 0.086217,
-        "rvi_signal": 0.146808,
+        "rvi": 0.08538,
+        "rvi_signal": 0.146669,
         "rvi_bullish": false,
-        "perf7": 2.02,
-        "perf30": 6.25,
+        "perf7": 1.97,
+        "perf30": 6.19,
         "rs_above_kama": false,
         "trend_rs": "VERDE",
-        "score": 49.9,
+        "score": 49.7,
         "cross_bars": 19,
         "stress_flags": [],
         "stress_score": 0,
-        "hurst_60": 0.399,
+        "hurst_60": 0.4,
         "hurst_1y": 0.356,
         "adx": 25.7,
         "regime": {
@@ -1233,7 +1233,7 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "WSPE.MI",
@@ -1290,15 +1290,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "SPXE.MI",
         "name": "State Street SPDR S&P 500 EUR Acc Hedged",
-        "price": 18.388,
-        "kama": 18.027,
-        "k_pct": 2.0,
-        "er": 0.3511,
+        "price": 18.404,
+        "kama": 18.029,
+        "k_pct": 2.08,
+        "er": 0.3616,
         "ao": 0.644335,
         "ao_series": [
           0.621882,
@@ -1308,7 +1308,7 @@
           0.644335
         ],
         "baffetti": 0,
-        "rsi": 70.3,
+        "rsi": 70.6,
         "atr": 0.13971,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -1324,14 +1324,14 @@
         "vi_plus": 0.8852,
         "vi_minus": 0.7399,
         "vortex_bullish": true,
-        "rvi": 0.030788,
-        "rvi_signal": 0.026602,
+        "rvi": 0.033465,
+        "rvi_signal": 0.027048,
         "rvi_bullish": true,
-        "perf7": 2.19,
-        "perf30": 7.67,
-        "rs_above_kama": false,
+        "perf7": 2.28,
+        "perf30": 7.76,
+        "rs_above_kama": true,
         "trend_rs": "VERDE",
-        "score": 47.2,
+        "score": 47.7,
         "cross_bars": 8,
         "stress_flags": [
           "AO calante",
@@ -1348,15 +1348,15 @@
           "desc": "Trend rialzista forte"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "SRSA.MI",
         "name": "iShares MSCI South Africa UCITS ETF",
-        "price": 52.55,
-        "kama": 51.89,
-        "k_pct": 1.27,
-        "er": 0.275,
+        "price": 52.59,
+        "kama": 51.893,
+        "k_pct": 1.34,
+        "er": 0.2801,
         "ao": -0.296088,
         "ao_series": [
           -1.343765,
@@ -1366,7 +1366,7 @@
           -0.296088
         ],
         "baffetti": 5,
-        "rsi": 51.5,
+        "rsi": 51.7,
         "atr": 1.25516,
         "trend": "GRIGIO",
         "mm_aligned": true,
@@ -1382,14 +1382,14 @@
         "vi_plus": 0.8142,
         "vi_minus": 0.8893,
         "vortex_bullish": false,
-        "rvi": -0.000676,
-        "rvi_signal": -0.07496,
+        "rvi": 0.0,
+        "rvi_signal": -0.074848,
         "rvi_bullish": true,
-        "perf7": 1.08,
-        "perf30": -2.76,
+        "perf7": 1.15,
+        "perf30": -2.68,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 47.2,
+        "score": 47.6,
         "cross_bars": 5,
         "stress_flags": [
           "AO negativo",
@@ -1406,7 +1406,7 @@
           "desc": "Senza direzione"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "CN1.PA",
@@ -1461,15 +1461,15 @@
           "desc": "Zona grigia"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "FLXI.MI",
         "name": "Franklin FTSE India UCITS ETF",
-        "price": 35.04,
-        "kama": 34.948,
-        "k_pct": 0.26,
-        "er": 0.0858,
+        "price": 35.09,
+        "kama": 34.949,
+        "k_pct": 0.4,
+        "er": 0.1007,
         "ao": -0.035235,
         "ao_series": [
           -0.364514,
@@ -1479,7 +1479,7 @@
           -0.035235
         ],
         "baffetti": 5,
-        "rsi": 51.8,
+        "rsi": 52.3,
         "atr": 0.4681,
         "trend": "GRIGIO",
         "mm_aligned": false,
@@ -1495,14 +1495,14 @@
         "vi_plus": 0.8663,
         "vi_minus": 0.7644,
         "vortex_bullish": true,
-        "rvi": 0.132188,
-        "rvi_signal": 0.100974,
+        "rvi": 0.134645,
+        "rvi_signal": 0.101383,
         "rvi_bullish": true,
-        "perf7": 0.95,
-        "perf30": -1.1,
+        "perf7": 1.09,
+        "perf30": -0.96,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 45.2,
+        "score": 46.0,
         "cross_bars": 1,
         "stress_flags": [
           "AO negativo",
@@ -1519,121 +1519,7 @@
           "desc": "Senza direzione"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
-      },
-      {
-        "ticker": "SPY5.MI",
-        "name": "State Street SPDR S&P 500 UCITS ETF",
-        "price": 650.98,
-        "kama": 640.05,
-        "k_pct": 1.71,
-        "er": 0.4293,
-        "ao": 26.633001,
-        "ao_series": [
-          27.43197,
-          27.478824,
-          27.605442,
-          27.260593,
-          26.633001
-        ],
-        "baffetti": 0,
-        "rsi": 77.1,
-        "atr": 3.91095,
-        "trend": "VERDE",
-        "mm_aligned": true,
-        "sar": 643.8502,
-        "sar_bullish": true,
-        "sar_history": [
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "vi_plus": 0.9877,
-        "vi_minus": 0.6386,
-        "vortex_bullish": true,
-        "rvi": 0.184282,
-        "rvi_signal": 0.246771,
-        "rvi_bullish": false,
-        "perf7": 2.07,
-        "perf30": 9.09,
-        "rs_above_kama": true,
-        "trend_rs": "VERDE",
-        "score": 44.2,
-        "cross_bars": 8,
-        "stress_flags": [
-          "AO calante"
-        ],
-        "stress_score": 1,
-        "hurst_60": 0.626,
-        "hurst_1y": 0.478,
-        "adx": 72.0,
-        "regime": {
-          "code": "SLANCIO",
-          "label": "\ud83d\ude80 Slancio",
-          "color": "#1a7f37",
-          "desc": "Trend rialzista forte"
-        },
-        "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
-      },
-      {
-        "ticker": "WSPX.MI",
-        "name": "WisdomTree S&P 500",
-        "price": 39.56,
-        "kama": 38.896,
-        "k_pct": 1.71,
-        "er": 0.426,
-        "ao": 1.607765,
-        "ao_series": [
-          1.65825,
-          1.666456,
-          1.670779,
-          1.649015,
-          1.607765
-        ],
-        "baffetti": 0,
-        "rsi": 77.2,
-        "atr": 0.27829,
-        "trend": "VERDE",
-        "mm_aligned": true,
-        "sar": 38.65552,
-        "sar_bullish": true,
-        "sar_history": [
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "vi_plus": 1.0564,
-        "vi_minus": 0.617,
-        "vortex_bullish": true,
-        "rvi": 0.113655,
-        "rvi_signal": 0.135939,
-        "rvi_bullish": false,
-        "perf7": 2.13,
-        "perf30": 9.07,
-        "rs_above_kama": true,
-        "trend_rs": "VERDE",
-        "score": 44.1,
-        "cross_bars": 8,
-        "stress_flags": [
-          "AO calante"
-        ],
-        "stress_score": 1,
-        "hurst_60": 0.623,
-        "hurst_1y": 0.316,
-        "adx": 67.8,
-        "regime": {
-          "code": "SLANCIO",
-          "label": "\ud83d\ude80 Slancio",
-          "color": "#1a7f37",
-          "desc": "Trend rialzista forte"
-        },
-        "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "LGUS.MI",
@@ -1690,15 +1576,129 @@
           "desc": "Trend rialzista forte"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
+      },
+      {
+        "ticker": "SPY5.MI",
+        "name": "State Street SPDR S&P 500 UCITS ETF",
+        "price": 650.76,
+        "kama": 640.006,
+        "k_pct": 1.68,
+        "er": 0.4247,
+        "ao": 26.633001,
+        "ao_series": [
+          27.43197,
+          27.478824,
+          27.605442,
+          27.260593,
+          26.633001
+        ],
+        "baffetti": 0,
+        "rsi": 77.0,
+        "atr": 3.91095,
+        "trend": "VERDE",
+        "mm_aligned": true,
+        "sar": 643.8502,
+        "sar_bullish": true,
+        "sar_history": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "vi_plus": 0.9877,
+        "vi_minus": 0.6386,
+        "vortex_bullish": true,
+        "rvi": 0.182833,
+        "rvi_signal": 0.246529,
+        "rvi_bullish": false,
+        "perf7": 2.03,
+        "perf30": 9.06,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "score": 44.0,
+        "cross_bars": 8,
+        "stress_flags": [
+          "AO calante"
+        ],
+        "stress_score": 1,
+        "hurst_60": 0.626,
+        "hurst_1y": 0.478,
+        "adx": 72.0,
+        "regime": {
+          "code": "SLANCIO",
+          "label": "\ud83d\ude80 Slancio",
+          "color": "#1a7f37",
+          "desc": "Trend rialzista forte"
+        },
+        "buy_level": "WATCH",
+        "level_ts": "2026-05-29 14:40 CET"
+      },
+      {
+        "ticker": "WSPX.MI",
+        "name": "WisdomTree S&P 500",
+        "price": 39.545,
+        "kama": 38.893,
+        "k_pct": 1.68,
+        "er": 0.4209,
+        "ao": 1.607765,
+        "ao_series": [
+          1.65825,
+          1.666456,
+          1.670779,
+          1.649015,
+          1.607765
+        ],
+        "baffetti": 0,
+        "rsi": 77.1,
+        "atr": 0.27829,
+        "trend": "VERDE",
+        "mm_aligned": true,
+        "sar": 38.65552,
+        "sar_bullish": true,
+        "sar_history": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "vi_plus": 1.0564,
+        "vi_minus": 0.617,
+        "vortex_bullish": true,
+        "rvi": 0.11245,
+        "rvi_signal": 0.135738,
+        "rvi_bullish": false,
+        "perf7": 2.09,
+        "perf30": 9.03,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "score": 43.9,
+        "cross_bars": 8,
+        "stress_flags": [
+          "AO calante"
+        ],
+        "stress_score": 1,
+        "hurst_60": 0.623,
+        "hurst_1y": 0.315,
+        "adx": 67.8,
+        "regime": {
+          "code": "SLANCIO",
+          "label": "\ud83d\ude80 Slancio",
+          "color": "#1a7f37",
+          "desc": "Trend rialzista forte"
+        },
+        "buy_level": "WATCH",
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "VUSA.MI",
         "name": "Vanguard S&P 500 UCITS ETF",
-        "price": 123.4,
-        "kama": 121.415,
-        "k_pct": 1.64,
-        "er": 0.4191,
+        "price": 123.42,
+        "kama": 121.419,
+        "k_pct": 1.65,
+        "er": 0.4214,
         "ao": 5.013205,
         "ao_series": [
           5.186824,
@@ -1724,14 +1724,14 @@
         "vi_plus": 1.0569,
         "vi_minus": 0.6179,
         "vortex_bullish": true,
-        "rvi": 0.179026,
-        "rvi_signal": 0.205484,
+        "rvi": 0.179569,
+        "rvi_signal": 0.205575,
         "rvi_bullish": false,
-        "perf7": 1.99,
-        "perf30": 8.95,
+        "perf7": 2.01,
+        "perf30": 8.97,
         "rs_above_kama": true,
         "trend_rs": "VERDE",
-        "score": 43.7,
+        "score": 43.8,
         "cross_bars": 8,
         "stress_flags": [
           "AO calante"
@@ -1747,15 +1747,15 @@
           "desc": "Trend rialzista forte"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "IAEX.AS",
         "name": "iShares AEX UCITS ETF",
-        "price": 105.2,
-        "kama": 103.42,
-        "k_pct": 1.72,
-        "er": 0.5367,
+        "price": 104.84,
+        "kama": 103.345,
+        "k_pct": 1.45,
+        "er": 0.5108,
         "ao": 2.835912,
         "ao_series": [
           2.551059,
@@ -1765,7 +1765,7 @@
           2.835912
         ],
         "baffetti": 0,
-        "rsi": 61.5,
+        "rsi": 60.2,
         "atr": 1.24697,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -1781,21 +1781,21 @@
         "vi_plus": 1.0203,
         "vi_minus": 0.7162,
         "vortex_bullish": true,
-        "rvi": 0.211521,
-        "rvi_signal": 0.272025,
+        "rvi": 0.206035,
+        "rvi_signal": 0.271111,
         "rvi_bullish": false,
-        "perf7": 1.21,
-        "perf30": 3.54,
+        "perf7": 0.87,
+        "perf30": 3.19,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 42.8,
+        "score": 41.2,
         "cross_bars": 12,
         "stress_flags": [
           "AO calante"
         ],
         "stress_score": 1,
-        "hurst_60": 0.335,
-        "hurst_1y": 0.4,
+        "hurst_60": 0.334,
+        "hurst_1y": 0.399,
         "adx": 34.7,
         "regime": {
           "code": "SALITA",
@@ -1804,15 +1804,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "WRD.PA",
         "name": "HSBC MSCI World UCITS ETF",
-        "price": 41.985,
-        "kama": 41.272,
-        "k_pct": 1.73,
-        "er": 0.488,
+        "price": 41.951,
+        "kama": 41.264,
+        "k_pct": 1.66,
+        "er": 0.4785,
         "ao": 1.521819,
         "ao_series": [
           1.468244,
@@ -1822,7 +1822,7 @@
           1.521819
         ],
         "baffetti": 0,
-        "rsi": 73.5,
+        "rsi": 73.2,
         "atr": 0.29198,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -1838,14 +1838,14 @@
         "vi_plus": 1.005,
         "vi_minus": 0.6743,
         "vortex_bullish": true,
-        "rvi": 0.276954,
-        "rvi_signal": 0.307807,
+        "rvi": 0.274398,
+        "rvi_signal": 0.307381,
         "rvi_bullish": false,
-        "perf7": 2.04,
-        "perf30": 7.37,
-        "rs_above_kama": true,
+        "perf7": 1.96,
+        "perf30": 7.28,
+        "rs_above_kama": false,
         "trend_rs": "GRIGIO",
-        "score": 40.9,
+        "score": 40.5,
         "cross_bars": 22,
         "stress_flags": [
           "AO calante"
@@ -1861,15 +1861,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "XCHA.DE",
         "name": "Xtrackers CSI300 Swap UCITS ETF",
-        "price": 18.696,
-        "kama": 18.521,
-        "k_pct": 0.95,
-        "er": 0.2044,
+        "price": 18.682,
+        "kama": 18.52,
+        "k_pct": 0.88,
+        "er": 0.1892,
         "ao": 0.494341,
         "ao_series": [
           0.397035,
@@ -1879,7 +1879,7 @@
           0.494341
         ],
         "baffetti": 2,
-        "rsi": 59.9,
+        "rsi": 59.5,
         "atr": 0.18884,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -1895,20 +1895,20 @@
         "vi_plus": 0.7751,
         "vi_minus": 0.7791,
         "vortex_bullish": false,
-        "rvi": 0.070333,
-        "rvi_signal": 0.133087,
+        "rvi": 0.068105,
+        "rvi_signal": 0.132716,
         "rvi_bullish": false,
-        "perf7": 0.92,
-        "perf30": 5.84,
+        "perf7": 0.84,
+        "perf30": 5.76,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 38.5,
+        "score": 37.9,
         "cross_bars": 5,
         "stress_flags": [
           "ER<0.4"
         ],
         "stress_score": 1,
-        "hurst_60": 0.431,
+        "hurst_60": 0.43,
         "hurst_1y": 0.305,
         "adx": 26.0,
         "regime": {
@@ -1918,25 +1918,25 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "XBAS.DE",
         "name": "Xtrackers MSCI Singapore UCITS ETF",
-        "price": 2.096,
+        "price": 2.095,
         "kama": 2.074,
-        "k_pct": 1.07,
-        "er": 0.463,
-        "ao": 0.038484,
+        "k_pct": 1.0,
+        "er": 0.4423,
+        "ao": 0.038356,
         "ao_series": [
           0.046366,
           0.043857,
           0.04115,
           0.040596,
-          0.038484
+          0.038356
         ],
         "baffetti": 0,
-        "rsi": 62.1,
+        "rsi": 61.5,
         "atr": 0.01947,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -1950,16 +1950,16 @@
           true
         ],
         "vi_plus": 1.0598,
-        "vi_minus": 0.7846,
+        "vi_minus": 0.7795,
         "vortex_bullish": true,
-        "rvi": 0.264545,
-        "rvi_signal": 0.269438,
+        "rvi": 0.262165,
+        "rvi_signal": 0.269041,
         "rvi_bullish": false,
-        "perf7": -0.12,
-        "perf30": 2.62,
+        "perf7": -0.21,
+        "perf30": 2.52,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 38.2,
+        "score": 37.3,
         "cross_bars": 19,
         "stress_flags": [
           "AO calante"
@@ -1975,7 +1975,7 @@
           "desc": "Zona grigia"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "XSMI.MI",
@@ -2033,7 +2033,7 @@
           "desc": "Zona grigia"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "DJE.PA",
@@ -2090,7 +2090,7 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "SVE.MI",
@@ -2148,7 +2148,7 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "UKE.MI",
@@ -2205,29 +2205,29 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
-        "ticker": "MCHN.MI",
-        "name": "Invesco MSCI China All Shares UCITS ETF",
-        "price": 26.55,
-        "kama": 27.036,
-        "k_pct": -1.8,
-        "er": 0.4795,
-        "ao": -0.23578,
+        "ticker": "ITBL.MI",
+        "name": "WisdomTree FTSE MIB Banks",
+        "price": 17.016,
+        "kama": 20.927,
+        "k_pct": -18.69,
+        "er": 0.585,
+        "ao": -440.415106,
         "ao_series": [
-          -0.050544,
-          -0.095177,
-          -0.134941,
-          -0.234486,
-          -0.23578
+          -527.75863,
+          -506.820724,
+          -484.746912,
+          -462.718794,
+          -440.415106
         ],
-        "baffetti": 0,
-        "rsi": 44.2,
-        "atr": 0.27485,
-        "trend": "GRIGIO",
+        "baffetti": 10,
+        "rsi": 9.5,
+        "atr": 27.10813,
+        "trend": "ROSSO",
         "mm_aligned": false,
-        "sar": 27.19646,
+        "sar": 641.20722,
         "sar_bullish": false,
         "sar_history": [
           false,
@@ -2236,35 +2236,35 @@
           false,
           false
         ],
-        "vi_plus": 0.7418,
-        "vi_minus": 0.6444,
+        "vi_plus": 1.4179,
+        "vi_minus": 0.8426,
         "vortex_bullish": true,
-        "rvi": 0.140272,
-        "rvi_signal": 0.217254,
+        "rvi": -0.126713,
+        "rvi_signal": -0.102178,
         "rvi_bullish": false,
-        "perf7": -1.37,
-        "perf30": -0.23,
+        "perf7": 2.87,
+        "perf30": -97.88,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 27.9,
-        "cross_bars": 10,
+        "score": 27.0,
+        "cross_bars": 15,
         "stress_flags": [
           "KAMA rotta",
           "SAR bear",
           "AO negativo"
         ],
         "stress_score": 3,
-        "hurst_60": 0.355,
-        "hurst_1y": 0.46,
-        "adx": 20.3,
+        "hurst_60": 0.466,
+        "hurst_1y": 0.388,
+        "adx": 83.3,
         "regime": {
-          "code": "TRANSIZIONE",
-          "label": "\u26a0\ufe0f Transizione",
-          "color": "#bc4c00",
-          "desc": "Zona grigia"
+          "code": "RIBASSO",
+          "label": "\ud83d\udcc9 Ribasso",
+          "color": "#cf222e",
+          "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "XCS3.DE",
@@ -2323,74 +2323,15 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-05-29 13:34 CET"
-      },
-      {
-        "ticker": "ITBL.MI",
-        "name": "WisdomTree FTSE MIB Banks",
-        "price": 16.982,
-        "kama": 20.954,
-        "k_pct": -18.95,
-        "er": 0.5714,
-        "ao": -440.415106,
-        "ao_series": [
-          -527.75863,
-          -506.820724,
-          -484.746912,
-          -462.718794,
-          -440.415106
-        ],
-        "baffetti": 10,
-        "rsi": 9.5,
-        "atr": 27.10813,
-        "trend": "ROSSO",
-        "mm_aligned": false,
-        "sar": 641.20722,
-        "sar_bullish": false,
-        "sar_history": [
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "vi_plus": 1.4179,
-        "vi_minus": 0.8426,
-        "vortex_bullish": true,
-        "rvi": -0.129192,
-        "rvi_signal": -0.102591,
-        "rvi_bullish": false,
-        "perf7": 2.66,
-        "perf30": -97.89,
-        "rs_above_kama": false,
-        "trend_rs": "ROSSO",
-        "score": 26.6,
-        "cross_bars": 15,
-        "stress_flags": [
-          "KAMA rotta",
-          "SAR bear",
-          "AO negativo"
-        ],
-        "stress_score": 3,
-        "hurst_60": 0.466,
-        "hurst_1y": 0.388,
-        "adx": 83.3,
-        "regime": {
-          "code": "RIBASSO",
-          "label": "\ud83d\udcc9 Ribasso",
-          "color": "#cf222e",
-          "desc": "Ribasso in corso"
-        },
-        "buy_level": "SELL",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "XFVT.DE",
         "name": "Xtrackers Vietnam Swap UCITS ETF",
-        "price": 36.065,
-        "kama": 36.254,
-        "k_pct": -0.52,
-        "er": 0.4662,
+        "price": 36.03,
+        "kama": 36.249,
+        "k_pct": -0.6,
+        "er": 0.4723,
         "ao": 0.132353,
         "ao_series": [
           0.983044,
@@ -2400,7 +2341,7 @@
           0.132353
         ],
         "baffetti": 0,
-        "rsi": 48.4,
+        "rsi": 48.1,
         "atr": 0.55823,
         "trend": "GRIGIO",
         "mm_aligned": false,
@@ -2416,11 +2357,11 @@
         "vi_plus": 0.8063,
         "vi_minus": 0.9888,
         "vortex_bullish": false,
-        "rvi": -0.102666,
-        "rvi_signal": 0.029994,
+        "rvi": -0.104209,
+        "rvi_signal": 0.029737,
         "rvi_bullish": false,
-        "perf7": -3.01,
-        "perf30": 2.36,
+        "perf7": -3.11,
+        "perf30": 2.26,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
         "score": 26.2,
@@ -2441,7 +2382,7 @@
           "desc": "Zona grigia"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "SPXJ.MI",
@@ -2501,26 +2442,86 @@
           "desc": "Senza direzione"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
+      },
+      {
+        "ticker": "MCHN.MI",
+        "name": "Invesco MSCI China All Shares UCITS ETF",
+        "price": 26.54,
+        "kama": 27.005,
+        "k_pct": -1.72,
+        "er": 0.3099,
+        "ao": -0.228147,
+        "ao_series": [
+          -0.095177,
+          -0.134941,
+          -0.234486,
+          -0.23578,
+          -0.228147
+        ],
+        "baffetti": 1,
+        "rsi": 44.0,
+        "atr": 0.25593,
+        "trend": "GRIGIO",
+        "mm_aligned": false,
+        "sar": 27.12754,
+        "sar_bullish": false,
+        "sar_history": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "vi_plus": 0.7225,
+        "vi_minus": 0.6938,
+        "vortex_bullish": true,
+        "rvi": 0.077945,
+        "rvi_signal": 0.171479,
+        "rvi_bullish": false,
+        "perf7": -1.67,
+        "perf30": -1.63,
+        "rs_above_kama": false,
+        "trend_rs": "ROSSO",
+        "score": 22.8,
+        "cross_bars": 11,
+        "stress_flags": [
+          "KAMA rotta",
+          "SAR bear",
+          "AO negativo",
+          "ER<0.4"
+        ],
+        "stress_score": 4,
+        "hurst_60": 0.36,
+        "hurst_1y": 0.46,
+        "adx": 20.3,
+        "regime": {
+          "code": "TRANSIZIONE",
+          "label": "\u26a0\ufe0f Transizione",
+          "color": "#bc4c00",
+          "desc": "Zona grigia"
+        },
+        "buy_level": "SELL",
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "SAUDI.MI",
         "name": "Franklin FTSE Saudi Arabia UCITS ETF",
-        "price": 21.305,
-        "kama": 21.149,
-        "k_pct": 0.74,
-        "er": 0.0292,
-        "ao": -0.053103,
+        "price": 21.335,
+        "kama": 21.15,
+        "k_pct": 0.88,
+        "er": 0.0643,
+        "ao": -0.050544,
         "ao_series": [
           -0.090765,
           -0.069735,
           -0.02825,
           -0.037162,
-          -0.053103
+          -0.050544
         ],
         "baffetti": 0,
-        "rsi": 52.3,
-        "atr": 0.16544,
+        "rsi": 53.5,
+        "atr": 0.16651,
         "trend": "VERDE",
         "mm_aligned": false,
         "sar": 20.9664,
@@ -2532,17 +2533,17 @@
           true,
           true
         ],
-        "vi_plus": 0.9559,
-        "vi_minus": 0.9745,
+        "vi_plus": 0.9631,
+        "vi_minus": 0.9677,
         "vortex_bullish": false,
-        "rvi": 0.030115,
-        "rvi_signal": -0.120222,
+        "rvi": 0.035241,
+        "rvi_signal": -0.119367,
         "rvi_bullish": true,
-        "perf7": 0.52,
-        "perf30": -2.69,
+        "perf7": 0.66,
+        "perf30": -2.56,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 20.8,
+        "score": 22.2,
         "cross_bars": 9,
         "stress_flags": [
           "AO negativo",
@@ -2551,7 +2552,7 @@
         "stress_score": 2,
         "hurst_60": 0.42,
         "hurst_1y": 0.519,
-        "adx": 18.1,
+        "adx": 18.5,
         "regime": {
           "code": "LATERALE",
           "label": "\u2194 Laterale",
@@ -2559,7 +2560,7 @@
           "desc": "Senza direzione"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "AUHEUA.MI",
@@ -2619,15 +2620,15 @@
           "desc": "Zona grigia"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "INDO.PA",
         "name": "Amundi MSCI Indonesia UCITS ETF",
-        "price": 70.406,
-        "kama": 71.903,
-        "k_pct": -2.08,
-        "er": 0.8427,
+        "price": 70.648,
+        "kama": 71.988,
+        "k_pct": -1.86,
+        "er": 0.8387,
         "ao": -9.427447,
         "ao_series": [
           -9.752251,
@@ -2637,7 +2638,7 @@
           -9.427447
         ],
         "baffetti": 2,
-        "rsi": 20.5,
+        "rsi": 20.8,
         "atr": 1.60375,
         "trend": "ROSSO",
         "mm_aligned": false,
@@ -2653,14 +2654,14 @@
         "vi_plus": 0.4502,
         "vi_minus": 1.095,
         "vortex_bullish": false,
-        "rvi": -0.054349,
-        "rvi_signal": 0.003268,
+        "rvi": -0.050222,
+        "rvi_signal": 0.003956,
         "rvi_bullish": false,
-        "perf7": -6.52,
-        "perf30": -22.05,
+        "perf7": -6.2,
+        "perf30": -21.78,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 15.8,
+        "score": 15.9,
         "cross_bars": 16,
         "stress_flags": [
           "KAMA rotta",
@@ -2668,7 +2669,7 @@
           "AO negativo"
         ],
         "stress_score": 3,
-        "hurst_60": 0.472,
+        "hurst_60": 0.471,
         "hurst_1y": 0.461,
         "adx": 51.3,
         "regime": {
@@ -2678,15 +2679,15 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "HSTE.MI",
         "name": "HSBC Hang Seng Tech UCITS ETF",
-        "price": 5.817,
+        "price": 5.814,
         "kama": 5.932,
-        "k_pct": -1.94,
-        "er": 0.0983,
+        "k_pct": -1.99,
+        "er": 0.1034,
         "ao": -0.033691,
         "ao_series": [
           -0.083759,
@@ -2696,7 +2697,7 @@
           -0.033691
         ],
         "baffetti": 4,
-        "rsi": 46.5,
+        "rsi": 46.4,
         "atr": 0.11375,
         "trend": "ROSSO",
         "mm_aligned": false,
@@ -2712,11 +2713,11 @@
         "vi_plus": 0.7082,
         "vi_minus": 0.8239,
         "vortex_bullish": false,
-        "rvi": -0.122927,
-        "rvi_signal": -0.014598,
+        "rvi": -0.123565,
+        "rvi_signal": -0.014704,
         "rvi_bullish": false,
-        "perf7": -0.65,
-        "perf30": -3.08,
+        "perf7": -0.7,
+        "perf30": -3.13,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
         "score": 11.3,
@@ -2738,15 +2739,15 @@
           "desc": "Senza direzione"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "XPQP.DE",
         "name": "Xtrackers MSCI Philippines UCITS ETF",
-        "price": 1.232,
+        "price": 1.234,
         "kama": 1.267,
-        "k_pct": -2.76,
-        "er": 0.3711,
+        "k_pct": -2.61,
+        "er": 0.3606,
         "ao": -0.008996,
         "ao_series": [
           -0.007531,
@@ -2756,7 +2757,7 @@
           -0.008996
         ],
         "baffetti": 0,
-        "rsi": 39.6,
+        "rsi": 40.1,
         "atr": 0.01932,
         "trend": "ROSSO",
         "mm_aligned": false,
@@ -2772,11 +2773,11 @@
         "vi_plus": 0.6544,
         "vi_minus": 0.8539,
         "vortex_bullish": false,
-        "rvi": 0.005543,
-        "rvi_signal": -0.021358,
+        "rvi": 0.00913,
+        "rvi_signal": -0.02076,
         "rvi_bullish": true,
-        "perf7": -2.41,
-        "perf30": -4.13,
+        "perf7": -2.23,
+        "perf30": -3.95,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
         "score": 10.0,
@@ -2798,7 +2799,7 @@
           "desc": "Senza direzione"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "LCCN.MI",
@@ -2857,7 +2858,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "TUR.PA",
@@ -2916,15 +2917,15 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "IBZL.MI",
         "name": "iShares MSCI Brazil UCITS ETF",
-        "price": 24.85,
-        "kama": 25.408,
-        "k_pct": -2.2,
-        "er": 0.0315,
+        "price": 24.895,
+        "kama": 25.409,
+        "k_pct": -2.02,
+        "er": 0.0115,
         "ao": -1.624485,
         "ao_series": [
           -1.754529,
@@ -2934,7 +2935,7 @@
           -1.624485
         ],
         "baffetti": 0,
-        "rsi": 33.8,
+        "rsi": 34.2,
         "atr": 0.4322,
         "trend": "ROSSO",
         "mm_aligned": false,
@@ -2950,11 +2951,11 @@
         "vi_plus": 0.6331,
         "vi_minus": 1.1295,
         "vortex_bullish": false,
-        "rvi": -0.215572,
-        "rvi_signal": -0.208195,
+        "rvi": -0.21362,
+        "rvi_signal": -0.20787,
         "rvi_bullish": false,
-        "perf7": -1.84,
-        "perf30": -12.33,
+        "perf7": -1.66,
+        "perf30": -12.17,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
         "score": 0,
@@ -2976,17 +2977,17 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       }
     ],
     "watchlist": [
       {
         "ticker": "FLXT.MI",
         "name": "Franklin FTSE Taiwan UCITS ETF",
-        "price": 60.45,
-        "kama": 56.939,
-        "k_pct": 6.17,
-        "er": 0.681,
+        "price": 60.3,
+        "kama": 56.893,
+        "k_pct": 5.99,
+        "er": 0.6763,
         "ao": 7.170044,
         "ao_series": [
           4.405559,
@@ -2996,7 +2997,7 @@
           7.170044
         ],
         "baffetti": 6,
-        "rsi": 78.0,
+        "rsi": 77.7,
         "atr": 1.27209,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -3012,18 +3013,18 @@
         "vi_plus": 0.9581,
         "vi_minus": 0.7681,
         "vortex_bullish": true,
-        "rvi": 0.225184,
-        "rvi_signal": 0.166785,
+        "rvi": 0.222133,
+        "rvi_signal": 0.166277,
         "rvi_bullish": true,
-        "perf7": 13.88,
-        "perf30": 30.49,
+        "perf7": 13.6,
+        "perf30": 30.17,
         "rs_above_kama": true,
         "trend_rs": "VERDE",
-        "score": 85.9,
+        "score": 85.8,
         "cross_bars": 7,
         "stress_flags": [],
         "stress_score": 0,
-        "hurst_60": 0.467,
+        "hurst_60": 0.466,
         "hurst_1y": 0.499,
         "adx": 46.4,
         "regime": {
@@ -3033,15 +3034,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "BUY3",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "XESD.DE",
         "name": "Xtrackers Spain UCITS ETF",
-        "price": 42.88,
-        "kama": 41.841,
-        "k_pct": 2.48,
-        "er": 0.5903,
+        "price": 42.775,
+        "kama": 41.815,
+        "k_pct": 2.3,
+        "er": 0.5777,
         "ao": 1.036132,
         "ao_series": [
           0.325338,
@@ -3051,7 +3052,7 @@
           1.036132
         ],
         "baffetti": 8,
-        "rsi": 62.2,
+        "rsi": 61.5,
         "atr": 0.59327,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -3067,14 +3068,14 @@
         "vi_plus": 1.0475,
         "vi_minus": 0.7598,
         "vortex_bullish": true,
-        "rvi": 0.175994,
-        "rvi_signal": 0.165625,
+        "rvi": 0.172367,
+        "rvi_signal": 0.165021,
         "rvi_bullish": true,
-        "perf7": 2.3,
-        "perf30": 2.73,
+        "perf7": 2.05,
+        "perf30": 2.48,
         "rs_above_kama": false,
-        "trend_rs": "GRIGIO",
-        "score": 73.9,
+        "trend_rs": "ROSSO",
+        "score": 72.9,
         "cross_bars": 8,
         "stress_flags": [],
         "stress_score": 0,
@@ -3088,15 +3089,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "WS5X.MI",
         "name": "WisdomTree EURO STOXX 50",
-        "price": 44.495,
-        "kama": 43.391,
-        "k_pct": 2.55,
-        "er": 0.6294,
+        "price": 44.36,
+        "kama": 43.354,
+        "k_pct": 2.32,
+        "er": 0.6134,
         "ao": 1.322618,
         "ao_series": [
           0.773103,
@@ -3106,7 +3107,7 @@
           1.322618
         ],
         "baffetti": 6,
-        "rsi": 61.7,
+        "rsi": 60.7,
         "atr": 0.62096,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -3122,18 +3123,18 @@
         "vi_plus": 1.0217,
         "vi_minus": 0.7323,
         "vortex_bullish": true,
-        "rvi": 0.321491,
-        "rvi_signal": 0.303569,
+        "rvi": 0.31719,
+        "rvi_signal": 0.302853,
         "rvi_bullish": true,
-        "perf7": 2.1,
-        "perf30": 3.84,
+        "perf7": 1.79,
+        "perf30": 3.52,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 72.5,
+        "score": 71.3,
         "cross_bars": 13,
         "stress_flags": [],
         "stress_score": 0,
-        "hurst_60": 0.354,
+        "hurst_60": 0.353,
         "hurst_1y": 0.345,
         "adx": 33.9,
         "regime": {
@@ -3143,7 +3144,7 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "SP1E.MI",
@@ -3198,15 +3199,15 @@
           "desc": "Trend rialzista forte"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       },
       {
         "ticker": "FMI.MI",
         "name": "Amundi Italy MIB ESG UCITS ETF",
-        "price": 124.12,
-        "kama": 119.407,
-        "k_pct": 3.95,
-        "er": 0.516,
+        "price": 123.92,
+        "kama": 119.356,
+        "k_pct": 3.82,
+        "er": 0.5061,
         "ao": 4.939647,
         "ao_series": [
           4.098176,
@@ -3216,7 +3217,7 @@
           4.939647
         ],
         "baffetti": 6,
-        "rsi": 65.5,
+        "rsi": 65.1,
         "atr": 1.69532,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -3232,14 +3233,14 @@
         "vi_plus": 0.9697,
         "vi_minus": 0.739,
         "vortex_bullish": true,
-        "rvi": 0.126647,
-        "rvi_signal": 0.153203,
+        "rvi": 0.124336,
+        "rvi_signal": 0.152818,
         "rvi_bullish": false,
-        "perf7": 2.75,
-        "perf30": 8.04,
+        "perf7": 2.58,
+        "perf30": 7.87,
         "rs_above_kama": true,
         "trend_rs": "VERDE",
-        "score": 65.7,
+        "score": 65.3,
         "cross_bars": 19,
         "stress_flags": [],
         "stress_score": 0,
@@ -3253,177 +3254,12 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
-      },
-      {
-        "ticker": "IS3U.DE",
-        "name": "iShares MSCI France UCITS ETF",
-        "price": 64.58,
-        "kama": 63.341,
-        "k_pct": 1.96,
-        "er": 0.5121,
-        "ao": 1.021324,
-        "ao_series": [
-          0.1785,
-          0.402088,
-          0.697882,
-          0.817647,
-          1.021324
-        ],
-        "baffetti": 6,
-        "rsi": 59.4,
-        "atr": 0.78899,
-        "trend": "VERDE",
-        "mm_aligned": true,
-        "sar": 61.84665,
-        "sar_bullish": true,
-        "sar_history": [
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "vi_plus": 0.9923,
-        "vi_minus": 0.7797,
-        "vortex_bullish": true,
-        "rvi": 0.158291,
-        "rvi_signal": 0.159897,
-        "rvi_bullish": false,
-        "perf7": 1.94,
-        "perf30": 1.59,
-        "rs_above_kama": false,
-        "trend_rs": "ROSSO",
-        "score": 65.1,
-        "cross_bars": 8,
-        "stress_flags": [],
-        "stress_score": 0,
-        "hurst_60": 0.377,
-        "hurst_1y": 0.293,
-        "adx": 23.4,
-        "regime": {
-          "code": "TRANSIZIONE",
-          "label": "\u26a0\ufe0f Transizione",
-          "color": "#bc4c00",
-          "desc": "Zona grigia"
-        },
-        "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
-      },
-      {
-        "ticker": "EXS1.DE",
-        "name": "iShares Core DAX UCITS ETF",
-        "price": 207.35,
-        "kama": 202.501,
-        "k_pct": 2.39,
-        "er": 0.5718,
-        "ao": 6.24338,
-        "ao_series": [
-          4.131323,
-          4.820881,
-          5.625292,
-          5.974409,
-          6.24338
-        ],
-        "baffetti": 9,
-        "rsi": 59.7,
-        "atr": 3.04132,
-        "trend": "VERDE",
-        "mm_aligned": false,
-        "sar": 197.3558,
-        "sar_bullish": true,
-        "sar_history": [
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "vi_plus": 1.0063,
-        "vi_minus": 0.7594,
-        "vortex_bullish": true,
-        "rvi": 0.186283,
-        "rvi_signal": 0.193125,
-        "rvi_bullish": false,
-        "perf7": 1.59,
-        "perf30": 3.82,
-        "rs_above_kama": false,
-        "trend_rs": "ROSSO",
-        "score": 65.0,
-        "cross_bars": 10,
-        "stress_flags": [],
-        "stress_score": 0,
-        "hurst_60": 0.366,
-        "hurst_1y": 0.398,
-        "adx": 30.1,
-        "regime": {
-          "code": "SALITA",
-          "label": "\ud83d\udcc8 Salita",
-          "color": "#2ea043",
-          "desc": "Rialzo in corso"
-        },
-        "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:40 CET"
       }
     ]
   },
   "new_area": {
     "all": [
-      {
-        "ticker": "CSEMAS.MI",
-        "name": "iShares MSCI EM Asia ETF EUR Acc",
-        "price": 266.34,
-        "kama": 255.315,
-        "k_pct": 4.32,
-        "er": 0.5731,
-        "ao": 17.325554,
-        "ao_series": [
-          11.008526,
-          12.916555,
-          15.150672,
-          16.058613,
-          17.325554
-        ],
-        "baffetti": 5,
-        "rsi": 69.8,
-        "atr": 4.69866,
-        "trend": "VERDE",
-        "mm_aligned": true,
-        "sar": 246.65065,
-        "sar_bullish": true,
-        "sar_history": [
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "vi_plus": 0.9984,
-        "vi_minus": 0.6602,
-        "vortex_bullish": true,
-        "rvi": 0.314579,
-        "rvi_signal": 0.230762,
-        "rvi_bullish": true,
-        "perf7": 6.48,
-        "perf30": 15.19,
-        "rs_above_kama": true,
-        "trend_rs": "VERDE",
-        "score": 79.2,
-        "cross_bars": 6,
-        "stress_flags": [],
-        "stress_score": 0,
-        "hurst_60": 0.422,
-        "hurst_1y": 0.441,
-        "adx": 31.5,
-        "regime": {
-          "code": "SALITA",
-          "label": "\ud83d\udcc8 Salita",
-          "color": "#2ea043",
-          "desc": "Rialzo in corso"
-        },
-        "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
-      },
       {
         "ticker": "XDEE.DE",
         "name": "Xtrackers S&P 500 Equal Weight EUR Hedged",
@@ -3477,15 +3313,70 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
+      },
+      {
+        "ticker": "CSEMAS.MI",
+        "name": "iShares MSCI EM Asia ETF EUR Acc",
+        "price": 265.7,
+        "kama": 255.145,
+        "k_pct": 4.14,
+        "er": 0.563,
+        "ao": 17.325554,
+        "ao_series": [
+          11.008526,
+          12.916555,
+          15.150672,
+          16.058613,
+          17.325554
+        ],
+        "baffetti": 5,
+        "rsi": 69.4,
+        "atr": 4.69866,
+        "trend": "VERDE",
+        "mm_aligned": true,
+        "sar": 246.65065,
+        "sar_bullish": true,
+        "sar_history": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "vi_plus": 0.9984,
+        "vi_minus": 0.6602,
+        "vortex_bullish": true,
+        "rvi": 0.311593,
+        "rvi_signal": 0.230264,
+        "rvi_bullish": true,
+        "perf7": 6.23,
+        "perf30": 14.91,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "score": 78.6,
+        "cross_bars": 6,
+        "stress_flags": [],
+        "stress_score": 0,
+        "hurst_60": 0.422,
+        "hurst_1y": 0.441,
+        "adx": 31.5,
+        "regime": {
+          "code": "SALITA",
+          "label": "\ud83d\udcc8 Salita",
+          "color": "#2ea043",
+          "desc": "Rialzo in corso"
+        },
+        "buy_level": "BUY2",
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "SEMA.MI",
         "name": "iShares MSCI EM UCITS ETF EUR Acc",
-        "price": 56.67,
-        "kama": 54.703,
-        "k_pct": 3.6,
-        "er": 0.5903,
+        "price": 56.54,
+        "kama": 54.667,
+        "k_pct": 3.43,
+        "er": 0.5792,
         "ao": 2.916353,
         "ao_series": [
           1.722985,
@@ -3495,7 +3386,7 @@
           2.916353
         ],
         "baffetti": 5,
-        "rsi": 68.5,
+        "rsi": 68.0,
         "atr": 0.8968,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -3511,14 +3402,14 @@
         "vi_plus": 0.993,
         "vi_minus": 0.6905,
         "vortex_bullish": true,
-        "rvi": 0.25307,
-        "rvi_signal": 0.198939,
+        "rvi": 0.250001,
+        "rvi_signal": 0.198427,
         "rvi_bullish": true,
-        "perf7": 5.35,
-        "perf30": 11.51,
+        "perf7": 5.11,
+        "perf30": 11.26,
         "rs_above_kama": true,
         "trend_rs": "VERDE",
-        "score": 78.6,
+        "score": 78.0,
         "cross_bars": 6,
         "stress_flags": [],
         "stress_score": 0,
@@ -3532,15 +3423,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "IQQF.DE",
         "name": "iShares MSCI AC Far East ex-Japan UCITS ETF",
-        "price": 85.37,
-        "kama": 82.005,
-        "k_pct": 4.1,
-        "er": 0.5971,
+        "price": 85.09,
+        "kama": 81.928,
+        "k_pct": 3.86,
+        "er": 0.5832,
         "ao": 5.675471,
         "ao_series": [
           3.886147,
@@ -3550,7 +3441,7 @@
           5.675471
         ],
         "baffetti": 4,
-        "rsi": 70.8,
+        "rsi": 70.2,
         "atr": 1.44121,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -3566,19 +3457,19 @@
         "vi_plus": 1.0022,
         "vi_minus": 0.6675,
         "vortex_bullish": true,
-        "rvi": 0.27291,
-        "rvi_signal": 0.207318,
+        "rvi": 0.268568,
+        "rvi_signal": 0.206595,
         "rvi_bullish": true,
-        "perf7": 6.53,
-        "perf30": 16.63,
+        "perf7": 6.18,
+        "perf30": 16.24,
         "rs_above_kama": true,
         "trend_rs": "VERDE",
-        "score": 75.9,
+        "score": 75.2,
         "cross_bars": 6,
         "stress_flags": [],
         "stress_score": 0,
         "hurst_60": 0.42,
-        "hurst_1y": 0.443,
+        "hurst_1y": 0.444,
         "adx": 34.5,
         "regime": {
           "code": "SALITA",
@@ -3587,15 +3478,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "WS5X.MI",
         "name": "WisdomTree EURO STOXX 50",
-        "price": 44.495,
-        "kama": 43.391,
-        "k_pct": 2.55,
-        "er": 0.6294,
+        "price": 44.36,
+        "kama": 43.354,
+        "k_pct": 2.32,
+        "er": 0.6134,
         "ao": 1.322618,
         "ao_series": [
           0.773103,
@@ -3605,7 +3496,7 @@
           1.322618
         ],
         "baffetti": 6,
-        "rsi": 61.7,
+        "rsi": 60.7,
         "atr": 0.62096,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -3621,18 +3512,18 @@
         "vi_plus": 1.0217,
         "vi_minus": 0.7323,
         "vortex_bullish": true,
-        "rvi": 0.321491,
-        "rvi_signal": 0.303569,
+        "rvi": 0.31719,
+        "rvi_signal": 0.302853,
         "rvi_bullish": true,
-        "perf7": 2.1,
-        "perf30": 3.84,
+        "perf7": 1.79,
+        "perf30": 3.52,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 72.5,
+        "score": 71.3,
         "cross_bars": 13,
         "stress_flags": [],
         "stress_score": 0,
-        "hurst_60": 0.354,
+        "hurst_60": 0.353,
         "hurst_1y": 0.345,
         "adx": 33.9,
         "regime": {
@@ -3642,7 +3533,7 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "NTSZ.DE",
@@ -3697,15 +3588,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "NQSE.DE",
         "name": "iShares NASDAQ 100 UCITS ETF",
-        "price": 17.64,
-        "kama": 17.043,
-        "k_pct": 3.5,
-        "er": 0.4,
+        "price": 17.622,
+        "kama": 17.04,
+        "k_pct": 3.42,
+        "er": 0.3926,
         "ao": 1.105506,
         "ao_series": [
           1.048529,
@@ -3715,7 +3606,7 @@
           1.105506
         ],
         "baffetti": 4,
-        "rsi": 73.2,
+        "rsi": 73.0,
         "atr": 0.23527,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -3731,17 +3622,19 @@
         "vi_plus": 0.9515,
         "vi_minus": 0.685,
         "vortex_bullish": true,
-        "rvi": 0.100643,
-        "rvi_signal": 0.057168,
+        "rvi": 0.099191,
+        "rvi_signal": 0.056926,
         "rvi_bullish": true,
-        "perf7": 3.63,
-        "perf30": 14.78,
+        "perf7": 3.52,
+        "perf30": 14.67,
         "rs_above_kama": true,
         "trend_rs": "VERDE",
-        "score": 67.1,
+        "score": 66.8,
         "cross_bars": 8,
-        "stress_flags": [],
-        "stress_score": 0,
+        "stress_flags": [
+          "ER<0.4"
+        ],
+        "stress_score": 1,
         "hurst_60": 0.587,
         "hurst_1y": 0.527,
         "adx": 41.2,
@@ -3752,15 +3645,15 @@
           "desc": "Trend rialzista forte"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "MEUD.PA",
         "name": "Amundi Core Stoxx Europe 600 UCITS ETF",
-        "price": 308.8,
-        "kama": 302.048,
-        "k_pct": 2.24,
-        "er": 0.5234,
+        "price": 308.3,
+        "kama": 301.941,
+        "k_pct": 2.11,
+        "er": 0.513,
         "ao": 7.951181,
         "ao_series": [
           5.518381,
@@ -3770,7 +3663,7 @@
           7.951181
         ],
         "baffetti": 6,
-        "rsi": 60.2,
+        "rsi": 59.6,
         "atr": 3.82357,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -3786,14 +3679,14 @@
         "vi_plus": 0.9749,
         "vi_minus": 0.7122,
         "vortex_bullish": true,
-        "rvi": 0.246926,
-        "rvi_signal": 0.275986,
+        "rvi": 0.244417,
+        "rvi_signal": 0.275567,
         "rvi_bullish": false,
-        "perf7": 1.48,
-        "perf30": 3.12,
+        "perf7": 1.31,
+        "perf30": 2.96,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 66.0,
+        "score": 65.3,
         "cross_bars": 10,
         "stress_flags": [],
         "stress_score": 0,
@@ -3807,15 +3700,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "IWDE.MI",
         "name": "iShares MSCI World EUR Hedged UCITS ETF",
-        "price": 117.54,
-        "kama": 115.131,
-        "k_pct": 2.09,
-        "er": 0.4107,
+        "price": 117.48,
+        "kama": 115.12,
+        "k_pct": 2.05,
+        "er": 0.4051,
         "ao": 3.696676,
         "ao_series": [
           3.298413,
@@ -3825,7 +3718,7 @@
           3.696676
         ],
         "baffetti": 5,
-        "rsi": 68.8,
+        "rsi": 68.6,
         "atr": 1.01256,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -3841,14 +3734,14 @@
         "vi_plus": 0.9264,
         "vi_minus": 0.7162,
         "vortex_bullish": true,
-        "rvi": 0.131837,
-        "rvi_signal": 0.138921,
+        "rvi": 0.130613,
+        "rvi_signal": 0.138717,
         "rvi_bullish": false,
-        "perf7": 2.03,
-        "perf30": 6.12,
+        "perf7": 1.98,
+        "perf30": 6.07,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 63.9,
+        "score": 63.7,
         "cross_bars": 8,
         "stress_flags": [],
         "stress_score": 0,
@@ -3862,15 +3755,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "WNAS.MI",
         "name": "WisdomTree NASDAQ-100 ETP",
-        "price": 38.05,
-        "kama": 36.907,
-        "k_pct": 3.1,
-        "er": 0.4505,
+        "price": 38.055,
+        "kama": 36.909,
+        "k_pct": 3.11,
+        "er": 0.4515,
         "ao": 2.616618,
         "ao_series": [
           2.478147,
@@ -3896,11 +3789,11 @@
         "vi_plus": 1.0007,
         "vi_minus": 0.6307,
         "vortex_bullish": true,
-        "rvi": 0.058834,
-        "rvi_signal": 0.089432,
+        "rvi": 0.059027,
+        "rvi_signal": 0.089464,
         "rvi_bullish": false,
-        "perf7": 3.45,
-        "perf30": 16.4,
+        "perf7": 3.47,
+        "perf30": 16.41,
         "rs_above_kama": true,
         "trend_rs": "VERDE",
         "score": 63.5,
@@ -3917,25 +3810,25 @@
           "desc": "Trend rialzista forte"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "IJPE.MI",
         "name": "iShares MSCI Japan EUR Hedged UCITS ETF",
-        "price": 138.87,
-        "kama": 135.505,
-        "k_pct": 2.48,
-        "er": 0.3445,
-        "ao": 4.514291,
+        "price": 138.68,
+        "kama": 135.476,
+        "k_pct": 2.37,
+        "er": 0.3312,
+        "ao": 4.506615,
         "ao_series": [
           2.90941,
           3.304998,
           3.883822,
           4.203323,
-          4.514291
+          4.506615
         ],
         "baffetti": 5,
-        "rsi": 64.7,
+        "rsi": 64.3,
         "atr": 1.75571,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -3949,16 +3842,16 @@
           true
         ],
         "vi_plus": 0.8616,
-        "vi_minus": 0.7803,
+        "vi_minus": 0.7765,
         "vortex_bullish": true,
-        "rvi": 0.322666,
-        "rvi_signal": 0.350192,
+        "rvi": 0.319725,
+        "rvi_signal": 0.349702,
         "rvi_bullish": false,
-        "perf7": 2.92,
-        "perf30": 4.58,
+        "perf7": 2.78,
+        "perf30": 4.44,
         "rs_above_kama": true,
-        "trend_rs": "GRIGIO",
-        "score": 63.0,
+        "trend_rs": "ROSSO",
+        "score": 62.3,
         "cross_bars": 6,
         "stress_flags": [
           "ER<0.4"
@@ -3974,25 +3867,82 @@
           "desc": "Zona grigia"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
+      },
+      {
+        "ticker": "EST.MI",
+        "name": "Amundi MSCI Eastern Europe Ex Russia UCITS ETF",
+        "price": 43.645,
+        "kama": 42.09,
+        "k_pct": 3.7,
+        "er": 0.3523,
+        "ao": 0.971088,
+        "ao_series": [
+          0.475471,
+          0.601147,
+          0.784633,
+          0.863397,
+          0.971088
+        ],
+        "baffetti": 6,
+        "rsi": 60.5,
+        "atr": 0.70107,
+        "trend": "VERDE",
+        "mm_aligned": true,
+        "sar": 41.64408,
+        "sar_bullish": true,
+        "sar_history": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "vi_plus": 0.9131,
+        "vi_minus": 0.7512,
+        "vortex_bullish": true,
+        "rvi": 0.176728,
+        "rvi_signal": 0.210424,
+        "rvi_bullish": false,
+        "perf7": 2.62,
+        "perf30": 1.75,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "score": 62.1,
+        "cross_bars": 8,
+        "stress_flags": [
+          "ER<0.4"
+        ],
+        "stress_score": 1,
+        "hurst_60": 0.513,
+        "hurst_1y": 0.434,
+        "adx": 34.3,
+        "regime": {
+          "code": "SALITA",
+          "label": "\ud83d\udcc8 Salita",
+          "color": "#2ea043",
+          "desc": "Rialzo in corso"
+        },
+        "buy_level": "WATCH",
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "LAFRI.MI",
         "name": "Amundi Pan Africa UCITS ETF",
-        "price": 15.136,
-        "kama": 14.639,
-        "k_pct": 3.39,
-        "er": 0.3137,
-        "ao": 0.080212,
+        "price": 15.08,
+        "kama": 14.632,
+        "k_pct": 3.06,
+        "er": 0.2892,
+        "ao": 0.075435,
         "ao_series": [
           -0.370671,
           -0.283771,
           -0.152659,
           -0.054982,
-          0.080212
+          0.075435
         ],
         "baffetti": 5,
-        "rsi": 56.4,
+        "rsi": 55.5,
         "atr": 0.36276,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -4006,16 +3956,16 @@
           true
         ],
         "vi_plus": 0.8578,
-        "vi_minus": 0.8951,
+        "vi_minus": 0.9032,
         "vortex_bullish": false,
-        "rvi": -0.029002,
-        "rvi_signal": -0.14886,
+        "rvi": -0.032048,
+        "rvi_signal": -0.149368,
         "rvi_bullish": true,
-        "perf7": 4.73,
-        "perf30": -0.9,
+        "perf7": 4.35,
+        "perf30": -1.27,
         "rs_above_kama": true,
         "trend_rs": "ROSSO",
-        "score": 61.7,
+        "score": 60.4,
         "cross_bars": 5,
         "stress_flags": [
           "ER<0.4"
@@ -4031,82 +3981,25 @@
           "desc": "Zona grigia"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
-      },
-      {
-        "ticker": "EST.MI",
-        "name": "Amundi MSCI Eastern Europe Ex Russia UCITS ETF",
-        "price": 43.435,
-        "kama": 42.06,
-        "k_pct": 3.27,
-        "er": 0.3234,
-        "ao": 0.954029,
-        "ao_series": [
-          0.475471,
-          0.601147,
-          0.784633,
-          0.863397,
-          0.954029
-        ],
-        "baffetti": 6,
-        "rsi": 59.3,
-        "atr": 0.68678,
-        "trend": "VERDE",
-        "mm_aligned": true,
-        "sar": 41.64408,
-        "sar_bullish": true,
-        "sar_history": [
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "vi_plus": 0.9113,
-        "vi_minus": 0.7666,
-        "vortex_bullish": true,
-        "rvi": 0.171762,
-        "rvi_signal": 0.209596,
-        "rvi_bullish": false,
-        "perf7": 2.13,
-        "perf30": 1.26,
-        "rs_above_kama": false,
-        "trend_rs": "GRIGIO",
-        "score": 60.5,
-        "cross_bars": 8,
-        "stress_flags": [
-          "ER<0.4"
-        ],
-        "stress_score": 1,
-        "hurst_60": 0.513,
-        "hurst_1y": 0.434,
-        "adx": 33.5,
-        "regime": {
-          "code": "SALITA",
-          "label": "\ud83d\udcc8 Salita",
-          "color": "#2ea043",
-          "desc": "Rialzo in corso"
-        },
-        "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "SJPA.MI",
         "name": "iShares Core MSCI Japan IMI UCITS ETF",
-        "price": 68.57,
-        "kama": 67.145,
-        "k_pct": 2.12,
-        "er": 0.2476,
-        "ao": 2.319853,
+        "price": 68.5,
+        "kama": 67.137,
+        "k_pct": 2.03,
+        "er": 0.2349,
+        "ao": 2.317294,
         "ao_series": [
           1.723852,
           1.891353,
           2.114058,
           2.223941,
-          2.319853
+          2.317294
         ],
         "baffetti": 5,
-        "rsi": 63.9,
+        "rsi": 63.5,
         "atr": 0.85199,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -4120,16 +4013,16 @@
           true
         ],
         "vi_plus": 0.8644,
-        "vi_minus": 0.81,
+        "vi_minus": 0.8072,
         "vortex_bullish": true,
-        "rvi": 0.210141,
-        "rvi_signal": 0.249133,
+        "rvi": 0.20784,
+        "rvi_signal": 0.248749,
         "rvi_bullish": false,
-        "perf7": 2.27,
-        "perf30": 5.48,
+        "perf7": 2.16,
+        "perf30": 5.37,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 59.3,
+        "score": 58.7,
         "cross_bars": 8,
         "stress_flags": [
           "ER<0.4"
@@ -4145,7 +4038,7 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "NTSG.MI",
@@ -4202,7 +4095,7 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "NTSX.MI",
@@ -4259,26 +4152,26 @@
           "desc": "Trend rialzista forte"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "JRGE.MI",
         "name": "JPMorgan Global Research Enhanced Index ETF",
-        "price": 55.43,
-        "kama": 54.415,
-        "k_pct": 1.87,
-        "er": 0.4286,
-        "ao": 1.581058,
+        "price": 55.46,
+        "kama": 54.421,
+        "k_pct": 1.91,
+        "er": 0.4351,
+        "ao": 1.583617,
         "ao_series": [
           1.386985,
           1.452206,
           1.572676,
           1.587176,
-          1.581058
+          1.583617
         ],
         "baffetti": 0,
-        "rsi": 69.3,
-        "atr": 0.38536,
+        "rsi": 69.5,
+        "atr": 0.38751,
         "trend": "VERDE",
         "mm_aligned": true,
         "sar": 54.23452,
@@ -4290,23 +4183,23 @@
           true,
           true
         ],
-        "vi_plus": 0.8913,
-        "vi_minus": 0.7627,
+        "vi_plus": 0.8919,
+        "vi_minus": 0.7586,
         "vortex_bullish": true,
-        "rvi": 0.012193,
-        "rvi_signal": 0.002019,
+        "rvi": 0.013996,
+        "rvi_signal": 0.002319,
         "rvi_bullish": true,
-        "perf7": 1.95,
-        "perf30": 5.54,
-        "rs_above_kama": false,
+        "perf7": 2.0,
+        "perf30": 5.6,
+        "rs_above_kama": true,
         "trend_rs": "ROSSO",
-        "score": 49.2,
+        "score": 49.5,
         "cross_bars": 8,
         "stress_flags": [],
         "stress_score": 0,
         "hurst_60": 0.526,
         "hurst_1y": 0.447,
-        "adx": 43.9,
+        "adx": 44.0,
         "regime": {
           "code": "SALITA",
           "label": "\ud83d\udcc8 Salita",
@@ -4314,7 +4207,7 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "WSPE.MI",
@@ -4371,15 +4264,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "ISAC.MI",
         "name": "iShares MSCI ACWI UCITS ETF",
-        "price": 104.68,
-        "kama": 102.574,
-        "k_pct": 2.05,
-        "er": 0.5451,
+        "price": 104.63,
+        "kama": 102.561,
+        "k_pct": 2.02,
+        "er": 0.5404,
         "ao": 3.954177,
         "ao_series": [
           3.585235,
@@ -4389,7 +4282,7 @@
           3.954177
         ],
         "baffetti": 0,
-        "rsi": 73.3,
+        "rsi": 73.1,
         "atr": 0.85117,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -4405,14 +4298,14 @@
         "vi_plus": 0.9693,
         "vi_minus": 0.694,
         "vortex_bullish": true,
-        "rvi": 0.18685,
-        "rvi_signal": 0.199155,
+        "rvi": 0.185614,
+        "rvi_signal": 0.198949,
         "rvi_bullish": false,
-        "perf7": 2.42,
-        "perf30": 7.81,
+        "perf7": 2.37,
+        "perf30": 7.75,
         "rs_above_kama": true,
         "trend_rs": "VERDE",
-        "score": 48.3,
+        "score": 48.1,
         "cross_bars": 8,
         "stress_flags": [],
         "stress_score": 0,
@@ -4426,15 +4319,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "IUSE.MI",
         "name": "iShares S&P 500 EUR Hedged UCITS ETF",
-        "price": 155.88,
-        "kama": 152.765,
-        "k_pct": 2.04,
-        "er": 0.3403,
+        "price": 155.91,
+        "kama": 152.77,
+        "k_pct": 2.06,
+        "er": 0.3425,
         "ao": 5.416735,
         "ao_series": [
           5.296618,
@@ -4444,7 +4337,7 @@
           5.416735
         ],
         "baffetti": 0,
-        "rsi": 70.0,
+        "rsi": 70.1,
         "atr": 1.31136,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -4460,14 +4353,14 @@
         "vi_plus": 0.9085,
         "vi_minus": 0.7062,
         "vortex_bullish": true,
-        "rvi": 0.05396,
-        "rvi_signal": 0.045002,
+        "rvi": 0.054439,
+        "rvi_signal": 0.045081,
         "rvi_bullish": true,
-        "perf7": 2.12,
-        "perf30": 7.61,
+        "perf7": 2.14,
+        "perf30": 7.64,
         "rs_above_kama": true,
         "trend_rs": "VERDE",
-        "score": 46.9,
+        "score": 47.0,
         "cross_bars": 8,
         "stress_flags": [
           "ER<0.4"
@@ -4483,25 +4376,25 @@
           "desc": "Trend rialzista forte"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "CAHEUA.MI",
         "name": "UBS MSCI Canada UCITS ETF hEUR Acc",
-        "price": 39.61,
-        "kama": 39.144,
-        "k_pct": 1.19,
-        "er": 0.4976,
-        "ao": 0.726603,
+        "price": 39.595,
+        "kama": 39.141,
+        "k_pct": 1.16,
+        "er": 0.4939,
+        "ao": 0.725323,
         "ao_series": [
           0.499235,
           0.622411,
           0.760235,
           0.760573,
-          0.726603
+          0.725323
         ],
         "baffetti": 0,
-        "rsi": 62.1,
+        "rsi": 61.9,
         "atr": 0.29948,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -4515,16 +4408,16 @@
           true
         ],
         "vi_plus": 0.8905,
-        "vi_minus": 0.8124,
+        "vi_minus": 0.8091,
         "vortex_bullish": true,
-        "rvi": -0.012452,
-        "rvi_signal": 0.036045,
+        "rvi": -0.013476,
+        "rvi_signal": 0.035875,
         "rvi_bullish": false,
-        "perf7": 1.32,
-        "perf30": 1.85,
+        "perf7": 1.28,
+        "perf30": 1.81,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 43.4,
+        "score": 43.2,
         "cross_bars": 8,
         "stress_flags": [],
         "stress_score": 0,
@@ -4538,15 +4431,70 @@
           "desc": "Zona grigia"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
+      },
+      {
+        "ticker": "SXRU.DE",
+        "name": "iShares Dow Jones Industrial Avg ETF EUR Acc",
+        "price": 530.7,
+        "kama": 522.937,
+        "k_pct": 1.48,
+        "er": 0.4276,
+        "ao": 15.757351,
+        "ao_series": [
+          14.315872,
+          15.475437,
+          16.480293,
+          16.558673,
+          15.757351
+        ],
+        "baffetti": 0,
+        "rsi": 67.1,
+        "atr": 4.29314,
+        "trend": "VERDE",
+        "mm_aligned": true,
+        "sar": 522.10459,
+        "sar_bullish": true,
+        "sar_history": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "vi_plus": 1.075,
+        "vi_minus": 0.6248,
+        "vortex_bullish": true,
+        "rvi": 0.128532,
+        "rvi_signal": 0.15791,
+        "rvi_bullish": false,
+        "perf7": 2.08,
+        "perf30": 6.26,
+        "rs_above_kama": false,
+        "trend_rs": "ROSSO",
+        "score": 38.9,
+        "cross_bars": 37,
+        "stress_flags": [],
+        "stress_score": 0,
+        "hurst_60": 0.451,
+        "hurst_1y": 0.37,
+        "adx": 37.5,
+        "regime": {
+          "code": "SALITA",
+          "label": "\ud83d\udcc8 Salita",
+          "color": "#2ea043",
+          "desc": "Rialzo in corso"
+        },
+        "buy_level": "WATCH",
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "CSCA.MI",
         "name": "iShares MSCI Canada ETF EUR Acc",
-        "price": 260.19,
-        "kama": 257.614,
-        "k_pct": 1.0,
-        "er": 0.3776,
+        "price": 260.06,
+        "kama": 257.597,
+        "k_pct": 0.96,
+        "er": 0.3716,
         "ao": 4.197502,
         "ao_series": [
           3.922384,
@@ -4556,7 +4504,7 @@
           4.197502
         ],
         "baffetti": 0,
-        "rsi": 60.2,
+        "rsi": 59.9,
         "atr": 1.97961,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -4572,14 +4520,14 @@
         "vi_plus": 0.9239,
         "vi_minus": 0.8543,
         "vortex_bullish": true,
-        "rvi": 0.134809,
-        "rvi_signal": 0.203287,
+        "rvi": 0.133546,
+        "rvi_signal": 0.203076,
         "rvi_bullish": false,
-        "perf7": 0.71,
-        "perf30": 2.12,
+        "perf7": 0.66,
+        "perf30": 2.07,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 39.1,
+        "score": 38.8,
         "cross_bars": 9,
         "stress_flags": [
           "AO calante",
@@ -4596,62 +4544,7 @@
           "desc": "Zona grigia"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
-      },
-      {
-        "ticker": "SXRU.DE",
-        "name": "iShares Dow Jones Industrial Avg ETF EUR Acc",
-        "price": 530.7,
-        "kama": 522.937,
-        "k_pct": 1.48,
-        "er": 0.4276,
-        "ao": 15.740291,
-        "ao_series": [
-          14.315872,
-          15.475437,
-          16.480293,
-          16.558673,
-          15.740291
-        ],
-        "baffetti": 0,
-        "rsi": 67.1,
-        "atr": 4.27885,
-        "trend": "VERDE",
-        "mm_aligned": true,
-        "sar": 522.10459,
-        "sar_bullish": true,
-        "sar_history": [
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "vi_plus": 1.0753,
-        "vi_minus": 0.6268,
-        "vortex_bullish": true,
-        "rvi": 0.128658,
-        "rvi_signal": 0.157931,
-        "rvi_bullish": false,
-        "perf7": 2.08,
-        "perf30": 6.26,
-        "rs_above_kama": false,
-        "trend_rs": "ROSSO",
-        "score": 38.9,
-        "cross_bars": 37,
-        "stress_flags": [],
-        "stress_score": 0,
-        "hurst_60": 0.451,
-        "hurst_1y": 0.37,
-        "adx": 37.4,
-        "regime": {
-          "code": "SALITA",
-          "label": "\ud83d\udcc8 Salita",
-          "color": "#2ea043",
-          "desc": "Rialzo in corso"
-        },
-        "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "WWRD.MI",
@@ -4709,15 +4602,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "CSPXJ.MI",
         "name": "iShares Core MSCI Pac ex-Jpn ETF EUR Acc",
-        "price": 205.98,
-        "kama": 204.887,
-        "k_pct": 0.53,
-        "er": 0.0826,
+        "price": 206.23,
+        "kama": 204.895,
+        "k_pct": 0.65,
+        "er": 0.1063,
         "ao": -0.096589,
         "ao_series": [
           -0.248353,
@@ -4727,7 +4620,7 @@
           -0.096589
         ],
         "baffetti": 1,
-        "rsi": 52.4,
+        "rsi": 53.1,
         "atr": 2.04297,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -4743,14 +4636,14 @@
         "vi_plus": 0.8324,
         "vi_minus": 0.8826,
         "vortex_bullish": false,
-        "rvi": 0.178489,
-        "rvi_signal": 0.184485,
+        "rvi": 0.181213,
+        "rvi_signal": 0.184939,
         "rvi_bullish": false,
-        "perf7": 0.05,
-        "perf30": -0.21,
+        "perf7": 0.17,
+        "perf30": -0.09,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 27.0,
+        "score": 28.0,
         "cross_bars": 1,
         "stress_flags": [
           "SAR bear",
@@ -4768,15 +4661,15 @@
           "desc": "Senza direzione"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "IAPD.MI",
         "name": "iShares Asia Pacific Dividend UCITS ETF",
-        "price": 27.31,
-        "kama": 27.229,
-        "k_pct": 0.3,
-        "er": 0.1842,
+        "price": 27.3,
+        "kama": 27.228,
+        "k_pct": 0.26,
+        "er": 0.1947,
         "ao": 0.102603,
         "ao_series": [
           0.242279,
@@ -4786,7 +4679,7 @@
           0.102603
         ],
         "baffetti": 0,
-        "rsi": 51.4,
+        "rsi": 51.2,
         "atr": 0.24605,
         "trend": "VERDE",
         "mm_aligned": false,
@@ -4802,14 +4695,14 @@
         "vi_plus": 0.7721,
         "vi_minus": 0.9289,
         "vortex_bullish": false,
-        "rvi": 0.146536,
-        "rvi_signal": 0.189798,
+        "rvi": 0.145744,
+        "rvi_signal": 0.189666,
         "rvi_bullish": false,
-        "perf7": -0.53,
-        "perf30": 1.19,
+        "perf7": -0.56,
+        "perf30": 1.15,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 24.9,
+        "score": 25.1,
         "cross_bars": 1,
         "stress_flags": [
           "SAR bear",
@@ -4827,74 +4720,15 @@
           "desc": "Zona grigia"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-05-29 13:34 CET"
-      },
-      {
-        "ticker": "LTAM.MI",
-        "name": "iShares MSCI EM Latin America UCITS ETF",
-        "price": 17.942,
-        "kama": 18.199,
-        "k_pct": -1.41,
-        "er": 0.1874,
-        "ao": -0.568647,
-        "ao_series": [
-          -0.767694,
-          -0.712191,
-          -0.645793,
-          -0.601406,
-          -0.568647
-        ],
-        "baffetti": 6,
-        "rsi": 42.9,
-        "atr": 0.26174,
-        "trend": "ROSSO",
-        "mm_aligned": false,
-        "sar": 17.67794,
-        "sar_bullish": true,
-        "sar_history": [
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "vi_plus": 0.6823,
-        "vi_minus": 1.0195,
-        "vortex_bullish": false,
-        "rvi": -0.074918,
-        "rvi_signal": -0.089845,
-        "rvi_bullish": true,
-        "perf7": -0.37,
-        "perf30": -7.19,
-        "rs_above_kama": false,
-        "trend_rs": "ROSSO",
-        "score": 17.9,
-        "cross_bars": 15,
-        "stress_flags": [
-          "KAMA rotta",
-          "AO negativo",
-          "ER<0.4"
-        ],
-        "stress_score": 3,
-        "hurst_60": 0.559,
-        "hurst_1y": 0.494,
-        "adx": 31.1,
-        "regime": {
-          "code": "RIBASSO",
-          "label": "\ud83d\udcc9 Ribasso",
-          "color": "#cf222e",
-          "desc": "Ribasso in corso"
-        },
-        "buy_level": "SELL",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "ALAT.MI",
         "name": "Amundi MSCI EM Latin America UCITS ETF",
-        "price": 20.72,
+        "price": 20.735,
         "kama": 21.072,
-        "k_pct": -1.67,
-        "er": 0.1565,
+        "k_pct": -1.6,
+        "er": 0.1677,
         "ao": -0.636324,
         "ao_series": [
           -0.868265,
@@ -4904,8 +4738,8 @@
           -0.636324
         ],
         "baffetti": 6,
-        "rsi": 42.2,
-        "atr": 0.29491,
+        "rsi": 42.4,
+        "atr": 0.30063,
         "trend": "ROSSO",
         "mm_aligned": false,
         "sar": 20.36677,
@@ -4917,17 +4751,17 @@
           true,
           true
         ],
-        "vi_plus": 0.6787,
-        "vi_minus": 1.0276,
+        "vi_plus": 0.68,
+        "vi_minus": 1.0224,
         "vortex_bullish": false,
-        "rvi": 0.005134,
-        "rvi_signal": -0.004506,
+        "rvi": 0.00605,
+        "rvi_signal": -0.004354,
         "rvi_bullish": true,
-        "perf7": -0.38,
-        "perf30": -7.04,
+        "perf7": -0.31,
+        "perf30": -6.98,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 17.3,
+        "score": 17.5,
         "cross_bars": 15,
         "stress_flags": [
           "KAMA rotta",
@@ -4937,7 +4771,7 @@
         "stress_score": 3,
         "hurst_60": 0.552,
         "hurst_1y": 0.491,
-        "adx": 35.1,
+        "adx": 35.7,
         "regime": {
           "code": "RIBASSO",
           "label": "\ud83d\udcc9 Ribasso",
@@ -4945,7 +4779,66 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
+      },
+      {
+        "ticker": "LTAM.MI",
+        "name": "iShares MSCI EM Latin America UCITS ETF",
+        "price": 17.904,
+        "kama": 18.199,
+        "k_pct": -1.62,
+        "er": 0.1577,
+        "ao": -0.56967,
+        "ao_series": [
+          -0.767694,
+          -0.712191,
+          -0.645793,
+          -0.601406,
+          -0.56967
+        ],
+        "baffetti": 6,
+        "rsi": 42.2,
+        "atr": 0.26259,
+        "trend": "ROSSO",
+        "mm_aligned": false,
+        "sar": 17.67794,
+        "sar_bullish": true,
+        "sar_history": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "vi_plus": 0.6802,
+        "vi_minus": 1.0195,
+        "vortex_bullish": false,
+        "rvi": -0.077573,
+        "rvi_signal": -0.090287,
+        "rvi_bullish": true,
+        "perf7": -0.58,
+        "perf30": -7.38,
+        "rs_above_kama": false,
+        "trend_rs": "ROSSO",
+        "score": 17.2,
+        "cross_bars": 15,
+        "stress_flags": [
+          "KAMA rotta",
+          "AO negativo",
+          "ER<0.4"
+        ],
+        "stress_score": 3,
+        "hurst_60": 0.559,
+        "hurst_1y": 0.494,
+        "adx": 31.3,
+        "regime": {
+          "code": "RIBASSO",
+          "label": "\ud83d\udcc9 Ribasso",
+          "color": "#cf222e",
+          "desc": "Ribasso in corso"
+        },
+        "buy_level": "SELL",
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "IQQ9.DE",
@@ -5004,65 +4897,10 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       }
     ],
     "watchlist": [
-      {
-        "ticker": "CSEMAS.MI",
-        "name": "iShares MSCI EM Asia ETF EUR Acc",
-        "price": 266.34,
-        "kama": 255.315,
-        "k_pct": 4.32,
-        "er": 0.5731,
-        "ao": 17.325554,
-        "ao_series": [
-          11.008526,
-          12.916555,
-          15.150672,
-          16.058613,
-          17.325554
-        ],
-        "baffetti": 5,
-        "rsi": 69.8,
-        "atr": 4.69866,
-        "trend": "VERDE",
-        "mm_aligned": true,
-        "sar": 246.65065,
-        "sar_bullish": true,
-        "sar_history": [
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "vi_plus": 0.9984,
-        "vi_minus": 0.6602,
-        "vortex_bullish": true,
-        "rvi": 0.314579,
-        "rvi_signal": 0.230762,
-        "rvi_bullish": true,
-        "perf7": 6.48,
-        "perf30": 15.19,
-        "rs_above_kama": true,
-        "trend_rs": "VERDE",
-        "score": 79.2,
-        "cross_bars": 6,
-        "stress_flags": [],
-        "stress_score": 0,
-        "hurst_60": 0.422,
-        "hurst_1y": 0.441,
-        "adx": 31.5,
-        "regime": {
-          "code": "SALITA",
-          "label": "\ud83d\udcc8 Salita",
-          "color": "#2ea043",
-          "desc": "Rialzo in corso"
-        },
-        "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
-      },
       {
         "ticker": "XDEE.DE",
         "name": "Xtrackers S&P 500 Equal Weight EUR Hedged",
@@ -5116,15 +4954,70 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
+      },
+      {
+        "ticker": "CSEMAS.MI",
+        "name": "iShares MSCI EM Asia ETF EUR Acc",
+        "price": 265.7,
+        "kama": 255.145,
+        "k_pct": 4.14,
+        "er": 0.563,
+        "ao": 17.325554,
+        "ao_series": [
+          11.008526,
+          12.916555,
+          15.150672,
+          16.058613,
+          17.325554
+        ],
+        "baffetti": 5,
+        "rsi": 69.4,
+        "atr": 4.69866,
+        "trend": "VERDE",
+        "mm_aligned": true,
+        "sar": 246.65065,
+        "sar_bullish": true,
+        "sar_history": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "vi_plus": 0.9984,
+        "vi_minus": 0.6602,
+        "vortex_bullish": true,
+        "rvi": 0.311593,
+        "rvi_signal": 0.230264,
+        "rvi_bullish": true,
+        "perf7": 6.23,
+        "perf30": 14.91,
+        "rs_above_kama": true,
+        "trend_rs": "VERDE",
+        "score": 78.6,
+        "cross_bars": 6,
+        "stress_flags": [],
+        "stress_score": 0,
+        "hurst_60": 0.422,
+        "hurst_1y": 0.441,
+        "adx": 31.5,
+        "regime": {
+          "code": "SALITA",
+          "label": "\ud83d\udcc8 Salita",
+          "color": "#2ea043",
+          "desc": "Rialzo in corso"
+        },
+        "buy_level": "BUY2",
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "SEMA.MI",
         "name": "iShares MSCI EM UCITS ETF EUR Acc",
-        "price": 56.67,
-        "kama": 54.703,
-        "k_pct": 3.6,
-        "er": 0.5903,
+        "price": 56.54,
+        "kama": 54.667,
+        "k_pct": 3.43,
+        "er": 0.5792,
         "ao": 2.916353,
         "ao_series": [
           1.722985,
@@ -5134,7 +5027,7 @@
           2.916353
         ],
         "baffetti": 5,
-        "rsi": 68.5,
+        "rsi": 68.0,
         "atr": 0.8968,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -5150,14 +5043,14 @@
         "vi_plus": 0.993,
         "vi_minus": 0.6905,
         "vortex_bullish": true,
-        "rvi": 0.25307,
-        "rvi_signal": 0.198939,
+        "rvi": 0.250001,
+        "rvi_signal": 0.198427,
         "rvi_bullish": true,
-        "perf7": 5.35,
-        "perf30": 11.51,
+        "perf7": 5.11,
+        "perf30": 11.26,
         "rs_above_kama": true,
         "trend_rs": "VERDE",
-        "score": 78.6,
+        "score": 78.0,
         "cross_bars": 6,
         "stress_flags": [],
         "stress_score": 0,
@@ -5171,15 +5064,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "IQQF.DE",
         "name": "iShares MSCI AC Far East ex-Japan UCITS ETF",
-        "price": 85.37,
-        "kama": 82.005,
-        "k_pct": 4.1,
-        "er": 0.5971,
+        "price": 85.09,
+        "kama": 81.928,
+        "k_pct": 3.86,
+        "er": 0.5832,
         "ao": 5.675471,
         "ao_series": [
           3.886147,
@@ -5189,7 +5082,7 @@
           5.675471
         ],
         "baffetti": 4,
-        "rsi": 70.8,
+        "rsi": 70.2,
         "atr": 1.44121,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -5205,19 +5098,19 @@
         "vi_plus": 1.0022,
         "vi_minus": 0.6675,
         "vortex_bullish": true,
-        "rvi": 0.27291,
-        "rvi_signal": 0.207318,
+        "rvi": 0.268568,
+        "rvi_signal": 0.206595,
         "rvi_bullish": true,
-        "perf7": 6.53,
-        "perf30": 16.63,
+        "perf7": 6.18,
+        "perf30": 16.24,
         "rs_above_kama": true,
         "trend_rs": "VERDE",
-        "score": 75.9,
+        "score": 75.2,
         "cross_bars": 6,
         "stress_flags": [],
         "stress_score": 0,
         "hurst_60": 0.42,
-        "hurst_1y": 0.443,
+        "hurst_1y": 0.444,
         "adx": 34.5,
         "regime": {
           "code": "SALITA",
@@ -5226,15 +5119,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "WS5X.MI",
         "name": "WisdomTree EURO STOXX 50",
-        "price": 44.495,
-        "kama": 43.391,
-        "k_pct": 2.55,
-        "er": 0.6294,
+        "price": 44.36,
+        "kama": 43.354,
+        "k_pct": 2.32,
+        "er": 0.6134,
         "ao": 1.322618,
         "ao_series": [
           0.773103,
@@ -5244,7 +5137,7 @@
           1.322618
         ],
         "baffetti": 6,
-        "rsi": 61.7,
+        "rsi": 60.7,
         "atr": 0.62096,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -5260,18 +5153,18 @@
         "vi_plus": 1.0217,
         "vi_minus": 0.7323,
         "vortex_bullish": true,
-        "rvi": 0.321491,
-        "rvi_signal": 0.303569,
+        "rvi": 0.31719,
+        "rvi_signal": 0.302853,
         "rvi_bullish": true,
-        "perf7": 2.1,
-        "perf30": 3.84,
+        "perf7": 1.79,
+        "perf30": 3.52,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 72.5,
+        "score": 71.3,
         "cross_bars": 13,
         "stress_flags": [],
         "stress_score": 0,
-        "hurst_60": 0.354,
+        "hurst_60": 0.353,
         "hurst_1y": 0.345,
         "adx": 33.9,
         "regime": {
@@ -5281,7 +5174,7 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "NTSZ.DE",
@@ -5336,15 +5229,15 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       },
       {
         "ticker": "MEUD.PA",
         "name": "Amundi Core Stoxx Europe 600 UCITS ETF",
-        "price": 308.8,
-        "kama": 302.048,
-        "k_pct": 2.24,
-        "er": 0.5234,
+        "price": 308.3,
+        "kama": 301.941,
+        "k_pct": 2.11,
+        "er": 0.513,
         "ao": 7.951181,
         "ao_series": [
           5.518381,
@@ -5354,7 +5247,7 @@
           7.951181
         ],
         "baffetti": 6,
-        "rsi": 60.2,
+        "rsi": 59.6,
         "atr": 3.82357,
         "trend": "VERDE",
         "mm_aligned": true,
@@ -5370,14 +5263,14 @@
         "vi_plus": 0.9749,
         "vi_minus": 0.7122,
         "vortex_bullish": true,
-        "rvi": 0.246926,
-        "rvi_signal": 0.275986,
+        "rvi": 0.244417,
+        "rvi_signal": 0.275567,
         "rvi_bullish": false,
-        "perf7": 1.48,
-        "perf30": 3.12,
+        "perf7": 1.31,
+        "perf30": 2.96,
         "rs_above_kama": false,
         "trend_rs": "ROSSO",
-        "score": 66.0,
+        "score": 65.3,
         "cross_bars": 10,
         "stress_flags": [],
         "stress_score": 0,
@@ -5391,7 +5284,7 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-05-29 13:34 CET"
+        "level_ts": "2026-05-29 14:41 CET"
       }
     ]
   }
