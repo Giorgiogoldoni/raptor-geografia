@@ -151,7 +151,7 @@ tr:hover td{background:var(--bg2)}
   padding:10px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;flex-shrink:0}
 #chartBody{flex:1;overflow-y:auto;padding:12px 16px}
 
-/* ── CHART HEADER TICKER (scannerv2 style) ── */
+/* ── CHART HEADER TICKER (standard scannerv3) ── */
 .ct-hdr{background:#fff;border:1px solid var(--border);border-radius:8px;
   padding:12px 16px;margin-bottom:10px;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-start}
 .ct-main{flex:1;min-width:180px}
@@ -202,6 +202,17 @@ canvas{display:block;width:100%}
   background:#2563eb;color:#fff;border-radius:var(--radius);font-size:11px;font-weight:600;
   text-decoration:none;border:none;cursor:pointer}
 .tv-link:hover{background:#1d4ed8}
+
+/* Chart header buttons — standard scannerv3 */
+.chart-btn{display:inline-flex;align-items:center;gap:4px;padding:6px 12px;
+  background:var(--bg2);border:1px solid var(--border);color:var(--text);
+  border-radius:var(--radius);font-size:11px;font-weight:600;
+  text-decoration:none;cursor:pointer}
+.chart-btn:hover{border-color:var(--buy1);color:var(--buy1)}
+.chart-btn.tv{background:#2563eb;border-color:#2563eb;color:#fff}
+.chart-btn.tv:hover{background:#1d4ed8;color:#fff}
+.chart-btn.regole{background:#fff8c5;border-color:#e3b341;color:#7d4e00}
+.chart-btn.regole:hover{background:#fdefb3;color:#7d4e00}
 
 /* Sezioni */
 .sec-div{display:flex;align-items:center;gap:12px;margin:18px 0 10px}
@@ -260,6 +271,8 @@ canvas{display:block;width:100%}
     <button class="btn" onclick="closeChart()">← Torna</button>
     <span id="chartTitle" style="font-size:15px;font-weight:700;margin-left:6px">—</span>
     <div class="spacer"></div>
+    <a class="chart-btn tv" id="chartTvLink" href="#" target="_blank" rel="noopener">TradingView ↗</a>
+    <a class="chart-btn regole" href="docs/regole.pdf" target="_blank" rel="noopener">Regole (PDF)</a>
   </div>
   <div id="chartBody"></div>
 </div>
@@ -564,6 +577,7 @@ async function openChart(ticker, label) {
   document.getElementById('tableMode').style.display  = 'none';
   document.getElementById('chartMode').classList.add('visible');
   document.getElementById('chartTitle').textContent = label + ' — ' + ticker;
+  document.getElementById('chartTvLink').href = 'https://www.tradingview.com/chart/?symbol=' + encodeURIComponent(tvSymbol(ticker));
   document.getElementById('chartBody').innerHTML = '<div style="padding:40px;text-align:center;color:var(--muted2)"><div class="spinner"></div>Caricamento grafico...</div>';
 
   try {
@@ -651,13 +665,20 @@ function renderChart(ticker, label, cd) {
     if (!b && sarBull[i-1]) sellPts.push({x:i, y:closes[i]});
   });
 
-  // Cerca i dati dal JSON geografia per indicatori aggiuntivi
+  // Dati unificati: presenti direttamente nel JSON per-ticker (standard scannerv3).
+  // Fallback su geografia.json solo se il chart JSON non è ancora stato rigenerato
+  // con i nuovi campi (compatibilità fino al prossimo run orario).
   let extData = null;
   if (_lastData) {
     const allP = [...(_lastData.paesi?.positions||[]), ...(_lastData.paesi?.all||[]),
                   ...(_lastData.new_area?.positions||[]), ...(_lastData.new_area?.all||[])];
     extData = allP.find(d => d.ticker === ticker);
   }
+  const uni = (k) => (cd[k] !== undefined && cd[k] !== null) ? cd[k] : extData?.[k];
+  const u_buyLevel = uni('buy_level'), u_trend = uni('trend'), u_regime = uni('regime');
+  const u_er = uni('er'), u_score = uni('score'), u_adx = uni('adx');
+  const u_hurst60 = uni('hurst_60'), u_atrPct = uni('atr_pct');
+  const u_vortex = uni('vortex_bullish'), u_rvi = uni('rvi_bullish');
 
   const html = `
   <!-- HEADER TICKER -->
@@ -666,9 +687,9 @@ function renderChart(ticker, label, cd) {
       <div class="ct-ticker">${label}</div>
       <div style="font-size:10px;color:var(--muted2)">${ticker}</div>
       <div class="ct-pills">
-        ${extData?.buy_level ? lvlBadge(extData.buy_level) : ''}
-        ${extData?.trend ? trendBadge(extData.trend) : ''}
-        ${extData?.regime ? regimeBadge(extData.regime) : ''}
+        ${u_buyLevel ? lvlBadge(u_buyLevel) : ''}
+        ${u_trend ? trendBadge(u_trend) : ''}
+        ${u_regime ? regimeBadge(u_regime) : ''}
         <span style="font-size:9px;color:var(--muted2);padding:2px 6px;border:1px solid var(--border);border-radius:4px">TV: ${tv}</span>
       </div>
     </div>
@@ -687,38 +708,40 @@ function renderChart(ticker, label, cd) {
         <span class="ct-val" style="color:${baffV>=3?'var(--verde)':'var(--muted)'}">${baffV||0}</span></div>
       <div class="ct-box"><span class="ct-lbl">SAR</span>
         <span class="ct-val" style="color:${sarB?'var(--buy1)':'var(--rosso)'}">${sarB?'▲ BULL':'▼ BEAR'}</span></div>
+      <div class="ct-box"><span class="ct-lbl">ATR%(14)</span>
+        <span class="ct-val">${u_atrPct!=null?u_atrPct.toFixed(2)+'%':'—'}</span></div>
     </div>
   </div>
 
-  <!-- INDICATORI AGGIUNTIVI (da geografia.json) -->
-  ${extData ? `<div class="ind-grid-2">
-    <div class="ind2"><span class="il">ER</span><span class="iv" style="color:${erColor(extData.er||0)}">${Math.round((extData.er||0)*100)}%</span></div>
-    <div class="ind2"><span class="il">Score</span><span class="iv" style="color:${scoreColor(extData.score||0)}">${extData.score||0}</span></div>
-    <div class="ind2"><span class="il">Vortex</span><span class="iv" style="color:${extData.vortex_bullish?'var(--verde)':'var(--rosso)'}">${extData.vortex_bullish?'▲ Bull':'▼ Bear'}</span></div>
-    <div class="ind2"><span class="il">RVI</span><span class="iv" style="color:${extData.rvi_bullish?'var(--verde)':'var(--rosso)'}">${extData.rvi_bullish?'▲ Bull':'▼ Bear'}</span></div>
-    <div class="ind2"><span class="il">Mom 1M</span><span class="iv" style="color:${(extData.perf30||0)>=0?'var(--verde)':'var(--rosso)'}">${fmt(extData.perf30||0,2)}%</span></div>
-    ${cd.mom1m!=null?`<div class="ind2"><span class="il">Mom 3M</span><span class="iv" style="color:${(cd.mom3m||0)>=0?'var(--verde)':'var(--rosso)'}">${fmt(cd.mom3m||0,2)}%</span></div>`:''}
+  <!-- INDICATORI AGGIUNTIVI -->
+  ${(u_er!=null || u_score!=null) ? `<div class="ind-grid-2">
+    ${u_er!=null?`<div class="ind2"><span class="il">ER</span><span class="iv" style="color:${erColor(u_er||0)}">${Math.round((u_er||0)*100)}%</span></div>`:''}
+    ${u_score!=null?`<div class="ind2"><span class="il">Score</span><span class="iv" style="color:${scoreColor(u_score||0)}">${u_score||0}</span></div>`:''}
+    ${u_vortex!=null?`<div class="ind2"><span class="il">Vortex</span><span class="iv" style="color:${u_vortex?'var(--verde)':'var(--rosso)'}">${u_vortex?'▲ Bull':'▼ Bear'}</span></div>`:''}
+    ${u_rvi!=null?`<div class="ind2"><span class="il">RVI</span><span class="iv" style="color:${u_rvi?'var(--verde)':'var(--rosso)'}">${u_rvi?'▲ Bull':'▼ Bear'}</span></div>`:''}
+    ${cd.mom1m!=null?`<div class="ind2"><span class="il">Mom 1M</span><span class="iv" style="color:${(cd.mom1m||0)>=0?'var(--verde)':'var(--rosso)'}">${fmt(cd.mom1m||0,2)}%</span></div>`:''}
+    ${cd.mom3m!=null?`<div class="ind2"><span class="il">Mom 3M</span><span class="iv" style="color:${(cd.mom3m||0)>=0?'var(--verde)':'var(--rosso)'}">${fmt(cd.mom3m||0,2)}%</span></div>`:''}
     ${cd.mom6m!=null?`<div class="ind2"><span class="il">Mom 6M</span><span class="iv" style="color:${(cd.mom6m||0)>=0?'var(--verde)':'var(--rosso)'}">${fmt(cd.mom6m||0,2)}%</span></div>`:''}
   </div>` : ''}
 
   <!-- REGIME DI MERCATO -->
-  ${extData?.regime ? `<div class="regime-sect">
+  ${u_regime ? `<div class="regime-sect">
     <div class="regime-sect-title">📊 Regime di Mercato</div>
     <div class="regime-grid">
       <div class="rg-box">
-        ${regimeBadge(extData.regime)}
-        <div class="rg-sub" style="margin-top:4px">${extData.regime?.desc||''}</div>
+        ${regimeBadge(u_regime)}
+        <div class="rg-sub" style="margin-top:4px">${u_regime?.desc||''}</div>
       </div>
       <div class="rg-box">
         <span class="rg-lbl">Memoria recente (60g)</span>
-        <span class="rg-val" style="color:${extData.hurst_60>0.55?'var(--verde)':extData.hurst_60<0.45?'var(--buy1)':'var(--muted)'}">${extData.hurst_60||'—'}</span>
-        <div class="rg-bar"><div class="rg-fill" style="width:${Math.round((extData.hurst_60||0.5)*100)}%;background:${extData.hurst_60>0.55?'var(--verde)':extData.hurst_60<0.45?'var(--buy1)':'var(--muted)'}"></div></div>
-        <div class="rg-sub">${extData.hurst_60>0.55?'tende a trendare':extData.hurst_60<0.45?'tende a rimbalzare':'neutro'}</div>
+        <span class="rg-val" style="color:${u_hurst60>0.55?'var(--verde)':u_hurst60<0.45?'var(--buy1)':'var(--muted)'}">${u_hurst60||'—'}</span>
+        <div class="rg-bar"><div class="rg-fill" style="width:${Math.round((u_hurst60||0.5)*100)}%;background:${u_hurst60>0.55?'var(--verde)':u_hurst60<0.45?'var(--buy1)':'var(--muted)'}"></div></div>
+        <div class="rg-sub">${u_hurst60>0.55?'tende a trendare':u_hurst60<0.45?'tende a rimbalzare':'neutro'}</div>
       </div>
       <div class="rg-box">
         <span class="rg-lbl">ADX(14) — forza</span>
-        <span class="rg-val" style="color:${extData.adx>=25?'var(--verde)':extData.adx>=20?'#e3b341':'var(--muted)'}">${extData.adx||'—'}</span>
-        <div class="rg-sub">${extData.adx>=25?'Forte':extData.adx>=20?'Transizione':'Debole'}</div>
+        <span class="rg-val" style="color:${u_adx>=25?'var(--verde)':u_adx>=20?'#e3b341':'var(--muted)'}">${u_adx||'—'}</span>
+        <div class="rg-sub">${u_adx>=25?'Forte':u_adx>=20?'Transizione':'Debole'}</div>
       </div>
     </div>
   </div>` : ''}
