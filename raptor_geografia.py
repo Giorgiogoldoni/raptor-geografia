@@ -363,7 +363,11 @@ def update_signal_history(ticker, new_level, price, score, er):
 def save_chart_json(ticker, closes, highs, lows, dates,
                     ao_series_full, kama_series,
                     sar_series, sar_bull_series, rsi_series,
-                    signals_history=None):
+                    signals_history=None,
+                    buy_level=None, score=None, er=None, adx=None,
+                    atr=None, hurst_60=None, regime=None,
+                    vortex_bullish=None, rvi_bullish=None, baffetti=None,
+                    trend=None):
     os.makedirs("data/charts", exist_ok=True)
     n = min(252, len(closes))
 
@@ -410,6 +414,9 @@ def save_chart_json(ticker, closes, highs, lows, dates,
     mom3m = round((closes[-1]/closes[-63]-1)*100,2) if nc>=63 else None
     mom6m = round((closes[-1]/closes[-126]-1)*100,2) if nc>=126 else None
 
+    price_last = closes[-1] if closes else None
+    atr_pct = round(float(atr)/float(price_last)*100, 2) if (atr is not None and price_last) else None
+
     fname = f"data/charts/{ticker}.json"
     with open(fname, "w") as f:
         json.dump({
@@ -428,6 +435,20 @@ def save_chart_json(ticker, closes, highs, lows, dates,
             "mom3m":           mom3m,
             "mom6m":           mom6m,
             "signals_history": signals_history or [],
+            # Campi unificati: prima disponibili solo in geografia.json,
+            # ora presenti anche qui cosi' il modale fa una sola fetch (standard scannerv3)
+            "buy_level":       buy_level,
+            "score":           score,
+            "er":              er,
+            "adx":             adx,
+            "atr":             atr,
+            "atr_pct":         atr_pct,
+            "hurst_60":        hurst_60,
+            "regime":          regime,
+            "vortex_bullish":  vortex_bullish,
+            "rvi_bullish":     rvi_bullish,
+            "baffetti":        baffetti,
+            "trend":           trend,
             "generated_at":    now_ts(),
         }, f, separators=(",",":"), default=str)
 
@@ -621,6 +642,17 @@ def analyze(ticker, name, bench_close, vix_regime):
                 sar_bull_series = sar_history,
                 rsi_series      = rsi_series_full,
                 signals_history = signals_history,
+                buy_level       = buy_level,
+                score           = score,
+                er              = er,
+                adx             = adx_val,
+                atr             = atr_v,
+                hurst_60        = h60,
+                regime          = regime,
+                vortex_bullish  = vortex_bull,
+                rvi_bullish     = rvi_bull,
+                baffetti        = baff,
+                trend           = trend,
             )
         except Exception as ce:
             print(f"  ⚠️  chart JSON {ticker}: {ce}")
