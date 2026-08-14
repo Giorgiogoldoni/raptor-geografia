@@ -199,6 +199,66 @@ def calc_atr(high, low, close, n=14):
         av = (av*(n-1) + tr[i]) / n
     return round(av, 5)
 
+def calc_atr_series(high, low, close, n=14):
+    if len(close) < 2: return [None] * len(close)
+    tr = [max(high[i]-low[i], abs(high[i]-close[i-1]), abs(low[i]-close[i-1]))
+          for i in range(1, len(close))]
+    if not tr: return [None] * len(close)
+    result = [None] * (len(close) - len(tr))
+    av = sum(tr[:n]) / min(n, len(tr))
+    result.append(round(av, 5))
+    for i in range(min(n, len(tr)), len(tr)):
+        av = (av*(n-1) + tr[i]) / n
+        result.append(round(av, 5))
+    return result
+
+def calc_renko(close, atr_series):
+    """Renko a mattoni fissi, brick = ATR(14) mediano dell'ultimo anno."""
+    valid_atr = [a for a in atr_series if a]
+    if not valid_atr or len(close) < 20:
+        return [], None
+    brick = round(sorted(valid_atr)[len(valid_atr)//2], 5)
+    if brick <= 0:
+        return [], None
+    bricks = []
+    base = close[0]
+    direction = 0
+    for p in close[1:]:
+        while True:
+            if direction >= 0 and p >= base + brick:
+                bricks.append({"o": round(base,5), "c": round(base+brick,5), "dir": 1})
+                base += brick; direction = 1
+            elif direction <= 0 and p <= base - brick:
+                bricks.append({"o": round(base,5), "c": round(base-brick,5), "dir": -1})
+                base -= brick; direction = -1
+            else:
+                break
+    return bricks[-120:], brick
+
+def build_signal_note(tier, ctx):
+    """Genera un commento testuale leggibile per un segnale (entrata o uscita)."""
+    er        = ctx.get("er")
+    baff      = ctx.get("baff")
+    score     = ctx.get("score")
+    cross     = ctx.get("cross")
+    trend     = ctx.get("trend")
+    sar_bull  = ctx.get("sar_bull")
+    stress    = ctx.get("stress_flags") or []
+    er_pct    = round(er*100) if er is not None else None
+    if tier == "BUY1":
+        return f"SAR rialzista, incrocio KAMA {cross if cross is not None else '?'}gg fa, AO in miglioramento"
+    if tier == "BUY2":
+        return f"Prezzo sopra KAMA, AO positivo, Score={score if score is not None else '?'}"
+    if tier == "BUY3":
+        return f"ER={er_pct if er_pct is not None else '?'}% (forte), baffetti={baff if baff is not None else '?'} barre, Vortex/RVI bullish, sopra KAMA"
+    if tier == "SELL":
+        if stress:
+            return "Uscita per: " + ", ".join(stress)
+        return f"Trend {trend or '?'}, SAR {'rialzista' if sar_bull else 'ribassista'}"
+    if tier == "WATCH":
+        return "Nessuna condizione di ingresso attiva"
+    return "—"
+
 def calc_parabolic_sar(high, low, af0=0.02, af_max=0.2):
     if len(high) < 5: return low[-1], True, [], []
     sar, ep, af, bull = low[0], high[0], af0, True
@@ -336,7 +396,7 @@ def save_signal_history(ticker, history_data):
     with open(path, "w") as f:
         json.dump(history_data, f, separators=(",",":"), default=str)
 
-def update_signal_history(ticker, new_level, price, score, er):
+def update_signal_history(ticker, new_level, price, score, er, note=None):
     """Aggiunge un evento alla storia segnali solo se il livello è cambiato."""
     data = load_signal_history(ticker)
     history = data.get("history", [])
@@ -349,6 +409,7 @@ def update_signal_history(ticker, new_level, price, score, er):
             "price":  round(float(price), 4) if price else None,
             "score":  round(float(score), 1) if score else None,
             "er":     round(float(er), 4) if er else None,
+            "note":   note,
         })
         # mantieni ultimi 20 eventi
         history = history[-20:]
@@ -367,7 +428,8 @@ def save_chart_json(ticker, closes, highs, lows, dates,
                     buy_level=None, score=None, er=None, adx=None,
                     atr=None, hurst_60=None, regime=None,
                     vortex_bullish=None, rvi_bullish=None, baffetti=None,
-                    trend=None):
+                    trend=None, volumes=None, rsi5_series=None,
+                    renko=None, renko_brick=None, opens=None):
     os.makedirs("data/charts", exist_ok=True)
     n = min(252, len(closes))
 
@@ -377,6 +439,7 @@ def save_chart_json(ticker, closes, highs, lows, dates,
 
     dates_out  = dates[-n:]
     closes_out = [fmt4(v) for v in closes[-n:]]
+    opens_out  = [fmt4(v) for v in (opens[-n:] if opens else closes[-n:])]
     highs_out  = [fmt4(v) for v in highs[-n:]]
     lows_out   = [fmt4(v) for v in lows[-n:]]
     kama_out   = [fmt4(v) for v in kama_series[-n:]]
@@ -409,6 +472,20 @@ def save_chart_json(ticker, closes, highs, lows, dates,
         else:                  count = 0
         baff_out.append(abs(count))
 
+    if volumes and len(volumes) >= n:
+        vol_out = [int(v) for v in volumes[-n:]]
+    elif volumes:
+        vol_out = [0]*(n-len(volumes)) + [int(v) for v in volumes]
+    else:
+        vol_out = [0]*n
+
+    if rsi5_series and len(rsi5_series) >= n:
+        rsi5_out = [fmt2(v) for v in rsi5_series[-n:]]
+    elif rsi5_series:
+        rsi5_out = [None]*(n-len(rsi5_series)) + [fmt2(v) for v in rsi5_series]
+    else:
+        rsi5_out = [None]*n
+
     nc = len(closes)
     mom1m = round((closes[-1]/closes[-22]-1)*100,2) if nc>=22 else None
     mom3m = round((closes[-1]/closes[-63]-1)*100,2) if nc>=63 else None
@@ -423,6 +500,7 @@ def save_chart_json(ticker, closes, highs, lows, dates,
             "ticker":          ticker,
             "dates":           dates_out,
             "closes":          closes_out,
+            "opens":           opens_out,
             "highs":           highs_out,
             "lows":            lows_out,
             "kama":            kama_out,
@@ -431,6 +509,10 @@ def save_chart_json(ticker, closes, highs, lows, dates,
             "sar":             sar_out,
             "sar_bull":        sar_bull_out,
             "baff":            baff_out,
+            "volumes":         vol_out,
+            "rsi5":            rsi5_out,
+            "renko":           renko or [],
+            "renko_brick":     renko_brick,
             "mom1m":           mom1m,
             "mom3m":           mom3m,
             "mom6m":           mom6m,
@@ -561,6 +643,7 @@ def analyze(ticker, name, bench_close, vix_regime):
         high   = [float(x) for x in df["High"].tolist()]
         low    = [float(x) for x in df["Low"].tolist()]
         open_  = [float(x) for x in df["Open"].tolist()] if "Open" in df.columns else close[:]
+        volume = [float(x) for x in df["Volume"].tolist()] if "Volume" in df.columns else [0.0]*len(close)
         dates  = [str(d.date()) for d in df.index]
 
         price   = close[-1]
@@ -621,11 +704,18 @@ def analyze(ticker, name, bench_close, vix_regime):
             "cross_bars": cross, "stress_score": len(stress_flags),
         }, vix_regime)
 
-        # Aggiorna storia segnali
-        signals_history = update_signal_history(ticker, buy_level, price, score, er)
+        # Aggiorna storia segnali (con commento leggibile)
+        signal_note = build_signal_note(buy_level, {
+            "er": er, "baff": baff, "score": score, "cross": cross,
+            "trend": trend, "sar_bull": sar_bull, "stress_flags": stress_flags,
+        })
+        signals_history = update_signal_history(ticker, buy_level, price, score, er, note=signal_note)
 
         # Serie complete per il grafico
-        rsi_series_full = calc_rsi_series(close)
+        rsi_series_full  = calc_rsi_series(close)
+        rsi5_series_full = calc_rsi_series(close, n=5)
+        atr_series_full  = calc_atr_series(high, low, close)
+        renko_bricks, renko_brick_size = calc_renko(close, atr_series_full)
         ao_series_padded = [None]*33 + ao_series
 
         # Salva chart JSON con storia segnali integrata
@@ -653,6 +743,11 @@ def analyze(ticker, name, bench_close, vix_regime):
                 rvi_bullish     = rvi_bull,
                 baffetti        = baff,
                 trend           = trend,
+                volumes         = volume,
+                rsi5_series     = rsi5_series_full,
+                renko           = renko_bricks,
+                renko_brick     = renko_brick_size,
+                opens           = open_,
             )
         except Exception as ce:
             print(f"  ⚠️  chart JSON {ticker}: {ce}")
