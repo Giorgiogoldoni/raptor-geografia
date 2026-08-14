@@ -190,12 +190,13 @@ tr:hover td{background:var(--bg2)}
 .chart-sect-title{font-size:9px;color:var(--muted2);margin-bottom:6px;display:flex;justify-content:space-between}
 canvas{display:block;width:100%}
 
-/* Storia segnali */
-.sig-hist{display:flex;flex-direction:column;gap:3px}
-.sh-row{display:grid;grid-template-columns:90px 80px 1fr;gap:6px;align-items:center;
-  padding:4px 8px;background:var(--bg2);border-radius:var(--radius)}
-.sh-date{font-size:10px;color:var(--muted)}
-.sh-price{font-size:10px;font-weight:600;text-align:right}
+/* Storia segnali — tabella trade entrata/uscita */
+.storia-table-wrap{overflow-x:auto}
+.storia-table{width:100%;border-collapse:collapse;font-size:11px}
+.storia-table th{text-align:left;padding:6px 8px;background:var(--bg2);color:var(--muted);
+  font-weight:600;font-size:10px;text-transform:uppercase;border-bottom:1px solid var(--border);white-space:nowrap}
+.storia-table td{padding:6px 8px;border-bottom:1px solid var(--border);vertical-align:top}
+.storia-table tbody tr:hover{background:var(--bg2)}
 
 /* Link */
 .tv-link{display:inline-flex;align-items:center;gap:4px;padding:6px 12px;
@@ -746,107 +747,295 @@ function renderChart(ticker, label, cd) {
     </div>
   </div>` : ''}
 
-  <!-- GRAFICO PREZZI + KAMA + SEGNALI -->
+  <!-- GRAFICO PREZZI (HEIKIN-ASHI) + RENKO + VOLUME + BAFFETTI + AO + RSI -->
   <div class="chart-sect">
     <div class="chart-sect-title">
-      <span>Prezzo + KAMA + Segnali BUY/SELL</span>
-      <span style="display:flex;gap:8px;font-size:9px">
-        <span style="color:#1f2328">━ Prezzo</span>
-        <span style="color:#f0883e">━ KAMA</span>
-        <span style="color:var(--buy3)">● SAR bull</span>
-        <span style="color:var(--rosso)">● SAR bear</span>
-      </span>
+      <span>Grafico standard scannerv3</span>
+      <span id="chartLegend" style="display:flex;gap:8px;font-size:9px;flex-wrap:wrap"></span>
     </div>
-    <div style="height:220px"><canvas id="gp1"></canvas></div>
-  </div>
-
-  <!-- BAFF -->
-  <div class="chart-sect">
-    <div class="chart-sect-title"><span>BAFF (AO consecutivo)</span></div>
-    <div style="height:80px"><canvas id="gp2"></canvas></div>
-  </div>
-
-  <!-- AO -->
-  <div class="chart-sect">
-    <div class="chart-sect-title"><span>AO (Awesome Oscillator)</span></div>
-    <div style="height:80px"><canvas id="gp3"></canvas></div>
-  </div>
-
-  <!-- RSI -->
-  <div class="chart-sect">
-    <div class="chart-sect-title"><span>RSI(14)</span></div>
-    <div style="height:80px"><canvas id="gp4"></canvas></div>
+    <div id="chartSvgWrap" style="width:100%;overflow-x:auto"></div>
   </div>
 
   <!-- STORIA SEGNALI -->
-  ${sigHist.length ? `<div class="chart-sect">
+  <div class="chart-sect">
     <div class="regime-sect-title" style="margin-bottom:8px">Storia Segnali</div>
-    <div class="sig-hist">
-      ${sigHist.map(sh => `<div class="sh-row">
-        <span class="sh-date">${sh.date||'—'}</span>
-        ${lvlBadge(sh.signal)}
-        <span class="sh-price">${sh.price!=null?sh.price.toFixed(4):'—'}</span>
-      </div>`).join('')}
+    <div class="storia-table-wrap">
+      <table class="storia-table">
+        <thead><tr>
+          <th>#</th><th>Data Entrata</th><th>Data Uscita</th><th>Segnale</th>
+          <th>Prezzo Entrata</th><th>Prezzo Uscita</th><th>Δ%</th><th>Giorni</th><th>Note</th>
+        </tr></thead>
+        <tbody id="storiaBody"></tbody>
+      </table>
     </div>
-  </div>` : ''}
+  </div>
   `;
 
   document.getElementById('chartBody').innerHTML = html;
 
-  // Disegna grafici
+  // Disegna grafico SVG unico + tabella storia segnali
   setTimeout(() => {
-    // P1 — Prezzo + KAMA + SAR
-    dcG('gp1');
-    chartInstances.gp1 = new Chart(document.getElementById('gp1').getContext('2d'), {
-      type:'line',
-      data:{labels, datasets:[
-        {label:'Prezzo',data:closes,borderColor:'#1f2328',borderWidth:1.5,pointRadius:0,fill:false,tension:0},
-        {label:'KAMA',data:kama,borderColor:'#f0883e',borderWidth:2,pointRadius:0,fill:false,tension:0,spanGaps:true},
-        {label:'SAR▲',data:sarBullPts,borderColor:'transparent',backgroundColor:'var(--buy3)',
-          pointRadius:sarBullPts.map(v=>v!=null?3:0),showLine:false,fill:false},
-        {label:'SAR▼',data:sarBearPts,borderColor:'transparent',backgroundColor:'var(--rosso)',
-          pointRadius:sarBearPts.map(v=>v!=null?3:0),showLine:false,fill:false},
-      ]},
-      options:cOpts({plugins:{legend:{display:true,labels:{font:{size:9},boxWidth:10,color:'#57606a'}}}})
-    });
-
-    // P2 — BAFF
-    dcG('gp2');
-    chartInstances.gp2 = new Chart(document.getElementById('gp2').getContext('2d'), {
-      type:'bar',
-      data:{labels, datasets:[{
-        data:baff,
-        backgroundColor:baff.map((v,i) => {
-          const ao_i = ao[i];
-          if (ao_i==null) return 'transparent';
-          return ao_i>=0?'rgba(26,127,55,.8)':'rgba(207,34,46,.8)';
-        }),
-        borderWidth:0
-      }]},
-      options:cOpts({scales:{x:{display:false},y:{display:false}},plugins:{legend:{display:false},tooltip:{enabled:false}}})
-    });
-
-    // P3 — AO
-    dcG('gp3');
-    chartInstances.gp3 = new Chart(document.getElementById('gp3').getContext('2d'), {
-      type:'bar',
-      data:{labels, datasets:[{data:ao,backgroundColor:aoColors,borderWidth:0}]},
-      options:cOpts({scales:{x:{display:false}}})
-    });
-
-    // P4 — RSI
-    dcG('gp4');
-    chartInstances.gp4 = new Chart(document.getElementById('gp4').getContext('2d'), {
-      type:'line',
-      data:{labels, datasets:[
-        {data:rsi,borderColor:'#e3b341',borderWidth:1.5,pointRadius:0,fill:false,tension:.3,spanGaps:true},
-        {data:new Array(closes.length).fill(70),borderColor:'rgba(207,34,46,.3)',borderWidth:1,pointRadius:0,fill:false},
-        {data:new Array(closes.length).fill(30),borderColor:'rgba(26,127,55,.3)',borderWidth:1,pointRadius:0,fill:false},
-      ]},
-      options:cOpts({scales:{x:{display:false},y:{min:0,max:100}}})
-    });
-
+    renderChartSVG(cd);
+    renderStoria(buildTrades(sigHist));
   }, 80);
+}
+
+// ── HELPERS GRAFICO SVG (standard scannerv3) ────────────────────────────────
+function sma(arr, period) {
+  const out = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (i < period - 1) { out.push(null); continue; }
+    let s = 0, ok = true;
+    for (let k = i - period + 1; k <= i; k++) { if (arr[k] == null) { ok = false; break; } s += arr[k]; }
+    out.push(ok ? s / period : null);
+  }
+  return out;
+}
+
+// Ricostruisce i trade (entrata→uscita) dalla storia segnali sparsa (evento sul cambio di livello)
+function buildTrades(cd) {
+  const sigHist = cd.signals_history || [];
+  const dates = cd.dates || [], closes = cd.closes || [];
+  const BUY = ['BUY1','BUY2','BUY3'];
+  const trades = [];
+  let open = null;
+  sigHist.forEach(sh => {
+    if (BUY.includes(sh.signal)) {
+      if (!open) open = { entryDate: sh.date, entryTier: sh.signal, entryPrice: sh.price, entryNote: sh.note };
+    } else if (sh.signal === 'SELL') {
+      if (open) {
+        trades.push({ ...open, exitDate: sh.date, exitTier: sh.signal, exitPrice: sh.price, exitNote: sh.note, isOpen: false });
+        open = null;
+      }
+    }
+  });
+  if (open) trades.push({ ...open, exitDate: null, exitTier: null, exitPrice: null, exitNote: null, isOpen: true });
+
+  const lastPrice = closes[closes.length - 1];
+  trades.forEach(tr => {
+    const exitP = tr.isOpen ? lastPrice : tr.exitPrice;
+    tr.exitPriceEff = exitP;
+    tr.deltaPct = (tr.entryPrice && exitP != null) ? ((exitP / tr.entryPrice - 1) * 100) : null;
+    const eIdx = dates.indexOf(tr.entryDate);
+    const xIdx = tr.isOpen ? dates.length - 1 : dates.indexOf(tr.exitDate);
+    tr.days = (eIdx >= 0 && xIdx >= 0) ? (xIdx - eIdx) : null;
+  });
+  return trades.reverse();
+}
+
+function renderStoria(trades) {
+  const tb = document.getElementById('storiaBody');
+  if (!tb) return;
+  if (!trades || !trades.length) {
+    tb.innerHTML = '<tr><td colspan="9" style="text-align:center;color:var(--muted2);padding:12px">Nessun trade completo nell\'ultimo anno</td></tr>';
+    return;
+  }
+  tb.innerHTML = trades.map((tr, idx) => {
+    const deltaStr = tr.deltaPct != null ? (tr.deltaPct >= 0 ? '+' : '') + tr.deltaPct.toFixed(2) + '%' : '—';
+    const deltaColor = tr.deltaPct == null ? '' : tr.deltaPct >= 0 ? 'color:var(--verde)' : 'color:var(--rosso)';
+    const exitBadge = tr.isOpen
+      ? `<span class="lvl" style="background:#fff8e6;color:#9a6700;border:1px solid #9a6700">APERTA</span>`
+      : lvlBadge(tr.exitTier);
+    return `<tr>
+      <td style="color:var(--muted2);font-size:11px">${trades.length - idx}</td>
+      <td style="font-family:monospace;font-size:11px">${tr.entryDate||'—'}</td>
+      <td style="font-family:monospace;font-size:11px">${tr.exitDate||'—'}</td>
+      <td>${lvlBadge(tr.entryTier)} → ${exitBadge}</td>
+      <td style="font-family:monospace;font-weight:600">${tr.entryPrice!=null?tr.entryPrice.toFixed(4):'—'}</td>
+      <td style="font-family:monospace;font-weight:600">${tr.exitPriceEff!=null?tr.exitPriceEff.toFixed(4):'—'}</td>
+      <td style="font-family:monospace;${deltaColor}">${deltaStr}</td>
+      <td style="font-family:monospace;font-size:11px">${tr.days!=null?tr.days:'—'}</td>
+      <td style="font-size:10px;color:var(--muted2);max-width:260px">
+        <div><b>Entrata:</b> ${tr.entryNote||'—'}</div>
+        <div><b>Uscita:</b> ${tr.exitNote||(tr.isOpen?'Posizione ancora aperta':'—')}</div>
+        ${idx===0 && tr.isOpen ? '<div style="color:var(--verde);font-weight:600">← attuale</div>' : ''}
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+// Motore di rendering SVG unico — standard scannerv3 (Heikin-Ashi + Renko + Volume + Baffetti + AO + RSI)
+function renderChartSVG(cd) {
+  const dates = cd.dates || [];
+  const N = dates.length;
+  if (!N) return;
+  const o = cd.opens || cd.closes, h = cd.highs || [], l = cd.lows || [], c = cd.closes || [], v = cd.volumes || [];
+  const kama = cd.kama || [], ao = cd.ao || [], rsiArr = cd.rsi || [], rsi5Arr = cd.rsi5 || [];
+  const sarArr = cd.sar || [], sarBull = cd.sar_bull || [];
+  const bafC = cd.baff || [];
+  const renko = cd.renko || [], renkoBrick = cd.renko_brick;
+  const mm20 = sma(c, 20), mm50 = sma(c, 50), mm100 = sma(c, 100);
+  const sigHist = cd.signals_history || [];
+
+  function calcHA(o, h, l, c) {
+    const haO = [], haH = [], haL = [], haC = [];
+    haO.push((o[0]+c[0])/2); haC.push((o[0]+h[0]+l[0]+c[0])/4);
+    haH.push(Math.max(h[0], haO[0], haC[0])); haL.push(Math.min(l[0], haO[0], haC[0]));
+    for (let i = 1; i < c.length; i++) {
+      const nc = (o[i]+h[i]+l[i]+c[i])/4, no = (haO[i-1]+haC[i-1])/2;
+      haO.push(no); haC.push(nc); haH.push(Math.max(h[i], no, nc)); haL.push(Math.min(l[i], no, nc));
+    }
+    return { haO, haH, haL, haC };
+  }
+  const ha = calcHA(o, h, l, c);
+
+  const wrap = document.getElementById('chartSvgWrap');
+  if (!wrap) return;
+  const W = Math.max(wrap.clientWidth - 2, 340);
+  const PAD = { l: 46, r: 60, t: 8, b: 22 };
+  const PW = W - PAD.l - PAD.r;
+  const panels = [{ id:'price', h:260 }, { id:'renko', h:80 }, { id:'vol', h:55 }, { id:'baf', h:45 }, { id:'ao', h:65 }, { id:'rsi', h:90 }];
+  const GAP = 4;
+  const totalH = panels.reduce((s,p) => s + p.h + GAP, 0) + PAD.t + PAD.b;
+
+  const ns = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(ns, 'svg');
+  svg.setAttribute('width', W); svg.setAttribute('height', totalH);
+  svg.setAttribute('viewBox', '0 0 ' + W + ' ' + totalH);
+  svg.style.cssText = 'display:block;background:#fff';
+
+  function xPos(i, count) { count = count || N; return PAD.l + (i/Math.max(count-1,1)) * PW; }
+  function scY(val, mn, mx, yT, hh) { if (mx === mn) return yT + hh/2; return yT + hh - ((val-mn)/(mx-mn)) * hh; }
+  function el(tag, attrs, par) { const e = document.createElementNS(ns, tag); for (const [k,vv] of Object.entries(attrs)) e.setAttribute(k, vv); (par||svg).appendChild(e); return e; }
+  function line(x1,y1,x2,y2,stroke,sw,dash) { el('line',{x1:x1.toFixed(1),y1:y1.toFixed(1),x2:x2.toFixed(1),y2:y2.toFixed(1),stroke,'stroke-width':sw||1,...(dash?{'stroke-dasharray':dash}:{})}); }
+  function polyline(pts,stroke,sw,dash) { if (pts.length<2) return; el('polyline',{points:pts.map(p=>p[0].toFixed(1)+','+p[1].toFixed(1)).join(' '),stroke,'stroke-width':sw||1.5,fill:'none','stroke-linejoin':'round',...(dash?{'stroke-dasharray':dash}:{})}); }
+  function rectEl(x,y,w2,h2,fill,op) { if (w2<=0||h2<=0) return; el('rect',{x:x.toFixed(1),y:y.toFixed(1),width:Math.max(0,w2).toFixed(1),height:Math.max(0,h2).toFixed(1),fill,opacity:op!=null?op:1}); }
+  function txt(x,y,s,fill,size,anchor,weight) { const e = el('text',{x:x.toFixed(1),y:y.toFixed(1),fill,'font-size':size||9,'font-family':'Segoe UI,sans-serif','text-anchor':anchor||'middle','font-weight':weight||400}); e.textContent = s; }
+  function tri(cx,cy,sz,up,fill) { const pts = up?`${cx},${cy-sz} ${cx-sz},${cy+sz} ${cx+sz},${cy+sz}`:`${cx},${cy+sz} ${cx-sz},${cy-sz} ${cx+sz},${cy-sz}`; el('polygon',{points:pts,fill}); }
+  function diamond(cx,cy,sz,fill) { el('polygon',{points:`${cx},${cy-sz} ${cx+sz},${cy} ${cx},${cy+sz} ${cx-sz},${cy}`,fill}); }
+
+  let yOff = PAD.t;
+  panels.forEach(panel => {
+    const yTop = yOff, hh = panel.h;
+    rectEl(PAD.l, yTop, PW, hh, '#fbfcfd');
+    for (let g=0; g<=4; g++) { const gy = yTop + hh/4*g; line(PAD.l, gy, PAD.l+PW, gy, g===0||g===4?'#d0d7de':'#eef0f3', g===0||g===4?0.8:0.5); }
+
+    if (panel.id === 'price') {
+      const allP = [...ha.haH, ...ha.haL, ...kama.filter(x=>x!=null), ...mm20.filter(x=>x!=null), ...mm100.filter(x=>x!=null)];
+      const mn = Math.min(...allP) * 0.995, mx = Math.max(...allP) * 1.005;
+      const sy = vv => scY(vv, mn, mx, yTop, hh);
+      for (let g=0; g<=4; g++) { const vv = mn + (mx-mn)/4*g; txt(PAD.l-4, sy(vv)+3, vv<10?vv.toFixed(3):vv.toFixed(2), '#57606a', 8, 'end'); }
+      const bw = Math.max(1, PW/N*0.6);
+      for (let i=0; i<N; i++) {
+        const bull = ha.haC[i] >= ha.haO[i];
+        const col = bull ? '#1a7f37' : '#cf222e';
+        line(xPos(i), sy(ha.haH[i]), xPos(i), sy(ha.haL[i]), col, 1);
+        const yb = sy(Math.max(ha.haO[i], ha.haC[i])), yb2 = sy(Math.min(ha.haO[i], ha.haC[i]));
+        rectEl(xPos(i)-bw/2, yb, bw, Math.max(1, yb2-yb), col, 0.85);
+      }
+      polyline(mm100.map((vv,i)=>vv!=null?[xPos(i),sy(vv)]:null).filter(Boolean), '#bc8cff', 1, '8,4');
+      polyline(mm50.map((vv,i)=>vv!=null?[xPos(i),sy(vv)]:null).filter(Boolean), '#e3b341', 1, '5,3');
+      polyline(mm20.map((vv,i)=>vv!=null?[xPos(i),sy(vv)]:null).filter(Boolean), '#58a6ff', 1, '3,3');
+      polyline(kama.map((vv,i)=>vv!=null?[xPos(i),sy(vv)]:null).filter(Boolean), '#f0883e', 2);
+      sarArr.forEach((s,i) => { if (s==null) return; el('circle',{cx:xPos(i).toFixed(1),cy:sy(s).toFixed(1),r:2.6,fill:sarBull[i]?'#6e40c9':'#f85149',stroke:'#fff','stroke-width':0.8}); });
+      const segCol = { BUY1:'#1a7f37', BUY2:'#0969da', BUY3:'#6e40c9', SELL:'#cf222e' };
+      sigHist.forEach(sh => {
+        const i = dates.indexOf(sh.date);
+        if (i < 0 || !segCol[sh.signal]) return;
+        const up = sh.signal === 'BUY1' || sh.signal === 'BUY2' || sh.signal === 'BUY3';
+        if (sh.signal === 'BUY3') diamond(xPos(i), sy(c[i])+(up?12:-12), 5, segCol[sh.signal]);
+        else tri(xPos(i), sy(c[i])+(up?12:-12), 5, up, segCol[sh.signal]);
+      });
+      const lc = c[N-1];
+      rectEl(PAD.l+PW+2, sy(lc)-7, 50, 14, '#1f2328');
+      txt(PAD.l+PW+27, sy(lc)+4, lc<10?lc.toFixed(4):lc.toFixed(2), '#fff', 8);
+      txt(PAD.l+2, yTop+10, 'PREZZO (HEIKIN-ASHI) · KAMA · MM20/50/100 · SAR', '#57606a', 7.5, 'start', 700);
+    }
+
+    if (panel.id === 'renko') {
+      if (!renko || !renko.length) {
+        txt(PAD.l+PW/2, yTop+hh/2, 'Renko non disponibile per questo ticker', '#8b949e', 9);
+      } else {
+        const rn = renko.length;
+        const vals = renko.flatMap(b => [b.o, b.c]);
+        const mn = Math.min(...vals), mx = Math.max(...vals);
+        const sy = vv => scY(vv, mn, mx, yTop, hh);
+        const bw = Math.max(2, PW/rn*0.8);
+        renko.forEach((b,i) => {
+          const col = b.dir > 0 ? '#1a7f37' : '#cf222e';
+          const y0 = sy(Math.max(b.o,b.c)), y1 = sy(Math.min(b.o,b.c));
+          rectEl(xPos(i,rn)-bw/2, y0, bw, Math.max(1, y1-y0), col, 0.9);
+        });
+      }
+      txt(PAD.l+2, yTop+10, 'RENKO (ATR14, brick=' + (renkoBrick||'—') + ')', '#57606a', 7.5, 'start', 700);
+    }
+
+    if (panel.id === 'vol') {
+      const vmax = Math.max(...v, 1);
+      const vAvg = sma(v, 20);
+      const bw = Math.max(1, PW/N*0.7);
+      v.forEach((vv,i) => {
+        const vh = (vv/vmax) * hh;
+        const col = i===0 ? '#58a6ff' : c[i]>=c[i-1] ? 'rgba(26,127,55,.55)' : 'rgba(207,34,46,.55)';
+        rectEl(xPos(i)-bw/2, yTop+hh-vh, bw, vh, col);
+      });
+      polyline(vAvg.map((vv,i)=>vv!=null?[xPos(i), yTop+hh-Math.min(vv/vmax,1)*hh]:null).filter(Boolean), '#0969da', 1.2);
+      txt(PAD.l+2, yTop+10, 'VOLUME vs Media20', '#57606a', 7.5, 'start', 700);
+    }
+
+    if (panel.id === 'baf') {
+      const bmax = Math.max(5, ...bafC);
+      const bw = Math.max(1, PW/N*0.7);
+      bafC.forEach((n,i) => {
+        const bh = (n/bmax) * hh;
+        const col = n>=2 ? 'rgba(26,127,55,.85)' : n>=1 ? 'rgba(240,136,62,.7)' : 'rgba(208,215,222,.6)';
+        rectEl(xPos(i)-bw/2, yTop+hh-bh, bw, bh, col);
+      });
+      txt(PAD.l+2, yTop+10, 'BAFFETTI', '#57606a', 7.5, 'start', 700);
+    }
+
+    if (panel.id === 'ao') {
+      const vals = ao.filter(x=>x!=null);
+      const mn = Math.min(...vals, 0), mx = Math.max(...vals, 0);
+      const zero = scY(0, mn, mx, yTop, hh);
+      const bw = Math.max(1, PW/N*0.7);
+      line(PAD.l, zero, PAD.l+PW, zero, '#d0d7de', 1);
+      ao.forEach((vv,i) => {
+        if (vv==null) return;
+        const prev = ao[i-1];
+        const up = vv >= (prev==null?vv:prev);
+        const col = vv>=0 ? (up?'#1a7f37':'rgba(26,127,55,.4)') : (up?'rgba(207,34,46,.4)':'#cf222e');
+        const y0 = scY(vv, mn, mx, yTop, hh);
+        rectEl(xPos(i)-bw/2, Math.min(y0,zero), bw, Math.abs(y0-zero)||1, col);
+      });
+      txt(PAD.l+2, yTop+10, 'AO (Awesome Oscillator)', '#57606a', 7.5, 'start', 700);
+    }
+
+    if (panel.id === 'rsi') {
+      const sy = vv => scY(vv, 0, 100, yTop, hh);
+      rectEl(PAD.l, sy(70), PW, sy(30)-sy(70), '#fff7e6', 0.7);
+      [70,50,30].forEach(lv => { line(PAD.l, sy(lv), PAD.l+PW, sy(lv), lv===50?'#d0d7de':'#eef0f3', 0.8, lv!==50?'3,3':''); txt(PAD.l-4, sy(lv)+3, lv, '#57606a', 7.5, 'end'); });
+      for (let i=1; i<N; i++) {
+        if (rsiArr[i]==null || rsiArr[i-1]==null || rsi5Arr[i]==null || rsi5Arr[i-1]==null) continue;
+        const bullish = (rsi5Arr[i]+rsi5Arr[i-1]) >= (rsiArr[i]+rsiArr[i-1]);
+        const col = bullish ? 'rgba(26,127,55,.18)' : 'rgba(207,34,46,.18)';
+        const pts = `${xPos(i-1).toFixed(1)},${sy(rsiArr[i-1]).toFixed(1)} ${xPos(i).toFixed(1)},${sy(rsiArr[i]).toFixed(1)} ${xPos(i).toFixed(1)},${sy(rsi5Arr[i]).toFixed(1)} ${xPos(i-1).toFixed(1)},${sy(rsi5Arr[i-1]).toFixed(1)}`;
+        el('polygon', { points: pts, fill: col });
+      }
+      polyline(rsiArr.map((vv,i)=>vv!=null?[xPos(i),sy(vv)]:null).filter(Boolean), '#e3b341', 1.5);
+      polyline(rsi5Arr.map((vv,i)=>vv!=null?[xPos(i),sy(vv)]:null).filter(Boolean), '#58a6ff', 1.2, '3,2');
+      const lr = rsiArr.filter(x=>x!=null).at(-1);
+      if (lr != null) { rectEl(PAD.l+PW+2, sy(lr)-6, 32, 12, '#e3b341'); txt(PAD.l+PW+18, sy(lr)+4, lr.toFixed(0), '#1f2328', 8); }
+      txt(PAD.l+2, yTop+10, 'RSI(14) arancio · RSI(5) blu tratteggiato', '#57606a', 7.5, 'start', 700);
+      const step = Math.max(1, Math.floor(N/8));
+      for (let i=0; i<N; i+=step) {
+        const dd = new Date(dates[i]);
+        txt(xPos(i), totalH-PAD.b+13, dd.getDate()+'/'+(dd.getMonth()+1), '#57606a', 7.5);
+      }
+    }
+
+    yOff += hh + GAP;
+  });
+
+  wrap.innerHTML = '';
+  wrap.appendChild(svg);
+
+  const legEl = document.getElementById('chartLegend');
+  if (legEl) {
+    const swf = (color,label) => `<span style="display:inline-flex;align-items:center;gap:4px"><span style="width:10px;height:10px;background:${color};display:inline-block;border-radius:2px"></span>${label}</span>`;
+    legEl.innerHTML = [swf('#1a7f37','HA Verde'), swf('#cf222e','HA Rosso'), swf('#f0883e','KAMA'), swf('#58a6ff','MM20'), swf('#e3b341','MM50'), swf('#bc8cff','MM100'),
+      swf('#1a7f37','BUY1'), swf('#0969da','BUY2'), swf('#6e40c9','BUY3'), swf('#cf222e','SELL')].join('');
+  }
 }
 
 function closeChart() {
