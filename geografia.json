@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-03T21:19:24.616885+01:00",
-  "updated_display": "03/11/2026 21:19 CET",
-  "vix": 21.0,
+  "updated_at": "2026-11-03T22:53:23.078290+01:00",
+  "updated_display": "03/11/2026 22:53 CET",
+  "vix": 20.83,
   "vix_regime": "RIDOTTO",
   "paesi": {
     "all": [
@@ -58,7 +58,7 @@
           "desc": "Senza direzione"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "CN1.PA",
@@ -113,7 +113,7 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "FLXI.MI",
@@ -170,7 +170,7 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "EXS1.DE",
@@ -227,7 +227,7 @@
           "desc": "Zona grigia"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "SVE.MI",
@@ -282,7 +282,7 @@
           "desc": "Trend rialzista forte"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "XSMI.MI",
@@ -337,7 +337,7 @@
           "desc": "Trend rialzista forte"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "IS3U.DE",
@@ -394,7 +394,7 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "C40.PA",
@@ -451,7 +451,7 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "XCS3.DE",
@@ -508,7 +508,7 @@
           "desc": "Senza direzione"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "WMIB.MI",
@@ -567,7 +567,7 @@
           "desc": "Zona grigia"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "IMIB.MI",
@@ -626,7 +626,7 @@
           "desc": "Zona grigia"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "FMI.MI",
@@ -685,7 +685,7 @@
           "desc": "Zona grigia"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "SP1E.MI",
@@ -745,7 +745,7 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "CSMIB.MI",
@@ -804,7 +804,7 @@
           "desc": "Zona grigia"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "SAUS.MI",
@@ -864,7 +864,7 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "SPXJ.MI",
@@ -922,7 +922,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "WRTY.MI",
@@ -979,7 +979,7 @@
           "desc": "Zona grigia"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "UKE.MI",
@@ -1037,7 +1037,7 @@
           "desc": "Senza direzione"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "D5BI.DE",
@@ -1094,7 +1094,7 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "VUSA.MI",
@@ -1154,7 +1154,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "SPY5.MI",
@@ -1214,7 +1214,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "WSPX.MI",
@@ -1274,7 +1274,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "WSPE.MI",
@@ -1334,7 +1334,7 @@
           "desc": "Zona grigia"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "WRD.PA",
@@ -1394,7 +1394,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "SPXE.MI",
@@ -1454,7 +1454,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "LGUS.MI",
@@ -1514,7 +1514,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "QTOP.MI",
@@ -1573,7 +1573,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "LCCN.MI",
@@ -1633,7 +1633,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "WNAS.MI",
@@ -1693,7 +1693,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "FLXU.MI",
@@ -1753,7 +1753,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "DJE.PA",
@@ -1813,7 +1813,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "IAEX.AS",
@@ -1873,7 +1873,7 @@
           "desc": "Senza direzione"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "HSTE.MI",
@@ -1932,7 +1932,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "WS5X.MI",
@@ -1991,7 +1991,7 @@
           "desc": "Senza direzione"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "CSNDX.MI",
@@ -2051,7 +2051,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "MCHN.MI",
@@ -2110,7 +2110,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "LEER.DE",
@@ -2170,7 +2170,7 @@
           "desc": "Senza direzione"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "XBAS.DE",
@@ -2229,7 +2229,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "EST.MI",
@@ -2289,7 +2289,7 @@
           "desc": "Senza direzione"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "SRSA.MI",
@@ -2349,7 +2349,7 @@
           "desc": "Zona grigia"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "TUR.PA",
@@ -2408,7 +2408,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "IBZL.MI",
@@ -2467,7 +2467,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "XCS4.DE",
@@ -2526,7 +2526,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "SAUDI.MI",
@@ -2585,7 +2585,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "FLXT.MI",
@@ -2645,7 +2645,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "XFVT.DE",
@@ -2705,7 +2705,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "XPQP.DE",
@@ -2765,7 +2765,7 @@
           "desc": "Senza direzione"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "INDO.PA",
@@ -2825,7 +2825,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "XESD.DE",
@@ -2885,7 +2885,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "VJPE.MI",
@@ -2945,7 +2945,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "XCHA.DE",
@@ -3005,7 +3005,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       }
     ],
     "watchlist": [
@@ -3062,7 +3062,7 @@
           "desc": "Senza direzione"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       }
     ]
   },
@@ -3121,7 +3121,7 @@
           "desc": "Trend rialzista forte"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "MEUD.PA",
@@ -3178,7 +3178,7 @@
           "desc": "Zona grigia"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "NTSZ.DE",
@@ -3235,7 +3235,7 @@
           "desc": "Rialzo in corso"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "WSPE.MI",
@@ -3295,7 +3295,7 @@
           "desc": "Zona grigia"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "CSPXJ.MI",
@@ -3354,7 +3354,7 @@
           "desc": "Senza direzione"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "IUSE.MI",
@@ -3414,7 +3414,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "CSCA.MI",
@@ -3474,7 +3474,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "JRGE.MI",
@@ -3534,7 +3534,7 @@
           "desc": "Zona grigia"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "WNAS.MI",
@@ -3594,7 +3594,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "WWRD.MI",
@@ -3654,7 +3654,7 @@
           "desc": "Zona grigia"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "SXRU.DE",
@@ -3714,7 +3714,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "SJPA.MI",
@@ -3774,7 +3774,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "IQQ9.DE",
@@ -3833,7 +3833,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "NTSG.MI",
@@ -3890,7 +3890,7 @@
           "desc": "Zona grigia"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "NTSX.MI",
@@ -3949,7 +3949,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "ISAC.MI",
@@ -4009,7 +4009,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "CAHEUA.MI",
@@ -4069,7 +4069,7 @@
           "desc": "Zona grigia"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "WS5X.MI",
@@ -4128,7 +4128,7 @@
           "desc": "Senza direzione"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "IAPD.MI",
@@ -4186,7 +4186,7 @@
           "desc": "Senza direzione"
         },
         "buy_level": "WATCH",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "EST.MI",
@@ -4246,7 +4246,7 @@
           "desc": "Senza direzione"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "IWDE.MI",
@@ -4306,7 +4306,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "ALAT.MI",
@@ -4365,7 +4365,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "LAFRI.MI",
@@ -4424,7 +4424,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "LTAM.MI",
@@ -4483,7 +4483,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "CSEMAS.MI",
@@ -4543,7 +4543,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "IQQF.DE",
@@ -4603,7 +4603,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "IJPE.MI",
@@ -4663,7 +4663,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "NQSE.DE",
@@ -4722,7 +4722,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       },
       {
         "ticker": "SEMA.MI",
@@ -4782,7 +4782,7 @@
           "desc": "Ribasso in corso"
         },
         "buy_level": "SELL",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       }
     ],
     "watchlist": [
@@ -4839,7 +4839,7 @@
           "desc": "Trend rialzista forte"
         },
         "buy_level": "BUY2",
-        "level_ts": "2026-11-03 21:19 CET"
+        "level_ts": "2026-11-03 22:53 CET"
       }
     ]
   }
